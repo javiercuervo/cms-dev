@@ -63,6 +63,9 @@
 | 12 | Footer Elementor Theme Builder (logo blanco, MIT, enlaces legales) | Preparado | 2026-01-28 |
 | 13 | Script deploy-staging-batch.sh para deploy único | Preparado | 2026-01-28 |
 | 14 | CSS: Blog en retícula con estilo corporativo (solo títulos, proporción áurea, poliedros) | Preparado | 2026-01-28 |
+| 15 | Página Investigación: nuevo diseño con hero, tarjetas de áreas, contenido reescrito | Preparado | 2026-01-28 |
+| 16 | Página Investigación: renombrada de "Tesis doctoral" a "Línea de Investigación" | Preparado | 2026-01-28 |
+| 17 | Página Investigación: nueva URL /investigacion/ (antes /investigacion-tesis-universidade-de-aveiro/) | Preparado | 2026-01-28 |
 
 ---
 

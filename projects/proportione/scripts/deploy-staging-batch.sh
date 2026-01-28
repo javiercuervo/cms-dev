@@ -150,9 +150,66 @@ if (\$conditions_manager) {
 echo \"Footer configurado correctamente\\n\";
 '"
 
-# 5. Purgar todas las cachés
+# 5. Actualizar página de Investigación
 echo ""
-echo "[5/5] Purgando cachés..."
+echo "[5/7] Actualizando página de Investigación..."
+ssh $REMOTE "cat > /tmp/investigacion-content.html << 'HTMLEOF'
+$(cat "$PROJECT_DIR/content/investigacion-page.html")
+HTMLEOF"
+
+ssh $REMOTE "cd $WP_PATH && wp eval '
+// Buscar la página de investigación
+\$pages = get_posts(array(
+    \"post_type\" => \"page\",
+    \"name\" => \"investigacion-tesis-universidade-de-aveiro\",
+    \"posts_per_page\" => 1
+));
+
+if (!empty(\$pages)) {
+    \$page_id = \$pages[0]->ID;
+    \$content = file_get_contents(\"/tmp/investigacion-content.html\");
+
+    // Actualizar contenido y título
+    wp_update_post(array(
+        \"ID\" => \$page_id,
+        \"post_title\" => \"Línea de Investigación\",
+        \"post_content\" => \$content,
+        \"post_name\" => \"investigacion\"
+    ));
+
+    echo \"Página actualizada (ID: \$page_id)\\n\";
+} else {
+    echo \"Página no encontrada, creando nueva...\\n\";
+    \$content = file_get_contents(\"/tmp/investigacion-content.html\");
+    \$page_id = wp_insert_post(array(
+        \"post_title\" => \"Línea de Investigación\",
+        \"post_content\" => \$content,
+        \"post_status\" => \"publish\",
+        \"post_type\" => \"page\",
+        \"post_name\" => \"investigacion\"
+    ));
+    echo \"Página creada (ID: \$page_id)\\n\";
+}
+'"
+
+# 6. Actualizar menú (cambiar enlace de Investigación)
+echo ""
+echo "[6/7] Actualizando enlace en menú..."
+ssh $REMOTE "cd $WP_PATH && wp eval '
+// Buscar item de menú de Investigación y actualizar URL
+\$menu_items = wp_get_nav_menu_items(\"menu-principal\");
+foreach (\$menu_items as \$item) {
+    if (strpos(\$item->url, \"investigacion\") !== false) {
+        // Actualizar a la nueva URL
+        update_post_meta(\$item->ID, \"_menu_item_url\", home_url(\"/investigacion/\"));
+        echo \"Menú actualizado: \" . \$item->title . \"\\n\";
+    }
+}
+'"
+
+# 7. Purgar todas las cachés
+echo ""
+echo "[7/7] Purgando cachés..."
 ssh $REMOTE "cd $WP_PATH && \
     wp cache flush && \
     wp transient delete --all && \
