@@ -1,22 +1,23 @@
-# Guía de Despliegue
+# Guía de Despliegue - Proportione
 
 ## URLs del Proyecto
 
 | Entorno | URL | Rama Git |
 |---------|-----|----------|
-| Staging | https://staging.tudominio.com | `staging` |
-| Producción | https://tudominio.com | `main` |
+| Staging | https://staging19.proportione.com | `staging` |
+| Producción | https://proportione.com | `main` |
+| GitHub | https://github.com/javiercuervo/cms-dev | código fuente |
 
 ## Configuración SSH
 
 Archivo `~/.ssh/config`:
 
 ```
-Host siteground
-    HostName tudominio.com
-    User tu-usuario-siteground
+Host siteground-proportione
+    HostName ssh.proportione.com
+    User u7-hsfspysgq8vx
     Port 18765
-    IdentityFile ~/.ssh/id_ed25519
+    IdentityFile ~/.ssh/siteground_key
 ```
 
 ## Remotos Git
@@ -25,37 +26,52 @@ Host siteground
 # Ver remotos configurados
 git remote -v
 
-# Staging
-staging  ssh://usuario@tudominio.com:18765/home/usuario/staging.tudominio.com/public_html
+# GitHub (código fuente)
+origin    https://github.com/javiercuervo/cms-dev.git
 
-# Producción (cuando esté configurado)
-production  ssh://usuario@tudominio.com:18765/home/usuario/public_html
+# SiteGround Staging (deploy)
+siteground-staging    ssh://u7-hsfspysgq8vx@c1121528.sgvps.net:18765/home/customer/www/staging19.proportione.com/public_html/
 ```
 
 ## Proceso de Deploy
 
-### A Staging
+### 1. Commit a GitHub
 
 ```bash
 git add .
 git commit -m "tipo: descripción del cambio"
-git push staging staging
+git push origin staging
 ```
 
-### A Producción
+### 2. Deploy a Staging
 
-**Opción A: Via Git**
 ```bash
-git checkout main
-git merge staging
-git push production main
+# Opción A: Script automático
+./scripts/deploy-staging.sh
+
+# Opción B: Manual
+rsync -avz wp-content/themes/twentytwentythree-child/ \
+  siteground-proportione:/home/customer/www/staging19.proportione.com/public_html/wp-content/themes/twentytwentythree-child/
 ```
 
-**Opción B: Via SiteGround (Recomendado)**
+### 3. Verificar
+
+Abrir https://staging19.proportione.com/ y comprobar cambios.
+
+### 4. A Producción (cuando esté listo)
+
+**Opción A: Via SiteGround Staging Tool (Recomendado)**
 1. Site Tools → WordPress → Staging
 2. Click en "Push to Live"
 3. Seleccionar archivos y/o base de datos
 4. Confirmar
+
+**Opción B: Merge a main**
+```bash
+git checkout main
+git merge staging
+git push origin main
+```
 
 ## Rollback
 
@@ -65,7 +81,30 @@ git log --oneline -5
 
 # Revertir último commit
 git revert HEAD
-git push [remote] [rama]
+git push origin staging
+
+# Re-deploy
+./scripts/deploy-staging.sh
 ```
 
 O usar backups de SiteGround: Site Tools → Security → Backups
+
+## Estructura del Child Theme
+
+```
+wp-content/themes/twentytwentythree-child/
+├── style.css       # Estilos personalizados
+└── functions.php   # Funciones PHP (enqueue, hooks, etc.)
+```
+
+## Convención de Commits
+
+```
+feat: nueva funcionalidad
+fix: corrección de bug
+style: cambios de CSS/formato
+refactor: reorganización de código
+docs: documentación
+chore: tareas de mantenimiento
+test: pruebas
+```

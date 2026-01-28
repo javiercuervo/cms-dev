@@ -348,37 +348,37 @@ O usar backup de SiteGround: Site Tools → Security → Backups
 - [x] Crear README.md básico
 - [x] Primer commit: "chore: estructura inicial"
 
-### FASE 2: CONFIGURAR SITEGROUND (Pendiente)
-- [ ] Acceder a SiteGround Site Tools
-- [ ] Developers → SSH Keys: agregar tu clave pública
-- [ ] Developers → Git: crear repositorio para staging
-- [ ] Copiar URL del repositorio Git de SiteGround
-- [ ] Probar conexión SSH: `ssh siteground "echo ok"`
+### FASE 2: CONFIGURAR SITEGROUND ✅
+- [x] Acceder a SiteGround Site Tools
+- [x] Developers → SSH Keys: clave creada `cms-git-proportione`
+- [x] Developers → Git: repositorio creado para staging19
+- [x] URL copiada: `ssh://u7-hsfspysgq8vx@c1121528.sgvps.net:18765/...`
+- [x] Conexión SSH verificada: `ssh siteground-proportione "echo ok"`
 
-### FASE 3: CONECTAR REPOSITORIOS (Pendiente)
-- [ ] Agregar remoto: `git remote add staging [URL]`
-- [ ] Push inicial: `git push -u staging staging`
-- [ ] Verificar en SiteGround que se recibió el push
+### FASE 3: CONECTAR REPOSITORIOS ✅
+- [x] GitHub configurado como `origin`: https://github.com/javiercuervo/cms-dev
+- [x] SiteGround configurado como `siteground-staging`
+- [x] Push inicial a GitHub completado
+- [x] Deploy via rsync configurado
 
-### FASE 4: DESARROLLO INICIAL (Pendiente)
-- [ ] Descargar tema actual de staging (si existe)
-- [ ] Agregarlo a wp-content/themes/
-- [ ] Abrir proyecto en VS Code
-- [ ] Iniciar Claude Code en terminal
-- [ ] Hacer primer cambio de prueba
-- [ ] Commit y push a staging
+### FASE 4: DESARROLLO INICIAL ✅
+- [x] Child theme extraído de staging (twentytwentythree-child)
+- [x] Agregado a wp-content/themes/
+- [x] Proyecto abierto en VS Code + Claude Code
+- [x] Cambio de prueba realizado (style.css + functions.php)
+- [x] Commit y push a GitHub
 
-### FASE 5: VALIDAR FLUJO COMPLETO (Pendiente)
-- [ ] Verificar cambio en staging.tudominio.com
-- [ ] Probar funcionalidad
-- [ ] Revisar checklist pre-producción
-- [ ] Merge staging → main
-- [ ] Push a producción
-- [ ] Verificar en tudominio.com
+### FASE 5: VALIDAR FLUJO COMPLETO ✅
+- [x] Deploy a staging19.proportione.com verificado
+- [x] CSS del child theme cargando correctamente
+- [ ] Merge staging → main (pendiente cuando haya cambios estables)
+- [ ] Deploy a producción (pendiente)
 
-### FASE 6: DOCUMENTAR (Pendiente)
-- [ ] Actualizar docs/DEPLOYMENT.md con URLs específicas
-- [ ] Documentar accesos SSH en lugar seguro
+### FASE 6: DOCUMENTAR ✅
+- [x] docs/DEPLOYMENT.md actualizado
+- [x] Credenciales en keys/ACCESOS.md (excluido de git)
+- [x] Script deploy-staging.sh creado
+- [x] Documentación técnica añadida (siteground-git.md, wordpress-api-claude-code.md)
 
 ---
 
