@@ -71,6 +71,33 @@
 
 ---
 
+## Diagnóstico Post-Deploy (2026-01-28)
+
+### Problemas Detectados
+
+| Componente | Estado | Problema | Causa |
+|------------|--------|----------|-------|
+| Blog /blog/ | ❌ Parcial | 1 columna, contenido solapado | Selectores CSS incorrectos |
+| Homepage | ❌ Sin cambios | Ningún cambio visible | Página Elementor, CSS no aplica |
+| Footer | ❌ Sin cambios | No muestra MIT ni enlaces | Theme Builder necesario |
+| Investigación | ✅ Funciona | Estructura OK, falta diseño | Necesita imágenes/retícula |
+
+### Correcciones Aplicadas (Local)
+
+| # | Corrección | Estado |
+|---|-----------|--------|
+| 20 | CSS Blog: selectores robustos con body.blog, !important | Preparado |
+| 21 | CSS Blog: grid forzado en #primary, .site-main, main | Preparado |
+| 22 | Documento diagnóstico CSS creado | Completado |
+
+### Pendiente (No resuelto con CSS)
+
+- **Homepage**: Requiere edición directa en Elementor o CSS ultra-específico
+- **Footer**: Requiere crear template en Elementor Theme Builder
+- **Investigación**: Necesita imágenes y maquetación más visual
+
+---
+
 ## Próximo Deploy a Producción
 
 **Fecha prevista:** Por determinar
