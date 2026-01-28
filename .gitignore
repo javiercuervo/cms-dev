@@ -27,8 +27,9 @@ wp-content/plugins/*
 !wp-content/plugins/mi-plugin-custom/
 
 # === Temas de terceros ===
-wp-content/themes/flavor-flavor-flavor-flavor/
-# Mantener solo tu child theme
+# Tema padre se instala via WP, no versionar
+wp-content/themes/twentytwentythree/
+# Solo versionamos el child theme: twentytwentythree-child/
 
 # === Sistema ===
 .DS_Store
