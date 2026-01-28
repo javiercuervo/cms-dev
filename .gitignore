@@ -1,0 +1,38 @@
+# === WordPress Core (NUNCA versionar) ===
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# === Configuración sensible ===
+wp-config.php
+.htaccess
+.env
+*.log
+
+# === wp-content: excluir lo que no es código ===
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup*/
+wp-content/wflogs/
+wp-content/debug.log
+
+# === Plugins de terceros (instalar via WP Admin) ===
+wp-content/plugins/*
+!wp-content/plugins/mi-plugin-custom/
+
+# === Temas de terceros ===
+wp-content/themes/flavor-flavor-flavor-flavor/
+# Mantener solo tu child theme
+
+# === Sistema ===
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+*.sql
+*.zip

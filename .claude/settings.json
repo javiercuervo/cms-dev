@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(cat *)"
+    ],
+    "deny": []
+  },
+  "context": {
+    "project_type": "wordpress",
+    "git_workflow": "staging-to-production",
+    "remotes": {
+      "staging": "staging branch -> SiteGround staging",
+      "production": "main branch -> SiteGround production"
+    }
+  }
+}
