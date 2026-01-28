@@ -1,40 +1,44 @@
-# === WordPress Core (NUNCA versionar) ===
-/wp-admin/
-/wp-includes/
-/wp-*.php
-/index.php
-/xmlrpc.php
-/license.txt
-/readme.html
+# === CREDENCIALES (por proyecto) ===
+**/keys/
 
-# === Configuración sensible ===
-wp-config.php
-.htaccess
+# === CONFIGURACIÓN SENSIBLE ===
 .env
 *.log
-keys/
+wp-config.php
+.htaccess
 
-# === wp-content: excluir lo que no es código ===
-wp-content/uploads/
-wp-content/upgrade/
-wp-content/cache/
-wp-content/backup*/
-wp-content/wflogs/
-wp-content/debug.log
+# === WORDPRESS CORE (si se descarga) ===
+**/wp-admin/
+**/wp-includes/
+**/wp-*.php
+**/index.php
+**/xmlrpc.php
+**/license.txt
+**/readme.html
 
-# === Plugins de terceros (instalar via WP Admin) ===
-wp-content/plugins/*
-!wp-content/plugins/mi-plugin-custom/
+# === WP-CONTENT: excluir lo que no es código ===
+**/wp-content/uploads/
+**/wp-content/upgrade/
+**/wp-content/cache/
+**/wp-content/backup*/
+**/wp-content/wflogs/
+**/wp-content/debug.log
 
-# === Temas de terceros ===
-# Tema padre se instala via WP, no versionar
-wp-content/themes/twentytwentythree/
-# Solo versionamos el child theme: twentytwentythree-child/
+# === PLUGINS DE TERCEROS ===
+# Solo versionar plugins propios
+**/wp-content/plugins/*
+!**/wp-content/plugins/.gitkeep
+!**/wp-content/plugins/mi-plugin-custom/
 
-# === Sistema ===
+# === MU-PLUGINS ===
+**/wp-content/mu-plugins/*
+!**/wp-content/mu-plugins/.gitkeep
+
+# === SISTEMA ===
 .DS_Store
 Thumbs.db
 node_modules/
 vendor/
 *.sql
 *.zip
+*.tar.gz
