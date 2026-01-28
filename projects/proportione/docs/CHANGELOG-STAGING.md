@@ -60,6 +60,8 @@
 | 9 | Logo fondo granate subido a staging (ID 2766) | Completado | 2026-01-28 |
 | 10 | CSS: Ocultar título de página duplicado del tema (aplica a todas las páginas) | Completado | 2026-01-28 |
 | 11 | CSS: Títulos sobre fondos oscuros/imágenes en color crema (#F5F0E6) | Completado | 2026-01-28 |
+| 12 | Footer Elementor Theme Builder (logo blanco, MIT, enlaces legales) | Preparado | 2026-01-28 |
+| 13 | Script deploy-staging-batch.sh para deploy único | Preparado | 2026-01-28 |
 
 ---
 
