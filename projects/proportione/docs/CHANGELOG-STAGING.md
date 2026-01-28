@@ -57,6 +57,9 @@
 | 6 | CSS: Logo en footer con filtro blanco para fondo granate | Completado | 2026-01-28 |
 | 7 | Footer: Licencia MIT en lugar de "All rights reserved" | Completado | 2026-01-28 |
 | 8 | Footer: Enlaces a Política de Privacidad y Política de Cookies | Completado | 2026-01-28 |
+| 9 | Logo fondo granate subido a staging (ID 2766) | Completado | 2026-01-28 |
+| 10 | CSS: Ocultar título de página duplicado del tema (aplica a todas las páginas) | Completado | 2026-01-28 |
+| 11 | CSS: Títulos sobre fondos oscuros/imágenes en color crema (#F5F0E6) | Completado | 2026-01-28 |
 
 ---
 

@@ -12,6 +12,7 @@
     --color-secondary: #551122;
     --color-accent: #6E8157;
     --color-neutral: #AEADB3;
+    --color-cream: #F5F0E6;
     --font-titles: 'Oswald', sans-serif;
     --font-body: 'Raleway', sans-serif;
 }
@@ -155,6 +156,60 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 3rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.6rem; }
+
+/* ===========================================
+   TÍTULOS DE PÁGINA - EVITAR DUPLICADOS
+   =========================================== */
+
+/* Ocultar título de página del tema (evita duplicación con Elementor) */
+.page .entry-header,
+.page .page-header,
+.single .entry-header,
+.page-title,
+article.page > header,
+.elementor-page .entry-header,
+body.elementor-page .page-header {
+    display: none !important;
+}
+
+/* ===========================================
+   TÍTULOS SOBRE FONDOS OSCUROS/IMÁGENES
+   =========================================== */
+
+/* Títulos en secciones con fondo de imagen - color crema */
+.elementor-section[data-settings*="background_image"] h1,
+.elementor-section[data-settings*="background_image"] h2,
+.elementor-section[data-settings*="background_image"] .elementor-heading-title,
+.elementor-section[style*="background-image"] h1,
+.elementor-section[style*="background-image"] h2,
+.elementor-section[style*="background-image"] .elementor-heading-title {
+    color: var(--color-cream) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Títulos en secciones con overlay oscuro */
+.elementor-section:has(.elementor-background-overlay) h1,
+.elementor-section:has(.elementor-background-overlay) h2,
+.elementor-section:has(.elementor-background-overlay) .elementor-heading-title {
+    color: var(--color-cream) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Hero sections - títulos en crema */
+.elementor-section.elementor-section-height-full h1,
+.elementor-section.elementor-section-height-full .elementor-heading-title,
+.elementor-section-stretched h1,
+.elementor-section-stretched .elementor-heading-title {
+    color: var(--color-cream) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Primera sección de página (hero típico) con fondo */
+.elementor-section:first-child[data-settings*="background"] h1,
+.elementor-section:first-child[data-settings*="background"] .elementor-heading-title {
+    color: var(--color-cream) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
 
 /* ===========================================
    CONTENIDO - FIXES DE MÁRGENES
