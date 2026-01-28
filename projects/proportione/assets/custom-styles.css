@@ -157,6 +157,59 @@ h2 { font-size: 2.2rem; }
 h3 { font-size: 1.6rem; }
 
 /* ===========================================
+   CONTENIDO - FIXES DE MÁRGENES
+   =========================================== */
+
+/* Listas con bullets - asegurar márgenes laterales */
+.elementor-widget-text-editor ul,
+.elementor-widget-text-editor ol,
+.entry-content ul,
+.entry-content ol {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+}
+
+/* Contenedores de Elementor - márgenes consistentes */
+.elementor-section > .elementor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Listas con estrellas/iconos - márgenes laterales */
+.elementor-icon-list-items {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Texto sobre fondos oscuros - forzar legibilidad */
+.elementor-section[data-settings*="background_background"] .elementor-widget-text-editor,
+.elementor-section.elementor-section-boxed[style*="background"] .elementor-widget-text-editor {
+    color: #fff;
+}
+
+/* Secciones con overlay oscuro - texto blanco */
+.elementor-background-overlay + .elementor-container .elementor-widget-text-editor,
+.elementor-section[style*="background-image"] .elementor-widget-text-editor p {
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Fix específico para texto gris sobre fondo oscuro */
+.elementor-section .elementor-element .elementor-text-editor p[style*="color"],
+.elementor-section .elementor-element .elementor-text-editor span[style*="color: #"] {
+    color: inherit;
+}
+
+/* Forzar texto blanco en secciones con fondo de imagen */
+.elementor-section.elementor-element[data-element_type="section"]:has(.elementor-background-overlay) p,
+.elementor-section[style*="background-image"] p {
+    color: #fff !important;
+}
+
+/* ===========================================
    FOOTER
    =========================================== */
 .site-footer {
@@ -173,6 +226,39 @@ h3 { font-size: 1.6rem; }
 
 .site-footer a:hover {
     opacity: 1;
+}
+
+/* Footer logo - usar versión blanca */
+.site-footer .site-branding img,
+.site-footer img.custom-logo {
+    filter: brightness(0) invert(1);
+    max-height: 40px;
+}
+
+/* Footer links legales */
+.footer-legal-links {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+}
+
+.footer-legal-links a {
+    margin-right: 20px;
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.footer-legal-links a:hover {
+    opacity: 1;
+}
+
+/* Copyright MIT */
+.footer-copyright {
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.7;
 }
 
 /* ===========================================

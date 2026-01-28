@@ -50,6 +50,13 @@
 | # | Cambio | Estado | Fecha |
 |---|--------|--------|-------|
 | 1 | Añadida sección "Origen y Filosofía de la Marca" al manual de identidad: inspiración en *De Divina Proportione* de Luca Pacioli y Leonardo da Vinci, proporción áurea, poliedros de Leonardo | Completado | 2026-01-28 |
+| 2 | Documentados assets de marca (Brandbay) y páginas legales en IDENTIDAD-VISUAL.md | Completado | 2026-01-28 |
+| 3 | CSS: Fix márgenes en listas con bullets (capacitación personalizada, etc.) | Completado | 2026-01-28 |
+| 4 | CSS: Fix márgenes en listas con estrellas (alineación estratégica, etc.) | Completado | 2026-01-28 |
+| 5 | CSS: Texto blanco sobre fondos oscuros ("En la era digital...") | Completado | 2026-01-28 |
+| 6 | CSS: Logo en footer con filtro blanco para fondo granate | Completado | 2026-01-28 |
+| 7 | Footer: Licencia MIT en lugar de "All rights reserved" | Completado | 2026-01-28 |
+| 8 | Footer: Enlaces a Política de Privacidad y Política de Cookies | Completado | 2026-01-28 |
 
 ---
 

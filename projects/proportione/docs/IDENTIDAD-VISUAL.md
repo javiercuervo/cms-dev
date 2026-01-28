@@ -42,3 +42,18 @@ El logotipo de **Proportione** se construye de forma modular, garantizando propo
 ## Tipografías Corporativas
 - **Tipografía principal:** *Bourbon Grotesque* Regular. Utilizada en el logotipo y en títulos destacados de la marca.
 - **Tipografía secundaria:** *Raleway* (familia tipográfica, pesos Medium y Bold). Se recomienda para textos corporativos en comunicaciones internas y externas, así como en señalética, por su claridad y legibilidad.
+
+## Assets de Marca
+
+**Repositorio de assets:** https://app.brandbay.io/brand/proportione
+
+Aquí se encuentran todas las versiones del logotipo, iconos, y recursos gráficos oficiales de la marca.
+
+## Páginas Legales
+
+- **Política de Privacidad:** /politica-privacidad/
+- **Política de Cookies:** /politica-cookies/
+
+## Licencia
+
+El contenido del sitio se publica bajo **Licencia MIT**.
