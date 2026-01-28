@@ -29,15 +29,49 @@
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    
-    .elementor-container {
+
+    /* Solo columnas de contenido, NO el header ni nav-menu */
+    .elementor-section:not(.elementor-location-header) .elementor-container:not(.e-con):not([class*="nav"]) {
         flex-direction: column !important;
     }
-    
+
     /* Hero responsive */
     .elementor-widget-heading .elementor-heading-title {
         font-size: 36px !important;
     }
+}
+
+/* ===========================================
+   NAVEGACIÓN - Asegurar horizontal en desktop
+   =========================================== */
+
+/* Menú Elementor siempre horizontal en desktop */
+.elementor-nav-menu--main,
+.elementor-nav-menu,
+.elementor-nav-menu__container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+}
+
+.elementor-nav-menu--layout-horizontal .elementor-nav-menu {
+    flex-direction: row !important;
+}
+
+/* Items del menú en línea */
+.elementor-nav-menu > li,
+.elementor-nav-menu--main > li {
+    display: inline-flex !important;
+}
+
+/* Header container horizontal */
+.elementor-location-header .elementor-container,
+.elementor-location-header .e-con,
+[data-elementor-type="header"] .elementor-container,
+[data-elementor-type="header"] .e-con {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
 }
 
 /* Cards con hover effect */
