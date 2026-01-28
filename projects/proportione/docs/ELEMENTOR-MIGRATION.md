@@ -2,7 +2,7 @@
 
 ## Fecha: 28 Enero 2026
 
-## Estado: En progreso
+## Estado: Completada
 
 ---
 
@@ -33,14 +33,21 @@ Configuración global de colores y tipografía:
 
 | Template | ID | Condición | Descripción |
 |----------|-----|-----------|-------------|
-| Header | 2795 | include/general | Header con logo y menú horizontal |
+| Header | 2795 | include/general | Header con logo PNG 140px y menú horizontal |
 | Footer | 2796 | include/general | Footer con 3 columnas y copyright |
+| Blog Archive | 2797 | include/archive/post | Grid de posts 3 columnas con paginación |
+| Blog Single | 2798 | include/singular/post | Layout de artículo con sidebar |
 
 ### Páginas Elementor
 
 | Página | ID | URL | Estado |
 |--------|-----|-----|--------|
-| Homepage | 2793 | / | Completa |
+| Homepage | 2793 | / | ✅ Completa |
+| Divina Proportione | 82 | /divina-proportione/ | ✅ Completa |
+| Consultoría | 139 | /consultoria-estrategica-crecimiento-organico/ | ✅ Completa |
+| Contacto | 339 | /contacto/ | ✅ Completa |
+| Política de Privacidad | 3 | /politica-de-privacidad/ | ✅ Completa |
+| Política de Cookies | 1221 | /politica-de-cookies/ | ✅ Completa |
 
 ---
 
@@ -127,28 +134,48 @@ Configuración global de colores y tipografía:
 
 ## URLs de Edición
 
-- **Homepage**: https://staging19.proportione.com/wp-admin/post.php?post=2793&action=elementor
+### Templates
 - **Header**: https://staging19.proportione.com/wp-admin/post.php?post=2795&action=elementor
 - **Footer**: https://staging19.proportione.com/wp-admin/post.php?post=2796&action=elementor
+- **Blog Archive**: https://staging19.proportione.com/wp-admin/post.php?post=2797&action=elementor
+- **Blog Single**: https://staging19.proportione.com/wp-admin/post.php?post=2798&action=elementor
 - **Kit Global**: https://staging19.proportione.com/wp-admin/post.php?post=2701&action=elementor
+
+### Páginas
+- **Homepage**: https://staging19.proportione.com/wp-admin/post.php?post=2793&action=elementor
+- **Divina Proportione**: https://staging19.proportione.com/wp-admin/post.php?post=82&action=elementor
+- **Consultoría**: https://staging19.proportione.com/wp-admin/post.php?post=139&action=elementor
+- **Contacto**: https://staging19.proportione.com/wp-admin/post.php?post=339&action=elementor
+- **Privacidad**: https://staging19.proportione.com/wp-admin/post.php?post=3&action=elementor
+- **Cookies**: https://staging19.proportione.com/wp-admin/post.php?post=1221&action=elementor
 
 ---
 
-## Pendiente de Migración
+## Páginas Migradas Completamente
 
-### Páginas prioritarias
-- [ ] Contacto (ID: 339)
-- [ ] Quiénes somos / About
-- [ ] Servicios
-- [ ] Política de privacidad (ID: 3)
-- [ ] Política de cookies (ID: 1221)
+### Páginas principales
+- [x] Homepage (ID: 2793) - Hero, servicios, CTA
+- [x] Divina Proportione (ID: 82) - Filosofía, proporción áurea
+- [x] Consultoría (ID: 139) - Crecimiento orgánico
+- [x] Contacto (ID: 339) - Formulario HubSpot + redes
+
+### Páginas legales
+- [x] Política de Privacidad (ID: 3)
+- [x] Política de Cookies (ID: 1221)
 
 ### Blog Templates
-- [ ] Archive Template (listado de posts)
-- [ ] Single Post Template
+- [x] Archive Template (ID: 2797) - Grid 3 columnas
+- [x] Single Post Template (ID: 2798) - Contenido + sidebar
 
-### Páginas de contenido
-- [ ] Múltiples páginas de insights/artículos
+---
+
+## Páginas Opcionales (contenido secundario)
+
+Estas páginas pueden migrarse manualmente según necesidad:
+- Quiénes somos (ID: 1675) - draft
+- Línea de Investigación (ID: 2591)
+- Partners (ID: 2040) - draft
+- Artículos de blog individuales
 
 ---
 

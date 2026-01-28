@@ -1438,3 +1438,44 @@ El diseño comunica:
 
 **Versión:** 1.0 | **Fecha:** Enero 2026 | **Propósito:** Guía técnica de diseño visual para consultoría estratégica
 
+
+---
+
+## 15. BIBLIOTECA DE IMÁGENES DE PROPORTIONE
+
+### 15.1 Principio de Uso
+
+Todas las imágenes en la biblioteca de WordPress tienen un **alt text descriptivo** que explica su contenido y contexto. Al seleccionar imágenes para cualquier página:
+
+1. **Revisar el alt text** para entender el propósito de la imagen
+2. **Seleccionar la que mejor represente** el contenido de la sección
+3. **Priorizar coherencia visual** con la paleta de colores corporativa
+
+### 15.2 Categorías de Imágenes Disponibles
+
+| Categoría | Descripción | Uso Recomendado |
+|-----------|-------------|-----------------|
+| **Colaboración** | Personas trabajando en equipo, reuniones | Hero sections, secciones de equipo |
+| **Estrategia** | Pizarras, diagramas, planificación | Secciones de servicios, metodología |
+| **Tecnología** | Robots, IA, interfaces digitales | Artículos de blog, insights |
+| **Geometría/Proportione** | Formas geométricas, proporción áurea | Página Divina Proportione, branding |
+| **Profesional** | Fotografías de fundadores, equipo | About, contacto |
+
+### 15.3 Imágenes Clave para la Identidad
+
+| ID | Imagen | Uso |
+|----|--------|-----|
+| 1162 | Colaboración en mesa de madera | Hero homepage |
+| 1165 | Persona escribiendo en pizarra | Sección estrategia |
+| 1166 | Dos personas revisando documentos | Sección co-creación |
+| 2629 | Javier Cuervo | About, equipo |
+| 177 | Fibonacci/Crecimiento | Divina Proportione |
+| 2649 | Ilustración Leonardo da Vinci | Divina Proportione |
+
+### 15.4 Reglas de Selección
+
+1. **Coherencia temática**: La imagen debe reforzar el mensaje del texto
+2. **Paleta de colores**: Preferir imágenes con tonos cálidos (granates, verdes, cremas)
+3. **Calidad profesional**: Sin imágenes pixeladas o de stock genéricas
+4. **Alt text completo**: Siempre verificar que el alt text describa adecuadamente la imagen
+

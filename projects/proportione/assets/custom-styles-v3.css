@@ -1,0 +1,353 @@
+/* ===========================================
+   PROPORTIONE - Identidad Visual v3
+   Staging: staging19.proportione.com
+   Tema: Hello Elementor + Elementor Pro
+   Última actualización: 2026-01-28
+   =========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #5F322F;
+    --color-secondary: #551122;
+    --color-accent: #6E8157;
+    --color-neutral: #AEADB3;
+    --color-cream: #F5F0E6;
+    --font-titles: 'Oswald', sans-serif;
+    --font-body: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================================
+   LOGO - Tamaño forzado (máx 180px)
+   =========================================== */
+.site-branding img.custom-logo,
+.custom-logo-link img,
+img.custom-logo,
+.elementor-widget-image img[src*="logo"],
+.elementor-widget-site-logo img,
+header img[class*="logo"],
+.e-logo img,
+.site-logo img {
+    max-width: 180px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* ===========================================
+   ENCABEZADOS - Granate corporativo (#5F322F)
+   =========================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titles) !important;
+    color: var(--color-primary) !important;
+}
+
+/* Elementor headings */
+.elementor-heading-title,
+.elementor-widget-heading .elementor-heading-title,
+.elementor h1,
+.elementor h2,
+.elementor h3,
+.elementor h4,
+.elementor h5,
+.elementor h6 {
+    font-family: var(--font-titles) !important;
+    color: #5F322F !important;
+}
+
+/* Excepción: títulos sobre fondos oscuros */
+.elementor-section[data-settings*="background_image"] .elementor-heading-title,
+.elementor-section[style*="background-color:#5"] .elementor-heading-title,
+.elementor-section[style*="background-color: #5"] .elementor-heading-title,
+.elementor-section[style*="background-color:#3"] .elementor-heading-title,
+.elementor-section.e-con[style*="background"] .elementor-heading-title,
+.elementor-background-overlay ~ .elementor-container .elementor-heading-title,
+.e-con[style*="background-color"] .elementor-heading-title {
+    color: var(--color-cream) !important;
+}
+
+/* ===========================================
+   LAYOUT - Contenedores con márgenes
+   =========================================== */
+.elementor-section > .elementor-container,
+.elementor-section-boxed > .elementor-container,
+.e-con {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+/* Secciones full-width: el contenedor interior sí tiene márgenes */
+.elementor-section-full_width > .elementor-container {
+    max-width: 1200px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+/* ===========================================
+   ENLACES - Verde corporativo
+   =========================================== */
+a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+.elementor-widget-text-editor a,
+.entry-content a,
+p a {
+    color: var(--color-accent) !important;
+}
+
+.elementor-widget-text-editor a:hover,
+.entry-content a:hover,
+p a:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Menú sin subrayado */
+nav a, .menu a, .site-navigation a {
+    text-decoration: none;
+}
+
+/* ===========================================
+   HEADER - Hello Elementor
+   =========================================== */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #fff;
+    border-bottom: 3px solid var(--color-primary);
+    min-height: 80px;
+}
+
+.site-branding {
+    flex-shrink: 0;
+}
+
+.site-description,
+.site-title {
+    display: none !important;
+}
+
+/* Navegación */
+.site-header nav ul.menu {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header nav ul.menu > li > a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 28px 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+}
+
+.site-header nav ul.menu > li > a:hover,
+.site-header nav ul.menu > li.current-menu-item > a {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+/* Ocultar flechas dropdown */
+.site-header nav ul.menu > li.menu-item-has-children > a::after {
+    display: none !important;
+}
+
+/* Submenús */
+.site-header nav ul.menu li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    padding: 15px 0;
+    z-index: 1000;
+    border-top: 3px solid var(--color-primary);
+}
+
+.site-header nav ul.menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+.site-header nav ul.menu li ul.sub-menu li a {
+    display: block;
+    padding: 12px 25px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.site-header nav ul.menu li ul.sub-menu li a:hover {
+    background: #f5f5f5;
+    color: var(--color-primary);
+}
+
+/* Botón CTA Contacto */
+.site-header nav ul.menu > li.cta-button > a,
+.site-header nav ul.menu > li:last-child > a {
+    background: var(--color-primary);
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 12px 25px;
+    margin-left: 15px;
+    border-bottom: none;
+}
+
+.site-header nav ul.menu > li.cta-button > a:hover,
+.site-header nav ul.menu > li:last-child > a:hover {
+    background: var(--color-secondary);
+}
+
+/* ===========================================
+   FOOTER
+   =========================================== */
+.site-footer,
+footer.elementor-location-footer {
+    background: var(--color-primary);
+    padding: 40px 50px;
+}
+
+.site-footer p,
+.site-footer a,
+footer.elementor-location-footer p,
+footer.elementor-location-footer a {
+    color: #fff !important;
+    font-family: var(--font-body);
+}
+
+.site-footer img.custom-logo,
+footer.elementor-location-footer img {
+    filter: brightness(0) invert(1);
+    max-width: 180px;
+}
+
+/* ===========================================
+   CITAS / BLOCKQUOTES
+   =========================================== */
+blockquote,
+.wp-block-quote {
+    border-left: 4px solid var(--color-cream) !important;
+    padding: 20px 30px !important;
+    margin: 30px 0 !important;
+    font-size: 1.3rem !important;
+    font-style: italic !important;
+    background: transparent !important;
+}
+
+blockquote p,
+.wp-block-quote p {
+    color: var(--color-cream) !important;
+    margin: 0 !important;
+}
+
+/* ===========================================
+   BLOG - Grid 3 columnas
+   =========================================== */
+body.blog #primary,
+body.blog .site-main,
+body.blog main {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 60px 50px !important;
+}
+
+body.blog article {
+    position: relative !important;
+    overflow: hidden !important;
+    background: var(--color-cream) !important;
+    aspect-ratio: 1.618 / 1 !important;
+    display: flex !important;
+    align-items: flex-end !important;
+}
+
+body.blog article .entry-title {
+    font-size: 1.1rem !important;
+    padding: 15px !important;
+    margin: 0 !important;
+    background: rgba(95, 50, 47, 0.9) !important;
+    width: 100% !important;
+}
+
+body.blog article .entry-title a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+body.blog .entry-summary,
+body.blog .entry-meta,
+body.blog .entry-content {
+    display: none !important;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 1024px) {
+    body.blog #primary,
+    body.blog .site-main {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 0 20px;
+    }
+
+    .elementor-section > .elementor-container,
+    .e-con {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    body.blog #primary,
+    body.blog .site-main {
+        grid-template-columns: 1fr !important;
+        padding: 30px 20px !important;
+    }
+
+    .site-branding img.custom-logo {
+        max-width: 140px !important;
+    }
+}
+
+/* ===========================================
+   OCULTAR TÍTULO DUPLICADO DEL TEMA
+   =========================================== */
+.page .entry-header,
+.single .entry-header .entry-title:first-child {
+    display: none !important;
+}

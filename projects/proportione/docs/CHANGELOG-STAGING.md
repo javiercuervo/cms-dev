@@ -124,8 +124,237 @@
 
 ---
 
+## RESET TOTAL (2026-01-28)
+
+### Estado: CERO ABSOLUTO
+
+Staging reseteado completamente para empezar desde base sólida.
+
+### Eliminado
+
+| Componente | Estado |
+|------------|--------|
+| CSS Customizer | ✓ Vacío |
+| Theme Mods | ✓ Eliminados todos |
+| Templates Elementor | ✓ Eliminados |
+| Condiciones Theme Builder | ✓ Eliminadas |
+| mu-plugins custom | ✓ Eliminados |
+| Cache Elementor | ✓ Purgada |
+| Cache WordPress | ✓ Purgada |
+| Cache SiteGround | ✓ Purgada |
+
+### Estado Actual
+
+- **Tema**: Hello Elementor (default, sin personalizaciones)
+- **Elementor Pro**: Activo
+- **CSS**: Ninguno
+- **Footer**: Default del tema
+- **Header**: Default del tema
+
+### Próximos Pasos
+
+Construir desde cero, paso a paso:
+1. [x] Definir colores en Elementor Site Settings
+2. [x] Definir tipografías en Elementor Site Settings
+3. [x] Crear header con Elementor Theme Builder
+4. [x] Crear footer con Elementor Theme Builder
+5. [x] Revisar homepage (Stackable/Gutenberg + CSS)
+6. [x] Revisar páginas internas (mismo CSS aplica)
+
+---
+
+## Construcción Paso 1: Colores y Tipografías (2026-01-28)
+
+### Colores Globales (Elementor Kit ID 2701)
+
+| ID | Nombre | Color | Uso |
+|----|--------|-------|-----|
+| primary | Primary | #5F322F | Granate corporativo |
+| secondary | Secondary | #551122 | Burdeos oscuro |
+| text | Text | #333333 | Texto general |
+| accent | Accent | #6E8157 | Verde corporativo |
+| cream | Crema | #F5F0E6 | Fondos claros |
+| neutral | Neutral | #AEADB3 | Elementos neutros |
+| white | Blanco | #FFFFFF | Fondos blancos |
+
+### Tipografías Globales
+
+| ID | Nombre | Fuente | Peso | Uso |
+|----|--------|--------|------|-----|
+| primary | Primary | Oswald | 600 | Títulos principales |
+| secondary | Secondary | Oswald | 500 | Subtítulos |
+| text | Text | Raleway | 400 | Cuerpo de texto |
+| accent | Accent | Raleway | 600 | Texto destacado |
+
+---
+
+## Construcción Paso 2: Header (2026-01-28)
+
+### Header Theme Builder (ID 2783)
+
+| Elemento | Configuración |
+|----------|---------------|
+| Layout | Full width, contenido 1200px |
+| Fondo | Blanco (#FFFFFF) |
+| Borde inferior | 3px sólido #5F322F |
+| Padding | 15px vertical, 50px horizontal |
+
+### Columnas
+
+| Columna | Ancho | Contenido |
+|---------|-------|-----------|
+| Logo | 20% | Site Logo widget, max 180px |
+| Navegación | 80% | Nav Menu widget, menu-principal |
+
+### Menú
+
+| Propiedad | Valor |
+|-----------|-------|
+| Layout | Horizontal |
+| Tipografía | Raleway 600, 14px, uppercase |
+| Color texto | #333333 |
+| Color hover | #5F322F |
+| Pointer | Underline #5F322F |
+
+---
+
+## Construcción Paso 3: Footer (2026-01-28)
+
+### Footer Theme Builder (ID 2784)
+
+| Elemento | Configuración |
+|----------|---------------|
+| Layout | Full width, contenido 1200px |
+| Fondo | #5F322F (granate) |
+| Padding | 40px vertical, 50px horizontal |
+
+### Columnas
+
+| Columna | Ancho | Contenido |
+|---------|-------|-----------|
+| Logo | 33% | Site Logo, 160px, filtro blanco |
+| Enlaces | 34% | Privacidad + Cookies, centrado |
+| Copyright | 33% | MIT License © 2024, derecha |
+
+### CSS Adicional
+
+```css
+footer.elementor-location-footer img { filter: brightness(0) invert(1); }
+footer.elementor-location-footer a { color: #FFFFFF !important; }
+```
+
+---
+
+## Construcción Paso 4: Homepage (2026-01-28)
+
+### Análisis
+
+| Aspecto | Detalle |
+|---------|---------|
+| ID | 6 |
+| Editor | Gutenberg + Stackable (NO Elementor) |
+| Bloques Stackable | 33 (columns, icon-label, heading) |
+| Bloques WP | cover, paragraph, list, image |
+
+### CSS Aplicado
+
+| Selector | Estilo |
+|----------|--------|
+| Títulos (h1-h6) | Oswald, #5F322F |
+| Párrafos | Raleway, #333333 |
+| Enlaces | #6E8157, hover #5F322F |
+| Contenedores | max-width 1200px, padding 50px |
+| Títulos fondos oscuros | #F5F0E6 (crema) |
+
+### Nota
+
+La homepage usa Stackable/Gutenberg, no Elementor. Se mantiene así para no perder el contenido existente. Los estilos se aplican vía CSS.
+
+---
+
+## Construcción Paso 5: Páginas Internas (2026-01-28)
+
+### Análisis
+
+Todas las páginas usan **Gutenberg** (la mayoría con Stackable):
+
+| Página | Editor |
+|--------|--------|
+| Home | Gutenberg + Stackable |
+| Contacto | Gutenberg + Stackable |
+| Divina Proportione | Gutenberg + Stackable |
+| Investigación | Gutenberg |
+| Clientes | Gutenberg + Stackable |
+| Programas | Gutenberg + Stackable |
+| Blog | Gutenberg |
+
+### Resultado
+
+El CSS global para Stackable/Gutenberg aplica a todas las páginas automáticamente.
+
+---
+
+## RESUMEN FINAL - Staging Estable
+
+### Estado: ✅ COMPLETO
+
+| Componente | Estado | Tecnología |
+|------------|--------|------------|
+| Colores globales | ✅ | Elementor Kit |
+| Tipografías globales | ✅ | Elementor Kit |
+| Header | ✅ | Elementor Theme Builder |
+| Footer | ✅ | Elementor Theme Builder |
+| Homepage | ✅ | Gutenberg + Stackable + CSS |
+| Páginas internas | ✅ | Gutenberg + Stackable + CSS |
+
+### Paleta de Colores
+
+| Color | Código | Uso |
+|-------|--------|-----|
+| Primary | #5F322F | Granate corporativo |
+| Accent | #6E8157 | Verde enlaces |
+| Text | #333333 | Texto general |
+| Cream | #F5F0E6 | Fondos claros |
+
+### Tipografías
+
+| Tipo | Fuente |
+|------|--------|
+| Títulos | Oswald |
+| Cuerpo | Raleway |
+
+### IDs Importantes
+
+| Elemento | ID |
+|----------|-----|
+| Elementor Kit | 2701 |
+| Header | 2789 |
+| Footer | 2788 |
+| Homepage | 6 |
+
+---
+
+## Corrección Templates (2026-01-28)
+
+### Problema
+Los templates de header y footer tenían JSON inválido (comillas sin escapar en HTML).
+
+### Solución
+1. Eliminados templates corruptos (2783, 2784)
+2. Recreados con JSON válido vía PHP directo:
+   - Header ID: 2789
+   - Footer ID: 2788
+3. HTML simplificado sin estilos inline
+4. Estilos aplicados vía CSS global
+
+### CSS Añadido
+- Título de página visible (.entry-header, .entry-title)
+- Texto sobre fondos oscuros: párrafos, listas, spans en crema (#F5F0E6)
+
+---
+
 ## Notas
 
-- Producción actual: proportione.com (sin cambios desde el staging)
-- Cualquier cambio nuevo se documenta en la tabla "Cambios Pendientes"
-- Deploy a producción se hace en batch cuando se apruebe
+- **Producción (proportione.com)**: Intacta, estado original
+- **Staging (staging19.proportione.com)**: Reset total, Hello Elementor default
+- Construcción paso a paso desde base limpia

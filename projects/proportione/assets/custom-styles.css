@@ -1,978 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+
 /* ===========================================
-   PROPORTIONE - Identidad Visual
-   Color principal: #5F322F
-   Tipografía títulos: Bourbon Grotesque (fallback: Oswald)
-   Tipografía cuerpo: Raleway
+   FOOTER - Texto crema, sin filtro en logo
    =========================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
-
-:root {
-    --color-primary: #5F322F;
-    --color-secondary: #551122;
-    --color-accent: #6E8157;
-    --color-neutral: #AEADB3;
-    --color-cream: #F5F0E6;
-    --font-titles: 'Oswald', sans-serif;
-    --font-body: 'Raleway', sans-serif;
+footer.elementor-location-footer,
+.elementor-location-footer {
+    background-color: #5F322F !important;
 }
 
-body {
-    font-family: var(--font-body);
-    color: #333;
+footer.elementor-location-footer p,
+footer.elementor-location-footer span,
+footer.elementor-location-footer a,
+.elementor-location-footer p,
+.elementor-location-footer span,
+.elementor-location-footer a {
+    color: #F5F0E6 !important;
+    font-family: Raleway, sans-serif;
+}
+
+footer.elementor-location-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================================
+   STACKABLE / GUTENBERG - Estilos corporativos
+   =========================================== */
+
+/* Tipografías - Títulos */
+.stk-block-heading h1,
+.stk-block-heading h2,
+.stk-block-heading h3,
+.stk-block-heading h4,
+.wp-block-heading,
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif !important;
+    color: #5F322F !important;
+}
+
+/* Párrafos - Color oscuro por defecto */
+p, .wp-block-paragraph, li, span {
+    font-family: Raleway, sans-serif;
+    color: #333333;
     line-height: 1.6;
 }
 
 /* ===========================================
-   ENLACES - Color corporativo
+   FONDOS OSCUROS - Todo el texto en crema
+   =========================================== */
+/* Stackable columns con fondo */
+.stk-block-column[style*="background-color"],
+.stk-block-column[style*="background-image"],
+.stk-block[style*="background-color"],
+.stk-block[style*="background-image"] {
+    /* Container con fondo oscuro */
+}
+
+.stk-block-column[style*="background-color"] h1,
+.stk-block-column[style*="background-color"] h2,
+.stk-block-column[style*="background-color"] h3,
+.stk-block-column[style*="background-color"] h4,
+.stk-block-column[style*="background-color"] p,
+.stk-block-column[style*="background-color"] li,
+.stk-block-column[style*="background-color"] span,
+.stk-block-column[style*="background-color"] .stk-block-text__text,
+.stk-block-column[style*="background-color"] .stk-block-heading__text,
+.stk-block[style*="background-color"] h1,
+.stk-block[style*="background-color"] h2,
+.stk-block[style*="background-color"] h3,
+.stk-block[style*="background-color"] p,
+.stk-block[style*="background-color"] li,
+.stk-block[style*="background-color"] span {
+    color: #F5F0E6 !important;
+}
+
+/* WordPress cover blocks */
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4,
+.wp-block-cover p,
+.wp-block-cover li,
+.wp-block-cover span,
+.wp-block-cover .wp-block-paragraph {
+    color: #F5F0E6 !important;
+}
+
+/* Elementos con clase has-background */
+.has-background h1,
+.has-background h2,
+.has-background h3,
+.has-background p,
+.has-background li,
+.has-background span {
+    color: #F5F0E6 !important;
+}
+
+/* Selectores específicos por color de fondo oscuro */
+[style*="background-color:#5"] *,
+[style*="background-color: #5"] *,
+[style*="background-color:#3"] *,
+[style*="background-color: #3"] *,
+[style*="background-color:#2"] *,
+[style*="background-color: #2"] *,
+[style*="background-color:#1"] *,
+[style*="background-color: #1"] *,
+[style*="background-color:#0"] *,
+[style*="background-color: #0"] * {
+    color: #F5F0E6 !important;
+}
+
+/* ===========================================
+   FONDOS CLAROS - Texto oscuro forzado
+   =========================================== */
+[style*="background-color:#F"] *,
+[style*="background-color: #F"] *,
+[style*="background-color:#f"] *,
+[style*="background-color: #f"] *,
+[style*="background-color:#E"] *,
+[style*="background-color: #E"] *,
+[style*="background-color:#e"] *,
+[style*="background-color: #e"] *,
+[style*="background-color:#D"] *,
+[style*="background-color: #D"] *,
+[style*="background-color:#d"] *,
+[style*="background-color: #d"] *,
+[style*="background-color:#C"] *,
+[style*="background-color: #C"] *,
+[style*="background-color:#c"] *,
+[style*="background-color: #c"] * {
+    color: #333333 !important;
+}
+
+/* Títulos siempre en granate excepto en fondos oscuros (ya cubierto arriba) */
+[style*="background-color:#F"] h1,
+[style*="background-color:#F"] h2,
+[style*="background-color:#F"] h3,
+[style*="background-color:#f"] h1,
+[style*="background-color:#f"] h2,
+[style*="background-color:#f"] h3 {
+    color: #5F322F !important;
+}
+
+/* ===========================================
+   ENLACES
    =========================================== */
 a {
-    color: var(--color-accent);
-    text-decoration: underline;
-    transition: color 0.3s ease;
+    color: #6E8157;
 }
 
 a:hover {
-    color: var(--color-primary);
-}
-
-/* Enlaces en contenido */
-.entry-content a,
-.elementor-widget-text-editor a,
-article a:not(.post-thumbnail):not(.entry-title a),
-p a {
-    color: var(--color-accent) !important;
-    text-decoration: underline !important;
-}
-
-.entry-content a:hover,
-.elementor-widget-text-editor a:hover,
-article a:hover,
-p a:hover {
-    color: var(--color-primary) !important;
-}
-
-/* Enlaces en menú - mantener sin subrayado */
-nav a,
-.menu a,
-.site-navigation a {
-    text-decoration: none;
+    color: #5F322F;
 }
 
 /* ===========================================
-   CITAS / BLOCKQUOTES
+   CONTENEDORES
    =========================================== */
-blockquote,
-.wp-block-quote {
-    border-left: 4px solid var(--color-cream) !important;
-    padding: 20px 30px !important;
-    margin: 30px 0 !important;
-    font-size: 1.3rem !important;
-    font-style: italic !important;
-    text-align: left !important;
-    background: transparent !important;
-}
-
-blockquote p,
-.wp-block-quote p {
-    color: var(--color-cream) !important;
-    margin: 0 !important;
-    line-height: 1.6 !important;
-}
-
-blockquote a,
-.wp-block-quote a {
-    color: var(--color-accent) !important;
-}
-
-/* Cita en sección oscura */
-.stk-block-background blockquote,
-[style*="background-color:#520d14"] blockquote,
-[style*="background-color: #520d14"] blockquote {
-    border-left-color: var(--color-cream) !important;
-}
-
-.stk-block-background blockquote p,
-[style*="background-color:#520d14"] blockquote p {
-    color: var(--color-cream) !important;
+.stk-block-columns,
+.wp-block-columns {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* ===========================================
-   HEADER
+   TÍTULO DE PÁGINA
    =========================================== */
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background: #fff;
-    border-bottom: 3px solid var(--color-primary);
-    min-height: 80px;
-}
-
-.site-branding {
-    flex-shrink: 0;
-}
-.site-branding img.custom-logo {
-    max-height: 50px;
-    width: auto;
-}
-.site-description,
-.site-title {
-    display: none !important;
-}
-
-/* Navegación */
-.site-header .site-navigation {
-    display: flex;
-    align-items: center;
-}
-
-.site-header nav ul.menu {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.site-header nav ul.menu > li {
-    position: relative;
-}
-
-.site-header nav ul.menu > li > a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 600;
-    padding: 28px 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s;
-    border-bottom: 3px solid transparent;
-    margin-bottom: -3px;
-}
-
-.site-header nav ul.menu > li > a:hover,
-.site-header nav ul.menu > li.current-menu-item > a {
-    color: var(--color-primary);
-    border-bottom-color: var(--color-primary);
-}
-
-/* Ocultar flechas dropdown */
-.site-header nav ul.menu > li.menu-item-has-children > a::after {
-    display: none !important;
-}
-
-/* Submenús */
-.site-header nav ul.menu li ul.sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    min-width: 250px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    padding: 15px 0;
-    z-index: 1000;
-    border-top: 3px solid var(--color-primary);
-}
-
-.site-header nav ul.menu li:hover > ul.sub-menu {
-    display: block;
-}
-
-.site-header nav ul.menu li ul.sub-menu li a {
-    display: block;
-    padding: 12px 25px;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.2s;
-}
-
-.site-header nav ul.menu li ul.sub-menu li a:hover {
-    background: #f5f5f5;
-    color: var(--color-primary);
-    padding-left: 30px;
-}
-
-/* Botón Contacto */
-.site-header nav ul.menu > li.menu-cta > a {
-    background: var(--color-primary);
-    color: #fff !important;
-    border-radius: 0;
-    padding: 15px 30px;
-    margin-left: 15px;
-    border-bottom: none !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.site-header nav ul.menu > li.menu-cta > a:hover {
-    background: var(--color-secondary);
-}
-
-/* ===========================================
-   TIPOGRAFÍA GLOBAL
-   =========================================== */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-titles);
-    color: var(--color-primary);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-h1 { font-size: 3rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.6rem; }
-
-/* ===========================================
-   TÍTULOS DE PÁGINA - EVITAR DUPLICADOS
-   =========================================== */
-
-/* Ocultar título de página del tema (evita duplicación con Elementor) */
+.entry-header,
 .page .entry-header,
-.page .page-header,
-.single .entry-header,
-.page-title,
-article.page > header,
-.elementor-page .entry-header,
-body.elementor-page .page-header {
-    display: none !important;
-}
-
-/* ===========================================
-   TÍTULOS SOBRE FONDOS OSCUROS/IMÁGENES
-   =========================================== */
-
-/* Títulos en secciones con fondo de imagen - color crema */
-.elementor-section[data-settings*="background_image"] h1,
-.elementor-section[data-settings*="background_image"] h2,
-.elementor-section[data-settings*="background_image"] .elementor-heading-title,
-.elementor-section[style*="background-image"] h1,
-.elementor-section[style*="background-image"] h2,
-.elementor-section[style*="background-image"] .elementor-heading-title {
-    color: var(--color-cream) !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Títulos en secciones con overlay oscuro */
-.elementor-section:has(.elementor-background-overlay) h1,
-.elementor-section:has(.elementor-background-overlay) h2,
-.elementor-section:has(.elementor-background-overlay) .elementor-heading-title {
-    color: var(--color-cream) !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Hero sections - títulos en crema */
-.elementor-section.elementor-section-height-full h1,
-.elementor-section.elementor-section-height-full .elementor-heading-title,
-.elementor-section-stretched h1,
-.elementor-section-stretched .elementor-heading-title {
-    color: var(--color-cream) !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Primera sección de página (hero típico) con fondo */
-.elementor-section:first-child[data-settings*="background"] h1,
-.elementor-section:first-child[data-settings*="background"] .elementor-heading-title {
-    color: var(--color-cream) !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-
-/* ===========================================
-   CONTENIDO - FIXES DE MÁRGENES
-   =========================================== */
-
-/* Listas con bullets - asegurar márgenes laterales */
-.elementor-widget-text-editor ul,
-.elementor-widget-text-editor ol,
-.entry-content ul,
-.entry-content ol {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-left: 20px;
-}
-
-/* Contenedores de Elementor - márgenes consistentes */
-.elementor-section > .elementor-container {
+.single .entry-header {
+    display: block !important;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 40px 50px 20px;
 }
 
-/* Listas con estrellas/iconos - márgenes laterales */
-.elementor-icon-list-items {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/* Texto sobre fondos oscuros - forzar legibilidad */
-.elementor-section[data-settings*="background_background"] .elementor-widget-text-editor,
-.elementor-section.elementor-section-boxed[style*="background"] .elementor-widget-text-editor {
-    color: #fff;
-}
-
-/* Secciones con overlay oscuro - texto blanco */
-.elementor-background-overlay + .elementor-container .elementor-widget-text-editor,
-.elementor-section[style*="background-image"] .elementor-widget-text-editor p {
-    color: #fff !important;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-/* Fix específico para texto gris sobre fondo oscuro */
-.elementor-section .elementor-element .elementor-text-editor p[style*="color"],
-.elementor-section .elementor-element .elementor-text-editor span[style*="color: #"] {
-    color: inherit;
-}
-
-/* Forzar texto blanco en secciones con fondo de imagen */
-.elementor-section.elementor-element[data-element_type="section"]:has(.elementor-background-overlay) p,
-.elementor-section[style*="background-image"] p {
-    color: #fff !important;
-}
-
-/* ===========================================
-   FOOTER
-   =========================================== */
-.site-footer {
-    background: var(--color-primary);
-    color: #fff;
-    padding: 40px 50px;
-    margin-top: 60px;
-}
-
-.site-footer a {
-    color: #fff;
-    opacity: 0.8;
-}
-
-.site-footer a:hover {
-    opacity: 1;
-}
-
-/* Footer logo */
-.site-footer .site-branding img,
-.site-footer img.custom-logo {
-    max-height: 40px;
-}
-
-/* Footer links legales */
-.footer-legal-links {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    font-size: 14px;
-}
-
-.footer-legal-links a {
-    margin-right: 20px;
-    color: #fff;
-    opacity: 0.7;
-    text-decoration: none;
-}
-
-.footer-legal-links a:hover {
-    opacity: 1;
-}
-
-/* Copyright MIT */
-.footer-copyright {
-    margin-top: 15px;
-    font-size: 13px;
-    opacity: 0.7;
-}
-
-/* ===========================================
-   PÁGINAS DE INVESTIGACIÓN
-   =========================================== */
-
-/* Hero de investigación */
-.page-template-default.page article.page,
-body.page-id-investigacion .site-main {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Sección hero para páginas sin Elementor */
-.page article.page > .entry-content:first-child {
-    position: relative;
-}
-
-/* Estilo para páginas de investigación */
-.investigacion-hero {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    color: #fff;
-    padding: 100px 50px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.investigacion-hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    border: 2px solid rgba(255,255,255,0.1);
-    border-radius: 50%;
-    transform: rotate(45deg);
-}
-
-.investigacion-hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    border: 2px solid rgba(255,255,255,0.08);
-    transform: rotate(45deg);
-}
-
-.investigacion-hero h1 {
-    color: var(--color-cream) !important;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.investigacion-hero .subtitulo {
-    font-family: var(--font-body);
-    font-size: 1.3rem;
-    opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-/* Contenido de investigación */
-.investigacion-contenido {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 50px;
-}
-
-.investigacion-contenido h2 {
-    font-size: 1.8rem;
-    margin-top: 60px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid var(--color-primary);
-}
-
-.investigacion-contenido h2:first-child {
-    margin-top: 0;
-}
-
-/* Tarjetas de líneas de investigación */
-.lineas-investigacion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.linea-card {
-    background: var(--color-cream);
-    padding: 35px;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.linea-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--color-primary);
-    transition: width 0.3s ease;
-}
-
-.linea-card:hover {
-    transform: translateX(5px);
-    box-shadow: -5px 5px 20px rgba(95, 50, 47, 0.15);
-}
-
-.linea-card:hover::before {
-    width: 8px;
-}
-
-.linea-card h3 {
-    font-size: 1.2rem;
-    margin: 0 0 15px 0;
-}
-
-.linea-card p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #555;
-}
-
-/* Lista de publicaciones */
-.publicaciones-lista {
-    list-style: none;
-    padding: 0;
-    margin: 30px 0;
-}
-
-.publicaciones-lista li {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 25px;
-}
-
-.publicaciones-lista li::before {
-    content: '◆';
-    position: absolute;
-    left: 0;
-    color: var(--color-primary);
-    font-size: 10px;
-    top: 24px;
-}
-
-.publicaciones-lista li:last-child {
-    border-bottom: none;
-}
-
-.publicacion-titulo {
+.entry-title,
+.page .entry-title,
+.single .entry-title {
+    display: block !important;
+    font-family: Oswald, sans-serif !important;
+    color: #5F322F !important;
+    font-size: 2.5rem;
     font-weight: 600;
-    color: var(--color-primary);
-    display: block;
-    margin-bottom: 5px;
-}
-
-.publicacion-meta {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Colaboradores/Partners */
-.colaboradores-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.colaborador-logo {
-    height: 60px;
-    opacity: 0.7;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
-}
-
-.colaborador-logo:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-}
-
-@media (max-width: 768px) {
-    .investigacion-hero {
-        padding: 60px 25px;
-    }
-
-    .investigacion-hero h1 {
-        font-size: 2rem;
-    }
-
-    .investigacion-contenido {
-        padding: 50px 25px;
-    }
-
-    .lineas-investigacion {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ===========================================
-   BLOG - ÍNDICE DE ARTÍCULOS (RETÍCULA)
-   Inspirado en De Divina Proportione
-   Selectores robustos para Hello Elementor
-   =========================================== */
-
-/* Reset del contenedor principal del blog */
-body.blog #primary,
-body.blog .site-main,
-body.blog main,
-body.archive #primary,
-body.archive .site-main,
-body.archive main {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 30px !important;
-    max-width: 1400px !important;
-    margin: 0 auto !important;
-    padding: 60px 50px !important;
-    box-sizing: border-box !important;
-}
-
-/* Título de archivo/blog - Ocupa toda la fila */
-body.blog .page-header,
-body.archive .page-header,
-body.blog header.entry-header,
-body.archive header.archive-header {
-    grid-column: 1 / -1 !important;
-    text-align: center !important;
-    margin-bottom: 30px !important;
-    padding-bottom: 30px !important;
-    border-bottom: 3px solid var(--color-primary) !important;
-}
-
-body.blog .page-title,
-body.archive .page-title,
-body.blog .archive-title,
-body.archive .archive-title {
-    font-family: var(--font-titles) !important;
-    color: var(--color-primary) !important;
-    font-size: 2.5rem !important;
-    text-transform: uppercase !important;
-    letter-spacing: 3px !important;
-    margin: 0 !important;
-}
-
-/* Cada artículo - Selectores múltiples */
-body.blog article,
-body.blog .hentry,
-body.blog [class*="post-"],
-body.archive article,
-body.archive .hentry,
-body.archive [class*="post-"] {
-    position: relative !important;
-    overflow: hidden !important;
-    background: var(--color-cream) !important;
-    border: none !important;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    min-height: 280px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important;
-}
-
-body.blog article:hover,
-body.archive article:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 20px 40px rgba(95, 50, 47, 0.2) !important;
-}
-
-/* Imagen destacada como fondo */
-body.blog article .post-thumbnail,
-body.blog article .wp-post-image,
-body.blog article > a > img,
-body.blog article figure,
-body.archive article .post-thumbnail,
-body.archive article .wp-post-image {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: 1 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-body.blog article .post-thumbnail img,
-body.blog article img.wp-post-image,
-body.archive article .post-thumbnail img,
-body.archive article img.wp-post-image {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 0.6s ease !important;
-}
-
-body.blog article:hover img,
-body.archive article:hover img {
-    transform: scale(1.05) !important;
-}
-
-/* Overlay degradado sobre imagen */
-body.blog article::before,
-body.archive article::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 30%,
-        rgba(95, 50, 47, 0.9) 100%
-    ) !important;
-    z-index: 2 !important;
-    pointer-events: none !important;
-}
-
-body.blog article:hover::before,
-body.archive article:hover::before {
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 10%,
-        rgba(85, 17, 34, 0.95) 100%
-    ) !important;
-}
-
-/* Header del artículo (contiene título) */
-body.blog article header,
-body.blog article .entry-header,
-body.archive article header,
-body.archive article .entry-header {
-    position: relative !important;
-    z-index: 3 !important;
-    padding: 25px !important;
-    margin-top: auto !important;
-    background: transparent !important;
-}
-
-/* Título del artículo */
-body.blog article .entry-title,
-body.blog article h2,
-body.blog article h3,
-body.archive article .entry-title,
-body.archive article h2 {
-    font-family: var(--font-titles) !important;
-    font-size: 1.2rem !important;
-    font-weight: 600 !important;
-    color: #fff !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    line-height: 1.4 !important;
-    margin: 0 !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
-}
-
-body.blog article .entry-title a,
-body.blog article h2 a,
-body.archive article .entry-title a,
-body.archive article h2 a {
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-body.blog article:hover .entry-title a,
-body.blog article:hover h2 a,
-body.archive article:hover .entry-title a {
-    color: var(--color-cream) !important;
-}
-
-/* OCULTAR TODO EXCEPTO TÍTULO E IMAGEN */
-body.blog article .entry-content,
-body.blog article .entry-summary,
-body.blog article .entry-meta,
-body.blog article .entry-footer,
-body.blog article .post-meta,
-body.blog article .meta,
-body.blog article time,
-body.blog article .author,
-body.blog article .comments-link,
-body.blog article .edit-link,
-body.blog article .cat-links,
-body.blog article .tags-links,
-body.blog article > p,
-body.blog article .excerpt,
-body.archive article .entry-content,
-body.archive article .entry-summary,
-body.archive article .entry-meta,
-body.archive article .entry-footer,
-body.archive article > p {
-    display: none !important;
-}
-
-/* Primer artículo destacado */
-body.blog article:first-of-type,
-body.archive article:first-of-type {
-    grid-column: span 2 !important;
-    grid-row: span 2 !important;
-    min-height: 500px !important;
-}
-
-body.blog article:first-of-type .entry-title,
-body.blog article:first-of-type h2,
-body.archive article:first-of-type .entry-title {
-    font-size: 1.8rem !important;
-}
-
-/* Elemento decorativo geométrico */
-body.blog article::after,
-body.archive article::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 20px !important;
-    right: 20px !important;
-    width: 35px !important;
-    height: 35px !important;
-    border: 2px solid rgba(255,255,255,0.4) !important;
-    transform: rotate(45deg) !important;
-    z-index: 3 !important;
-    pointer-events: none !important;
-    transition: all 0.4s ease !important;
-}
-
-body.blog article:hover::after,
-body.archive article:hover::after {
-    border-color: var(--color-cream) !important;
-    transform: rotate(90deg) scale(1.1) !important;
-}
-
-/* Paginación del blog */
-body.blog .pagination,
-body.blog .nav-links,
-body.blog .posts-navigation,
-body.archive .pagination,
-body.archive .nav-links {
-    grid-column: 1 / -1 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 15px !important;
-    margin-top: 40px !important;
-    padding-top: 40px !important;
-    border-top: 1px solid var(--color-neutral) !important;
-}
-
-body.blog .pagination a,
-body.blog .pagination span,
-body.blog .nav-links a,
-body.archive .pagination a,
-body.archive .pagination span {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-width: 45px !important;
-    height: 45px !important;
-    padding: 0 20px !important;
-    font-family: var(--font-titles) !important;
-    font-size: 14px !important;
-    text-decoration: none !important;
-    border: 2px solid var(--color-primary) !important;
-    color: var(--color-primary) !important;
-    background: #fff !important;
-    transition: all 0.3s ease !important;
-}
-
-body.blog .pagination a:hover,
-body.blog .nav-links a:hover,
-body.archive .pagination a:hover {
-    background: var(--color-primary) !important;
-    color: #fff !important;
-}
-
-body.blog .pagination .current,
-body.archive .pagination .current {
-    background: var(--color-primary) !important;
-    color: #fff !important;
-}
-
-/* Traducir paginación a español */
-body.blog .nav-previous a,
-body.blog .nav-next a,
-body.archive .nav-previous a,
-body.archive .nav-next a {
-    font-size: 0 !important;
-}
-
-body.blog .nav-previous a::before,
-body.archive .nav-previous a::before {
-    content: '← Anterior' !important;
-    font-size: 14px !important;
-    font-family: var(--font-titles) !important;
-}
-
-body.blog .nav-next a::before,
-body.archive .nav-next a::before {
-    content: 'Siguiente →' !important;
-    font-size: 14px !important;
-    font-family: var(--font-titles) !important;
+    margin: 0;
 }
 
 /* ===========================================
    RESPONSIVE
    =========================================== */
-@media (max-width: 1024px) {
-    .site-header {
-        padding: 0 30px;
-    }
-    .site-header nav ul.menu > li > a {
-        padding: 20px 15px;
-        font-size: 13px;
-    }
-}
-
 @media (max-width: 768px) {
-    .site-header {
-        flex-wrap: wrap;
-        padding: 15px 20px;
-    }
-    .site-header nav ul.menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .site-header nav ul.menu > li > a {
-        padding: 12px 10px;
-        font-size: 12px;
+    .stk-block-columns,
+    .wp-block-columns {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    /* Blog responsive - 1 columna en móvil */
-    body.blog #primary,
-    body.blog .site-main,
-    body.blog main,
-    body.archive #primary,
-    body.archive .site-main {
-        grid-template-columns: 1fr !important;
-        padding: 30px 20px !important;
-        gap: 20px !important;
+    .entry-header {
+        padding: 30px 20px 15px;
     }
 
-    body.blog article:first-of-type,
-    body.archive article:first-of-type {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
-        min-height: 280px !important;
-    }
-
-    body.blog article .entry-title,
-    body.blog article h2,
-    body.archive article .entry-title,
-    body.blog article:first-of-type .entry-title,
-    body.blog article:first-of-type h2 {
-        font-size: 1.1rem !important;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Blog responsive - 2 columnas en tablet */
-    body.blog #primary,
-    body.blog .site-main,
-    body.blog main,
-    body.archive #primary,
-    body.archive .site-main {
-        grid-template-columns: repeat(2, 1fr) !important;
-        padding: 40px 30px !important;
-    }
-
-    body.blog article:first-of-type,
-    body.archive article:first-of-type {
-        grid-column: span 2 !important;
-        grid-row: span 1 !important;
-        min-height: 350px !important;
+    .entry-title {
+        font-size: 1.8rem;
     }
 }
