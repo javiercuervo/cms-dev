@@ -98,6 +98,20 @@
 
 ---
 
+## Deploy Final (2026-01-28)
+
+### Cambios Aplicados al Servidor
+
+| # | Cambio | Estado |
+|---|--------|--------|
+| 23 | CSS: Color de enlaces → verde corporativo (#6E8157) | ✅ Desplegado |
+| 24 | Footer Elementor Theme Builder creado (ID 2773) | ✅ Desplegado |
+| 25 | Estilos globales Elementor: colores y tipografías corporativas | ✅ Desplegado |
+| 26 | Página Divina Proportione: imagen Mona Lisa → erudito renacentista (ID 2649) | ✅ Desplegado |
+| 27 | Cache de Elementor regenerada | ✅ Desplegado |
+
+---
+
 ## Próximo Deploy a Producción
 
 **Fecha prevista:** Por determinar

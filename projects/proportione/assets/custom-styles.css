@@ -24,6 +24,42 @@ body {
 }
 
 /* ===========================================
+   ENLACES - Color corporativo
+   =========================================== */
+a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Enlaces en contenido */
+.entry-content a,
+.elementor-widget-text-editor a,
+article a:not(.post-thumbnail):not(.entry-title a),
+p a {
+    color: var(--color-accent) !important;
+    text-decoration: underline !important;
+}
+
+.entry-content a:hover,
+.elementor-widget-text-editor a:hover,
+article a:hover,
+p a:hover {
+    color: var(--color-primary) !important;
+}
+
+/* Enlaces en menú - mantener sin subrayado */
+nav a,
+.menu a,
+.site-navigation a {
+    text-decoration: none;
+}
+
+/* ===========================================
    HEADER
    =========================================== */
 .site-header {
