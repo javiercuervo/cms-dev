@@ -49,7 +49,7 @@
 
 | # | Cambio | Estado | Fecha |
 |---|--------|--------|-------|
-| - | - | - | - |
+| 1 | Añadida sección "Origen y Filosofía de la Marca" al manual de identidad: inspiración en *De Divina Proportione* de Luca Pacioli y Leonardo da Vinci, proporción áurea, poliedros de Leonardo | Completado | 2026-01-28 |
 
 ---
 
