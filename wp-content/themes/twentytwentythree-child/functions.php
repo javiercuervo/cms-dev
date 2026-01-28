@@ -1,7 +1,10 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
-function enqueue_parent_styles() {
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_and_child_styles' );
+function enqueue_parent_and_child_styles() {
+   // Cargar CSS del tema padre
    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+   // Cargar CSS del child theme
+   wp_enqueue_style( 'child-style', get_stylesheet_uri(), array('parent-style'), wp_get_theme()->get('Version') );
 }
 add_action(
  'init',
