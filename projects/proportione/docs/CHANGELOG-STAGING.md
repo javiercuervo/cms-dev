@@ -62,6 +62,7 @@
 | 11 | CSS: Títulos sobre fondos oscuros/imágenes en color crema (#F5F0E6) | Completado | 2026-01-28 |
 | 12 | Footer Elementor Theme Builder (logo blanco, MIT, enlaces legales) | Preparado | 2026-01-28 |
 | 13 | Script deploy-staging-batch.sh para deploy único | Preparado | 2026-01-28 |
+| 14 | CSS: Blog en retícula con estilo corporativo (solo títulos, proporción áurea, poliedros) | Preparado | 2026-01-28 |
 
 ---
 
