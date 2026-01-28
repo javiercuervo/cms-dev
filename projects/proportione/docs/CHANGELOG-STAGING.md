@@ -66,6 +66,8 @@
 | 15 | Página Investigación: nuevo diseño con hero, tarjetas de áreas, contenido reescrito | Preparado | 2026-01-28 |
 | 16 | Página Investigación: renombrada de "Tesis doctoral" a "Línea de Investigación" | Preparado | 2026-01-28 |
 | 17 | Página Investigación: nueva URL /investigacion/ (antes /investigacion-tesis-universidade-de-aveiro/) | Preparado | 2026-01-28 |
+| 18 | Paginación blog: "Next" → "Siguiente →", "Previous" → "← Anterior" | Preparado | 2026-01-28 |
+| 19 | Idioma WordPress forzado a es_ES | Preparado | 2026-01-28 |
 
 ---
 

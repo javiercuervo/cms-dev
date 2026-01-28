@@ -17,7 +17,7 @@ echo "=========================================="
 
 # 1. Subir CSS
 echo ""
-echo "[1/5] Subiendo CSS..."
+echo "[1/8] Subiendo CSS..."
 ssh $REMOTE "cat > /tmp/proportione-custom.css << 'CSSEOF'
 $(cat "$PROJECT_DIR/assets/custom-styles.css")
 CSSEOF"
@@ -25,21 +25,23 @@ echo "     CSS subido a /tmp/proportione-custom.css"
 
 # 2. Aplicar CSS al customizer
 echo ""
-echo "[2/5] Aplicando CSS al customizer de WordPress..."
+echo "[2/8] Aplicando CSS al customizer de WordPress..."
 ssh $REMOTE "cd $WP_PATH && wp eval '\$css = file_get_contents(\"/tmp/proportione-custom.css\"); wp_update_custom_css_post(\$css); echo \"OK\";'"
 
-# 3. Configurar ajustes del tema
+# 3. Configurar ajustes del tema e idioma
 echo ""
-echo "[3/5] Configurando ajustes del tema..."
+echo "[3/8] Configurando ajustes del tema e idioma..."
 ssh $REMOTE "cd $WP_PATH && \
+    wp language core install es_ES --activate 2>/dev/null || true && \
+    wp option update WPLANG 'es_ES' && \
     wp theme mod set hello_footer_logo_display 'yes' && \
     wp theme mod set hello_footer_copyright_display 'yes' && \
     wp theme mod set hello_footer_copyright_text 'MIT License © 2024 Proportione | <a href=\"/politica-privacidad/\">Política de Privacidad</a> | <a href=\"/politica-cookies/\">Política de Cookies</a>' && \
-    echo 'Ajustes del tema configurados'"
+    echo 'Ajustes del tema e idioma configurados'"
 
 # 4. Crear footer con Elementor Theme Builder
 echo ""
-echo "[4/5] Creando footer con Elementor..."
+echo "[4/8] Creando footer con Elementor..."
 ssh $REMOTE "cd $WP_PATH && wp eval '
 // Verificar si ya existe un footer
 \$existing = get_posts(array(
@@ -152,7 +154,7 @@ echo \"Footer configurado correctamente\\n\";
 
 # 5. Actualizar página de Investigación
 echo ""
-echo "[5/7] Actualizando página de Investigación..."
+echo "[5/8] Actualizando página de Investigación..."
 ssh $REMOTE "cat > /tmp/investigacion-content.html << 'HTMLEOF'
 $(cat "$PROJECT_DIR/content/investigacion-page.html")
 HTMLEOF"
@@ -194,7 +196,7 @@ if (!empty(\$pages)) {
 
 # 6. Actualizar menú (cambiar enlace de Investigación)
 echo ""
-echo "[6/7] Actualizando enlace en menú..."
+echo "[6/8] Actualizando enlace en menú..."
 ssh $REMOTE "cd $WP_PATH && wp eval '
 // Buscar item de menú de Investigación y actualizar URL
 \$menu_items = wp_get_nav_menu_items(\"menu-principal\");
@@ -207,9 +209,9 @@ foreach (\$menu_items as \$item) {
 }
 '"
 
-# 7. Purgar todas las cachés
+# 8. Purgar todas las cachés
 echo ""
-echo "[7/7] Purgando cachés..."
+echo "[8/8] Purgando cachés..."
 ssh $REMOTE "cd $WP_PATH && \
     wp cache flush && \
     wp transient delete --all && \

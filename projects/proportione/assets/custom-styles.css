@@ -800,6 +800,28 @@ body.page-id-investigacion .site-main {
     color: #fff;
 }
 
+/* Paginación - Traducir Next/Previous a español */
+.nav-links .nav-previous a,
+.nav-links .nav-next a,
+.pagination .prev,
+.pagination .next {
+    font-size: 0;
+}
+
+.nav-links .nav-previous a::after,
+.pagination .prev::after {
+    content: '← Anterior';
+    font-size: 14px;
+    font-family: var(--font-titles);
+}
+
+.nav-links .nav-next a::after,
+.pagination .next::after {
+    content: 'Siguiente →';
+    font-size: 14px;
+    font-family: var(--font-titles);
+}
+
 /* ===========================================
    RESPONSIVE
    =========================================== */
