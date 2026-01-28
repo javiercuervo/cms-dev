@@ -12,6 +12,7 @@ wp-config.php
 .htaccess
 .env
 *.log
+keys/
 
 # === wp-content: excluir lo que no es código ===
 wp-content/uploads/
