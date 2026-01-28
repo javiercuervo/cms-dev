@@ -98,6 +98,15 @@ ol[style*="background-color"] strong {
     padding: 15px 50px;
     background: #fff;
     border-bottom: 3px solid #5F322F;
+    position: relative;
+    z-index: 999;
+}
+
+/* Elementor header también necesita z-index */
+.elementor-location-header,
+[data-elementor-type="header"] {
+    position: relative;
+    z-index: 999;
 }
 
 /* Menú horizontal */
@@ -165,6 +174,14 @@ ol[style*="background-color"] strong {
 .site-navigation ul.menu li ul.sub-menu li a:hover {
     background: #f5f5f5;
     color: #5F322F;
+}
+
+/* Asegurar que el hero/contenido no tape el header */
+.elementor-section,
+[data-elementor-type="page"] .elementor-section,
+.elementor-element {
+    position: relative;
+    z-index: 1;
 }
 
 /* Responsive - mostrar menú mobile */

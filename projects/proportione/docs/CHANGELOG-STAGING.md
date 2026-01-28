@@ -353,8 +353,50 @@ Los templates de header y footer tenían JSON inválido (comillas sin escapar en
 
 ---
 
+## Estabilización Pre-Rediseño (2026-01-28)
+
+### Objetivo
+Crear una base sólida antes del rediseño de mañana.
+
+### Cambios Aplicados
+
+| # | Cambio | Archivo | Estado |
+|---|--------|---------|--------|
+| 35 | Agregado z-index al header para evitar que imágenes lo tapen | accesibilidad.css | ✅ |
+| 36 | Agregado z-index a Elementor header | accesibilidad.css | ✅ |
+| 37 | Asegurado que secciones Elementor no tapen el header | accesibilidad.css | ✅ |
+
+### Documentación de Archivos CSS
+
+| Archivo | Propósito | Carga |
+|---------|-----------|-------|
+| `custom-styles.css` | Estilos corporativos Stackable/Gutenberg | Via WordPress Customizer |
+| `custom-styles-v3.css` | Versión completa con variables CSS | Backup/referencia |
+| `custom-elementor.css` | Estilos específicos Elementor (footer, responsive) | Via proportione-styles.php |
+| `accesibilidad.css` | Contraste, navegación, header layout, z-index | Via proportione-styles.php |
+| `proportione-contrast.css` | Versión de alto contraste (WCAG) | Opcional |
+
+### Archivos Nuevos Agregados
+
+- `content/Javier_Cuervo_CTO_Profile.md` - Perfil del CTO
+- `content/Mayte_Tortosa_CEO_Profile.md` - Perfil de la CEO
+- `content/grid-imagenes-home.md` - Especificación de imágenes homepage
+- `content/proportione-framework.md` - Marco conceptual de servicios
+- `assets/Infografías/` - Logos horizontales y verticales
+- `assets/staging-css-backup-20260128-202244.css` - Backup de CSS
+
+### Estado Final
+
+- **Header**: z-index 999, siempre visible sobre contenido
+- **Footer**: Estilos correctos, enlaces funcionando
+- **Navegación**: Menú funcional con submenús
+- **Blog**: Accesible desde menú y footer
+- **Git**: Todo commiteado y respaldado en GitHub
+
+---
+
 ## Notas
 
 - **Producción (proportione.com)**: Intacta, estado original
-- **Staging (staging19.proportione.com)**: Reset total, Hello Elementor default
-- Construcción paso a paso desde base limpia
+- **Staging (staging19.proportione.com)**: Estabilizado, listo para rediseño
+- Base sólida para trabajo de mañana
