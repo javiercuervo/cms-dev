@@ -1,0 +1,182 @@
+/* === ACCESIBILIDAD - Contraste texto/fondo === */
+
+/* Secciones Stackable con fondo oscuro o imagen */
+.stk-83c1400 h1, .stk-83c1400 h2, .stk-83c1400 h3, .stk-83c1400 h4,
+.stk-83c1400 p, .stk-83c1400 li, .stk-83c1400 span,
+.stk-83c1400 .has-base-color, .stk-83c1400 .has-text-color,
+.stk-83c1400 .stk-block-heading__text,
+.stk-83c1400 .stk-block-text__text {
+    color: #F5F0E6 !important;
+}
+
+/* Sección stk-0023a8c (también tiene fondo) */
+.stk-0023a8c h1, .stk-0023a8c h2, .stk-0023a8c h3, .stk-0023a8c h4,
+.stk-0023a8c p, .stk-0023a8c li, .stk-0023a8c span,
+.stk-0023a8c .stk-block-heading__text {
+    color: #F5F0E6 !important;
+}
+
+/* Stackable genérico con fondo */
+.stk-block-background h1, .stk-block-background h2, 
+.stk-block-background h3, .stk-block-background h4,
+.stk-block-background p, .stk-block-background li,
+.stk-block-background .stk-block-heading__text,
+.stk--has-background-overlay h1, .stk--has-background-overlay h2,
+.stk--has-background-overlay h3, .stk--has-background-overlay h4,
+.stk--has-background-overlay p, .stk--has-background-overlay li {
+    color: #F5F0E6 !important;
+}
+
+/* EXCEPCIÓN: Listas con fondo claro propio -> texto oscuro */
+.stk-83c1400 ol.has-background, .stk-83c1400 ol.has-background li,
+.stk-83c1400 ol.has-background strong,
+.stk-83c1400 ul.has-background, .stk-83c1400 ul.has-background li,
+[style*="background-color:#fff"] li,
+[style*="background-color:#fff"] strong,
+[style*="background-color: #fff"] li,
+ol[style*="background-color"] li,
+ol[style*="background-color"] strong {
+    color: #333333 !important;
+}
+
+/* WordPress cover blocks */
+.wp-block-cover h1, .wp-block-cover h2, .wp-block-cover h3,
+.wp-block-cover h4, .wp-block-cover p, .wp-block-cover li {
+    color: #F5F0E6 !important;
+}
+
+/* SVG icons - color claro */
+.stk-block-background svg path,
+.stk-83c1400 svg path,
+.stk-0023a8c svg path {
+    fill: #F5F0E6 !important;
+}
+
+/* === TÍTULOS Y TAGLINE === */
+
+/* Ocultar tagline del header (duplicado) */
+.site-description {
+    display: none !important;
+}
+
+/* Margen para título de página */
+.page-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 50px 20px;
+}
+
+.entry-title {
+    font-family: 'Oswald', sans-serif;
+    color: #5F322F;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 30px 20px 15px;
+    }
+    .entry-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* === NAVEGACIÓN HEADER === */
+
+/* Ocultar menú mobile en desktop */
+.site-navigation-dropdown,
+.site-navigation-toggle-holder {
+    display: none !important;
+}
+
+/* Header layout */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #fff;
+    border-bottom: 3px solid #5F322F;
+}
+
+/* Menú horizontal */
+.site-navigation ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+/* Items del menú */
+.site-navigation ul.menu > li {
+    position: relative;
+}
+
+.site-navigation ul.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.site-navigation ul.menu > li > a:hover,
+.site-navigation ul.menu > li.current-menu-item > a {
+    color: #5F322F;
+}
+
+/* Submenús - ocultos por defecto */
+.site-navigation ul.menu li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 220px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    z-index: 1000;
+    border-top: 3px solid #5F322F;
+}
+
+/* Mostrar submenú en hover */
+.site-navigation ul.menu li:hover > ul.sub-menu {
+    display: block;
+}
+
+/* Items del submenú */
+.site-navigation ul.menu li ul.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.site-navigation ul.menu li ul.sub-menu li a:hover {
+    background: #f5f5f5;
+    color: #5F322F;
+}
+
+/* Responsive - mostrar menú mobile */
+@media (max-width: 1024px) {
+    .site-navigation {
+        display: none !important;
+    }
+    .site-navigation-dropdown,
+    .site-navigation-toggle-holder {
+        display: block !important;
+    }
+    .site-header {
+        padding: 15px 20px;
+    }
+}

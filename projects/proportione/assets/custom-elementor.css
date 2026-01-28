@@ -1,0 +1,50 @@
+/* ===========================================
+   PROPORTIONE - CSS Custom para Elementor
+   =========================================== */
+
+/* Logo del footer - invertir a blanco */
+.footer-logo-white img,
+[data-elementor-type="footer"] .elementor-widget-image img {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Animaciones suaves globales */
+.elementor-invisible {
+    visibility: visible !important;
+}
+
+/* Transiciones de hover en botones */
+.elementor-button {
+    transition: all 0.3s ease !important;
+}
+
+/* Mejora de tipografía en listas de iconos */
+.elementor-icon-list-text {
+    line-height: 1.6 !important;
+}
+
+/* Espaciado de secciones responsive */
+@media (max-width: 767px) {
+    .elementor-section {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .elementor-container {
+        flex-direction: column !important;
+    }
+    
+    /* Hero responsive */
+    .elementor-widget-heading .elementor-heading-title {
+        font-size: 36px !important;
+    }
+}
+
+/* Cards con hover effect */
+.elementor-container[data-element_type="container"]:has(.elementor-widget-icon-list) {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elementor-container[data-element_type="container"]:has(.elementor-widget-icon-list):hover {
+    transform: translateY(-5px);
+}
