@@ -228,10 +228,9 @@ h3 { font-size: 1.6rem; }
     opacity: 1;
 }
 
-/* Footer logo - usar versión blanca */
+/* Footer logo */
 .site-footer .site-branding img,
 .site-footer img.custom-logo {
-    filter: brightness(0) invert(1);
     max-height: 40px;
 }
 
