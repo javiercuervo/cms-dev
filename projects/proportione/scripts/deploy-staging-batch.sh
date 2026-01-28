@@ -143,12 +143,6 @@ update_post_meta(\$footer_id, \"_elementor_data\", wp_json_encode(\$footer_conte
 // Configurar condiciones de display (mostrar en todo el sitio)
 update_post_meta(\$footer_id, \"_elementor_conditions\", array(\"include/general\"));
 
-// Marcar como template activo
-\$conditions_manager = \\Elementor\\Plugin::\$instance->modules_manager->get_modules(\"theme-builder\")->get_conditions_manager();
-if (\$conditions_manager) {
-    \$conditions_manager->get_cache()->regenerate();
-}
-
 echo \"Footer configurado correctamente\\n\";
 '"
 
