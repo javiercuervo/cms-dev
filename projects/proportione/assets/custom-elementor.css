@@ -2,10 +2,12 @@
    PROPORTIONE - CSS Custom para Elementor
    =========================================== */
 
-/* Logo del footer - invertir a blanco */
+/* Logo del footer - invertir a blanco sobre fondo granate */
 .footer-logo-white img,
-[data-elementor-type="footer"] .elementor-widget-image img {
+[data-elementor-type="footer"] .elementor-widget-image img,
+.elementor-location-footer .elementor-widget-image img {
     filter: brightness(0) invert(1) !important;
+    max-width: 160px !important;
 }
 
 /* Animaciones suaves globales */
