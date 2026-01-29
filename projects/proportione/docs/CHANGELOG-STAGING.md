@@ -395,8 +395,98 @@ Crear una base sólida antes del rediseño de mañana.
 
 ---
 
+## Rediseño Páginas de Equipo (2026-01-29)
+
+### Páginas Rediseñadas con Elementor
+
+| Página | ID | URL | Estado |
+|--------|-----|-----|--------|
+| Mayte Tortosa | 2802 | /mayte-tortosa/ | ✅ Completo |
+| Javier Cuervo | 2804 | /javier-cuervo/ | ✅ Completo |
+
+### Estructura de Ambas Páginas
+
+1. **Hero Section** (flex, proporción áurea 38.2% / 61.8%)
+   - Foto del profesional (imagen de biblioteca de medios)
+   - Nombre, cargo, descripción introductoria
+   - Fondo crema (#F5F0E6)
+
+2. **Expertise Cards** (3 tarjetas, grid responsive)
+   - Border-top de 4px en color primario (#5F322F)
+   - Título (Oswald), descripción (Raleway)
+   - Fondo blanco
+
+3. **Trayectoria Destacada** (lista con iconos)
+   - Íconos de maletín (eicon-briefcase)
+   - 4 hitos profesionales principales
+
+4. **CTA Footer**
+   - Fondo granate (#5F322F)
+   - Texto blanco
+   - Enlace a /contacto/
+
+### Imágenes Utilizadas
+
+| Persona | Image ID | Archivo |
+|---------|----------|---------|
+| Mayte Tortosa | 1635 | Mayte-Dron-ibiza.jpg |
+| Javier Cuervo | 2629 | Jersey-azul-redondo.png |
+
+### Accesibilidad
+
+- Jerarquía de encabezados: h1 > h2 > h3
+- Alto contraste en todos los textos
+- Tipografía legible: Oswald 600 (títulos), Raleway 400 (cuerpo)
+- Colores verificados: #5F322F sobre #F5F0E6, #333333 sobre blanco
+
+---
+
+## Header Simplificado (2026-01-29)
+
+### Estructura Final (ID 2795)
+
+| Elemento | Ancho | Contenido |
+|----------|-------|-----------|
+| Logo | 20% | PNG transparente (ID 38) |
+| Menú | 60% | Nav Menu horizontal, centrado |
+| Hamburguesa | 20% | Solo móvil |
+
+### CSS Aplicado (`custom-elementor.css`)
+
+- Header siempre horizontal (flex-direction: row)
+- z-index: 9999 para evitar solapamiento
+- Menú items en línea (inline-flex)
+
+---
+
+## Footer Rediseñado (2026-01-29)
+
+### Estructura Final (ID 2796)
+
+- Grid áureo: 38.2% logo / 61.8% contenido
+- Logo con fondo granate (ID 1749)
+- Sin iconos de redes sociales
+- Enlaces: Inicio, Consultoría, Blog, Contacto
+- Enlaces legales: Privacidad, Cookies
+- Copyright MIT 2024
+
+---
+
+## Hero Homepage (2026-01-29)
+
+### Rediseño Completo
+
+- Fondo sólido granate (#5F322F)
+- Texto centrado, color crema (#F5F0E6)
+- H1: "Crecimiento Orgánico para Organizaciones"
+- Descripción clara de la propuesta de valor
+- Botones: "Descubre cómo" (outline) + "Contactar" (sólido)
+
+---
+
 ## Notas
 
 - **Producción (proportione.com)**: Intacta, estado original
-- **Staging (staging19.proportione.com)**: Estabilizado, listo para rediseño
-- Base sólida para trabajo de mañana
+- **Staging (staging19.proportione.com)**: Estabilizado con rediseños completos
+- Todas las páginas principales funcionando correctamente
+- Base sólida para futuros desarrollos
