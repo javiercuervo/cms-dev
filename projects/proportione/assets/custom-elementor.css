@@ -23,27 +23,27 @@
     line-height: 1.6 !important;
 }
 
-/* Espaciado de secciones responsive */
-@media (max-width: 767px) {
-    .elementor-section {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
+/* ===========================================
+   HEADER - Layout fijo horizontal
+   =========================================== */
 
-    /* Solo columnas de contenido, NO el header ni nav-menu */
-    .elementor-section:not(.elementor-location-header) .elementor-container:not(.e-con):not([class*="nav"]) {
-        flex-direction: column !important;
-    }
-
-    /* Hero responsive */
-    .elementor-widget-heading .elementor-heading-title {
-        font-size: 36px !important;
-    }
+/* Header principal siempre horizontal */
+.elementor-location-header,
+[data-elementor-type="header"] {
+    position: relative !important;
+    z-index: 9999 !important;
 }
 
-/* ===========================================
-   NAVEGACIÓN - Asegurar horizontal en desktop
-   =========================================== */
+.elementor-location-header > .elementor-element,
+.elementor-location-header .e-con,
+[data-elementor-type="header"] > .elementor-element,
+[data-elementor-type="header"] .e-con {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
 
 /* Menú Elementor siempre horizontal en desktop */
 .elementor-nav-menu--main,
@@ -64,15 +64,56 @@
     display: inline-flex !important;
 }
 
-/* Header container horizontal */
-.elementor-location-header .elementor-container,
-.elementor-location-header .e-con,
-[data-elementor-type="header"] .elementor-container,
-[data-elementor-type="header"] .e-con {
+/* ===========================================
+   HERO HOMEPAGE - Banner horizontal
+   =========================================== */
+
+/* Hero principal: layout horizontal */
+[data-elementor-type="wp-page"] > .elementor-element:first-child > .e-con {
+    display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
+    flex-wrap: wrap !important;
 }
+
+/* Containers hijos del hero */
+[data-elementor-type="wp-page"] > .elementor-element:first-child > .e-con > .e-con {
+    flex-direction: row !important;
+}
+
+/* ===========================================
+   RESPONSIVE - Solo móvil
+   =========================================== */
+
+@media (max-width: 767px) {
+    /* Secciones de contenido (NO hero, NO header) */
+    .elementor-section:not(.elementor-location-header):not(:first-child) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Hero en móvil: permitir wrap vertical */
+    [data-elementor-type="wp-page"] > .elementor-element:first-child > .e-con > .e-con {
+        flex-direction: column !important;
+    }
+
+    /* Hero responsive */
+    .elementor-widget-heading .elementor-heading-title {
+        font-size: 36px !important;
+    }
+
+    /* Header en móvil: mantener horizontal logo + hamburguesa */
+    .elementor-location-header > .elementor-element,
+    .elementor-location-header .e-con,
+    [data-elementor-type="header"] > .elementor-element,
+    [data-elementor-type="header"] .e-con {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+/* ===========================================
+   CARDS Y EFECTOS
+   =========================================== */
 
 /* Cards con hover effect */
 .elementor-container[data-element_type="container"]:has(.elementor-widget-icon-list) {
