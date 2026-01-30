@@ -20,6 +20,8 @@ Host siteground-proportione
     IdentityFile ~/.ssh/siteground_key
 ```
 
+**Passphrase de la clave SSH:** `Q$U*1c0wJnETN`
+
 ## Remotos Git
 
 ```bash
