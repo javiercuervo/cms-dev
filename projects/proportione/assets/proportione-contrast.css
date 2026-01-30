@@ -409,3 +409,74 @@ p a:hover {
     h2 { font-size: 1.5rem !important; }
     h3 { font-size: 1.3rem !important; }
 }
+
+/* ===========================================
+   10. CLASES DE UTILIDAD - Forzar contraste
+   =========================================== */
+
+/* Fondo oscuro → texto claro */
+.bg-dark,
+.has-dark-background {
+    background-color: #5F322F !important;
+}
+.bg-dark *,
+.has-dark-background * {
+    color: #F5F0E6 !important;
+}
+
+/* Fondo claro → texto oscuro */
+.bg-light,
+.has-light-background {
+    background-color: #F5F0E6 !important;
+}
+.bg-light *,
+.has-light-background * {
+    color: #333333 !important;
+}
+.bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4,
+.has-light-background h1, .has-light-background h2, .has-light-background h3, .has-light-background h4 {
+    color: #5F322F !important;
+}
+
+/* ===========================================
+   11. REFUERZO SELECTORES - Mayor especificidad
+   =========================================== */
+
+/* Stackable con overlay de fondo */
+.stk-block.stk--has-background-overlay *:not(a):not(button) {
+    color: #F5F0E6 !important;
+}
+
+/* WordPress blocks con fondos */
+.wp-block-group.has-background *,
+.wp-block-cover__inner-container * {
+    color: #F5F0E6 !important;
+}
+
+/* Títulos en wp-block-cover */
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4 {
+    color: #F5F0E6 !important;
+}
+
+/* ===========================================
+   12. LINKS EN FONDOS OSCUROS
+   =========================================== */
+
+/* Links deben ser claros en fondos oscuros */
+[style*="background-color:#5"] a,
+[style*="background-color: #5"] a,
+.bg-dark a,
+.has-dark-background a,
+.wp-block-cover a {
+    color: #F5F0E6 !important;
+    text-decoration: underline !important;
+}
+
+[style*="background-color:#5"] a:hover,
+.bg-dark a:hover,
+.wp-block-cover a:hover {
+    color: #FFFFFF !important;
+}
