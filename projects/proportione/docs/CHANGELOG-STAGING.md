@@ -484,9 +484,293 @@ Crear una base sólida antes del rediseño de mañana.
 
 ---
 
+---
+
+## FASE FIGMA + MAGICIAN (2026-01-29)
+
+### Objetivo
+Iterar sobre los disenos existentes usando Figma + Magician para generar mejoras visuales.
+
+### Configuracion
+
+| Componente | Estado |
+|------------|--------|
+| MCP Figma Desktop | Conectado |
+| Design System CSS | 707 lineas |
+| Carpeta iconos Magician | assets/icons/magician/ |
+| Carpeta imagenes Magician | assets/img/magician/ |
+| Log de outputs | docs/MAGICIAN-OUTPUT-LOG.md |
+
+### Workflow
+
+| Fase | Responsable | Estado |
+|------|-------------|--------|
+| 1. Captura staging → Figma | Javier | Pendiente |
+| 2. Mejoras con Magician | Javier | Pendiente |
+| 3. Lectura Figma → CSS | Claude Code | Listo |
+| 4. Implementacion staging | Claude Code | Listo |
+| 5. QA conjunto | Ambos | Pendiente |
+
+### Tokens del Design System (para Figma)
+
+```
+COLORES:
+color/primary     → #5F322F (Granate)
+color/secondary   → #551122 (Burdeos)
+color/accent      → #6E8157 (Verde oliva)
+color/neutral     → #AEADB3 (Gris)
+color/cream       → #F5F0E6 (Crema)
+color/white       → #FFFFFF
+color/black       → #1A1A1A
+
+ESPACIADO (grid 8px):
+space/xs  → 8px
+space/sm  → 16px
+space/md  → 24px
+space/lg  → 32px
+space/xl  → 48px
+space/xxl → 64px
+
+TIPOGRAFIA:
+font/titles → Bourbon Grotesque / Oswald (fallback)
+font/body   → Raleway
+```
+
+### Paginas a Procesar
+
+| # | Pagina | Prioridad | Estado |
+|---|--------|-----------|--------|
+| 1 | Navegacion/Footer | Alta | Completado |
+| 2 | Homepage | Alta | **Completado** (ID 2832) |
+| 3 | Contacto | Alta | Pendiente |
+| 4 | Blog | Media | Pendiente |
+| 5 | Investigacion | Media | Pendiente |
+| 6 | Mayte Tortosa | Media | Completado |
+| 7 | Javier Cuervo | Media | Completado |
+
+---
+
+## Rediseño Homepage con Brand Voice (2026-01-29)
+
+### Objetivo
+Rehacer los contenidos y diseño de la homepage aplicando el Brand Voice oficial definido por Marga.
+
+### Problemas Corregidos
+1. **Demasiada "Divina Proporción"**: Eliminado énfasis en proporción áurea, Da Vinci, galaxias
+2. **Lenguaje de "Consultora de los 90"**: Eliminado "Business Process Reengineering", "Interim Management"
+3. **Mensajes complejos**: Simplificado para claridad de un vistazo
+
+### Nueva Estructura Homepage
+
+| Sección | Contenido | Estado |
+|---------|-----------|--------|
+| Hero | "Digitalización sin complicaciones" + CTAs | Preparado |
+| Qué Hacemos | "Tecnología al servicio de las personas" | Preparado |
+| Método 20-60-20 | Diagrama visual del método de trabajo | Preparado |
+| Tres Pilares | Cards: Estrategia, Tecnología, Personas | Preparado |
+| Por Qué Elegirnos | 4 diferenciadores clave | Preparado |
+| CTA Final | "¿Hablamos?" con contacto | Preparado |
+
+### Archivos Creados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `content/homepage-content-nuevo.md` | Textos aprobados con checklist Brand Voice |
+| `content/homepage-nuevo.html` | HTML listo para Gutenberg/Stackable |
+| `assets/homepage-nuevo.css` | CSS específico para nueva homepage |
+
+### Archivos Actualizados
+
+| Archivo | Cambio |
+|---------|--------|
+| `assets/proportione-styles.php` | Añadida carga de homepage-nuevo.css |
+
+### Brand Voice Aplicado
+
+#### Palabras USADAS (que amamos):
+- Estrategia, Tecnología, Personas
+- Transferencia de conocimiento
+- Acompañamiento, Posicionamiento
+- Adaptación, Facilitador
+
+#### Palabras EVITADAS (prohibidas):
+- ~~Visión~~, ~~Misión~~, ~~Globales~~
+- ~~ODS~~, ~~Complejo~~, ~~Expertos~~
+- ~~Traumático~~ (solo en negativo: "sin traumas")
+
+### Emociones Objetivo
+
+- Confiado: "Estas personas saben"
+- Tranquilo: "Está en buenas manos"
+- Informado: "Ahora lo entiendo"
+- Aliviado: "Por fin alguien que lo entiende"
+
+### Implementación Completada (2026-01-29)
+
+| Paso | Descripción | Estado |
+|------|-------------|--------|
+| 1 | Subir CSS homepage-nuevo.css al tema child | ✅ Completado |
+| 2 | Actualizar functions.php con carga condicional | ✅ Completado |
+| 3 | Crear página "Homepage Nueva" (ID 2832) | ✅ Completado |
+| 4 | Configurar como página de inicio | ✅ Completado |
+| 5 | Limpiar caches (WordPress + Elementor) | ✅ Completado |
+| 6 | Verificar carga de CSS y contenido | ✅ Completado |
+
+### URLs
+
+- **Homepage nueva**: https://staging19.proportione.com/
+- **Página anterior (backup)**: ID 2793 "Home Elementor"
+
+### Próximos Pasos
+
+1. [ ] Revisar visualmente en desktop, tablet, móvil
+2. [ ] Revisar contenidos con Marga
+3. [ ] Ajustes de diseño si son necesarios
+4. [ ] QA de accesibilidad
+
+---
+
+## Página Filosofía (2026-01-29)
+
+### Objetivo
+Implementar la página de Filosofía (Nosotros > Filosofía) usando Elementor con:
+- Imágenes seleccionadas de WordPress Media Library
+- Animaciones nativas de Elementor
+- Contenido completo según el Brand Voice
+- Filtro granate corporativo donde aplique
+
+### Archivos Creados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `content/filosofia-content.md` | Contenido completo de las 7 secciones con verificación Brand Voice |
+| `assets/filosofia.css` | CSS específico para la página Filosofía |
+| `docs/GUIA-ELEMENTOR-FILOSOFIA.md` | Guía paso a paso para implementar en Elementor |
+
+### Estructura de la Página (7 Secciones)
+
+| # | Sección | Fondo | Contenido Principal |
+|---|---------|-------|---------------------|
+| 1 | Hero | Imagen + overlay granate 70% | H1 + subtítulo |
+| 2 | Introducción | Blanco | Texto centrado 22px |
+| 3 | Origen del nombre | Crema | 2 columnas: imagen + texto |
+| 4 | Principios | Blanco | 3 cards con imagen |
+| 5 | Cómo trabajamos | Crema | Infografía o timeline |
+| 6 | Compromiso | Blanco | Texto destacado con borde |
+| 7 | CTA | Granate | Botón a /equipo/ |
+
+### Imágenes de Media Library
+
+| Sección | Image ID | Título |
+|---------|----------|--------|
+| Hero | 2659 | Hombre renacentista estudiando geometría |
+| Hero (alt) | 2665 | Forma geométrica abstracta resplandeciente |
+| Origen | 2665 | Forma geométrica abstracta resplandeciente |
+| Card A | 2618 | Equipo profesionales reunión oficina |
+| Card B | 2566 | Persona trabajando laptop oficina moderna |
+| Card C | 2543 | Profesional presentando ante equipo |
+| Método | 2801 | Infografía transformación digital |
+
+### Animaciones Configuradas
+
+| Animación | Uso |
+|-----------|-----|
+| Fade In Up | Títulos, textos principales |
+| Fade In Left | Imágenes lado izquierdo |
+| Fade In Right | Textos lado derecho |
+| Zoom In | Bloque compromiso |
+| Slide In Left | Timeline pasos |
+
+### Brand Voice Aplicado
+
+**Palabras usadas:**
+- Tecnología, Personas, Transferencia de conocimiento
+- Acompañamiento, Escucha, Equilibrio
+- A medida, Facilitador
+
+**Palabras evitadas:**
+- ~~Visión~~, ~~Misión~~, ~~Globales~~, ~~Expertos~~
+
+### Próximos Pasos para Implementación
+
+1. [ ] Subir infografía SVG a Media Library
+2. [ ] Crear página "Filosofía" en WordPress (slug: /filosofia/)
+3. [ ] Editar con Elementor siguiendo la guía
+4. [ ] Añadir imágenes según IDs especificados
+5. [ ] Configurar animaciones
+6. [ ] Ajustar responsive (tablet/móvil)
+7. [ ] Publicar y verificar
+8. [ ] Añadir al menú: Nosotros > Filosofía
+
+### SEO
+
+- **Title:** Nuestra Filosofía | Proportione - Tecnología y Personas
+- **Meta Description:** En Proportione creemos que la tecnología debe adaptarse a las personas. Conoce nuestra filosofía de trabajo: equilibrio, honestidad y transferencia de conocimiento.
+
+---
+
+## Página de Contacto (2026-01-30)
+
+### Objetivo
+Implementar la página de Contacto para staging19.proportione.com con guía completa para Elementor.
+
+### Archivos Creados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `docs/GUIA-ELEMENTOR-CONTACTO.md` | Guía paso a paso para implementar en Elementor |
+| `assets/contacto-elementor.css` | CSS específico para la página Contacto |
+| `content/contacto-page.html` | Estructura HTML de referencia |
+| `wp-content/themes/hello-elementor-child/contacto-elementor.css` | CSS copiado al child theme |
+
+### Archivos Modificados
+
+| Archivo | Cambio |
+|---------|--------|
+| `wp-content/themes/hello-elementor-child/functions.php` | Añadida carga condicional de CSS para /contacto/ |
+
+### Estructura de la Página
+
+| # | Sección | Fondo | Contenido Principal |
+|---|---------|-------|---------------------|
+| 1 | Hero | Granate (#5F322F) | H1 "Contacto" + subtítulo |
+| 2 | Formulario | Blanco | Form widget de Elementor |
+| 3 | Info contacto | Crema (#F5F0E6) | Email, teléfono, dirección |
+| 4 | Mapa | Blanco | Google Maps embed |
+
+### Configuración del Formulario
+
+| Campo | Tipo | Requerido |
+|-------|------|-----------|
+| Nombre | Text | Sí |
+| Email | Email | Sí |
+| Teléfono | Tel | No |
+| Mensaje | Textarea | Sí |
+
+### Email de Notificación
+
+**Destinatario:** info@proportione.com
+
+### CSS Carga Condicional
+
+El CSS `contacto-elementor.css` se carga únicamente en la página `/contacto/` mediante `is_page('contacto')` en functions.php.
+
+### Próximos Pasos
+
+1. [ ] Crear página "Contacto" en WordPress (slug: /contacto/)
+2. [ ] Editar con Elementor siguiendo GUIA-ELEMENTOR-CONTACTO.md
+3. [ ] Configurar Form widget con email info@proportione.com
+4. [ ] Ajustar responsive
+5. [ ] Verificar que CSS carga correctamente
+
+---
+
 ## Notas
 
-- **Producción (proportione.com)**: Intacta, estado original
-- **Staging (staging19.proportione.com)**: Estabilizado con rediseños completos
-- Todas las páginas principales funcionando correctamente
-- Base sólida para futuros desarrollos
+- **Produccion (proportione.com)**: Intacta, estado original
+- **Staging (staging19.proportione.com)**: Estabilizado con redisenos completos
+- Todas las paginas principales funcionando correctamente
+- Base solida para futuros desarrollos
+- **MCP Figma**: Conectado y funcional para lectura de disenos
+- **Brand Voice**: Documento oficial de Marga implementado
+- **Página Filosofía**: Archivos de contenido, CSS y guía creados, pendiente de implementar en Elementor

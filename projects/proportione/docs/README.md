@@ -1,10 +1,22 @@
-# Documentación del Proyecto
+# Documentación del Proyecto Proportione
 
 ## Índice
 
-- [PLAN.md](./PLAN.md) - Plan completo del flujo de trabajo
+### Planes y flujos
+- [PLAN.md](./PLAN.md) - Plan completo del flujo de trabajo Git + SiteGround
+- [PLAN-FIGMA-STAGING.md](./PLAN-FIGMA-STAGING.md) - **Plan Figma + Magician para staging19**
+- [FIGMA-SETUP.md](./FIGMA-SETUP.md) - **Setup Figma + MCP + tokens** (guía operativa)
 - [DEPLOYMENT.md](./DEPLOYMENT.md) - Guía de despliegue
 - [CHANGELOG.md](./CHANGELOG.md) - Registro de cambios
+
+### Auditorías y revisiones
+- [AUDITORIA-COLORES.md](./AUDITORIA-COLORES.md) - Paleta de colores
+- [AUDITORIA-TIPOGRAFIA.md](./AUDITORIA-TIPOGRAFIA.md) - Sistema tipográfico
+- [AUDITORIA-ACCESIBILIDAD-WCAG.md](./AUDITORIA-ACCESIBILIDAD-WCAG.md) - Accesibilidad
+- [IDENTIDAD-VISUAL.md](./IDENTIDAD-VISUAL.md) - Brand guidelines
+- [REVISION-*.md](.) - Estado de cada página
+
+### Técnico
 - [technical/](./technical/) - Documentación técnica (SiteGround, etc.)
 
 ## Arquitectura
