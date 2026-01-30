@@ -1,0 +1,173 @@
+[
+  {
+    "id": "contacto-hero",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "vh", "size": 70},
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "80", "right": "50", "bottom": "80", "left": "50"},
+      "flex_gap": {"column": "60", "row": "40", "unit": "px"}
+    },
+    "elements": [
+      {
+        "id": "contacto-form-col",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "width": {"unit": "%", "size": 55},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "contacto-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Contacto",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 56},
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "contacto-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center;\">Cuéntanos en qué podemos ayudarte. Un miembro del equipo se pondrá en contacto contigo.</p>",
+              "align": "center",
+              "text_color": "#F5F0E6",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "typography_line_height": {"unit": "em", "size": 1.6},
+              "_margin": {"unit": "px", "top": "20", "right": "0", "bottom": "40", "left": "0"}
+            }
+          },
+          {
+            "id": "contacto-form",
+            "elType": "widget",
+            "widgetType": "form",
+            "settings": {
+              "form_name": "Formulario de Contacto",
+              "form_fields": [
+                {
+                  "_id": "name",
+                  "field_type": "text",
+                  "field_label": "Nombre completo",
+                  "placeholder": "Tu nombre",
+                  "required": "true",
+                  "width": "100"
+                },
+                {
+                  "_id": "email",
+                  "field_type": "email",
+                  "field_label": "Email",
+                  "placeholder": "tu@email.com",
+                  "required": "true",
+                  "width": "50"
+                },
+                {
+                  "_id": "phone",
+                  "field_type": "tel",
+                  "field_label": "Teléfono",
+                  "placeholder": "+34 600 000 000",
+                  "required": "false",
+                  "width": "50"
+                },
+                {
+                  "_id": "company",
+                  "field_type": "text",
+                  "field_label": "Empresa",
+                  "placeholder": "Nombre de tu empresa",
+                  "required": "false",
+                  "width": "100"
+                },
+                {
+                  "_id": "message",
+                  "field_type": "textarea",
+                  "field_label": "Mensaje",
+                  "placeholder": "¿En qué podemos ayudarte?",
+                  "required": "true",
+                  "width": "100",
+                  "rows": "5"
+                },
+                {
+                  "_id": "privacy",
+                  "field_type": "acceptance",
+                  "field_label": "Acepto la <a href=\"/politica-privacidad/\" target=\"_blank\">Política de Privacidad</a> y el tratamiento de mis datos personales.",
+                  "required": "true",
+                  "width": "100",
+                  "acceptance_text": "Acepto la <a href=\"/politica-privacidad/\" target=\"_blank\">Política de Privacidad</a> y el tratamiento de mis datos personales."
+                },
+                {
+                  "_id": "marketing",
+                  "field_type": "acceptance",
+                  "field_label": "Deseo recibir comunicaciones comerciales y novedades de Proportione.",
+                  "required": "false",
+                  "width": "100",
+                  "acceptance_text": "Deseo recibir comunicaciones comerciales y novedades de Proportione."
+                }
+              ],
+              "button_text": "Enviar mensaje",
+              "button_size": "md",
+              "button_width": "100",
+              "button_align": "center",
+              "email_to": "mayte.tortosa@proportione.com",
+              "email_subject": "Nuevo contacto desde la web de Proportione",
+              "email_content": "[all-fields]",
+              "success_message": "¡Gracias por contactarnos! Te responderemos lo antes posible.",
+              "show_lost_password": "",
+              "form_id": "contacto-proportione",
+              "button_background_color": "#6E8157",
+              "button_background_hover_color": "#5a6d48",
+              "button_text_color": "#FFFFFF",
+              "button_border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4"},
+              "button_text_padding": {"unit": "px", "top": "15", "right": "30", "bottom": "15", "left": "30"},
+              "field_background_color": "#FFFFFF",
+              "field_border_color": "#dddddd",
+              "field_border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4"},
+              "label_color": "#F5F0E6",
+              "field_text_color": "#333333"
+            }
+          }
+        ]
+      },
+      {
+        "id": "contacto-image-col",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "width": {"unit": "%", "size": 35},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_direction": "column",
+          "flex_align_items": "center",
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "contacto-logo",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2024/04/Logo_-Estrategia-Tecnologia-y-Personas.png"},
+              "image_size": "large",
+              "width": {"unit": "%", "size": 80}
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

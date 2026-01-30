@@ -1,0 +1,272 @@
+/* ===========================================
+   PROPORTIONE - Accesibilidad WCAG AA
+   Basado en auditoría de accesibilidad - Enero 2026
+
+   Correcciones para cumplir WCAG 2.1 Nivel AA:
+   - Focus states visibles
+   - Skip-link
+   - Navegación por teclado
+   - Mejoras de contraste
+   =========================================== */
+
+/* ===========================================
+   1. FOCUS STATES - Visibilidad obligatoria
+   =========================================== */
+
+/* Focus global para todos los elementos interactivos */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus,
+[role="button"]:focus,
+[role="link"]:focus {
+    outline: 2px solid var(--color-accent, #6E8157) !important;
+    outline-offset: 2px !important;
+}
+
+/* Focus visible solo cuando se navega con teclado */
+:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent, #6E8157) !important;
+    outline-offset: 2px !important;
+}
+
+/* Focus específico para navegación */
+.site-navigation a:focus,
+.site-header nav a:focus,
+.elementor-nav-menu a:focus {
+    outline: 2px solid var(--color-primary, #5F322F) !important;
+    outline-offset: 2px !important;
+    background-color: rgba(95, 50, 47, 0.1) !important;
+}
+
+/* Focus en botones */
+button:focus,
+.wp-block-button__link:focus,
+.elementor-button:focus,
+input[type="submit"]:focus {
+    outline: 2px solid var(--color-primary, #5F322F) !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 4px rgba(95, 50, 47, 0.2) !important;
+}
+
+/* Focus en inputs de formulario */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    border-color: var(--color-primary, #5F322F) !important;
+    box-shadow: 0 0 0 3px rgba(95, 50, 47, 0.15) !important;
+}
+
+/* ===========================================
+   2. SUBMENÚS - Accesibles por teclado
+   =========================================== */
+
+/* Mostrar submenú con :focus-within (navegación por teclado) */
+.site-navigation ul.menu li:focus-within > ul.sub-menu,
+.site-header nav ul.menu li:focus-within > ul.sub-menu,
+.elementor-nav-menu li:focus-within > ul.sub-menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Focus en items de submenú */
+.site-navigation ul.sub-menu a:focus,
+.site-header nav ul.sub-menu a:focus {
+    background-color: #f5f5f5 !important;
+    color: var(--color-primary, #5F322F) !important;
+}
+
+/* ===========================================
+   3. SKIP-LINK - Saltar al contenido
+   =========================================== */
+
+.skip-link {
+    position: absolute !important;
+    top: -100px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-color: var(--color-primary, #5F322F) !important;
+    color: var(--color-cream, #F5F0E6) !important;
+    padding: 12px 24px !important;
+    z-index: 100000 !important;
+    text-decoration: none !important;
+    font-family: var(--font-body, 'Raleway', sans-serif) !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    border-radius: 0 0 4px 4px !important;
+    transition: top 0.3s ease !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.skip-link:focus {
+    top: 0 !important;
+    outline: none !important;
+}
+
+.skip-link:hover {
+    background-color: var(--color-secondary, #551122) !important;
+}
+
+/* ===========================================
+   4. SCREEN READER ONLY - Texto invisible pero accesible
+   =========================================== */
+
+.sr-only,
+.screen-reader-text,
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Mostrar cuando tiene focus */
+.sr-only:focus,
+.screen-reader-text:focus,
+.visually-hidden:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: inherit !important;
+    margin: inherit !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+/* ===========================================
+   5. CONTRASTE MEJORADO - Footer links
+   =========================================== */
+
+/* Aumentar opacidad base de links del footer para mejor contraste */
+.site-footer a,
+footer a,
+.elementor-location-footer a {
+    opacity: 0.9 !important;
+}
+
+.site-footer a:hover,
+.site-footer a:focus,
+footer a:hover,
+footer a:focus {
+    opacity: 1 !important;
+    text-decoration: underline !important;
+}
+
+/* ===========================================
+   6. REDUCCIÓN DE MOVIMIENTO
+   =========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .skip-link {
+        transition: none !important;
+    }
+}
+
+/* ===========================================
+   7. ALTO CONTRASTE (Windows High Contrast Mode)
+   =========================================== */
+
+@media (forced-colors: active) {
+    a:focus,
+    button:focus,
+    input:focus {
+        outline: 3px solid CanvasText !important;
+    }
+
+    .skip-link {
+        border: 2px solid CanvasText !important;
+    }
+}
+
+/* ===========================================
+   8. ÁREA DE CLICK MÍNIMA - 44x44px
+   =========================================== */
+
+/* Navegación mobile - área de toque mínima */
+@media (max-width: 1024px) {
+    .site-navigation a,
+    .site-header nav a,
+    button,
+    [role="button"],
+    input[type="submit"] {
+        min-height: 44px !important;
+        min-width: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+/* ===========================================
+   9. INDICADORES DE ESTADO
+   =========================================== */
+
+/* Estado activo/current en navegación */
+.site-navigation .current-menu-item > a,
+.site-header nav .current-menu-item > a {
+    border-bottom: 2px solid var(--color-primary, #5F322F) !important;
+}
+
+/* Estado disabled */
+button:disabled,
+input:disabled,
+[aria-disabled="true"] {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
+
+/* ===========================================
+   10. FORMULARIOS ACCESIBLES
+   =========================================== */
+
+/* Labels siempre visibles */
+label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-weight: 500 !important;
+}
+
+/* Placeholder no como único indicador */
+input::placeholder,
+textarea::placeholder {
+    color: #999 !important;
+    opacity: 1 !important;
+}
+
+/* Campos requeridos */
+input[required],
+textarea[required],
+select[required] {
+    border-left: 3px solid var(--color-accent, #6E8157) !important;
+}
+
+/* Mensajes de error */
+.error-message,
+[role="alert"] {
+    color: #c62828 !important;
+    font-weight: 500 !important;
+    margin-top: 8px !important;
+}

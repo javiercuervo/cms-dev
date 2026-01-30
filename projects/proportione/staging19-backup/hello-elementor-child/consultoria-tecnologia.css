@@ -1,0 +1,758 @@
+/* ===========================================
+   PROPORTIONE - Consultoría de Tecnología
+   Estilos específicos para la página
+
+   URL: /consultoria-estrategica-crecimiento-organico/
+        consultoria-de-tecnologia/
+
+   Versión: 1.0.0
+   Fecha: 2026-01-30
+
+   NOTAS DE MANTENIMIENTO:
+   - Este CSS se carga condicionalmente solo en esta página
+   - Usa clases CSS aplicadas en Elementor (Avanzado > CSS Classes)
+   - Los !important están documentados con motivo específico
+   =========================================== */
+
+/* ===========================================
+   1. SECCIÓN HERO
+   Fondo con imagen + overlay granate 70%
+   =========================================== */
+.tecnologia-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* FIX: Elementor overlay necesita override para mantener opacidad consistente */
+.tecnologia-hero .elementor-background-overlay {
+    background-color: #5F322F !important;
+    opacity: 0.7 !important;
+}
+
+.tecnologia-hero .hero-breadcrumb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #F5F0E6;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+.tecnologia-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #F5F0E6;
+    max-width: 60%;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.tecnologia-hero .hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #F5F0E6;
+    max-width: 50%;
+    line-height: 1.6;
+}
+
+/* Hero Responsive */
+@media (max-width: 1024px) {
+    .tecnologia-hero h1 {
+        font-size: 48px;
+        max-width: 80%;
+    }
+    .tecnologia-hero .hero-subtitle {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tecnologia-hero {
+        min-height: 50vh;
+    }
+    .tecnologia-hero h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    .tecnologia-hero .hero-subtitle {
+        font-size: 18px;
+        max-width: 100%;
+    }
+}
+
+/* ===========================================
+   2. SECCIÓN INTRODUCTION
+   2 columnas (60% texto / 40% imagen)
+   =========================================== */
+.tecnologia-introduction {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.tecnologia-introduction .elementor-container {
+    max-width: 1140px;
+}
+
+.tecnologia-introduction h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.tecnologia-introduction p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.tecnologia-introduction .intro-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .tecnologia-introduction {
+        padding: 60px 16px;
+    }
+    .tecnologia-introduction h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===========================================
+   3. SECCIÓN THREE KEY AREAS (Tres Pilares)
+   3 cards con número, título, descripción
+   =========================================== */
+.tecnologia-three-areas {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.tecnologia-three-areas h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 64px;
+}
+
+.tecnologia-area-card {
+    background: #FFFFFF;
+    border-top: 4px solid #5F322F;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.tecnologia-area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tecnologia-area-card .area-number {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #6E8157;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.tecnologia-area-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.tecnologia-area-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-three-areas {
+        padding: 60px 16px;
+    }
+    .tecnologia-three-areas h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .tecnologia-area-card {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    .tecnologia-area-card .area-number {
+        font-size: 40px;
+    }
+    .tecnologia-area-card h3 {
+        font-size: 24px;
+    }
+}
+
+/* ===========================================
+   4. SECCIÓN STRATEGY IMPORTANCE
+   H2 + párrafo + quote box
+   =========================================== */
+.tecnologia-strategy-importance {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.tecnologia-strategy-importance .elementor-container {
+    max-width: 900px;
+}
+
+.tecnologia-strategy-importance h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.tecnologia-strategy-importance .intro-paragraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 48px;
+}
+
+.tecnologia-quote-box {
+    background-color: #F5F0E6;
+    border-left: 4px solid #5F322F;
+    border-radius: 0 8px 8px 0;
+    padding: 32px 48px;
+}
+
+.tecnologia-quote-box p,
+.tecnologia-quote-box blockquote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-strategy-importance {
+        padding: 60px 16px;
+    }
+    .tecnologia-strategy-importance h2 {
+        font-size: 32px;
+    }
+    .tecnologia-quote-box {
+        padding: 24px 32px;
+    }
+    .tecnologia-quote-box p,
+    .tecnologia-quote-box blockquote {
+        font-size: 18px;
+    }
+}
+
+/* ===========================================
+   5. SECCIÓN STRATEGY TO EXECUTION
+   2 columnas (40% imagen / 60% texto + lista)
+   =========================================== */
+.tecnologia-strategy-execution {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.tecnologia-strategy-execution .execution-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tecnologia-strategy-execution h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.tecnologia-strategy-execution p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Lista de beneficios con checks verdes */
+.tecnologia-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0 0;
+}
+
+.tecnologia-benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* Icono check verde */
+.tecnologia-benefits-list .check-icon {
+    width: 24px;
+    height: 24px;
+    color: #6E8157;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* FIX: Elementor icon-list tiene color inline, necesita override */
+.tecnologia-benefits-list .elementor-icon-list-icon i,
+.tecnologia-benefits-list .elementor-icon-list-icon svg {
+    color: #6E8157 !important;
+    fill: #6E8157 !important;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-strategy-execution {
+        padding: 60px 16px;
+    }
+    .tecnologia-strategy-execution h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===========================================
+   6. SECCIÓN DIFFERENTIATORS
+   H2 + 4 bloques con icono, título, descripción
+   =========================================== */
+.tecnologia-differentiators {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.tecnologia-differentiators h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 64px;
+}
+
+.tecnologia-diff-item {
+    text-align: center;
+    padding: 16px;
+}
+
+.tecnologia-diff-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #F5F0E6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+}
+
+.tecnologia-diff-icon i,
+.tecnologia-diff-icon svg {
+    font-size: 32px;
+    color: #6E8157;
+    width: 32px;
+    height: 32px;
+}
+
+.tecnologia-diff-item h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.tecnologia-diff-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .tecnologia-differentiators .elementor-row,
+    .tecnologia-differentiators .elementor-container > .elementor-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .tecnologia-differentiators {
+        padding: 60px 16px;
+    }
+    .tecnologia-differentiators h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+/* ===========================================
+   7. SECCIÓN SUMMARY
+   Fondo granate con texto crema
+   =========================================== */
+.tecnologia-summary {
+    background-color: #5F322F;
+    padding: 100px 0;
+}
+
+.tecnologia-summary .elementor-container {
+    max-width: 900px;
+}
+
+.tecnologia-summary h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #F5F0E6;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+/* FIX: El design-system añade línea decorativa bajo H2,
+   no queremos en fondo oscuro */
+.tecnologia-summary h2::after {
+    display: none !important;
+}
+
+.tecnologia-summary p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F5F0E6;
+    text-align: center;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-summary {
+        padding: 60px 16px;
+    }
+    .tecnologia-summary h2 {
+        font-size: 32px;
+    }
+    .tecnologia-summary p {
+        font-size: 18px;
+    }
+}
+
+/* ===========================================
+   8. SECCIÓN RELATED CONTENT
+   H2 + 3 cards de contenido relacionado
+   =========================================== */
+.tecnologia-related {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.tecnologia-related h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 64px;
+}
+
+.tecnologia-related-card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnologia-related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tecnologia-related-badge {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E8157;
+    background-color: #F5F0E6;
+    padding: 4px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.tecnologia-related-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.tecnologia-related-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+.tecnologia-related-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6E8157;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tecnologia-related-link:hover {
+    color: #3B431C;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-related {
+        padding: 60px 16px;
+    }
+    .tecnologia-related h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .tecnologia-related-card {
+        margin-bottom: 24px;
+    }
+}
+
+/* ===========================================
+   9. SECCIÓN FINAL CTA
+   H2 + texto + 2 botones
+   =========================================== */
+.tecnologia-cta {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.tecnologia-cta .elementor-container {
+    max-width: 700px;
+}
+
+.tecnologia-cta h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.tecnologia-cta .cta-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.tecnologia-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Botón Primario - Verde */
+.tecnologia-btn-primary {
+    background-color: #6E8157;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tecnologia-btn-primary:hover {
+    background-color: #3B431C;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+}
+
+/* Botón Secundario - Outline Granate */
+.tecnologia-btn-secondary {
+    background-color: transparent;
+    color: #5F322F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 2px solid #5F322F;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tecnologia-btn-secondary:hover {
+    background-color: #5F322F;
+    color: #F5F0E6;
+}
+
+/* FIX: Elementor buttons tienen estilos inline muy específicos */
+.tecnologia-cta .elementor-button {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 16px 32px !important;
+    border-radius: 8px !important;
+}
+
+@media (max-width: 768px) {
+    .tecnologia-cta {
+        padding: 60px 16px;
+    }
+    .tecnologia-cta h2 {
+        font-size: 32px;
+    }
+    .tecnologia-cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .tecnologia-btn-primary,
+    .tecnologia-btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ===========================================
+   10. ANIMACIONES Y TRANSICIONES
+   Entradas suaves con delays escalonados
+   =========================================== */
+.tecnologia-animate-in {
+    animation: tecnologiaFadeInUp 0.6s ease-out both;
+}
+
+@keyframes tecnologiaFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clases de delay para escalonar animaciones */
+.tecnologia-delay-100 { animation-delay: 100ms; }
+.tecnologia-delay-200 { animation-delay: 200ms; }
+.tecnologia-delay-300 { animation-delay: 300ms; }
+
+/* Respeto a preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .tecnologia-animate-in,
+    .tecnologia-area-card,
+    .tecnologia-related-card {
+        animation: none;
+        transition: none;
+    }
+    .tecnologia-area-card:hover,
+    .tecnologia-related-card:hover {
+        transform: none;
+    }
+}
+
+/* ===========================================
+   11. CLASES UTILITARIAS REUTILIZABLES
+   Para aplicar en Elementor CSS Classes
+   =========================================== */
+
+/* Overlay granate 70% para secciones con imagen de fondo */
+/* FIX: Necesario para override de Elementor background overlay */
+.tecnologia-bg-overlay-granate .elementor-background-overlay {
+    background-color: #5F322F !important;
+    opacity: 0.7 !important;
+}
+
+/* Texto sobre fondo oscuro (hero, summary) */
+.tecnologia-text-on-dark h1,
+.tecnologia-text-on-dark h2,
+.tecnologia-text-on-dark h3,
+.tecnologia-text-on-dark p {
+    color: #F5F0E6;
+}
+
+/* FIX: Ocultar línea decorativa en fondos oscuros */
+.tecnologia-text-on-dark h2::after {
+    display: none !important;
+}
+
+/* Quote box con borde izquierdo */
+.tecnologia-box-left-border {
+    background-color: #F5F0E6;
+    border-left: 4px solid #5F322F;
+    border-radius: 0 8px 8px 0;
+    padding: 32px 48px;
+}
+
+/* Card con borde superior granate */
+.tecnologia-card-top-border {
+    border-top: 4px solid #5F322F;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}

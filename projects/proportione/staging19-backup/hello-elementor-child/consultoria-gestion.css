@@ -1,0 +1,723 @@
+/* ===========================================
+   PROPORTIONE - Consultoría de Gestión de Negocio
+   Estilos específicos para la página
+
+   URL: /consultoria-estrategica-crecimiento-organico/
+        consultoria-de-gestion-de-negocio-un-enfoque-estrategico/
+
+   Versión: 1.0.0
+   Fecha: 2026-01-30
+
+   NOTAS DE MANTENIMIENTO:
+   - Este CSS se carga condicionalmente solo en esta página
+   - Usa clases CSS aplicadas en Elementor (Avanzado > CSS Classes)
+   - Los !important están documentados con motivo específico
+   =========================================== */
+
+/* ===========================================
+   1. SECCIÓN HERO
+   Fondo con imagen + overlay granate 70%
+   =========================================== */
+.consultoria-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* FIX: Elementor overlay necesita override para mantener opacidad consistente */
+.consultoria-hero .elementor-background-overlay {
+    background-color: #5F322F !important;
+    opacity: 0.7 !important;
+}
+
+.consultoria-hero .hero-breadcrumb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #F5F0E6;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+.consultoria-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #F5F0E6;
+    max-width: 60%;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.consultoria-hero .hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #F5F0E6;
+    max-width: 50%;
+}
+
+/* Hero Responsive */
+@media (max-width: 1024px) {
+    .consultoria-hero h1 {
+        font-size: 48px;
+        max-width: 80%;
+    }
+    .consultoria-hero .hero-subtitle {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultoria-hero {
+        min-height: 50vh;
+    }
+    .consultoria-hero h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    .consultoria-hero .hero-subtitle {
+        font-size: 18px;
+        max-width: 100%;
+    }
+}
+
+/* ===========================================
+   2. SECCIÓN INTRODUCTION
+   2 columnas (60% texto / 40% imagen)
+   =========================================== */
+.consultoria-introduction {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.consultoria-introduction .elementor-container {
+    max-width: 1140px;
+}
+
+.consultoria-introduction h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.consultoria-introduction p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.consultoria-introduction .intro-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .consultoria-introduction {
+        padding: 60px 16px;
+    }
+    .consultoria-introduction h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===========================================
+   3. SECCIÓN THREE KEY AREAS
+   3 cards con número, título, descripción
+   =========================================== */
+.consultoria-three-areas {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.consultoria-three-areas h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.consultoria-area-card {
+    background: #FFFFFF;
+    border-top: 4px solid #5F322F;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.consultoria-area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.consultoria-area-card .area-number {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #6E8157;
+    margin-bottom: 16px;
+}
+
+.consultoria-area-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.consultoria-area-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .consultoria-three-areas {
+        padding: 60px 16px;
+    }
+    .consultoria-three-areas h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .consultoria-area-card {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    .consultoria-area-card .area-number {
+        font-size: 40px;
+    }
+    .consultoria-area-card h3 {
+        font-size: 24px;
+    }
+}
+
+/* ===========================================
+   4. SECCIÓN STRATEGY IMPORTANCE
+   H2 + párrafo + quote box
+   =========================================== */
+.consultoria-strategy-importance {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.consultoria-strategy-importance .elementor-container {
+    max-width: 900px;
+}
+
+.consultoria-strategy-importance h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.consultoria-strategy-importance .intro-paragraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 48px;
+}
+
+.consultoria-quote-box {
+    background-color: #F5F0E6;
+    border-left: 4px solid #5F322F;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 32px;
+}
+
+.consultoria-quote-box p,
+.consultoria-quote-box blockquote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .consultoria-strategy-importance {
+        padding: 60px 16px;
+    }
+    .consultoria-strategy-importance h2 {
+        font-size: 32px;
+    }
+    .consultoria-quote-box {
+        padding: 16px 20px;
+    }
+    .consultoria-quote-box p,
+    .consultoria-quote-box blockquote {
+        font-size: 18px;
+    }
+}
+
+/* ===========================================
+   5. SECCIÓN STRATEGY TO EXECUTION
+   2 columnas (40% imagen / 60% texto + lista)
+   =========================================== */
+.consultoria-strategy-execution {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.consultoria-strategy-execution .execution-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.consultoria-strategy-execution h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.consultoria-strategy-execution p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Lista de beneficios con checks verdes */
+.consultoria-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.consultoria-benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+
+/* FIX: Elementor icon-list tiene color inline, necesita override */
+.consultoria-benefits-list .elementor-icon-list-icon i {
+    color: #6E8157 !important;
+}
+
+@media (max-width: 768px) {
+    .consultoria-strategy-execution {
+        padding: 60px 16px;
+    }
+    .consultoria-strategy-execution h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===========================================
+   6. SECCIÓN DIFFERENTIATORS
+   H2 + 4 bloques con icono, título, descripción
+   =========================================== */
+.consultoria-differentiators {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.consultoria-differentiators h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.consultoria-diff-item {
+    text-align: center;
+    padding: 16px;
+}
+
+.consultoria-diff-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #F5F0E6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.consultoria-diff-icon i,
+.consultoria-diff-icon svg {
+    font-size: 32px;
+    color: #6E8157;
+    width: 32px;
+    height: 32px;
+}
+
+.consultoria-diff-item h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.consultoria-diff-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .consultoria-differentiators {
+        padding: 60px 16px;
+    }
+    .consultoria-differentiators h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+/* ===========================================
+   7. SECCIÓN SUMMARY
+   Fondo granate con texto crema
+   =========================================== */
+.consultoria-summary {
+    background-color: #5F322F;
+    padding: 100px 0;
+}
+
+.consultoria-summary .elementor-container {
+    max-width: 900px;
+}
+
+.consultoria-summary h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #F5F0E6;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* FIX: El design-system añade línea decorativa bajo H2,
+   no queremos en fondo oscuro */
+.consultoria-summary h2::after {
+    display: none !important;
+}
+
+.consultoria-summary p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F5F0E6;
+    text-align: center;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .consultoria-summary {
+        padding: 60px 16px;
+    }
+    .consultoria-summary h2 {
+        font-size: 32px;
+    }
+    .consultoria-summary p {
+        font-size: 18px;
+    }
+}
+
+/* ===========================================
+   8. SECCIÓN RELATED CONTENT
+   H2 + 3 cards de contenido relacionado
+   =========================================== */
+.consultoria-related {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.consultoria-related h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.consultoria-related-card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultoria-related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.consultoria-related-badge {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E8157;
+    background-color: #F5F0E6;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.consultoria-related-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.consultoria-related-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+.consultoria-related-link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6E8157;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.consultoria-related-link:hover {
+    color: #3B431C;
+}
+
+@media (max-width: 768px) {
+    .consultoria-related {
+        padding: 60px 16px;
+    }
+    .consultoria-related h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .consultoria-related-card {
+        margin-bottom: 24px;
+    }
+}
+
+/* ===========================================
+   9. SECCIÓN FINAL CTA
+   H2 + texto + 2 botones
+   =========================================== */
+.consultoria-cta {
+    background-color: #F5F0E6;
+    padding: 100px 0;
+}
+
+.consultoria-cta .elementor-container {
+    max-width: 700px;
+}
+
+.consultoria-cta h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.consultoria-cta .cta-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.consultoria-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Botón Primario - Verde */
+.consultoria-btn-primary {
+    background-color: #6E8157;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.consultoria-btn-primary:hover {
+    background-color: #3B431C;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+}
+
+/* Botón Secundario - Outline Granate */
+.consultoria-btn-secondary {
+    background-color: transparent;
+    color: #5F322F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 2px solid #5F322F;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.consultoria-btn-secondary:hover {
+    background-color: #5F322F;
+    color: #F5F0E6;
+}
+
+/* FIX: Elementor buttons tienen estilos inline muy específicos */
+.consultoria-cta .elementor-button {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 16px 32px !important;
+    border-radius: 8px !important;
+}
+
+@media (max-width: 768px) {
+    .consultoria-cta {
+        padding: 60px 16px;
+    }
+    .consultoria-cta h2 {
+        font-size: 32px;
+    }
+    .consultoria-cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .consultoria-btn-primary,
+    .consultoria-btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ===========================================
+   10. ANIMACIONES Y TRANSICIONES
+   Entradas suaves con delays escalonados
+   =========================================== */
+.consultoria-animate-in {
+    animation: consultoriaFadeInUp 0.6s ease-out both;
+}
+
+@keyframes consultoriaFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clases de delay para escalonar animaciones */
+.consultoria-delay-100 { animation-delay: 100ms; }
+.consultoria-delay-200 { animation-delay: 200ms; }
+.consultoria-delay-300 { animation-delay: 300ms; }
+
+/* Respeto a preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .consultoria-animate-in,
+    .consultoria-area-card,
+    .consultoria-related-card {
+        animation: none;
+        transition: none;
+    }
+    .consultoria-area-card:hover,
+    .consultoria-related-card:hover {
+        transform: none;
+    }
+}
+
+/* ===========================================
+   11. CLASES UTILITARIAS REUTILIZABLES
+   Para aplicar en Elementor CSS Classes
+   =========================================== */
+
+/* Overlay granate 70% para secciones con imagen de fondo */
+/* FIX: Necesario para override de Elementor background overlay */
+.bg-overlay-granate .elementor-background-overlay {
+    background-color: #5F322F !important;
+    opacity: 0.7 !important;
+}
+
+/* Texto sobre fondo oscuro (hero, summary) */
+.text-on-dark h1,
+.text-on-dark h2,
+.text-on-dark h3,
+.text-on-dark p {
+    color: #F5F0E6;
+}
+
+/* FIX: Ocultar línea decorativa en fondos oscuros */
+.text-on-dark h2::after {
+    display: none !important;
+}
+
+/* Quote box con borde izquierdo */
+.box-left-border {
+    background-color: #F5F0E6;
+    border-left: 4px solid #5F322F;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 32px;
+}
+
+/* Card con borde superior granate */
+.card-top-border {
+    border-top: 4px solid #5F322F;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}

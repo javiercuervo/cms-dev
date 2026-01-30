@@ -1,0 +1,156 @@
+/*
+Theme Name: Hello Elementor Child - Proportione
+Theme URI: https://proportione.com
+Description: Child theme de Hello Elementor para Proportione con sistema de diseño visual
+Author: Proportione
+Author URI: https://proportione.com
+Template: hello-elementor
+Version: 1.0.2
+License: MIT License
+License URI: https://opensource.org/licenses/MIT
+Text Domain: hello-elementor-child-proportione
+*/
+
+/* Importar fuentes - DEBE estar al principio */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+/* Los estilos personalizados se cargan via functions.php */
+
+/* Ocultar título en homepage */
+.home .page-header,
+.home .entry-title,
+body.page-id-2832 .page-header {
+    display: none !important;
+}
+
+/* ===========================================
+   HEADER PERSONALIZADO - PROPORTIONE
+   =========================================== */
+
+/* Header base */
+.elementor-location-header {
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Menú principal */
+.elementor-nav-menu--main {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+}
+
+.elementor-nav-menu--main .elementor-item {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: #5F322F !important;
+    padding: 12px 22px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.elementor-nav-menu--main .elementor-item:hover {
+    color: #6E8157 !important;
+}
+
+/* Submenús dropdown */
+.elementor-nav-menu--main .sub-menu {
+    background: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 8px 30px rgba(95, 50, 47, 0.15) !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 12px 0 !important;
+    min-width: 240px !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease !important;
+}
+
+/* Mostrar submenú en hover */
+.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+/* Items del submenú */
+.elementor-nav-menu--main .sub-menu .elementor-sub-item {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    color: #5F322F !important;
+    padding: 12px 24px !important;
+    display: block !important;
+    transition: all 0.2s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+.elementor-nav-menu--main .sub-menu .elementor-sub-item:hover {
+    background: #F5F0E6 !important;
+    color: #6E8157 !important;
+    border-left-color: #6E8157 !important;
+    padding-left: 28px !important;
+}
+
+/* Indicador de dropdown (flecha) */
+.elementor-nav-menu--main .menu-item-has-children > a.elementor-item::after {
+    content: ' ▾' !important;
+    font-size: 12px !important;
+    transition: transform 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.elementor-nav-menu--main .menu-item-has-children:hover > a.elementor-item::after {
+    transform: rotate(180deg) !important;
+}
+
+/* Línea decorativa bajo item activo */
+.elementor-nav-menu--main .elementor-item.elementor-item-active {
+    color: #6E8157 !important;
+}
+
+.elementor-nav-menu--main .elementor-item::before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: #6E8157 !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(-50%) !important;
+}
+
+.elementor-nav-menu--main .elementor-item:hover::before,
+.elementor-nav-menu--main .elementor-item.elementor-item-active::before {
+    width: 80% !important;
+}
+
+/* Menú móvil */
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown .elementor-item,
+    .elementor-nav-menu--dropdown .elementor-sub-item {
+        font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+        color: #5F322F !important;
+        padding: 14px 20px !important;
+        font-size: 18px !important;
+    }
+    
+    .elementor-nav-menu--dropdown .sub-menu {
+        background: #F5F0E6 !important;
+    }
+}
+
+/* Título de página Contacto en blanco */
+body.page-id-339 .page-header h1,
+body.page-id-339 .entry-title,
+body.page-id-339 h1.entry-title {
+    color: #FFFFFF !important;
+}
+

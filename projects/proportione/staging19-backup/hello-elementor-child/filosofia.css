@@ -1,0 +1,681 @@
+/**
+ * Proportione - Página Filosofía
+ * CSS específico para la página /filosofia/
+ * Fecha: 2026-01-29
+ *
+ * Colores:
+ * - Granate: #5F322F
+ * - Verde oliva: #6E8157
+ * - Crema: #F5F0E6
+ * - Texto: #333333
+ * - Blanco: #FFFFFF
+ */
+
+/* ==========================================================================
+   SECCIÓN 1: HERO
+   ========================================================================== */
+
+.filosofia-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filosofia-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(95, 50, 47, 0.7); /* Granate 70% */
+  z-index: 1;
+}
+
+.filosofia-hero .elementor-widget-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.filosofia-hero h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: #F5F0E6;
+  margin-bottom: 16px;
+  text-transform: none;
+}
+
+.filosofia-hero .subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #F5F0E6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .filosofia-hero h1 {
+    font-size: 40px;
+  }
+
+  .filosofia-hero .subtitle {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 2: INTRODUCCIÓN
+   ========================================================================== */
+
+.filosofia-intro {
+  background-color: #FFFFFF;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.filosofia-intro .intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .filosofia-intro {
+    padding: 60px 20px;
+  }
+
+  .filosofia-intro .intro-text {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 3: ORIGEN DEL NOMBRE
+   ========================================================================== */
+
+.filosofia-origen {
+  background-color: #F5F0E6;
+  padding: 80px 20px;
+}
+
+.filosofia-origen .origen-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 48px;
+  align-items: center;
+}
+
+.filosofia-origen .origen-image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.filosofia-origen .origen-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.filosofia-origen h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #5F322F;
+  margin-bottom: 24px;
+}
+
+.filosofia-origen p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.filosofia-origen .destacado {
+  font-style: italic;
+  font-size: 20px;
+  color: #5F322F;
+}
+
+@media (max-width: 768px) {
+  .filosofia-origen .origen-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .filosofia-origen h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .filosofia-origen p {
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 4: PRINCIPIOS (CARDS)
+   ========================================================================== */
+
+.filosofia-principios {
+  background-color: #FFFFFF;
+  padding: 80px 20px;
+}
+
+.filosofia-principios .principios-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.filosofia-principios h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #5F322F;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.filosofia-principios .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.filosofia-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  border-top: 4px solid #5F322F;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filosofia-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.filosofia-card .card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.filosofia-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.filosofia-card .card-content {
+  padding: 24px;
+  text-align: center;
+}
+
+.filosofia-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5F322F;
+  margin-bottom: 16px;
+}
+
+.filosofia-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .filosofia-principios .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .filosofia-principios {
+    padding: 60px 20px;
+  }
+
+  .filosofia-principios h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .filosofia-principios .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 5: CÓMO TRABAJAMOS (TIMELINE)
+   ========================================================================== */
+
+.filosofia-metodo {
+  background-color: #F5F0E6;
+  padding: 80px 20px;
+}
+
+.filosofia-metodo .metodo-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.filosofia-metodo h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #5F322F;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Infografía centrada */
+.filosofia-metodo .infografia {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filosofia-metodo .infografia img,
+.filosofia-metodo .infografia svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Timeline alternativo */
+.filosofia-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.timeline-step {
+  text-align: center;
+  position: relative;
+}
+
+.timeline-step::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -12px;
+  width: 24px;
+  height: 2px;
+  background-color: #5F322F;
+}
+
+.timeline-step:last-child::after {
+  display: none;
+}
+
+.timeline-step .step-number {
+  width: 48px;
+  height: 48px;
+  background-color: #5F322F;
+  color: #F5F0E6;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.timeline-step h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5F322F;
+  margin-bottom: 12px;
+}
+
+.timeline-step p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .filosofia-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .timeline-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .filosofia-metodo {
+    padding: 60px 20px;
+  }
+
+  .filosofia-metodo h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .filosofia-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 6: COMPROMISO
+   ========================================================================== */
+
+.filosofia-compromiso {
+  background-color: #FFFFFF;
+  padding: 80px 20px;
+}
+
+.filosofia-compromiso .compromiso-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filosofia-compromiso .compromiso-box {
+  background-color: #F5F0E6;
+  border-left: 6px solid #5F322F;
+  border-radius: 8px;
+  padding: 48px;
+  text-align: center;
+}
+
+/* Alternativa: borde completo */
+.filosofia-compromiso .compromiso-box.border-style {
+  background-color: #FFFFFF;
+  border: 3px solid #5F322F;
+  border-left-width: 3px;
+}
+
+.filosofia-compromiso .compromiso-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+.filosofia-compromiso .compromiso-text strong {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .filosofia-compromiso {
+    padding: 60px 20px;
+  }
+
+  .filosofia-compromiso .compromiso-box {
+    padding: 32px 24px;
+  }
+
+  .filosofia-compromiso .compromiso-text {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 7: CTA FINAL
+   ========================================================================== */
+
+.filosofia-cta {
+  background-color: #5F322F;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.filosofia-cta .cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filosofia-cta h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #F5F0E6;
+  margin-bottom: 16px;
+}
+
+.filosofia-cta .cta-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #F5F0E6;
+  margin-bottom: 32px;
+}
+
+.filosofia-cta .btn-primary {
+  display: inline-block;
+  background-color: #6E8157;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 18px 48px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filosofia-cta .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .filosofia-cta {
+    padding: 60px 20px;
+  }
+
+  .filosofia-cta h2 {
+    font-size: 32px;
+  }
+
+  .filosofia-cta .cta-text {
+    font-size: 16px;
+  }
+
+  .filosofia-cta .btn-primary {
+    padding: 16px 36px;
+    font-size: 16px;
+  }
+}
+
+/* ==========================================================================
+   ANIMACIONES (compatibles con Elementor)
+   ========================================================================== */
+
+/* fadeInUp */
+.animated.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* fadeInLeft */
+.animated.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* fadeInRight */
+.animated.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* fadeIn */
+.animated.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* zoomIn */
+.animated.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* slideInLeft */
+.animated.slideInLeft {
+  animation-name: slideInLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ==========================================================================
+   UTILIDADES
+   ========================================================================== */
+
+/* Filtro granate para imágenes */
+.filter-granate {
+  position: relative;
+}
+
+.filter-granate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(95, 50, 47, 0.3);
+  pointer-events: none;
+}
+
+/* Texto sobre fondo oscuro */
+.on-dark h1,
+.on-dark h2,
+.on-dark h3,
+.on-dark p,
+.on-dark span {
+  color: #F5F0E6;
+}
+
+/* ==========================================================================
+   ELEMENTOR OVERRIDES
+   ========================================================================== */
+
+/* Asegurar que las animaciones de Elementor funcionen */
+.elementor-invisible {
+  visibility: hidden;
+}
+
+/* Cards en Elementor */
+.elementor-column .filosofia-card {
+  height: 100%;
+}
+
+/* Sección con overlay */
+.elementor-section.has-overlay {
+  position: relative;
+}
+
+.elementor-section.has-overlay > .elementor-background-overlay {
+  background-color: rgba(95, 50, 47, 0.7);
+}
