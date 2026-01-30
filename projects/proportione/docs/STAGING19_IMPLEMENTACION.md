@@ -98,7 +98,7 @@ Contacto → /contacto/ [ID: 2825]
 | Servicios | `IMG_9291-3-scaled.jpg` | Imagen cabecera |
 | Consultoria | `IMG_8462-2-scaled.jpg` | Imagen cabecera |
 | Consultoria | `IMG_8407.jpg` | Estrategia global |
-| Footer | `Logo_300x84.png` | Logo Proportione |
+| Footer | `proportione-nbg2.png` | Logo Proportione (todas las paginas) |
 
 ---
 
@@ -266,4 +266,8 @@ ssh siteground-proportione "cd /home/customer/www/staging19.proportione.com/publ
 
 ---
 
-**Ultima actualizacion:** 30 enero 2026 18:57 CET
+**Ultima actualizacion:** 30 enero 2026 19:10 CET
+
+### Cambios recientes:
+- Logo footer actualizado a `proportione-nbg2.png` en todas las paginas
+- H1 de /servicios/ forzado a blanco con !important

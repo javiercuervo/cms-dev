@@ -270,7 +270,7 @@ get_header();
 <footer class="site-footer" style="background:#FFFFFF; padding:40px 50px; margin-top:0; border-top: 1px solid #E5E5E5;">
     <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
         <div style="flex:1; min-width:200px;">
-            <img src="https://staging19.proportione.com/wp-content/uploads/2024/04/Logo_-Estrategia-Tecnologia-y-Personas-300x84.png" alt="Proportione" style="max-width:200px; height:auto;">
+            <img src="https://staging19.proportione.com/wp-content/uploads/2026/01/proportione-nbg2.png" alt="Proportione" style="max-width:200px; height:auto;">
         </div>
         <div style="flex:1; min-width:280px; text-align:center; white-space:nowrap;">
             <a href="/politica-privacidad/" style="color:#5F322F; text-decoration:none;">Política de Privacidad</a>

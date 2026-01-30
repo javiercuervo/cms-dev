@@ -482,7 +482,7 @@ get_header();
         <div class="servicios-hero-overlay"></div>
     </div>
     <div class="servicios-hero-content">
-        <h1>Servicios que transforman</h1>
+        <h1 style="color: #FFFFFF !important;">Servicios que transforman</h1>
         <p>Estrategia, tecnología e impulso de personas para un crecimiento digital sostenible</p>
     </div>
 </section>
@@ -788,7 +788,7 @@ get_header();
 <footer class="site-footer" style="background:#FFFFFF; padding:40px 50px; margin-top:0; border-top: 1px solid #E5E5E5;">
     <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
         <div style="display:flex; align-items:center; gap:20px;">
-            <img src="https://staging19.proportione.com/wp-content/uploads/2024/04/cropped-proportione-logo-web-1.png" alt="Proportione" style="height:40px;">
+            <img src="https://staging19.proportione.com/wp-content/uploads/2026/01/proportione-nbg2.png" alt="Proportione" style="max-width:200px; height:auto;">
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
             <a href="/politica-de-privacidad" style="color:#5F322F; text-decoration:none; font-family:'Raleway',sans-serif; font-size:14px;">Política de Privacidad</a>
