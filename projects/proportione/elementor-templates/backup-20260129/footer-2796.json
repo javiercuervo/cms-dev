@@ -1,0 +1,82 @@
+[
+  {
+    "id": "footer-main",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#6E8157",
+      "padding": {"unit": "px", "top": "24", "right": "60", "bottom": "24", "left": "60"},
+      "padding_tablet": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "footer-logo",
+        "elType": "container",
+        "settings": {
+          "width": {"unit": "%", "size": 33},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_justify_content": "flex-start",
+          "flex_justify_content_tablet": "center",
+          "padding_tablet": {"unit": "px", "bottom": "12"}
+        },
+        "elements": [
+          {
+            "id": "logo-img",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2024/04/Logo_-Estrategia-Tecnologia-y-Personas.png", "id": 1886},
+              "image_size": "medium",
+              "width": {"unit": "px", "size": 160}
+            }
+          }
+        ]
+      },
+      {
+        "id": "footer-links",
+        "elType": "container",
+        "settings": {
+          "width": {"unit": "%", "size": 34},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_justify_content": "center",
+          "padding_tablet": {"unit": "px", "bottom": "12"}
+        },
+        "elements": [
+          {
+            "id": "links-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align:center;margin:0;font-size:14px;\"><a href=\"/politica-privacidad/\" style=\"color:#FFFFFF;text-decoration:none;\">Política de Privacidad</a> · <a href=\"/politica-cookies/\" style=\"color:#FFFFFF;text-decoration:none;\">Política de Cookies</a></p>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "footer-copy",
+        "elType": "container",
+        "settings": {
+          "width": {"unit": "%", "size": 33},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_justify_content": "flex-end",
+          "flex_justify_content_tablet": "center"
+        },
+        "elements": [
+          {
+            "id": "copy-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align:right;color:#FFFFFF;margin:0;font-size:14px;\">MIT License © 2026 Proportione</p>"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

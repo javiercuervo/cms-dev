@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "hero-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {
+        "unit": "vh",
+        "size": 80
+      },
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {
+        "url": "",
+        "id": 2659
+      },
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {
+        "unit": "px",
+        "size": 0.75
+      },
+      "padding": {
+        "unit": "px",
+        "top": "100",
+        "right": "20",
+        "bottom": "100",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "hero-content",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "hero-title",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<h1 style=\"text-align:center;color:#FFFFFF !important;font-family:Oswald,sans-serif;font-size:72px;font-weight:700;letter-spacing:1px;text-shadow:0 4px 20px rgba(0,0,0,0.5);margin:0;\">Digitalizaci\u00f3n sin complicaciones</h1>",
+              "_animation": "fadeInDown",
+              "_animation_duration": "slow"
+            }
+          },
+          {
+            "id": "hero-subtitle",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #FFFFFF;\">Acompa\u00f1amos a empresas y personas en el cambio tecnol\u00f3gico.<br><strong style=\"color: #FFFFFF; font-size: 1.2em;\">Sin traumas. Con resultados.</strong></p>",
+              "text_color": "#FFFFFF",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 26
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 18
+              },
+              "text_shadow_text_shadow_type": "custom",
+              "text_shadow_text_shadow": {
+                "horizontal": 0,
+                "vertical": 2,
+                "blur": 10,
+                "color": "rgba(0,0,0,0.4)"
+              },
+              "_margin": {
+                "unit": "px",
+                "top": "24",
+                "bottom": "40"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 300,
+              "_animation_duration": "slow"
+            }
+          },
+          {
+            "id": "hero-buttons",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "row",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 20
+              },
+              "flex_justify_content": "center"
+            },
+            "elements": [
+              {
+                "id": "btn-primary",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Conozca c\u00f3mo trabajamos",
+                  "link": {
+                    "url": "/metodologia/"
+                  },
+                  "align": "center",
+                  "size": "lg",
+                  "button_background_color": "#6E8157",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "size": 6
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_weight": "600",
+                  "_animation": "fadeInUp",
+                  "_animation_delay": 400
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "que-hacemos",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "20",
+        "bottom": "80",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "que-hacemos-inner",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "que-hacemos-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Tecnolog\u00eda al servicio de las personas",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 48
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 32
+              },
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "que-hacemos-p1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center;\">Muchas empresas se sienten desbordadas por los cambios tecnol\u00f3gicos. La tecnolog\u00eda puede ser costosa, dif\u00edcil de usar y a\u00fan m\u00e1s dif\u00edcil de adoptar.</p>",
+              "text_color": "#333333",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 20
+              },
+              "_margin": {
+                "unit": "px",
+                "top": "24",
+                "bottom": "24"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "que-hacemos-highlight",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Nosotros lo hacemos f\u00e1cil.",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#6E8157",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 36
+              },
+              "typography_font_weight": "600",
+              "_margin": {
+                "unit": "px",
+                "bottom": "24"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          },
+          {
+            "id": "que-hacemos-p2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center;\">Partimos de las personas y lo que necesitan. Despu\u00e9s, desarrollamos o implementamos la tecnolog\u00eda adecuada. El resultado: cambios que funcionan, equipos que los adoptan, y empresas que crecen.</p>",
+              "text_color": "#333333",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 300
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metodo-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1100
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {
+        "unit": "px",
+        "top": "40",
+        "right": "20",
+        "bottom": "60",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "metodo-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Nuestro m\u00e9todo: las personas siempre al mando",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 48
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 32
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "48"
+          },
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "metodo-cards",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch"
+        },
+        "elements": [
+          {
+            "id": "card-20-1",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "px",
+                "size": 240
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 220
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#6E8157",
+              "border_radius": {
+                "unit": "px",
+                "size": 12
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20"
+              },
+              "_animation": "fadeInUp"
+            },
+            "elements": [
+              {
+                "id": "card-20-1-percent",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "20%",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#FFFFFF",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                  },
+                  "typography_font_weight": "700"
+                }
+              },
+              {
+                "id": "card-20-1-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Su equipo define",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#FFFFFF",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 22
+                  },
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "card-20-1-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Estrategia y contexto</p>",
+                  "text_color": "#FFFFFF",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "card-60",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "px",
+                "size": 280
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 260
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {
+                "unit": "px",
+                "size": 12
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "card-60-percent",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "60%",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#F5F0E6",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 80
+                  },
+                  "typography_font_weight": "700"
+                }
+              },
+              {
+                "id": "card-60-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "La IA trabaja",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#F5F0E6",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 26
+                  },
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "card-60-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Tareas repetitivas y procesamiento</p>",
+                  "text_color": "#F5F0E6",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "card-20-2",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "px",
+                "size": 240
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 220
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#6E8157",
+              "border_radius": {
+                "unit": "px",
+                "size": 12
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "card-20-2-percent",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "20%",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#FFFFFF",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 64
+                  },
+                  "typography_font_weight": "700"
+                }
+              },
+              {
+                "id": "card-20-2-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Su equipo valida",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#FFFFFF",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 22
+                  },
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "card-20-2-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Calidad y decisiones</p>",
+                  "text_color": "#FFFFFF",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "metodo-tagline",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">La inteligencia artificial hace el trabajo pesado.<br><strong>Sus personas ponen la inteligencia que importa: la humana.</strong></p>",
+          "text_color": "#333333",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 22
+          },
+          "_margin": {
+            "unit": "px",
+            "top": "48"
+          },
+          "_animation": "fadeInUp",
+          "_animation_delay": 300
+        }
+      }
+    ]
+  },
+  {
+    "id": "pilares-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1100
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "20",
+        "bottom": "80",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "pilares-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Tres \u00e1reas, un objetivo: su crecimiento",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 48
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 32
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "48"
+          },
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "pilares-cards",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 32
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch"
+        },
+        "elements": [
+          {
+            "id": "pilar-estrategia",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "4",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+              },
+              "border_color": "#5F322F",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 4,
+                "blur": 20,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              },
+              "padding": {
+                "unit": "px",
+                "top": "32",
+                "right": "24",
+                "bottom": "32",
+                "left": "24"
+              },
+              "_animation": "fadeInUp"
+            },
+            "elements": [
+              {
+                "id": "pilar-est-icon",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-compass",
+                    "library": "fa-solid"
+                  },
+                  "align": "center",
+                  "primary_color": "#6E8157",
+                  "size": {
+                    "unit": "px",
+                    "size": 48
+                  }
+                }
+              },
+              {
+                "id": "pilar-est-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Estrategia",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 28
+                  },
+                  "typography_font_weight": "600",
+                  "_margin": {
+                    "unit": "px",
+                    "top": "16",
+                    "bottom": "12"
+                  }
+                }
+              },
+              {
+                "id": "pilar-est-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Definimos el camino. Analizamos su situaci\u00f3n y dise\u00f1amos un plan de acci\u00f3n realista.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                  },
+                  "_margin": {
+                    "unit": "px",
+                    "bottom": "20"
+                  }
+                }
+              },
+              {
+                "id": "pilar-est-btn",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Conozca nuestro enfoque",
+                  "link": {
+                    "url": "/consultoria/"
+                  },
+                  "align": "center",
+                  "size": "sm",
+                  "button_type": "outline",
+                  "button_text_color": "#5F322F",
+                  "button_border_color": "#5F322F"
+                }
+              }
+            ]
+          },
+          {
+            "id": "pilar-tecnologia",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "4",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+              },
+              "border_color": "#5F322F",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 4,
+                "blur": 20,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              },
+              "padding": {
+                "unit": "px",
+                "top": "32",
+                "right": "24",
+                "bottom": "32",
+                "left": "24"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "pilar-tec-icon",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-laptop-code",
+                    "library": "fa-solid"
+                  },
+                  "align": "center",
+                  "primary_color": "#6E8157",
+                  "size": {
+                    "unit": "px",
+                    "size": 48
+                  }
+                }
+              },
+              {
+                "id": "pilar-tec-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Tecnolog\u00eda",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 28
+                  },
+                  "typography_font_weight": "600",
+                  "_margin": {
+                    "unit": "px",
+                    "top": "16",
+                    "bottom": "12"
+                  }
+                }
+              },
+              {
+                "id": "pilar-tec-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Implementamos soluciones que funcionan. Sin complicaciones innecesarias.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                  },
+                  "_margin": {
+                    "unit": "px",
+                    "bottom": "20"
+                  }
+                }
+              },
+              {
+                "id": "pilar-tec-btn",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Vea nuestros servicios",
+                  "link": {
+                    "url": "/servicios/"
+                  },
+                  "align": "center",
+                  "size": "sm",
+                  "button_type": "outline",
+                  "button_text_color": "#5F322F",
+                  "button_border_color": "#5F322F"
+                }
+              }
+            ]
+          },
+          {
+            "id": "pilar-personas",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "4",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+              },
+              "border_color": "#5F322F",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 4,
+                "blur": 20,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              },
+              "padding": {
+                "unit": "px",
+                "top": "32",
+                "right": "24",
+                "bottom": "32",
+                "left": "24"
+              },
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "pilar-per-icon",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "selected_icon": {
+                    "value": "fas fa-users",
+                    "library": "fa-solid"
+                  },
+                  "align": "center",
+                  "primary_color": "#6E8157",
+                  "size": {
+                    "unit": "px",
+                    "size": 48
+                  }
+                }
+              },
+              {
+                "id": "pilar-per-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Personas",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 28
+                  },
+                  "typography_font_weight": "600",
+                  "_margin": {
+                    "unit": "px",
+                    "top": "16",
+                    "bottom": "12"
+                  }
+                }
+              },
+              {
+                "id": "pilar-per-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Acompa\u00f1amos a sus equipos. Les transferimos el conocimiento para que sean aut\u00f3nomos.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16
+                  },
+                  "_margin": {
+                    "unit": "px",
+                    "bottom": "20"
+                  }
+                }
+              },
+              {
+                "id": "pilar-per-btn",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "Conozca al equipo",
+                  "link": {
+                    "url": "/equipo/"
+                  },
+                  "align": "center",
+                  "size": "sm",
+                  "button_type": "outline",
+                  "button_text_color": "#5F322F",
+                  "button_border_color": "#5F322F"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "porque-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 800
+      },
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "20",
+        "bottom": "80",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "porque-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "\u00bfPor qu\u00e9 elegirnos?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 48
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 32
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "40"
+          },
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "porque-item-1",
+        "elType": "widget",
+        "widgetType": "icon-box",
+        "settings": {
+          "selected_icon": {
+            "value": "fas fa-cogs",
+            "library": "fa-solid"
+          },
+          "title_text": "Trabajamos dentro de su ecosistema",
+          "description_text": "No reemplazamos lo que funciona. Optimizamos lo que tiene.",
+          "position": "left",
+          "icon_vertical_align": "top",
+          "primary_color": "#6E8157",
+          "title_color": "#5F322F",
+          "description_color": "#333333",
+          "title_typography_font_family": "Oswald",
+          "title_typography_font_weight": "600",
+          "description_typography_font_family": "Raleway",
+          "_margin": {
+            "unit": "px",
+            "bottom": "24"
+          },
+          "_animation": "fadeInUp",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "porque-item-2",
+        "elType": "widget",
+        "widgetType": "icon-box",
+        "settings": {
+          "selected_icon": {
+            "value": "fas fa-graduation-cap",
+            "library": "fa-solid"
+          },
+          "title_text": "Transferimos conocimiento",
+          "description_text": "No creamos dependencia. Formamos a su equipo para que crezca solo.",
+          "position": "left",
+          "icon_vertical_align": "top",
+          "primary_color": "#6E8157",
+          "title_color": "#5F322F",
+          "description_color": "#333333",
+          "_margin": {
+            "unit": "px",
+            "bottom": "24"
+          },
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        }
+      },
+      {
+        "id": "porque-item-3",
+        "elType": "widget",
+        "widgetType": "icon-box",
+        "settings": {
+          "selected_icon": {
+            "value": "fas fa-chart-line",
+            "library": "fa-solid"
+          },
+          "title_text": "Resultados medibles",
+          "description_text": "Posicionamiento, ventas, eficiencia. N\u00fameros que puede ver.",
+          "position": "left",
+          "icon_vertical_align": "top",
+          "primary_color": "#6E8157",
+          "title_color": "#5F322F",
+          "description_color": "#333333",
+          "_margin": {
+            "unit": "px",
+            "bottom": "24"
+          },
+          "_animation": "fadeInUp",
+          "_animation_delay": 300
+        }
+      },
+      {
+        "id": "porque-item-4",
+        "elType": "widget",
+        "widgetType": "icon-box",
+        "settings": {
+          "selected_icon": {
+            "value": "fas fa-hand-holding-usd",
+            "library": "fa-solid"
+          },
+          "title_text": "Presupuestos reales",
+          "description_text": "Hacemos m\u00e1s con menos. Sin sorpresas.",
+          "position": "left",
+          "icon_vertical_align": "top",
+          "primary_color": "#6E8157",
+          "title_color": "#5F322F",
+          "description_color": "#333333",
+          "_animation": "fadeInUp",
+          "_animation_delay": 400
+        }
+      }
+    ]
+  },
+  {
+    "id": "cta-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {
+        "unit": "vh",
+        "size": 50
+      },
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {
+        "url": "https://staging19.proportione.com/wp-content/uploads/2026/01/IMG_8407-1.jpg",
+        "id": 2953
+      },
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#3d1f1c",
+      "background_overlay_opacity": {
+        "unit": "px",
+        "size": 0.80
+      },
+      "padding": {
+        "unit": "px",
+        "top": "100",
+        "right": "40",
+        "bottom": "100",
+        "left": "40"
+      }
+    },
+    "elements": [
+      {
+        "id": "cta-content",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "cta-title",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<h2 style=\"text-align:center;color:#FFFFFF !important;font-family:Oswald,sans-serif;font-size:56px;font-weight:600;margin:0;\">\u00bfHablamos?</h2>",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "cta-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align:center;color:#FFFFFF !important;font-family:Raleway,sans-serif;font-size:24px;line-height:1.6;margin:24px 0 0 0;\"><strong>Sin compromiso. Sin presi\u00f3n.</strong><br>Cu\u00e9ntenos qu\u00e9 necesita y le diremos honestamente si podemos ayudarle.</p>",
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

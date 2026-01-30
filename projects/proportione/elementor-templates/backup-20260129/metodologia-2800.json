@@ -1,0 +1,880 @@
+[
+  {
+    "id": "hero-metodologia",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {
+        "unit": "vh",
+        "size": 80
+      },
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {
+        "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920",
+        "id": ""
+      },
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {
+        "unit": "px",
+        "size": 0.8
+      },
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "20",
+        "bottom": "80",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "hero-content",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "hero-title",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<h1 style=\"text-align: center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 56px; font-weight: 600; margin: 0;\">C\u00f3mo trabajamos</h1>"
+            }
+          },
+          {
+            "id": "hero-subtitle",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<h2 style=\"text-align: center; color: #FFFFFF !important; font-family: Raleway, sans-serif; font-size: 28px; font-weight: 500; margin: 16px 0;\">El m\u00e9todo 20-60-20: tecnolog\u00eda al servicio de las personas</h2>"
+            }
+          },
+          {
+            "id": "hero-intro",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #FFFFFF !important; font-family: Raleway, sans-serif; font-size: 22px;\">Trabajamos dentro de su ecosistema. No reemplazamos lo que funciona.<br>Optimizamos lo que tiene y a\u00f1adimos solo lo necesario.</p>",
+              "_margin": {
+                "unit": "px",
+                "bottom": "24"
+              }
+            }
+          },
+          {
+            "id": "hero-btn",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Descubra el m\u00e9todo",
+              "link": {
+                "url": "#metodo"
+              },
+              "align": "center",
+              "size": "lg",
+              "button_background_color": "#6E8157",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "size": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro-problema",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 800
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "unit": "px",
+        "top": "40",
+        "right": "20",
+        "bottom": "40",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "intro-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center; font-family: Raleway, sans-serif; font-size: 22px; color: #333;\">Muchas empresas se sienten desbordadas por la tecnolog\u00eda. La IA promete maravillas pero nadie sabe c\u00f3mo integrarla sin perder el control.</p><p style=\"text-align: center; font-family: Raleway, sans-serif; font-size: 22px; color: #333; font-weight: 600; margin-top: 16px;\">Nosotros tenemos un m\u00e9todo probado: el 20-60-20.</p>"
+        }
+      }
+    ]
+  },
+  {
+    "id": "metodo-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "48",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "metodo-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "El M\u00e9todo 20-60-20",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 42
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "32"
+          }
+        }
+      },
+      {
+        "id": "metodo-infografia",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 1100
+          },
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch"
+        },
+        "elements": [
+          {
+            "id": "bloque-20-1",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 25
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 200
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#6E8157",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "padding": {
+                "unit": "px",
+                "top": "20",
+                "right": "16",
+                "bottom": "20",
+                "left": "16"
+              }
+            },
+            "elements": [
+              {
+                "id": "content-20-1",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 56px; font-weight: 700; margin: 0; line-height: 1;\">20%</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 18px; font-weight: 600; margin: 8px 0 4px 0;\">SU EQUIPO DEFINE</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Raleway, sans-serif; font-size: 14px; margin: 0;\">Estrategia y contexto</p>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "bloque-60",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 45
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 220
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "20",
+                "bottom": "24",
+                "left": "20"
+              }
+            },
+            "elements": [
+              {
+                "id": "content-60",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 72px; font-weight: 700; margin: 0; line-height: 1;\">60%</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 22px; font-weight: 600; margin: 12px 0 4px 0;\">LA IA TRABAJA</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Raleway, sans-serif; font-size: 16px; margin: 0;\">Tareas repetitivas y procesamiento</p>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "bloque-20-2",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 25
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100
+              },
+              "min_height": {
+                "unit": "px",
+                "size": 200
+              },
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#6E8157",
+              "border_radius": {
+                "unit": "px",
+                "size": 8
+              },
+              "padding": {
+                "unit": "px",
+                "top": "20",
+                "right": "16",
+                "bottom": "20",
+                "left": "16"
+              }
+            },
+            "elements": [
+              {
+                "id": "content-20-2",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 56px; font-weight: 700; margin: 0; line-height: 1;\">20%</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Oswald, sans-serif; font-size: 18px; font-weight: 600; margin: 8px 0 4px 0;\">SU EQUIPO VALIDA</p><p style=\"text-align:center; color: #FFFFFF !important; font-family: Raleway, sans-serif; font-size: 14px; margin: 0;\">Calidad y decisi\u00f3n</p>"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "metodo-tagline",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center; font-family: Raleway, sans-serif; font-size: 20px; color: #333;\">La inteligencia artificial hace el trabajo pesado. <strong>Sus personas ponen la inteligencia que importa: la humana.</strong></p>",
+          "_margin": {
+            "unit": "px",
+            "top": "24"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "fases-detalle",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1100
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "unit": "px",
+        "top": "40",
+        "right": "20",
+        "bottom": "40",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "fases-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Cada fase en detalle",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 42
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "20"
+          }
+        }
+      },
+      {
+        "id": "fases-grid",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 2
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch",
+          "content_width": "full"
+        },
+        "elements": [
+          {
+            "id": "fase-col-1",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "3",
+                "right": "1",
+                "bottom": "1",
+                "left": "1"
+              },
+              "border_color": "#6E8157",
+              "padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "14",
+                "bottom": "16",
+                "left": "14"
+              }
+            },
+            "elements": [
+              {
+                "id": "fase1-all",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"color: #6E8157; font-family: Oswald, sans-serif; font-size: 32px; font-weight: 700; margin: 0; line-height: 1;\">20%</p><p style=\"color: #5F322F; font-family: Oswald, sans-serif; font-size: 16px; font-weight: 600; margin: 4px 0 2px 0;\">Su equipo define</p><p style=\"color: #666; font-size: 12px; font-weight: 600; margin: 0 0 8px 0; font-style: italic;\">La estrategia humana</p><p style=\"color: #333; font-size: 13px; margin: 0; line-height: 1.4;\">Define el problema \u00b7 Establece contexto \u00b7 Marca l\u00edmites \u00b7 Decide qu\u00e9 NO debe hacer la tecnolog\u00eda</p><p style=\"color: #5F322F; font-size: 12px; font-weight: 600; margin: 10px 0 0 0;\">Sin esta fase, la IA trabaja a ciegas. Con ella, trabaja con prop\u00f3sito.</p>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "fase-col-2",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "3",
+                "right": "1",
+                "bottom": "1",
+                "left": "1"
+              },
+              "border_color": "#5F322F",
+              "padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "14",
+                "bottom": "16",
+                "left": "14"
+              }
+            },
+            "elements": [
+              {
+                "id": "fase2-all",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"color: #5F322F; font-family: Oswald, sans-serif; font-size: 32px; font-weight: 700; margin: 0; line-height: 1;\">60%</p><p style=\"color: #5F322F; font-family: Oswald, sans-serif; font-size: 16px; font-weight: 600; margin: 4px 0 2px 0;\">La IA trabaja</p><p style=\"color: #666; font-size: 12px; font-weight: 600; margin: 0 0 8px 0; font-style: italic;\">El m\u00fasculo tecnol\u00f3gico</p><p style=\"color: #333; font-size: 13px; margin: 0; line-height: 1.4;\">Procesa datos \u00b7 Genera borradores \u00b7 Automatiza tareas \u00b7 Analiza patrones \u00b7 Ejecuta lo tedioso</p><p style=\"color: #5F322F; font-size: 12px; font-weight: 600; margin: 10px 0 0 0;\">La IA no decide. Ejecuta lo que su equipo defini\u00f3.</p>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "fase-col-3",
+            "elType": "container",
+            "settings": {
+              "width": {
+                "unit": "%",
+                "size": 33
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_border": "solid",
+              "border_width": {
+                "unit": "px",
+                "top": "3",
+                "right": "1",
+                "bottom": "1",
+                "left": "1"
+              },
+              "border_color": "#6E8157",
+              "padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "14",
+                "bottom": "16",
+                "left": "14"
+              }
+            },
+            "elements": [
+              {
+                "id": "fase3-all",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"color: #6E8157; font-family: Oswald, sans-serif; font-size: 32px; font-weight: 700; margin: 0; line-height: 1;\">20%</p><p style=\"color: #5F322F; font-family: Oswald, sans-serif; font-size: 16px; font-weight: 600; margin: 4px 0 2px 0;\">Su equipo valida</p><p style=\"color: #666; font-size: 12px; font-weight: 600; margin: 0 0 8px 0; font-style: italic;\">El control humano</p><p style=\"color: #333; font-size: 13px; margin: 0; line-height: 1.4;\">Revisa resultados \u00b7 Detecta errores \u00b7 A\u00f1ade criterio \u00b7 Toma decisiones finales</p><p style=\"color: #5F322F; font-size: 12px; font-weight: 600; margin: 10px 0 0 0;\">La IA propone. Su equipo dispone.</p>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "proceso-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1100
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "48",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "proceso-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Nuestro proceso paso a paso",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 42
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "32"
+          }
+        }
+      },
+      {
+        "id": "proceso-steps",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24
+          },
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "step-1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style=\"text-align:center;\"><div style=\"width:50px;height:50px;background:#5F322F;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;\"><span style=\"color:#F5F0E6;font-family:Oswald;font-size:24px;font-weight:700;\">1</span></div><p style=\"color:#5F322F;font-family:Oswald;font-size:16px;font-weight:600;margin:0 0 4px 0;\">ESCUCHAMOS</p><p style=\"color:#333;font-size:13px;margin:0;max-width:200px;\">Entendemos el contexto real, no solo los s\u00edntomas.</p></div>"
+            }
+          },
+          {
+            "id": "step-2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style=\"text-align:center;\"><div style=\"width:50px;height:50px;background:#5F322F;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;\"><span style=\"color:#F5F0E6;font-family:Oswald;font-size:24px;font-weight:700;\">2</span></div><p style=\"color:#5F322F;font-family:Oswald;font-size:16px;font-weight:600;margin:0 0 4px 0;\">DIAGNOSTICAMOS</p><p style=\"color:#333;font-size:13px;margin:0;max-width:200px;\">Analizamos qu\u00e9 funciona y d\u00f3nde est\u00e1 el potencial.</p></div>"
+            }
+          },
+          {
+            "id": "step-3",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style=\"text-align:center;\"><div style=\"width:50px;height:50px;background:#5F322F;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;\"><span style=\"color:#F5F0E6;font-family:Oswald;font-size:24px;font-weight:700;\">3</span></div><p style=\"color:#5F322F;font-family:Oswald;font-size:16px;font-weight:600;margin:0 0 4px 0;\">PROPONEMOS</p><p style=\"color:#333;font-size:13px;margin:0;max-width:200px;\">Soluci\u00f3n a medida con presupuesto claro.</p></div>"
+            }
+          },
+          {
+            "id": "step-4",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style=\"text-align:center;\"><div style=\"width:50px;height:50px;background:#5F322F;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;\"><span style=\"color:#F5F0E6;font-family:Oswald;font-size:24px;font-weight:700;\">4</span></div><p style=\"color:#5F322F;font-family:Oswald;font-size:16px;font-weight:600;margin:0 0 4px 0;\">ACOMPA\u00d1AMOS</p><p style=\"color:#333;font-size:13px;margin:0;max-width:200px;\">Implementamos y transferimos conocimiento.</p></div>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "porque-funciona",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 1000
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "48",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "porque-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Por qu\u00e9 funciona",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 42
+          },
+          "typography_font_weight": "600",
+          "_margin": {
+            "unit": "px",
+            "bottom": "24"
+          }
+        }
+      },
+      {
+        "id": "porque-grid",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_wrap": "wrap",
+          "flex_gap": {"unit": "px", "size": 12},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "porque-1",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 48},
+              "width_tablet": {"unit": "%", "size": 100},
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_radius": {"unit": "px", "size": 6},
+              "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20"}
+            },
+            "elements": [
+              {
+                "id": "porque-1-content",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style=\"display:flex;gap:14px;align-items:flex-start;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#6E8157;border-radius:6px;flex-shrink:0;\"><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#FFFFFF' stroke-width='2.5'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg></span><div><p style=\"color:#5F322F;font-family:Oswald;font-size:18px;font-weight:600;margin:0 0 6px 0;\">Control sin perder velocidad</p><p style=\"color:#555;font-size:14px;margin:0;line-height:1.5;\">Su equipo decide, la IA acelera.</p></div></div>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "porque-2",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 48},
+              "width_tablet": {"unit": "%", "size": 100},
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_radius": {"unit": "px", "size": 6},
+              "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20"}
+            },
+            "elements": [
+              {
+                "id": "porque-2-content",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style=\"display:flex;gap:14px;align-items:flex-start;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#6E8157;border-radius:6px;flex-shrink:0;\"><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#FFFFFF' stroke-width='2.5'><circle cx='12' cy='12' r='9'/><path d='M12 3v18M3 12h18'/></svg></span><div><p style=\"color:#5F322F;font-family:Oswald;font-size:18px;font-weight:600;margin:0 0 6px 0;\">Equilibrio, no extremos</p><p style=\"color:#555;font-size:14px;margin:0;line-height:1.5;\">Ni automatización total ni 100% manual.</p></div></div>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "porque-3",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 48},
+              "width_tablet": {"unit": "%", "size": 100},
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_radius": {"unit": "px", "size": 6},
+              "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20"}
+            },
+            "elements": [
+              {
+                "id": "porque-3-content",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style=\"display:flex;gap:14px;align-items:flex-start;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#6E8157;border-radius:6px;flex-shrink:0;\"><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#FFFFFF' stroke-width='2.5'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg></span><div><p style=\"color:#5F322F;font-family:Oswald;font-size:18px;font-weight:600;margin:0 0 6px 0;\">Aprendizaje incluido</p><p style=\"color:#555;font-size:14px;margin:0;line-height:1.5;\">Su equipo aprende a hacerlo solo.</p></div></div>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "porque-4",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 48},
+              "width_tablet": {"unit": "%", "size": 100},
+              "background_background": "classic",
+              "background_color": "#F9F7F3",
+              "border_radius": {"unit": "px", "size": 6},
+              "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20"}
+            },
+            "elements": [
+              {
+                "id": "porque-4-content",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style=\"display:flex;gap:14px;align-items:flex-start;\"><span style=\"display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#6E8157;border-radius:6px;flex-shrink:0;\"><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#FFFFFF' stroke-width='2.5'><circle cx='12' cy='12' r='9'/><path d='M8 12l3 3 5-6'/></svg></span><div><p style=\"color:#5F322F;font-family:Oswald;font-size:18px;font-weight:600;margin:0 0 6px 0;\">Resultados medibles</p><p style=\"color:#555;font-size:14px;margin:0;line-height:1.5;\">Métricas claras, sin promesas vacías.</p></div></div>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "compromiso-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {
+        "unit": "px",
+        "top": "64",
+        "right": "20",
+        "bottom": "64",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "compromiso-box",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {
+            "unit": "px",
+            "size": 900
+          },
+          "flex_direction": "column",
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "compromiso-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align:center;color:#F5F0E6;font-family:'Bourbon Grotesque',Oswald,sans-serif;font-size:42px;font-weight:700;line-height:1.2;margin:0 0 8px 0;letter-spacing:1px;\">SI NO PODEMOS AYUDARLE,<br>SE LO DIREMOS.</p><p style=\"text-align:center;color:#F5F0E6;opacity:0.85;font-family:Raleway,sans-serif;font-size:18px;font-weight:400;margin:16px 0 0 0;\">Preferimos ser honestos a vender humo.</p>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cta-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+        "unit": "px",
+        "size": 800
+      },
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "20",
+        "bottom": "48",
+        "left": "20"
+      }
+    },
+    "elements": [
+      {
+        "id": "cta-content",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<h2 style=\"text-align: center; color: #F5F0E6 !important; font-family: Oswald, sans-serif; font-size: 36px; font-weight: 600; margin: 0 0 12px 0;\">\u00bfQuiere ver este m\u00e9todo en acci\u00f3n?</h2><p style=\"text-align: center; color: #F5F0E6 !important; font-family: Raleway, sans-serif; font-size: 18px; margin: 0 0 24px 0;\">Cu\u00e9ntenos su situaci\u00f3n. Le diremos honestamente si podemos ayudarle.</p>",
+          "_margin": {
+            "unit": "px",
+            "bottom": "0"
+          }
+        }
+      },
+      {
+        "id": "cta-buttons",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "cta-btn-casos",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Ver casos de \u00e9xito",
+              "link": {
+                "url": "/clientes/"
+              },
+              "align": "center",
+              "size": "md",
+              "button_background_color": "#6E8157",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "size": 6
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

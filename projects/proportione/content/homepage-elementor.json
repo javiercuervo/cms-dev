@@ -1,0 +1,689 @@
+[
+  {
+    "id": "hero-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 1200},
+      "height": "min-height",
+      "custom_height": {"unit": "vh", "size": 70},
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "hero-column",
+        "elType": "column",
+        "settings": {"_column_size": 100, "content_position": "center"},
+        "elements": [
+          {
+            "id": "hero-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Digitalización sin complicaciones",
+              "header_size": "h1",
+              "align": "center",
+              "title_color": "#F5F0E6",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 72},
+              "typography_font_weight": "700",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "hero-subtitle",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #F5F0E6; font-size: 22px; line-height: 1.6;\">Acompañamos a empresas y personas en el cambio tecnológico.<br>Sin traumas. Con resultados.</p>",
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          },
+          {
+            "id": "hero-buttons",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Conozca cómo trabajamos",
+              "link": {"url": "/metodologia/"},
+              "align": "center",
+              "background_color": "#6E8157",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 6},
+              "typography_font_family": "Raleway",
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp",
+              "_animation_delay": 400
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "que-hacemos-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 800},
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "que-hacemos-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "que-hacemos-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Tecnología al servicio de las personas",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "que-hacemos-text1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; font-size: 22px; line-height: 1.7; color: #333333;\">Muchas empresas se sienten desbordadas por los cambios tecnológicos. La tecnología puede ser costosa, difícil de usar y aún más difícil de adoptar.</p>",
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "que-hacemos-highlight",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Nosotros lo hacemos fácil.",
+              "header_size": "p",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 32},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          },
+          {
+            "id": "que-hacemos-text2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; font-size: 18px; line-height: 1.8; color: #333333;\">Partimos de las personas y lo que necesitan. Después, desarrollamos o implementamos la tecnología adecuada. El resultado: cambios que funcionan, equipos que los adoptan, y empresas que crecen.</p>",
+              "_animation": "fadeInUp",
+              "_animation_delay": 300
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metodo-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 1100},
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "metodo-title-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "metodo-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Nuestro método: las personas siempre al mando",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metodo-cards-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 1100},
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "40", "left": "20"},
+      "gap": "extended"
+    },
+    "elements": [
+      {
+        "id": "metodo-col1",
+        "elType": "column",
+        "settings": {
+          "_column_size": 33,
+          "background_background": "classic",
+          "background_color": "#6E8157",
+          "border_radius": {"unit": "px", "size": 8},
+          "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "metodo-20-1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "20%",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "700",
+              "_animation": "fadeInLeft"
+            }
+          },
+          {
+            "id": "metodo-title-1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Su equipo define",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 24}
+            }
+          },
+          {
+            "id": "metodo-desc-1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #FFFFFF;\">Estrategia y contexto</p>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "metodo-col2",
+        "elType": "column",
+        "settings": {
+          "_column_size": 34,
+          "background_background": "classic",
+          "background_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 8},
+          "padding": {"unit": "px", "top": "40", "right": "24", "bottom": "40", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "metodo-60",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "60%",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 56},
+              "typography_font_weight": "700",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "metodo-title-2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "La IA trabaja",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 24}
+            }
+          },
+          {
+            "id": "metodo-desc-2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #FFFFFF;\">Tareas repetitivas</p>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "metodo-col3",
+        "elType": "column",
+        "settings": {
+          "_column_size": 33,
+          "background_background": "classic",
+          "background_color": "#6E8157",
+          "border_radius": {"unit": "px", "size": 8},
+          "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "metodo-20-2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "20%",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "700",
+              "_animation": "fadeInRight"
+            }
+          },
+          {
+            "id": "metodo-title-3",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Su equipo valida",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_font_size": {"unit": "px", "size": 24}
+            }
+          },
+          {
+            "id": "metodo-desc-3",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #FFFFFF;\">Calidad y decisiones</p>"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metodo-footer-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 800},
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "metodo-footer-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "metodo-footer-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; font-size: 20px; line-height: 1.6; color: #333333;\">La inteligencia artificial hace el trabajo pesado.<br>Sus personas ponen la inteligencia que importa: la humana.</p>",
+              "_animation": "fadeInUp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pilares-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 1100},
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "pilares-title-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "pilares-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Tres áreas, un objetivo: su crecimiento",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pilares-cards-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 1100},
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "80", "left": "20"},
+      "gap": "extended"
+    },
+    "elements": [
+      {
+        "id": "pilar-col1",
+        "elType": "column",
+        "settings": {
+          "_column_size": 33,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+          "border_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 8},
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 16, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+          "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "pilar-title-1",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Estrategia",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_font_size": {"unit": "px", "size": 28},
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "pilar-text-1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #333333;\">Definimos el camino. Analizamos su situación y diseñamos un plan de acción realista.</p>"
+            }
+          },
+          {
+            "id": "pilar-btn-1",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Conozca nuestro enfoque",
+              "link": {"url": "/consultoria/"},
+              "align": "center",
+              "button_type": "default",
+              "background_color": "transparent",
+              "button_text_color": "#5F322F",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "size": 2},
+              "border_color": "#5F322F"
+            }
+          }
+        ]
+      },
+      {
+        "id": "pilar-col2",
+        "elType": "column",
+        "settings": {
+          "_column_size": 34,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+          "border_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 8},
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 16, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+          "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "pilar-title-2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Tecnología",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_font_size": {"unit": "px", "size": 28},
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "pilar-text-2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #333333;\">Implementamos soluciones que funcionan. Sin complicaciones innecesarias.</p>"
+            }
+          },
+          {
+            "id": "pilar-btn-2",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Vea nuestros servicios",
+              "link": {"url": "/servicios/"},
+              "align": "center",
+              "button_type": "default",
+              "background_color": "transparent",
+              "button_text_color": "#5F322F",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "size": 2},
+              "border_color": "#5F322F"
+            }
+          }
+        ]
+      },
+      {
+        "id": "pilar-col3",
+        "elType": "column",
+        "settings": {
+          "_column_size": 33,
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+          "border_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 8},
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 16, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+          "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"}
+        },
+        "elements": [
+          {
+            "id": "pilar-title-3",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Personas",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_font_size": {"unit": "px", "size": 28},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          },
+          {
+            "id": "pilar-text-3",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #333333;\">Acompañamos a sus equipos. Les transferimos el conocimiento para que sean autónomos.</p>"
+            }
+          },
+          {
+            "id": "pilar-btn-3",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Conozca al equipo",
+              "link": {"url": "/equipo/"},
+              "align": "center",
+              "button_type": "default",
+              "background_color": "transparent",
+              "button_text_color": "#5F322F",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "size": 2},
+              "border_color": "#5F322F"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "porque-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 800},
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "porque-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "porque-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Por qué elegirnos?",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "porque-list",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {"text": "<b>Trabajamos dentro de su ecosistema</b><br>No reemplazamos lo que funciona. Optimizamos lo que tiene.", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}},
+                {"text": "<b>Transferimos conocimiento</b><br>No creamos dependencia. Formamos a su equipo para que crezca solo.", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}},
+                {"text": "<b>Resultados medibles</b><br>Posicionamiento, ventas, eficiencia. Números que puede ver.", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}},
+                {"text": "<b>Presupuestos reales</b><br>Hacemos más con menos. Sin sorpresas.", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}
+              ],
+              "icon_color": "#6E8157",
+              "text_color": "#333333",
+              "space_between": {"unit": "px", "size": 24},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cta-section",
+    "elType": "section",
+    "settings": {
+      "layout": "full_width",
+      "content_width": {"unit": "px", "size": 600},
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "cta-column",
+        "elType": "column",
+        "settings": {"_column_size": 100},
+        "elements": [
+          {
+            "id": "cta-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Hablamos?",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#F5F0E6",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 56},
+              "typography_font_weight": "600",
+              "_animation": "fadeInUp"
+            }
+          },
+          {
+            "id": "cta-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center; color: #F5F0E6; font-size: 20px; line-height: 1.6;\">Sin compromiso. Sin presión.<br>Cuéntenos qué necesita y le diremos honestamente si podemos ayudarle.</p>",
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "cta-button",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Contactar",
+              "link": {"url": "/contacto/"},
+              "align": "center",
+              "background_color": "#6E8157",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 6},
+              "typography_font_family": "Raleway",
+              "typography_font_weight": "600",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

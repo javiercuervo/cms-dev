@@ -1,0 +1,757 @@
+[
+  {
+    "id": "hero-filosofia",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "vh", "size": 50},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "", "id": 2659},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {"unit": "px", "size": 0.7},
+      "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "hero-fil-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Nuestra filosofía",
+          "header_size": "h1",
+          "align": "center",
+          "title_color": "#F5F0E6",
+          "typography_typography": "custom",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {"unit": "px", "size": 64},
+          "typography_font_size_mobile": {"unit": "px", "size": 40},
+          "typography_font_weight": "600",
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "hero-fil-subtitle",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Equilibrio entre tecnología y personas",
+          "header_size": "p",
+          "align": "center",
+          "title_color": "#F5F0E6",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 24},
+          "typography_font_size_mobile": {"unit": "px", "size": 18},
+          "_margin": {"unit": "px", "top": "16"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": "intro-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "intro-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Creemos que la tecnología debe adaptarse a las personas, no al revés.<br>Por eso ponemos siempre al ser humano en el centro de cada decisión tecnológica.</p>",
+          "text_color": "#333333",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 22},
+          "typography_font_size_mobile": {"unit": "px", "size": 18},
+          "typography_line_height": {"unit": "em", "size": 1.7},
+          "_animation": "fadeIn"
+        }
+      }
+    ]
+  },
+  {
+    "id": "origen-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1100},
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_gap": {"unit": "px", "size": 48},
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "origen-image-col",
+        "elType": "container",
+        "settings": {
+          "width": {"unit": "%", "size": 40},
+          "width_tablet": {"unit": "%", "size": 100}
+        },
+        "elements": [
+          {
+            "id": "origen-img",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {"url": "", "id": 2665},
+              "image_size": "large",
+              "width": {"unit": "%", "size": 100},
+              "border_radius": {"unit": "px", "size": 8},
+              "_animation": "fadeInLeft"
+            }
+          }
+        ]
+      },
+      {
+        "id": "origen-text-col",
+        "elType": "container",
+        "settings": {
+          "width": {"unit": "%", "size": 60},
+          "width_tablet": {"unit": "%", "size": 100},
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "origen-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Por qué Proportione?",
+              "header_size": "h2",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Oswald",
+              "typography_font_size": {"unit": "px", "size": 48},
+              "typography_font_size_mobile": {"unit": "px", "size": 32},
+              "typography_font_weight": "600",
+              "_animation": "fadeInRight"
+            }
+          },
+          {
+            "id": "origen-p1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Nuestro nombre viene de la proporción áurea, ese equilibrio matemático que encontramos en la naturaleza y el arte. Pero para nosotros significa algo más simple: el balance perfecto entre lo que la tecnología puede hacer y lo que las personas necesitan.</p>",
+              "text_color": "#333333",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "typography_line_height": {"unit": "em", "size": 1.7},
+              "_margin": {"unit": "px", "top": "24", "bottom": "20"},
+              "_animation": "fadeInRight",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "origen-p2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p><em>No buscamos la última moda tecnológica. Buscamos la solución proporcionada a cada problema.</em></p>",
+              "text_color": "#5F322F",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 20},
+              "_animation": "fadeInRight",
+              "_animation_delay": 200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "principios-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1100},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "principios-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Lo que nos guía",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {"unit": "px", "size": 48},
+          "typography_font_size_mobile": {"unit": "px", "size": 32},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "bottom": "48"},
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "principios-cards",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_gap": {"unit": "px", "size": 32},
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch"
+        },
+        "elements": [
+          {
+            "id": "card-personas",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 33},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+              "border_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 8},
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+              "_animation": "fadeInUp"
+            },
+            "elements": [
+              {
+                "id": "card-per-img",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {"url": "", "id": 2618},
+                  "image_size": "medium_large",
+                  "width": {"unit": "%", "size": 100},
+                  "height": {"unit": "px", "size": 200},
+                  "object_fit": "cover"
+                }
+              },
+              {
+                "id": "card-per-content",
+                "elType": "container",
+                "settings": {
+                  "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "32", "left": "24"},
+                  "flex_direction": "column",
+                  "flex_align_items": "center"
+                },
+                "elements": [
+                  {
+                    "id": "card-per-title",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Personas primero",
+                      "header_size": "h3",
+                      "align": "center",
+                      "title_color": "#5F322F",
+                      "typography_font_family": "Oswald",
+                      "typography_font_size": {"unit": "px", "size": 24},
+                      "typography_font_weight": "600",
+                      "_margin": {"unit": "px", "bottom": "16"}
+                    }
+                  },
+                  {
+                    "id": "card-per-desc",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"text-align:center;\">Antes de hablar de tecnología, escuchamos. Entendemos qué necesita su equipo, qué les frena, qué les ayudaría. La tecnología viene después.</p>",
+                      "text_color": "#333333",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {"unit": "px", "size": 16}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "card-tecnologia",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 33},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+              "border_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 8},
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "card-tec-img",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {"url": "", "id": 2566},
+                  "image_size": "medium_large",
+                  "width": {"unit": "%", "size": 100},
+                  "height": {"unit": "px", "size": 200},
+                  "object_fit": "cover"
+                }
+              },
+              {
+                "id": "card-tec-content",
+                "elType": "container",
+                "settings": {
+                  "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "32", "left": "24"},
+                  "flex_direction": "column",
+                  "flex_align_items": "center"
+                },
+                "elements": [
+                  {
+                    "id": "card-tec-title",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Tecnología proporcionada",
+                      "header_size": "h3",
+                      "align": "center",
+                      "title_color": "#5F322F",
+                      "typography_font_family": "Oswald",
+                      "typography_font_size": {"unit": "px", "size": 24},
+                      "typography_font_weight": "600",
+                      "_margin": {"unit": "px", "bottom": "16"}
+                    }
+                  },
+                  {
+                    "id": "card-tec-desc",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"text-align:center;\">No implementamos más tecnología de la necesaria. Cada herramienta que proponemos tiene un propósito claro y un retorno medible.</p>",
+                      "text_color": "#333333",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {"unit": "px", "size": 16}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "card-conocimiento",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 33},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+              "border_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 8},
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.08)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "card-con-img",
+                "elType": "widget",
+                "widgetType": "image",
+                "settings": {
+                  "image": {"url": "", "id": 2543},
+                  "image_size": "medium_large",
+                  "width": {"unit": "%", "size": 100},
+                  "height": {"unit": "px", "size": 200},
+                  "object_fit": "cover"
+                }
+              },
+              {
+                "id": "card-con-content",
+                "elType": "container",
+                "settings": {
+                  "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "32", "left": "24"},
+                  "flex_direction": "column",
+                  "flex_align_items": "center"
+                },
+                "elements": [
+                  {
+                    "id": "card-con-title",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Conocimiento transferido",
+                      "header_size": "h3",
+                      "align": "center",
+                      "title_color": "#5F322F",
+                      "typography_font_family": "Oswald",
+                      "typography_font_size": {"unit": "px", "size": 24},
+                      "typography_font_weight": "600",
+                      "_margin": {"unit": "px", "bottom": "16"}
+                    }
+                  },
+                  {
+                    "id": "card-con-desc",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"text-align:center;\">No creamos dependencia. Nuestro objetivo es que su equipo pueda crecer solo. Les enseñamos a pescar, no les vendemos pescado.</p>",
+                      "text_color": "#333333",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {"unit": "px", "size": 16}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metodo-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1000},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "metodo-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Nuestro método de trabajo",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {"unit": "px", "size": 48},
+          "typography_font_size_mobile": {"unit": "px", "size": 32},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "bottom": "48"},
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "metodo-steps",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_gap": {"unit": "px", "size": 24},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "step-1",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 25},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "_animation": "slideInLeft"
+            },
+            "elements": [
+              {
+                "id": "step-1-num",
+                "elType": "widget",
+                "widgetType": "counter",
+                "settings": {
+                  "ending_number": 1,
+                  "prefix": "",
+                  "suffix": "",
+                  "title": "",
+                  "number_color": "#F5F0E6",
+                  "number_typography_font_family": "Oswald",
+                  "number_typography_font_size": {"unit": "px", "size": 24},
+                  "number_typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "step-1-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Escuchamos",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {"unit": "px", "size": 20},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "16", "bottom": "12"}
+                }
+              },
+              {
+                "id": "step-1-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Nos reunimos con su equipo para entender el contexto real, no solo los síntomas.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15}
+                }
+              }
+            ]
+          },
+          {
+            "id": "step-2",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 25},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "_animation": "slideInLeft",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "step-2-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Diagnosticamos",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {"unit": "px", "size": 20},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "16", "bottom": "12"}
+                }
+              },
+              {
+                "id": "step-2-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Analizamos qué funciona, qué no, y dónde está el verdadero potencial de mejora.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15}
+                }
+              }
+            ]
+          },
+          {
+            "id": "step-3",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 25},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "_animation": "slideInLeft",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "step-3-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Proponemos",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {"unit": "px", "size": 20},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "16", "bottom": "12"}
+                }
+              },
+              {
+                "id": "step-3-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Diseñamos una solución a medida, con presupuesto claro y plazos realistas.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15}
+                }
+              }
+            ]
+          },
+          {
+            "id": "step-4",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "%", "size": 25},
+              "width_tablet": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "_animation": "slideInLeft",
+              "_animation_delay": 300
+            },
+            "elements": [
+              {
+                "id": "step-4-title",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Acompañamos",
+                  "header_size": "h3",
+                  "align": "center",
+                  "title_color": "#5F322F",
+                  "typography_font_family": "Oswald",
+                  "typography_font_size": {"unit": "px", "size": 20},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "16", "bottom": "12"}
+                }
+              },
+              {
+                "id": "step-4-desc",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Implementamos juntos y transferimos el conocimiento para que sean autónomos.</p>",
+                  "text_color": "#333333",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "compromiso-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "compromiso-box",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#F5F0E6",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "6"},
+          "border_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 8},
+          "padding": {"unit": "px", "top": "48", "right": "48", "bottom": "48", "left": "48"},
+          "_animation": "zoomIn"
+        },
+        "elements": [
+          {
+            "id": "compromiso-text",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align:center;\"><strong>Nuestro compromiso: si no podemos ayudarle, se lo diremos.</strong><br>Preferimos ser honestos a vender humo.</p>",
+              "text_color": "#333333",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 24},
+              "typography_font_size_mobile": {"unit": "px", "size": 18},
+              "typography_line_height": {"unit": "em", "size": 1.6}
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cta-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 700},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "cta-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Quiere conocer al equipo?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#F5F0E6",
+          "typography_font_family": "Oswald",
+          "typography_font_size": {"unit": "px", "size": 48},
+          "typography_font_size_mobile": {"unit": "px", "size": 32},
+          "typography_font_weight": "600",
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "cta-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Las personas detrás de esta filosofía.</p>",
+          "text_color": "#F5F0E6",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 20},
+          "_margin": {"unit": "px", "top": "16", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "cta-button",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Conozca al equipo",
+          "link": {"url": "/equipo/"},
+          "align": "center",
+          "size": "lg",
+          "button_background_color": "#6E8157",
+          "button_text_color": "#FFFFFF",
+          "border_radius": {"unit": "px", "size": 6},
+          "text_padding": {"unit": "px", "top": "18", "right": "48", "bottom": "18", "left": "48"},
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "typography_font_weight": "600",
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        }
+      }
+    ]
+  }
+]
