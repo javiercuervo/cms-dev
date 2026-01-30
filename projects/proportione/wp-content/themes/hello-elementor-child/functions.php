@@ -86,6 +86,17 @@ function proportione_enqueue_custom_styles() {
             '1.0.0'
         );
     }
+
+    // Página Consultoría de Tecnología
+    // URL: /consultoria-estrategica-crecimiento-organico/consultoria-de-tecnologia/
+    if (is_page('consultoria-de-tecnologia')) {
+        wp_enqueue_style(
+            'proportione-consultoria-tecnologia',
+            $theme_uri . '/consultoria-tecnologia.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    }
 }
 
 // Limpiar cabecera de WordPress
