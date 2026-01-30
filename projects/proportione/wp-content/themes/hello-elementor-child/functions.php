@@ -97,6 +97,17 @@ function proportione_enqueue_custom_styles() {
             '1.0.0'
         );
     }
+
+    // Página Contacto
+    // URL: /contacto/
+    if (is_page('contacto')) {
+        wp_enqueue_style(
+            'proportione-contacto',
+            $theme_uri . '/contacto-elementor.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    }
 }
 
 // Limpiar cabecera de WordPress

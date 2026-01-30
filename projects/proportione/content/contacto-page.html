@@ -1,0 +1,153 @@
+<!-- Contacto - Página de Formulario -->
+<!-- Diseño accesible según WCAG AA -->
+
+<!-- HERO SECTION -->
+<div class="contacto-hero">
+    <h1>Contacto</h1>
+    <p class="subtitulo">Cuéntanos sobre tu proyecto de transformación</p>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="contacto-contenido">
+
+    <!-- FORMULARIO -->
+    <div class="contacto-formulario">
+        <h2>Envíanos un mensaje</h2>
+
+        <form id="contacto-form" class="form-accesible" action="/wp-json/contact-form-7/v1/contact-forms/XXX/feedback" method="post">
+
+            <!-- Nombre -->
+            <div class="form-grupo">
+                <label for="nombre">Nombre completo <span class="requerido" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    autocomplete="name"
+                    aria-required="true"
+                    placeholder="Tu nombre"
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="form-grupo">
+                <label for="email">Correo electrónico <span class="requerido" aria-hidden="true">*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    aria-required="true"
+                    placeholder="tu@email.com"
+                >
+            </div>
+
+            <!-- Empresa -->
+            <div class="form-grupo">
+                <label for="empresa">Empresa</label>
+                <input
+                    type="text"
+                    id="empresa"
+                    name="empresa"
+                    autocomplete="organization"
+                    placeholder="Nombre de tu empresa"
+                >
+            </div>
+
+            <!-- Teléfono -->
+            <div class="form-grupo">
+                <label for="telefono">Teléfono</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    autocomplete="tel"
+                    placeholder="+34 600 000 000"
+                >
+            </div>
+
+            <!-- Tipo de consulta -->
+            <div class="form-grupo">
+                <label for="tipo-consulta">¿Sobre qué quieres hablar?</label>
+                <select id="tipo-consulta" name="tipo-consulta">
+                    <option value="">Selecciona una opción</option>
+                    <option value="transformacion-digital">Transformación Digital</option>
+                    <option value="estrategia-ia">Estrategia de IA</option>
+                    <option value="gestion-cambio">Gestión del Cambio</option>
+                    <option value="digitalizacion-rrhh">Digitalización de RRHH</option>
+                    <option value="formacion">Formación y Capacitación</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-grupo form-grupo-full">
+                <label for="mensaje">Mensaje <span class="requerido" aria-hidden="true">*</span></label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    required
+                    aria-required="true"
+                    placeholder="Cuéntanos brevemente sobre tu proyecto o consulta..."
+                ></textarea>
+            </div>
+
+            <!-- Privacidad -->
+            <div class="form-grupo form-grupo-full form-checkbox">
+                <input
+                    type="checkbox"
+                    id="privacidad"
+                    name="privacidad"
+                    required
+                    aria-required="true"
+                >
+                <label for="privacidad">
+                    He leído y acepto la <a href="/politica-privacidad/" target="_blank">Política de Privacidad</a> <span class="requerido" aria-hidden="true">*</span>
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-grupo form-grupo-full form-submit">
+                <button type="submit" class="btn-submit">
+                    Enviar mensaje
+                </button>
+                <p class="form-nota">* Campos obligatorios</p>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- INFORMACIÓN DE CONTACTO -->
+    <div class="contacto-info">
+        <h2>Información de contacto</h2>
+
+        <div class="info-item">
+            <h3>Email</h3>
+            <p><a href="mailto:info@proportione.com">info@proportione.com</a></p>
+        </div>
+
+        <div class="info-item">
+            <h3>Ubicación</h3>
+            <p>Madrid, España<br>Lisboa, Portugal</p>
+        </div>
+
+        <div class="info-item">
+            <h3>Horario</h3>
+            <p>Lunes a Viernes<br>9:00 - 18:00 CET</p>
+        </div>
+
+        <div class="info-social">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="https://linkedin.com/company/proportione" target="_blank" rel="noopener" aria-label="LinkedIn de Proportione">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
