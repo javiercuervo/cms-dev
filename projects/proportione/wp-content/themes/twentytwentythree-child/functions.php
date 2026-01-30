@@ -29,3 +29,42 @@ add_action(
   remove_action( 'wp_head', 'wp_resource_hints', 2 );
  }
 );
+
+// Encolar CSS adicionales de Proportione
+add_action('wp_enqueue_scripts', 'proportione_enqueue_custom_styles', 20);
+function proportione_enqueue_custom_styles() {
+    // Sistema de contraste (texto claro/oscuro según fondo)
+    wp_enqueue_style(
+        'proportione-contrast',
+        get_stylesheet_directory_uri() . '/proportione-contrast.css',
+        array('child-style'),
+        '1.0.1'
+    );
+    // Correcciones de diseño
+    wp_enqueue_style(
+        'proportione-corrections',
+        get_stylesheet_directory_uri() . '/proportione-corrections.css',
+        array('proportione-contrast'),
+        '1.0.0'
+    );
+    // Accesibilidad
+    wp_enqueue_style(
+        'proportione-accessibility',
+        get_stylesheet_directory_uri() . '/proportione-accessibility.css',
+        array('proportione-corrections'),
+        '1.0.0'
+    );
+    // Design System - Tipografía, animaciones, decorativos
+    wp_enqueue_style(
+        'proportione-design-system',
+        get_stylesheet_directory_uri() . '/proportione-design-system.css',
+        array('proportione-accessibility'),
+        '1.0.0'
+    );
+}
+
+// Skip-link para accesibilidad (block themes no tienen header.php)
+add_action('wp_body_open', 'proportione_skip_link');
+function proportione_skip_link() {
+    echo '<a href="#main-content" class="skip-link">Saltar al contenido</a>';
+}

@@ -1,0 +1,38 @@
+# ═══════════════════════════════════════════════════════════════
+# PROPORTIONE - Git Ignore
+# ═══════════════════════════════════════════════════════════════
+
+# Archivos sensibles
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporal
+*.tmp
+*.temp
+.cache/
+
+# Imágenes descargadas (muy pesadas para git)
+figma-assets/banco-imagenes/
+figma-assets/*.png
+figma-assets/*.jpg
+!figma-assets/*.svg
+
+# Backups
+*.bak
+*.backup
