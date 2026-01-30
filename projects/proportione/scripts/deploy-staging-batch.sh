@@ -36,7 +36,7 @@ ssh $REMOTE "cd $WP_PATH && \
     wp option update WPLANG 'es_ES' && \
     wp theme mod set hello_footer_logo_display 'yes' && \
     wp theme mod set hello_footer_copyright_display 'yes' && \
-    wp theme mod set hello_footer_copyright_text 'MIT License © 2024 Proportione | <a href=\"/politica-privacidad/\">Política de Privacidad</a> | <a href=\"/politica-cookies/\">Política de Cookies</a>' && \
+    wp theme mod set hello_footer_copyright_text 'MIT License © 2026 Proportione | <a href=\"/politica-privacidad/\">Política de Privacidad</a> | <a href=\"/politica-cookies/\">Política de Cookies</a>' && \
     echo 'Ajustes del tema e idioma configurados'"
 
 # 4. Crear footer con Elementor Theme Builder
@@ -128,7 +128,7 @@ update_post_meta(\$footer_id, \"_elementor_edit_mode\", \"builder\");
                         \"elType\" => \"widget\",
                         \"widgetType\" => \"text-editor\",
                         \"settings\" => array(
-                            \"editor\" => \"<p style=\\\"text-align:right;\\\">MIT License © 2024 Proportione</p>\",
+                            \"editor\" => \"<p style=\\\"text-align:right;\\\">MIT License © 2026 Proportione</p>\",
                             \"text_color\" => \"#ffffff\"
                         )
                     )
@@ -202,6 +202,24 @@ foreach (\$menu_items as \$item) {
     }
 }
 '"
+
+# 7. Subir CSS y functions.php del child theme (hello-elementor-child)
+echo ""
+echo "[7/8] Subiendo CSS y functions.php al child theme..."
+CHILD_THEME="hello-elementor-child"
+scp "$PROJECT_DIR/assets/proportione-contrast.css" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+scp "$PROJECT_DIR/assets/proportione-corrections.css" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+scp "$PROJECT_DIR/assets/proportione-accessibility.css" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+scp "$PROJECT_DIR/assets/proportione-design-system.css" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+scp "$PROJECT_DIR/wp-content/themes/$CHILD_THEME/functions.php" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+scp "$PROJECT_DIR/wp-content/themes/$CHILD_THEME/style.css" \
+    $REMOTE:"$WP_PATH/wp-content/themes/$CHILD_THEME/"
+echo "     Archivos del child theme actualizados ($CHILD_THEME)"
 
 # 8. Purgar todas las cachés
 echo ""
