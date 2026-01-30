@@ -1,0 +1,131 @@
+═══════════════════════════════════════════════════════════════
+TEXTOS HOMEPAGE PROPORTIONE - Para copiar a Figma
+═══════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────
+HERO
+───────────────────────────────────────────────────────────────
+
+[H1]
+Digitalización sin complicaciones
+
+[Subtítulo]
+Acompañamos a empresas y personas en el cambio tecnológico.
+Sin traumas. Con resultados.
+
+[Botón 1]
+Conozca cómo trabajamos
+
+[Botón 2]
+Hablemos
+
+
+───────────────────────────────────────────────────────────────
+SECCIÓN 1: QUÉ HACEMOS
+───────────────────────────────────────────────────────────────
+
+[H2]
+Tecnología al servicio de las personas
+
+[Párrafo 1]
+Muchas empresas se sienten desbordadas por los cambios tecnológicos. La tecnología puede ser costosa, difícil de usar y aún más difícil de adoptar.
+
+[Destacado]
+Nosotros lo hacemos fácil.
+
+[Párrafo 2]
+Partimos de las personas y lo que necesitan. Después, desarrollamos o implementamos la tecnología adecuada. El resultado: cambios que funcionan, equipos que los adoptan, y empresas que crecen.
+
+
+───────────────────────────────────────────────────────────────
+SECCIÓN 2: MÉTODO 20-60-20
+───────────────────────────────────────────────────────────────
+
+[H2]
+Nuestro método: las personas siempre al mando
+
+[Columna 1]
+20%
+Su equipo define
+Estrategia y contexto
+
+[Columna 2]
+60%
+La IA trabaja
+Tareas repetitivas
+
+[Columna 3]
+20%
+Su equipo valida
+Calidad y decisiones
+
+[Texto apoyo]
+La inteligencia artificial hace el trabajo pesado.
+Sus personas ponen la inteligencia que importa: la humana.
+
+
+───────────────────────────────────────────────────────────────
+SECCIÓN 3: TRES PILARES
+───────────────────────────────────────────────────────────────
+
+[H2]
+Tres áreas, un objetivo: su crecimiento
+
+[Card 1]
+Estrategia
+Definimos el camino. Analizamos su situación y diseñamos un plan de acción realista.
+→ Conozca nuestro enfoque
+
+[Card 2]
+Tecnología
+Implementamos soluciones que funcionan. Sin complicaciones innecesarias.
+→ Vea nuestros servicios
+
+[Card 3]
+Personas
+Acompañamos a sus equipos. Les transferimos el conocimiento para que sean autónomos.
+→ Conozca al equipo
+
+
+───────────────────────────────────────────────────────────────
+SECCIÓN 4: POR QUÉ ELEGIRNOS
+───────────────────────────────────────────────────────────────
+
+[H2]
+¿Por qué elegirnos?
+
+[Diferenciador 1]
+Trabajamos dentro de su ecosistema
+No reemplazamos lo que funciona. Optimizamos lo que tiene.
+
+[Diferenciador 2]
+Transferimos conocimiento
+No creamos dependencia. Formamos a su equipo para que crezca solo.
+
+[Diferenciador 3]
+Resultados medibles
+Posicionamiento, ventas, eficiencia. Números que puede ver.
+
+[Diferenciador 4]
+Presupuestos reales
+Hacemos más con menos. Sin sorpresas.
+
+
+───────────────────────────────────────────────────────────────
+SECCIÓN 5: CTA FINAL
+───────────────────────────────────────────────────────────────
+
+[H2]
+¿Hablamos?
+
+[Texto]
+Sin compromiso. Sin presión.
+Cuéntenos qué necesita y le diremos honestamente si podemos ayudarle.
+
+[Botón]
+Contactar
+
+
+═══════════════════════════════════════════════════════════════
+FIN DE TEXTOS
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="400" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7A9461"/>
+      <stop offset="100%" style="stop-color:#6E8157"/>
+    </linearGradient>
+    <linearGradient id="granateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B3832"/>
+      <stop offset="100%" style="stop-color:#5F322F"/>
+    </linearGradient>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#F5F0E6"/>
+
+  <!-- Title -->
+  <text x="450" y="50" font-family="Oswald, sans-serif" font-size="32" font-weight="600" fill="#5F322F" text-anchor="middle">
+    Método 20-60-20
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="80" font-family="Raleway, sans-serif" font-size="16" fill="#666666" text-anchor="middle">
+    Las personas siempre al mando
+  </text>
+
+  <!-- Container for the three blocks -->
+  <g transform="translate(50, 110)">
+
+    <!-- Block 1: 20% - Su equipo define -->
+    <g transform="translate(0, 0)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="240" height="220" rx="12" fill="url(#greenGrad)" filter="url(#shadow)"/>
+
+      <!-- Percentage -->
+      <text x="120" y="70" font-family="Oswald, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+        20%
+      </text>
+
+      <!-- Title -->
+      <text x="120" y="110" font-family="Oswald, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+        Su equipo define
+      </text>
+
+      <!-- Divider -->
+      <line x1="60" y1="130" x2="180" y2="130" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.3"/>
+
+      <!-- Description -->
+      <text x="120" y="160" font-family="Raleway, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+        Estrategia
+      </text>
+      <text x="120" y="185" font-family="Raleway, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+        y contexto
+      </text>
+
+      <!-- Icon: Brain/Strategy -->
+      <circle cx="120" cy="205" r="0" fill="#FFFFFF" opacity="0"/>
+    </g>
+
+    <!-- Arrow 1 -->
+    <g transform="translate(250, 100)">
+      <polygon points="0,10 20,0 20,7 40,7 40,13 20,13 20,20" fill="#5F322F" opacity="0.6"/>
+    </g>
+
+    <!-- Block 2: 60% - La IA trabaja (larger, centered) -->
+    <g transform="translate(300, -20)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="280" height="260" rx="12" fill="url(#granateGrad)" filter="url(#shadow)"/>
+
+      <!-- Percentage -->
+      <text x="140" y="80" font-family="Oswald, sans-serif" font-size="80" font-weight="700" fill="#F5F0E6" text-anchor="middle">
+        60%
+      </text>
+
+      <!-- Title -->
+      <text x="140" y="130" font-family="Oswald, sans-serif" font-size="26" font-weight="600" fill="#F5F0E6" text-anchor="middle">
+        La IA trabaja
+      </text>
+
+      <!-- Divider -->
+      <line x1="70" y1="155" x2="210" y2="155" stroke="#F5F0E6" stroke-width="2" stroke-opacity="0.3"/>
+
+      <!-- Description -->
+      <text x="140" y="190" font-family="Raleway, sans-serif" font-size="18" fill="#F5F0E6" text-anchor="middle" opacity="0.9">
+        Tareas repetitivas
+      </text>
+      <text x="140" y="220" font-family="Raleway, sans-serif" font-size="18" fill="#F5F0E6" text-anchor="middle" opacity="0.9">
+        y procesamiento
+      </text>
+
+      <!-- Robot icon suggestion area -->
+      <circle cx="140" cy="245" r="0" fill="#F5F0E6" opacity="0"/>
+    </g>
+
+    <!-- Arrow 2 -->
+    <g transform="translate(590, 100)">
+      <polygon points="0,10 20,0 20,7 40,7 40,13 20,13 20,20" fill="#5F322F" opacity="0.6"/>
+    </g>
+
+    <!-- Block 3: 20% - Su equipo valida -->
+    <g transform="translate(640, 0)">
+      <!-- Card background -->
+      <rect x="0" y="0" width="240" height="220" rx="12" fill="url(#greenGrad)" filter="url(#shadow)"/>
+
+      <!-- Percentage -->
+      <text x="120" y="70" font-family="Oswald, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+        20%
+      </text>
+
+      <!-- Title -->
+      <text x="120" y="110" font-family="Oswald, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+        Su equipo valida
+      </text>
+
+      <!-- Divider -->
+      <line x1="60" y1="130" x2="180" y2="130" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.3"/>
+
+      <!-- Description -->
+      <text x="120" y="160" font-family="Raleway, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+        Calidad
+      </text>
+      <text x="120" y="185" font-family="Raleway, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+        y decisiones
+      </text>
+
+      <!-- Icon: Checkmark -->
+      <circle cx="120" cy="205" r="0" fill="#FFFFFF" opacity="0"/>
+    </g>
+
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="450" y="370" font-family="Raleway, sans-serif" font-size="18" fill="#5F322F" text-anchor="middle" font-style="italic">
+    La inteligencia artificial hace el trabajo pesado. Sus personas ponen la inteligencia humana.
+  </text>
+
+</svg>

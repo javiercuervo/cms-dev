@@ -1,0 +1,21 @@
+# ═══════════════════════════════════════════════════════════════
+# URLS DE IMÁGENES PARA PROCESAR CON ALTTEXT.AI
+# ═══════════════════════════════════════════════════════════════
+#
+# Instrucciones:
+# 1. Añade una URL por línea
+# 2. Para imágenes de Google Drive:
+#    - Clic derecho → "Obtener enlace" → Copia aquí
+#    - O usa el formato: https://drive.google.com/uc?export=view&id=ID_DEL_ARCHIVO
+# 3. Ejecuta: node scripts/process-images.js --urls figma-assets/urls-imagenes.txt
+#
+# Formato de URL de Drive:
+# Si tienes: https://drive.google.com/file/d/ABC123xyz/view
+# Usa:       https://drive.google.com/uc?export=view&id=ABC123xyz
+# ═══════════════════════════════════════════════════════════════
+
+# EJEMPLO (eliminar después):
+# https://drive.google.com/uc?export=view&id=1ABC123example
+
+# === TUS IMÁGENES AQUÍ ===
+
