@@ -128,14 +128,6 @@ get_header();
 .diferencia-item h3 { font-family: var(--font-titulo); font-size: 20px; font-weight: 600; color: var(--color-granate); margin: 0 0 8px; }
 .diferencia-item p { font-size: 16px; margin: 0; padding-left: 24px; }
 
-/* CTA */
-.section-cta { background: var(--color-granate); text-align: center; }
-.section-cta .ns-container { max-width: 600px; }
-.section-cta h2 { color: var(--color-crema); }
-.section-cta p { font-size: 20px; color: var(--color-crema); line-height: 1.6; margin: 0 0 32px; }
-.btn-cta { display: inline-block; padding: 18px 48px; background: var(--color-verde); color: var(--color-blanco) !important; font-size: 17px; font-weight: 600; text-decoration: none; border-radius: 6px; transition: all 0.3s ease; }
-.btn-cta:hover { background: var(--color-verde-medio); transform: translateY(-3px); }
-
 @media (max-width: 768px) {
     .como-cards, .equipo-cards, .diferencia-grid { grid-template-columns: 1fr; }
 }
@@ -246,15 +238,6 @@ get_header();
                 <p>No creamos adicción. Le enseñamos a su equipo para que crezca solo.</p>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="ns-section section-cta">
-    <div class="ns-container">
-        <h2>¿Quiere conocernos mejor?</h2>
-        <p>Una conversación sin compromiso.<br>Sin presentaciones interminables. Solo hablar.</p>
-        <a href="/contacto/" class="btn-cta">Agendar una conversación</a>
     </div>
 </section>
 

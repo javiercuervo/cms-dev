@@ -4,10 +4,20 @@
 `/investigacion/`
 
 ## Documento Fuente
-**IMPORTANTE:** Todo el contenido de esta página debe basarse en:
-`docs/investigacion_proportione.md`
 
-Este documento contiene las líneas de investigación oficiales de Proportione, publicaciones con DOI, y el marco académico.
+> **La investigación es un pilar fundamental de Proportione.** Define nuestra propuesta de valor diferencial y sustenta todos nuestros servicios con rigor académico.
+
+**IMPORTANTE:** Todo el contenido de esta página debe basarse en:
+
+📄 **`docs/investigacion_proportione.md`**
+
+Este documento maestro contiene:
+- Las 7 líneas de investigación activas
+- Publicaciones con DOI (Zenodo)
+- Marco académico (Doctorado en Innovación Empresarial, Universidade de Aveiro)
+- Investigador principal: Javier Cuervo López (ORCID: 0009-0006-7134-2894)
+
+**Cualquier actualización de líneas de investigación o publicaciones debe hacerse PRIMERO en `investigacion_proportione.md` y después reflejarse en la página.**
 
 ---
 
@@ -121,13 +131,3 @@ Este documento contiene las líneas de investigación oficiales de Proportione, 
 - DOI Role-Play IA: https://doi.org/10.5281/zenodo.17245635
 - DOI Coaching: https://doi.org/10.5281/zenodo.17243218
 
----
-
-## Archivo de Referencia
-
-El contenido completo y actualizado está en:
-```
-docs/investigacion_proportione.md
-```
-
-Cualquier actualización de líneas de investigación o publicaciones debe reflejarse primero en ese documento y luego en la página.

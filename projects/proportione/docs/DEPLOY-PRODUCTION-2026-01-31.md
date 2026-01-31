@@ -6,6 +6,8 @@ Este release incluye:
 1. **Plantillas de Blog por Categoría** - 4 estilos CSS diferenciados
 2. **Design System** - Contraste, correcciones, accesibilidad
 3. **Menú v2.0** - 4 items principales con dropdowns
+4. **CTAs Redundantes Eliminados** - De metodologia, nosotros y estrategia-innovacion
+5. **Página Investigación** - Rediseñada con 7 líneas + DOIs
 
 ## Pre-requisitos
 

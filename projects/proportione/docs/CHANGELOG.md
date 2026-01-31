@@ -4,6 +4,28 @@ Todos los cambios notables del proyecto se documentan aquí.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [2026-01-31] Preparación para Producción
+
+### Eliminado
+- **CTAs redundantes** de 3 páginas (contacto ya disponible en header):
+  - `metodologia.php` - Eliminada sección CTA completa
+  - `nosotros.php` - Eliminada sección CTA completa
+  - `estrategia-innovacion.php` - Eliminada sección CTA completa
+
+### Actualizado
+- **Documentación de Investigación**:
+  - README.md - Añadida descripción de investigación como pilar core
+  - GUIA-ELEMENTOR-INVESTIGACION.md - Reforzada referencia a `investigacion_proportione.md`
+
+### Archivos modificados
+- `staging19-backup/pages/metodologia.php`
+- `staging19-backup/pages/nosotros.php`
+- `staging19-backup/pages/estrategia-innovacion.php`
+- `docs/README.md`
+- `docs/GUIA-ELEMENTOR-INVESTIGACION.md`
+
+---
+
 ## [2026-01-31] Plantillas de Blog por Categoría
 
 ### Añadido
