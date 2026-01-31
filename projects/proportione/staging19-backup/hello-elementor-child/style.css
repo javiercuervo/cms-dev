@@ -154,3 +154,95 @@ body.page-id-339 h1.entry-title {
     color: #FFFFFF !important;
 }
 
+/* ============================================
+   MENÚ CTA - Botón Contacto Destacado
+   ============================================ */
+
+/* Estilo especial para el botón Contacto */
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item {
+    background: var(--verde, #6E8157) !important;
+    color: #FFFFFF !important;
+    padding: 10px 24px !important;
+    border-radius: 4px !important;
+    margin-left: 16px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.1em !important;
+}
+
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item:hover,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item:hover {
+    background: var(--verde-hover, #566E30) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(110, 129, 87, 0.3) !important;
+}
+
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item::before,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item::before {
+    display: none !important; /* Ocultar línea decorativa en CTA */
+}
+
+/* ============================================
+   SEPARADORES EN SUBMENÚ
+   ============================================ */
+
+/* Separador visual antes de "Ver todos los servicios" */
+.elementor-nav-menu--main .sub-menu .menu-item-divider {
+    border-top: 1px solid rgba(51, 51, 51, 0.1) !important;
+    margin: 8px 24px !important;
+    padding: 0 !important;
+}
+
+/* Enlace "Ver todos" con estilo especial */
+.elementor-nav-menu--main .sub-menu .menu-item-view-all > a {
+    color: var(--verde, #6E8157) !important;
+    font-weight: 600 !important;
+}
+
+.elementor-nav-menu--main .sub-menu .menu-item-view-all > a::after {
+    content: ' →' !important;
+}
+
+/* ============================================
+   SUBMENÚ - Sección Equipo
+   ============================================ */
+
+/* Etiqueta de sección en submenú */
+.elementor-nav-menu--main .sub-menu .menu-section-label {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 11px !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: var(--gris-medio, #666666) !important;
+    padding: 12px 24px 6px !important;
+    pointer-events: none !important;
+}
+
+/* Indent para items del equipo */
+.elementor-nav-menu--main .sub-menu .menu-item-team > a {
+    padding-left: 36px !important;
+    font-size: 15px !important;
+}
+
+.elementor-nav-menu--main .sub-menu .menu-item-team > a::before {
+    content: '•' !important;
+    position: absolute !important;
+    left: 24px !important;
+    color: var(--verde, #6E8157) !important;
+}
+
+/* ============================================
+   RESPONSIVE - Menú móvil CTA
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > a,
+    .elementor-nav-menu--dropdown .menu-item:last-child > a {
+        background: var(--verde, #6E8157) !important;
+        color: #FFFFFF !important;
+        margin: 10px 20px !important;
+        border-radius: 4px !important;
+        text-align: center !important;
+    }
+}
+

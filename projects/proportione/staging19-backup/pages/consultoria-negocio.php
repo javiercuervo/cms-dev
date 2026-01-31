@@ -595,15 +595,6 @@ get_header();
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="cn-section cn-cta">
-    <div class="cn-container">
-        <h2>¿Hablamos de tu negocio?</h2>
-        <p>Sin compromiso. Una conversación para entender tu situación y explorar si podemos ayudarte a alcanzar tus objetivos.</p>
-        <a href="/contacto/" class="cn-cta-btn">Contactar</a>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer class="site-footer" style="background:#FFFFFF; padding:40px 50px; margin-top:0; border-top: 1px solid #E5E5E5;">
     <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">

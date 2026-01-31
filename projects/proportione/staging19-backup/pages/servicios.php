@@ -344,64 +344,167 @@ get_header();
     margin: 0 auto;
 }
 
-/* Differentiators Section */
+/* Differentiators Section - Redesign */
 .diferenciadores-section {
-    background: var(--color-blanco);
-    padding: var(--spacing-section) 24px;
+    background: linear-gradient(135deg, var(--color-crema) 0%, #FFFFFF 100%);
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.diferenciadores-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(110,129,87,0.08) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .diferenciadores-inner {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .diferenciadores-inner h2 {
     font-family: var(--font-titulo);
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 600;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
     color: var(--color-granate);
     text-align: center;
-    margin: 0 0 48px 0;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
 }
 
-.diferenciador-item {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 24px;
+.diferenciadores-subtitle {
+    font-family: var(--font-cuerpo);
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 0 0 60px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.diferenciador-check {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--color-verde);
+.diferenciadores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.diferenciador-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(95, 50, 47, 0.06);
+    border: 1px solid rgba(95, 50, 47, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.diferenciador-card:nth-child(1) { animation-delay: 0.1s; }
+.diferenciador-card:nth-child(2) { animation-delay: 0.2s; }
+.diferenciador-card:nth-child(3) { animation-delay: 0.3s; }
+.diferenciador-card:nth-child(4) { animation-delay: 0.4s; }
+.diferenciador-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.diferenciador-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-verde) 0%, var(--color-granate) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.diferenciador-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(95, 50, 47, 0.12);
+}
+
+.diferenciador-card:hover::before {
+    transform: scaleX(1);
+}
+
+.diferenciador-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-verde-medio) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.diferenciador-check svg {
-    width: 14px;
-    height: 14px;
+.diferenciador-card:hover .diferenciador-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(110, 129, 87, 0.3);
+}
+
+.diferenciador-icon svg {
+    width: 28px;
+    height: 28px;
     color: #FFFFFF;
 }
 
-.diferenciador-item h3 {
+.diferenciador-card h3 {
     font-family: var(--font-titulo);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--color-granate);
-    margin: 0 0 4px 0;
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.diferenciador-item p {
+.diferenciador-card h3 .arrow {
+    color: var(--color-verde);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.diferenciador-card:hover h3 .arrow {
+    transform: translateX(6px);
+}
+
+.diferenciador-card p {
     font-family: var(--font-cuerpo);
     font-size: 16px;
-    color: #666;
+    color: #555;
     margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .diferenciadores-grid {
+        grid-template-columns: 1fr;
+    }
+    .diferenciador-card {
+        padding: 24px;
+    }
 }
 
 /* CTA Section */
@@ -690,7 +793,7 @@ get_header();
             <div class="modelo-block granate">
                 <div class="porcentaje">60%</div>
                 <div class="descripcion">
-                    <h3>La IA trabaja</h3>
+                    <h3 style="color: #6E8157 !important;">La IA trabaja</h3>
                     <p>Tareas repetitivas</p>
                 </div>
             </div>
@@ -712,75 +815,74 @@ get_header();
 <section class="diferenciadores-section">
     <div class="diferenciadores-inner">
         <h2>Por qué elegirnos</h2>
+        <p class="diferenciadores-subtitle">Consultores que implementan. Resultados que perduran.</p>
 
-        <div class="diferenciador-item">
-            <div class="diferenciador-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <div>
-                <h3>Trabajamos en tu stack →</h3>
+        <div class="diferenciadores-grid">
+            <!-- Card 1: Tu stack -->
+            <div class="diferenciador-card">
+                <div class="diferenciador-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <h3>Trabajamos en tu stack <span class="arrow">→</span></h3>
                 <p>Usamos las herramientas que ya conoces, no imponemos tecnología nueva.</p>
             </div>
-        </div>
 
-        <div class="diferenciador-item">
-            <div class="diferenciador-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <div>
-                <h3>Tu equipo es protagonista →</h3>
+            <!-- Card 2: Tu equipo -->
+            <div class="diferenciador-card">
+                <div class="diferenciador-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>Tu equipo es protagonista <span class="arrow">→</span></h3>
                 <p>Co-creamos desde el inicio, no ejecutamos proyectos lejanos.</p>
             </div>
-        </div>
 
-        <div class="diferenciador-item">
-            <div class="diferenciador-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <div>
-                <h3>Transferimos capacidad →</h3>
+            <!-- Card 3: Transferimos capacidad -->
+            <div class="diferenciador-card">
+                <div class="diferenciador-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <line x1="12" y1="6" x2="12" y2="12"></line>
+                        <line x1="9" y1="9" x2="15" y2="9"></line>
+                    </svg>
+                </div>
+                <h3>Transferimos capacidad <span class="arrow">→</span></h3>
                 <p>Dejamos conocimiento en casa, no dependencia de consultores.</p>
             </div>
-        </div>
 
-        <div class="diferenciador-item">
-            <div class="diferenciador-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <div>
-                <h3>Métricas claras →</h3>
+            <!-- Card 4: Métricas claras -->
+            <div class="diferenciador-card">
+                <div class="diferenciador-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                </div>
+                <h3>Métricas claras <span class="arrow">→</span></h3>
                 <p>Todo tiene KPIs y dashboards desde el día 1.</p>
             </div>
-        </div>
 
-        <div class="diferenciador-item">
-            <div class="diferenciador-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-            </div>
-            <div>
-                <h3>Implementación ligera →</h3>
+            <!-- Card 5: Implementación ligera -->
+            <div class="diferenciador-card">
+                <div class="diferenciador-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3>Implementación ligera <span class="arrow">→</span></h3>
                 <p>Simplicidad y escalabilidad sobre complejidad.</p>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="cta-inner">
-        <h2>¿Hablamos de tu proyecto?</h2>
-        <p>Sin compromiso. Sin presentaciones interminables. Solo una conversación para entender si podemos ayudarte.</p>
-        <a href="/contacto" class="cta-btn">Contactar</a>
     </div>
 </section>
 
