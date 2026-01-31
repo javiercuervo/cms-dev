@@ -88,7 +88,14 @@
 .single-post .post-thumbnail,
 .single-post .elementor-section:first-child .elementor-widget-image,
 .single-post .entry-header img,
-.single-post header .wp-post-image {
+.single-post header .wp-post-image,
+/* Placeholder de Elementor */
+.single-post img[src*="placeholder.png"],
+.single-post img[src*="elementor/assets/images"],
+.single-post .elementor-widget-image img[src*="placeholder"],
+/* Cualquier imagen antes del contenido */
+.single-post .elementor-section:first-child img,
+.single-post .elementor-section:nth-child(2) .elementor-widget-image {
     display: none !important;
 }
 
