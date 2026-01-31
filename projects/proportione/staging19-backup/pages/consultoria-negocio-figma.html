@@ -1,0 +1,733 @@
+<style>
+/* ============================================
+   CONSULTORÍA DE NEGOCIO - Diseño Figma
+   Paleta: Granate #5F322F, Verde #6E8157, Crema #F5F0E6
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+.cn-page {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ============================================
+   1. HERO SECTION
+   ============================================ */
+.cn-hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cn-hero-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.cn-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cn-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(95, 50, 47, 0.85), rgba(110, 129, 87, 0.70));
+}
+
+.cn-hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.cn-hero h1 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: #F5F0E6;
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+}
+
+.cn-hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #F5F0E6;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   2. INTRODUCTION SECTION
+   ============================================ */
+.cn-intro {
+    padding: 80px 24px;
+    background: #FFFFFF;
+}
+
+.cn-intro-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.cn-intro h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5F322F;
+    line-height: 1.3;
+    margin: 0 0 32px 0;
+}
+
+.cn-intro p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ============================================
+   3. THREE PILLARS SECTION
+   ============================================ */
+.cn-pillars {
+    padding: 96px 24px;
+    background: #F5F0E6;
+}
+
+.cn-pillars-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cn-pillars h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5F322F;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 64px 0;
+}
+
+.cn-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .cn-pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cn-pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cn-pillar-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 32px;
+    border-top: 4px solid #5F322F;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.cn-pillar-card:hover {
+    border-top-color: #6E8157;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.cn-pillar-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #F5F0E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.cn-pillar-icon svg {
+    width: 28px;
+    height: 28px;
+    color: #5F322F;
+    stroke-width: 1.5;
+}
+
+.cn-pillar-card h3 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+}
+
+.cn-pillar-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================
+   4. STRATEGY SECTION
+   ============================================ */
+.cn-strategy {
+    padding: 96px 24px;
+    background: #FFFFFF;
+}
+
+.cn-strategy-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .cn-strategy-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cn-strategy h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5F322F;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+}
+
+.cn-strategy-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.8;
+    margin: 0 0 24px 0;
+}
+
+.cn-quote {
+    padding: 16px 24px;
+    border-left: 4px solid #6E8157;
+    background: #F5F0E6;
+    border-radius: 0 4px 4px 0;
+}
+
+.cn-quote p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color: #5F322F;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cn-strategy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================
+   5. EXECUTION SECTION
+   ============================================ */
+.cn-execution {
+    padding: 96px 24px;
+    background: #F5F0E6;
+}
+
+.cn-execution-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .cn-execution-inner {
+        grid-template-columns: 1fr;
+    }
+    .cn-execution-image {
+        order: -1;
+    }
+}
+
+.cn-execution-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cn-execution h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5F322F;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+}
+
+.cn-execution-text > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.8;
+    margin: 0 0 32px 0;
+}
+
+.cn-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cn-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cn-check-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #6E8157;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cn-check-icon svg {
+    width: 14px;
+    height: 14px;
+    color: white;
+    stroke-width: 2.5;
+}
+
+.cn-checklist li span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ============================================
+   6. BENEFITS SECTION
+   ============================================ */
+.cn-benefits {
+    padding: 96px 24px;
+    background: #FFFFFF;
+}
+
+.cn-benefits-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cn-benefits h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5F322F;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 0 64px 0;
+}
+
+.cn-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .cn-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cn-benefit-card {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.cn-benefit-card:hover {
+    box-shadow: -4px 0 0 0 #6E8157, 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateX(4px);
+}
+
+.cn-benefit-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #5F322F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cn-benefit-icon svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    stroke-width: 2;
+}
+
+.cn-benefit-content h3 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+}
+
+.cn-benefit-content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================
+   7. CTA SECTION
+   ============================================ */
+.cn-cta {
+    padding: 80px 24px;
+    background: #5F322F;
+    text-align: center;
+}
+
+.cn-cta-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cn-cta h2 {
+    font-family: 'Josefin Sans', Georgia, serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #F5F0E6;
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+}
+
+.cn-cta > p,
+.cn-cta-inner > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F5F0E6;
+    opacity: 0.95;
+    line-height: 1.6;
+    margin: 0 0 40px 0;
+}
+
+.cn-cta-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #6E8157;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.cn-cta-btn:hover {
+    background: #566E30;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .cn-hero {
+        height: auto;
+        min-height: 350px;
+        padding: 60px 0;
+    }
+
+    .cn-hero h1 {
+        font-size: 36px;
+    }
+
+    .cn-hero-subtitle {
+        font-size: 17px;
+    }
+
+    .cn-intro h2,
+    .cn-pillars h2,
+    .cn-strategy h2,
+    .cn-execution h2,
+    .cn-benefits h2,
+    .cn-cta h2 {
+        font-size: 32px;
+    }
+
+    .cn-intro,
+    .cn-pillars,
+    .cn-strategy,
+    .cn-execution,
+    .cn-benefits,
+    .cn-cta {
+        padding: 60px 20px;
+    }
+}
+</style>
+
+<div class="cn-page">
+    <!-- 1. Hero Section -->
+    <section class="cn-hero">
+        <div class="cn-hero-bg">
+            <img src="https://staging19.proportione.com/wp-content/uploads/2023/10/Tecnologia-y-Personas-Proportione-Colaboracion-1.png" alt="Equipo colaborando en estrategia de negocio">
+        </div>
+        <div class="cn-hero-overlay"></div>
+        <div class="cn-hero-content">
+            <h1>Consultoría de Gestión de Negocio</h1>
+            <p class="cn-hero-subtitle">Un enfoque estratégico para navegar la incertidumbre y lograr crecimiento sostenible</p>
+        </div>
+    </section>
+
+    <!-- 2. Introduction Section -->
+    <section class="cn-intro">
+        <div class="cn-intro-inner">
+            <h2>Más allá de resolver problemas</h2>
+            <p>En Proportione entendemos que cada organización enfrenta desafíos únicos en un contexto de constante transformación. Nuestra consultoría de gestión de negocio no se limita a diagnosticar problemas; diseñamos soluciones estratégicas que integran personas, procesos y tecnología para crear valor sostenible. Trabajamos codo a codo con líderes empresariales para construir organizaciones resilientes, ágiles y preparadas para el futuro.</p>
+        </div>
+    </section>
+
+    <!-- 3. Three Pillars Section -->
+    <section class="cn-pillars">
+        <div class="cn-pillars-inner">
+            <h2>Tres áreas clave de actuación</h2>
+            <div class="cn-pillars-grid">
+                <!-- Pillar 1: Estrategia de Negocio -->
+                <div class="cn-pillar-card">
+                    <div class="cn-pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>Estrategia de Negocio</h3>
+                    <p>Definimos modelos de negocio sostenibles y alineados con los objetivos de largo plazo, adaptados a contextos de incertidumbre y cambio constante.</p>
+                </div>
+
+                <!-- Pillar 2: Diseño Organizacional -->
+                <div class="cn-pillar-card">
+                    <div class="cn-pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Diseño Organizacional</h3>
+                    <p>Creamos estructuras flexibles que potencian el talento, optimizan procesos y facilitan la toma de decisiones ágil y efectiva.</p>
+                </div>
+
+                <!-- Pillar 3: Transformación Digital -->
+                <div class="cn-pillar-card">
+                    <div class="cn-pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Transformación Digital</h3>
+                    <p>Integramos tecnología de manera estratégica para mejorar la eficiencia operativa, la experiencia del cliente y la capacidad de innovación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Strategy Section -->
+    <section class="cn-strategy">
+        <div class="cn-strategy-inner">
+            <div class="cn-strategy-text">
+                <h2>La importancia de la estrategia</h2>
+                <p>En un entorno de mercado volátil y cambiante, la estrategia no es un plan rígido, sino una brújula que orienta decisiones. Trabajamos contigo para identificar oportunidades, mitigar riesgos y construir ventajas competitivas sostenibles.</p>
+                <p>Nuestro enfoque combina análisis riguroso con pensamiento creativo, asegurando que cada decisión estratégica esté fundamentada en datos y alineada con la visión de futuro de la organización.</p>
+                <div class="cn-quote">
+                    <p>"La estrategia sin ejecución es una alucinación. La ejecución sin estrategia es caos. Necesitamos ambas."</p>
+                </div>
+            </div>
+            <div class="cn-strategy-image">
+                <img src="https://staging19.proportione.com/wp-content/uploads/2023/10/Tecnologia-y-Personas-Planificacion-Estrategica-Proportione.png" alt="Planificación estratégica en pizarra">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Execution Section -->
+    <section class="cn-execution">
+        <div class="cn-execution-inner">
+            <div class="cn-execution-image">
+                <img src="https://staging19.proportione.com/wp-content/uploads/2026/01/IMG_8407.jpg" alt="Presentación de estrategia de negocio">
+            </div>
+            <div class="cn-execution-text">
+                <h2>De la estrategia a la ejecución</h2>
+                <p>No basta con diseñar estrategias brillantes; el verdadero valor está en llevarlas a la práctica. Acompañamos a tu equipo en todo el proceso de implementación, asegurando que los objetivos se traduzcan en resultados tangibles.</p>
+                <ul class="cn-checklist">
+                    <li>
+                        <span class="cn-check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </span>
+                        <span>Implementación de planes con metodologías ágiles y probadas</span>
+                    </li>
+                    <li>
+                        <span class="cn-check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </span>
+                        <span>Supervisión continua de métricas clave y KPIs</span>
+                    </li>
+                    <li>
+                        <span class="cn-check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </span>
+                        <span>Ajustes estratégicos basados en resultados reales</span>
+                    </li>
+                    <li>
+                        <span class="cn-check-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </span>
+                        <span>Transferencia de conocimiento para autonomía organizacional</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Benefits Section -->
+    <section class="cn-benefits">
+        <div class="cn-benefits-inner">
+            <h2>Qué conseguirás</h2>
+            <div class="cn-benefits-grid">
+                <!-- Benefit 1 -->
+                <div class="cn-benefit-card">
+                    <div class="cn-benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                            <polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                    <div class="cn-benefit-content">
+                        <h3>Crecimiento sostenible</h3>
+                        <p>Estrategias diseñadas para generar valor a largo plazo, no soluciones cortoplacistas.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="cn-benefit-card">
+                    <div class="cn-benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="cn-benefit-content">
+                        <h3>Resiliencia organizacional</h3>
+                        <p>Estructuras y procesos que permiten adaptarse rápidamente a cambios del mercado.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="cn-benefit-card">
+                    <div class="cn-benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="cn-benefit-content">
+                        <h3>Innovación integrada</h3>
+                        <p>Cultura de mejora continua que impulsa la creatividad y la diferenciación competitiva.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="cn-benefit-card">
+                    <div class="cn-benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="cn-benefit-content">
+                        <h3>Equipos empoderados</h3>
+                        <p>Desarrollo de capacidades internas para que tu organización sea autónoma y eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA Section -->
+    <section class="cn-cta">
+        <div class="cn-cta-inner">
+            <h2>¿Listo para transformar su organización?</h2>
+            <p>Hablemos de su situación específica. Sin compromiso.</p>
+            <a href="/contacto/" class="cn-cta-btn">Agendar una conversación</a>
+        </div>
+    </section>
+</div>

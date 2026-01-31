@@ -36,3 +36,9 @@ figma-assets/*.jpg
 # Backups
 *.bak
 *.backup
+
+# Capturas temporales de Figma
+figma-assets/capture-*/
+
+# Archivos HTML temporales de preview
+*-preview.html
