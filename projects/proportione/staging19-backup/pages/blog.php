@@ -1,7 +1,7 @@
 <?php
 /**
- * Blog Page - The Proportione Times
- * Diseño estilo periódico tecnológico
+ * Blog Page - Alma Proportione
+ * Diseño estilo editorial tecnológico
  */
 require_once(dirname(__FILE__) . '/wp-load.php');
 get_header();
@@ -36,7 +36,7 @@ $categories = get_categories(array('hide_empty' => true));
 
 <style>
 /* ============================================
-   THE PROPORTIONE TIMES - Blog Styles
+   ALMA PROPORTIONE - Blog Styles
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
