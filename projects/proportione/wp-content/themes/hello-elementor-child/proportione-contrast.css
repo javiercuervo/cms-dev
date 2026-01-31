@@ -1,0 +1,482 @@
+/* ===========================================
+   PROPORTIONE - CSS de Contraste y Accesibilidad
+   Según Manual de Identidad Visual
+
+   Colores corporativos:
+   - Primary (Granate): #5F322F
+   - Text: #333333
+   - Cream: #F5F0E6
+   - Accent (Verde): #6E8157
+
+   Tipografías:
+   - Títulos: Oswald
+   - Cuerpo: Raleway
+   =========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+/* ===========================================
+   1. BASE - Colores por defecto
+   =========================================== */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif !important;
+    color: #5F322F !important;
+}
+
+a {
+    color: #6E8157;
+}
+
+a:hover {
+    color: #5F322F;
+}
+
+/* ===========================================
+   2. FOOTER - Fondo granate, texto crema
+   =========================================== */
+footer,
+.elementor-location-footer,
+footer.elementor-location-footer,
+[data-elementor-type="footer"] {
+    background-color: #5F322F !important;
+}
+
+footer *,
+.elementor-location-footer *,
+footer.elementor-location-footer *,
+[data-elementor-type="footer"] * {
+    color: #F5F0E6 !important;
+}
+
+footer a,
+.elementor-location-footer a,
+footer.elementor-location-footer a {
+    color: #F5F0E6 !important;
+    text-decoration: underline;
+}
+
+footer a:hover,
+.elementor-location-footer a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Logo del footer - filtro para convertir a blanco sobre fondo granate */
+footer img,
+.elementor-location-footer img,
+[data-elementor-type="footer"] img,
+.footer-logo-white img {
+    filter: brightness(0) invert(1) !important;
+    max-width: 100px !important;
+    max-height: 40px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* ===========================================
+   3. FONDOS OSCUROS - Texto claro
+   Incluye: granate (#5F), negro, grises oscuros
+   =========================================== */
+
+/* Por color de fondo inline */
+[style*="background-color:#5"] *,
+[style*="background-color: #5"] *,
+[style*="background-color:#3"] *,
+[style*="background-color: #3"] *,
+[style*="background-color:#2"] *,
+[style*="background-color: #2"] *,
+[style*="background-color:#1"] *,
+[style*="background-color: #1"] *,
+[style*="background-color:#0"] *,
+[style*="background-color: #0"] *,
+[style*="background-color: rgb(95"] *,
+[style*="background-color:rgb(95"] *,
+[style*="background:#5"] *,
+[style*="background: #5"] * {
+    color: #F5F0E6 !important;
+}
+
+/* Stackable con fondos oscuros */
+.stk-block-column[style*="background-color:#5"] *,
+.stk-block-column[style*="background-color:#3"] *,
+.stk-block-column[style*="background-color:#2"] *,
+.stk-block-column[style*="background-color:#1"] *,
+.stk-block-column[style*="background-color:#0"] *,
+.stk-block[style*="background-color:#5"] *,
+.stk-block[style*="background-color:#3"] * {
+    color: #F5F0E6 !important;
+}
+
+/* Stackable con imágenes de fondo (asume overlay oscuro) */
+.stk-block-column[style*="background-image"] h1,
+.stk-block-column[style*="background-image"] h2,
+.stk-block-column[style*="background-image"] h3,
+.stk-block-column[style*="background-image"] h4,
+.stk-block-column[style*="background-image"] p,
+.stk-block-column[style*="background-image"] li,
+.stk-block-column[style*="background-image"] span,
+.stk-block[style*="background-image"] h1,
+.stk-block[style*="background-image"] h2,
+.stk-block[style*="background-image"] h3,
+.stk-block[style*="background-image"] p {
+    color: #F5F0E6 !important;
+}
+
+/* Stackable bloques con fondo de imagen - TODOS los elementos */
+.stk-block-background h1,
+.stk-block-background h2,
+.stk-block-background h3,
+.stk-block-background h4,
+.stk-block-background p,
+.stk-block-background li,
+.stk-block-background span,
+.stk-block-background strong,
+.stk-block-background .wp-block-list,
+.stk-block-background .wp-block-list li,
+.stk--has-background-overlay h1,
+.stk--has-background-overlay h2,
+.stk--has-background-overlay h3,
+.stk--has-background-overlay h4,
+.stk--has-background-overlay p,
+.stk--has-background-overlay li,
+.stk--has-background-overlay span,
+.stk--has-background-overlay strong,
+.stk--has-background-overlay .wp-block-list,
+.stk--has-background-overlay .wp-block-list li {
+    color: #F5F0E6 !important;
+}
+
+/* Específico para la sección stk-83c1400 (Tecnología y Personas con imagen de fondo) */
+.stk-83c1400 *,
+.stk-83c1400 h1,
+.stk-83c1400 h2,
+.stk-83c1400 h3,
+.stk-83c1400 p,
+.stk-83c1400 li,
+.stk-83c1400 strong {
+    color: #F5F0E6 !important;
+}
+
+/* WordPress cover blocks */
+.wp-block-cover *,
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4,
+.wp-block-cover p,
+.wp-block-cover li,
+.wp-block-cover span {
+    color: #F5F0E6 !important;
+}
+
+/* Elementos con clase has-background (WordPress) */
+.has-background.has-black-background-color *,
+.has-background[style*="background-color:#5"] *,
+.has-background[style*="background-color:#3"] *,
+.has-background[style*="background-color:#2"] *,
+.has-background[style*="background-color:#1"] *,
+.has-background[style*="background-color:#0"] * {
+    color: #F5F0E6 !important;
+}
+
+/* Elementor secciones con fondo oscuro */
+.elementor-section[data-settings*="background_image"] h1,
+.elementor-section[data-settings*="background_image"] h2,
+.elementor-section[data-settings*="background_image"] h3,
+.elementor-section[data-settings*="background_image"] p,
+.elementor-section[style*="background-color:#5"] *,
+.elementor-section[style*="background-color:#3"] *,
+.e-con[style*="background-color:#5"] *,
+.e-con[style*="background-color:#3"] * {
+    color: #F5F0E6 !important;
+}
+
+/* ===========================================
+   4. FONDOS CLAROS - Texto oscuro
+   Incluye: blanco, crema, grises claros
+   =========================================== */
+
+/* Por color de fondo inline */
+[style*="background-color:#F"] *,
+[style*="background-color: #F"] *,
+[style*="background-color:#f"] *,
+[style*="background-color: #f"] *,
+[style*="background-color:#E"] *,
+[style*="background-color: #E"] *,
+[style*="background-color:#e"] *,
+[style*="background-color:#D"] *,
+[style*="background-color:#C"] *,
+[style*="background-color:#B"] *,
+[style*="background-color:#A"] *,
+[style*="background-color:#9"] *,
+[style*="background-color:#8"] *,
+[style*="background-color:#7"] *,
+[style*="background-color: #fff"] *,
+[style*="background-color:#fff"] *,
+[style*="background:#fff"] *,
+[style*="background: #fff"] *,
+[style*="background-color: white"] *,
+[style*="background-color:white"] *,
+[style*="background: white"] *,
+[style*="background:white"] * {
+    color: #333333 !important;
+}
+
+/* Títulos en fondos claros: granate */
+[style*="background-color:#F"] h1,
+[style*="background-color:#F"] h2,
+[style*="background-color:#F"] h3,
+[style*="background-color:#F"] h4,
+[style*="background-color:#f"] h1,
+[style*="background-color:#f"] h2,
+[style*="background-color:#f"] h3,
+[style*="background-color:#E"] h1,
+[style*="background-color:#E"] h2,
+[style*="background-color:#E"] h3,
+[style*="background-color:#fff"] h1,
+[style*="background-color:#fff"] h2,
+[style*="background-color:#fff"] h3,
+[style*="background-color: white"] h1,
+[style*="background-color: white"] h2,
+[style*="background-color: white"] h3,
+.has-white-background-color h1,
+.has-white-background-color h2,
+.has-white-background-color h3,
+.has-white-background-color h4 {
+    color: #5F322F !important;
+}
+
+/* Stackable fondos claros */
+.stk-block-column[style*="background-color:#F"] *,
+.stk-block-column[style*="background-color:#f"] *,
+.stk-block-column[style*="background-color:#E"] *,
+.stk-block-column[style*="background-color:#e"] *,
+.stk-block-column[style*="background-color:#fff"] * {
+    color: #333333 !important;
+}
+
+.stk-block-column[style*="background-color:#F"] h1,
+.stk-block-column[style*="background-color:#F"] h2,
+.stk-block-column[style*="background-color:#F"] h3,
+.stk-block-column[style*="background-color:#fff"] h1,
+.stk-block-column[style*="background-color:#fff"] h2,
+.stk-block-column[style*="background-color:#fff"] h3 {
+    color: #5F322F !important;
+}
+
+/* ===========================================
+   5. STACKABLE - Override ALL color schemes
+   =========================================== */
+
+/* Forzar colores corporativos en TODAS las variables Stackable */
+:root {
+    /* Colores corporativos para Stackable */
+    --stk-link-color: #6E8157 !important;
+    --stk-accent-color: #6E8157 !important;
+    --stk-subtitle-color: #5F322F !important;
+    --stk-button-background-color: #5F322F !important;
+    --stk-button-text-color: #FFFFFF !important;
+    --stk-button-outline-color: #5F322F !important;
+}
+
+/* Forzar tipografías corporativas en Stackable */
+.stk-block-heading__text {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.stk-block-text__text {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+/* Override TODOS los esquemas de color de Stackable */
+.stk--background-scheme--scheme-default-1,
+.stk--background-scheme--scheme-default-2,
+.stk--background-scheme--scheme-default-3,
+.stk--container-scheme--scheme-default-1,
+.stk--container-scheme--scheme-default-2,
+.stk--container-scheme--scheme-default-3,
+[class*="stk--background-scheme"],
+[class*="stk--container-scheme"] {
+    --stk-link-color: #6E8157 !important;
+    --stk-accent-color: #6E8157 !important;
+    --stk-subtitle-color: #F5F0E6 !important;
+    --stk-button-background-color: #5F322F !important;
+    --stk-button-text-color: #FFFFFF !important;
+    --stk-button-outline-color: #F5F0E6 !important;
+}
+
+/* Esquemas oscuros: texto crema */
+.stk--background-scheme--scheme-default-3,
+.stk--container-scheme--scheme-default-3 {
+    --stk-heading-color: #F5F0E6 !important;
+    --stk-text-color: #F5F0E6 !important;
+}
+
+/* Esquemas claros: texto oscuro, títulos granate */
+.stk--background-scheme--scheme-default-1,
+.stk--background-scheme--scheme-default-2,
+.stk--container-scheme--scheme-default-1,
+.stk--container-scheme--scheme-default-2 {
+    --stk-heading-color: #5F322F !important;
+    --stk-text-color: #333333 !important;
+}
+
+/* Eliminar el magenta #f00069 de TODOS los contextos */
+[style*="#f00069"],
+[style*="rgb(240, 0, 105)"] {
+    color: #6E8157 !important;
+    background-color: #6E8157 !important;
+}
+
+/* ===========================================
+   6. HEADER - Fondo blanco, texto oscuro
+   =========================================== */
+header,
+.elementor-location-header,
+[data-elementor-type="header"] {
+    background-color: #FFFFFF !important;
+    border-bottom: 3px solid #5F322F !important;
+}
+
+/* Logo del header - misma altura que el texto */
+.elementor-location-header img,
+[data-elementor-type="header"] img {
+    max-height: 40px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+header a,
+.elementor-location-header a,
+[data-elementor-type="header"] a {
+    color: #333333 !important;
+    text-decoration: none !important;
+}
+
+header a:hover,
+.elementor-location-header a:hover {
+    color: #5F322F !important;
+}
+
+/* Menú del header */
+.elementor-location-header .elementor-nav-menu a {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+}
+
+/* ===========================================
+   7. ENLACES - Verde corporativo
+   =========================================== */
+.entry-content a,
+.wp-block-paragraph a,
+p a,
+article a:not(.wp-block-button__link) {
+    color: #6E8157 !important;
+}
+
+.entry-content a:hover,
+.wp-block-paragraph a:hover,
+p a:hover {
+    color: #5F322F !important;
+}
+
+/* ===========================================
+   8. OCULTAR ELEMENTOS DUPLICADOS
+   =========================================== */
+
+/* Ocultar título duplicado dentro del cover en homepage */
+.home .wp-block-cover .wp-block-post-title,
+.home .wp-block-cover h2.wp-block-post-title {
+    display: none !important;
+}
+
+/* ===========================================
+   9. RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.3rem !important; }
+}
+
+/* ===========================================
+   10. CLASES DE UTILIDAD - Forzar contraste
+   =========================================== */
+
+/* Fondo oscuro → texto claro */
+.bg-dark,
+.has-dark-background {
+    background-color: #5F322F !important;
+}
+.bg-dark *,
+.has-dark-background * {
+    color: #F5F0E6 !important;
+}
+
+/* Fondo claro → texto oscuro */
+.bg-light,
+.has-light-background {
+    background-color: #F5F0E6 !important;
+}
+.bg-light *,
+.has-light-background * {
+    color: #333333 !important;
+}
+.bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4,
+.has-light-background h1, .has-light-background h2, .has-light-background h3, .has-light-background h4 {
+    color: #5F322F !important;
+}
+
+/* ===========================================
+   11. REFUERZO SELECTORES - Mayor especificidad
+   =========================================== */
+
+/* Stackable con overlay de fondo */
+.stk-block.stk--has-background-overlay *:not(a):not(button) {
+    color: #F5F0E6 !important;
+}
+
+/* WordPress blocks con fondos */
+.wp-block-group.has-background *,
+.wp-block-cover__inner-container * {
+    color: #F5F0E6 !important;
+}
+
+/* Títulos en wp-block-cover */
+.wp-block-cover h1,
+.wp-block-cover h2,
+.wp-block-cover h3,
+.wp-block-cover h4 {
+    color: #F5F0E6 !important;
+}
+
+/* ===========================================
+   12. LINKS EN FONDOS OSCUROS
+   =========================================== */
+
+/* Links deben ser claros en fondos oscuros */
+[style*="background-color:#5"] a,
+[style*="background-color: #5"] a,
+.bg-dark a,
+.has-dark-background a,
+.wp-block-cover a {
+    color: #F5F0E6 !important;
+    text-decoration: underline !important;
+}
+
+[style*="background-color:#5"] a:hover,
+.bg-dark a:hover,
+.wp-block-cover a:hover {
+    color: #FFFFFF !important;
+}

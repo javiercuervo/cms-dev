@@ -12,3 +12,10 @@ Text Domain: hello-elementor-child-proportione
 */
 
 /* Los estilos personalizados se cargan via functions.php */
+
+/* Ocultar título en homepage */
+.home .page-header,
+.home .entry-title,
+body.page-id-2832 .page-header {
+    display: none !important;
+}
