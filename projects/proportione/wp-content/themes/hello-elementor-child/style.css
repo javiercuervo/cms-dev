@@ -5,11 +5,14 @@ Description: Child theme de Hello Elementor para Proportione con sistema de dise
 Author: Proportione
 Author URI: https://proportione.com
 Template: hello-elementor
-Version: 1.0.0
+Version: 1.0.2
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 Text Domain: hello-elementor-child-proportione
 */
+
+/* Importar fuentes - DEBE estar al principio */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
 /* Los estilos personalizados se cargan via functions.php */
 
@@ -19,3 +22,338 @@ Text Domain: hello-elementor-child-proportione
 body.page-id-2832 .page-header {
     display: none !important;
 }
+
+/* ===========================================
+   HEADER PERSONALIZADO - PROPORTIONE
+   =========================================== */
+
+/* Header base */
+.elementor-location-header {
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Menú principal */
+.elementor-nav-menu--main {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+}
+
+.elementor-nav-menu--main .elementor-item {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: #5F322F !important;
+    padding: 12px 22px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.elementor-nav-menu--main .elementor-item:hover {
+    color: #6E8157 !important;
+}
+
+/* ===========================================
+   SUBMENÚS DROPDOWN - FIX COMPLETO ELEMENTOR
+   =========================================== */
+
+/* Reset de estilos de Elementor para submenús */
+.elementor-nav-menu--main .elementor-nav-menu--dropdown,
+.elementor-nav-menu--main ul.sub-menu,
+.elementor-nav-menu--main .sub-menu.elementor-nav-menu--dropdown {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    z-index: 99999 !important;
+    background: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 8px 30px rgba(95, 50, 47, 0.15) !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 12px 0 !important;
+    min-width: 280px !important;
+    margin: 0 !important;
+    list-style: none !important;
+    /* Estado oculto - usar display para máxima compatibilidad */
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.2s ease, visibility 0.2s ease !important;
+}
+
+/* Asegurar que el item padre tiene posición relativa */
+.elementor-nav-menu--main .menu-item-has-children,
+.elementor-nav-menu--main li.menu-item-has-children {
+    position: relative !important;
+}
+
+/* Puente invisible para mantener hover - ANTES del submenú */
+.elementor-nav-menu--main .menu-item-has-children > a.elementor-item::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 15px !important;
+    background: transparent !important;
+    pointer-events: auto !important;
+}
+
+/* MOSTRAR submenú en hover del item padre */
+.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu,
+.elementor-nav-menu--main .menu-item-has-children:hover > .elementor-nav-menu--dropdown,
+.elementor-nav-menu--main .menu-item-has-children:hover > ul.sub-menu.elementor-nav-menu--dropdown,
+.elementor-nav-menu--main li.menu-item-has-children:hover > ul,
+nav.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Mantener submenú visible cuando el ratón está sobre él */
+.elementor-nav-menu--main .sub-menu:hover,
+.elementor-nav-menu--main .elementor-nav-menu--dropdown:hover,
+.elementor-nav-menu--main ul.sub-menu.elementor-nav-menu--dropdown:hover {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Items dentro del submenú */
+.elementor-nav-menu--main .sub-menu li,
+.elementor-nav-menu--main .elementor-nav-menu--dropdown li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Items del submenú */
+.elementor-nav-menu--main .sub-menu .elementor-sub-item {
+    font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    color: #5F322F !important;
+    padding: 12px 24px !important;
+    display: block !important;
+    transition: all 0.2s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+.elementor-nav-menu--main .sub-menu .elementor-sub-item:hover {
+    background: #F5F0E6 !important;
+    color: #6E8157 !important;
+    border-left-color: #6E8157 !important;
+    padding-left: 28px !important;
+}
+
+/* Indicador de dropdown (flecha) */
+.elementor-nav-menu--main .menu-item-has-children > a.elementor-item::after {
+    content: ' ▾' !important;
+    font-size: 12px !important;
+    transition: transform 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.elementor-nav-menu--main .menu-item-has-children:hover > a.elementor-item::after {
+    transform: rotate(180deg) !important;
+}
+
+/* Línea decorativa bajo item activo */
+.elementor-nav-menu--main .elementor-item.elementor-item-active {
+    color: #6E8157 !important;
+}
+
+.elementor-nav-menu--main .elementor-item::before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: #6E8157 !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(-50%) !important;
+}
+
+.elementor-nav-menu--main .elementor-item:hover::before,
+.elementor-nav-menu--main .elementor-item.elementor-item-active::before {
+    width: 80% !important;
+}
+
+/* Menú móvil */
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown .elementor-item,
+    .elementor-nav-menu--dropdown .elementor-sub-item {
+        font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
+        color: #5F322F !important;
+        padding: 14px 20px !important;
+        font-size: 18px !important;
+    }
+    
+    .elementor-nav-menu--dropdown .sub-menu {
+        background: #F5F0E6 !important;
+    }
+}
+
+/* Título de página Contacto en blanco */
+body.page-id-339 .page-header h1,
+body.page-id-339 .entry-title,
+body.page-id-339 h1.entry-title {
+    color: #FFFFFF !important;
+}
+
+/* ============================================
+   MENÚ CTA - Botón Contacto Destacado
+   ============================================ */
+
+/* Estilo especial para el botón Contacto */
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item {
+    background: var(--verde, #6E8157) !important;
+    color: #FFFFFF !important;
+    padding: 10px 24px !important;
+    border-radius: 4px !important;
+    margin-left: 16px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.1em !important;
+}
+
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item:hover,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item:hover {
+    background: var(--verde-hover, #566E30) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(110, 129, 87, 0.3) !important;
+}
+
+.elementor-nav-menu--main .menu-item.menu-cta > a.elementor-item::before,
+.elementor-nav-menu--main .menu-item:last-child > a.elementor-item::before {
+    display: none !important; /* Ocultar línea decorativa en CTA */
+}
+
+/* ============================================
+   SEPARADORES EN SUBMENÚ
+   ============================================ */
+
+/* Separador visual antes de "Ver todos los servicios" */
+.elementor-nav-menu--main .sub-menu .menu-item-divider {
+    border-top: 1px solid rgba(51, 51, 51, 0.1) !important;
+    margin: 8px 24px !important;
+    padding: 0 !important;
+}
+
+/* Enlace "Ver todos" con estilo especial */
+.elementor-nav-menu--main .sub-menu .menu-item-view-all > a {
+    color: var(--verde, #6E8157) !important;
+    font-weight: 600 !important;
+}
+
+.elementor-nav-menu--main .sub-menu .menu-item-view-all > a::after {
+    content: ' →' !important;
+}
+
+/* ============================================
+   SUBMENÚ - Sección Equipo
+   ============================================ */
+
+/* Etiqueta de sección en submenú */
+.elementor-nav-menu--main .sub-menu .menu-section-label {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 11px !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: var(--gris-medio, #666666) !important;
+    padding: 12px 24px 6px !important;
+    pointer-events: none !important;
+}
+
+/* Indent para items del equipo */
+.elementor-nav-menu--main .sub-menu .menu-item-team > a {
+    padding-left: 36px !important;
+    font-size: 15px !important;
+}
+
+.elementor-nav-menu--main .sub-menu .menu-item-team > a::before {
+    content: '•' !important;
+    position: absolute !important;
+    left: 24px !important;
+    color: var(--verde, #6E8157) !important;
+}
+
+/* ============================================
+   RESPONSIVE - Menú móvil CTA
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > a,
+    .elementor-nav-menu--dropdown .menu-item:last-child > a {
+        background: var(--verde, #6E8157) !important;
+        color: #FFFFFF !important;
+        margin: 10px 20px !important;
+        border-radius: 4px !important;
+        text-align: center !important;
+    }
+}
+
+/* ============================================
+   MENÚ MÓVIL - Hamburger Button Fix
+   ============================================ */
+
+/* Asegurar que el botón hamburger sea clickable */
+.elementor-menu-toggle,
+.elementor-menu-toggle__icon,
+.elementor-menu-toggle i,
+.eicon-menu-bar {
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative !important;
+}
+
+/* Contenedor del toggle */
+.elementor-nav-menu__toggle {
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+}
+
+/* Icono hamburger más grande y fácil de clickar */
+@media (max-width: 1024px) {
+    .elementor-menu-toggle {
+        padding: 12px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .elementor-menu-toggle i,
+    .elementor-menu-toggle svg {
+        font-size: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    /* Asegurar que el header no bloquee el toggle */
+    .elementor-location-header .elementor-section,
+    .elementor-location-header .elementor-container,
+    .elementor-location-header .elementor-column,
+    .elementor-location-header .elementor-widget-wrap {
+        overflow: visible !important;
+    }
+
+    /* Dropdown del menú móvil */
+    .elementor-nav-menu--dropdown.elementor-nav-menu__container {
+        z-index: 99998 !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    }
+}
+

@@ -96,7 +96,7 @@
 .single-post .elementor-section:first-child,
 .single-post .entry-header {
     background: var(--blog-bg-cream) !important;
-    padding: 60px 24px 50px !important;
+    padding: 40px 24px 32px !important;
     text-align: center;
     border-bottom: 1px solid var(--blog-border-light);
 }
@@ -570,45 +570,74 @@
 }
 
 @media (max-width: 768px) {
-    /* Header */
+    /* Header - Compacto en móvil */
     .single-post .elementor-section:first-child,
     .single-post .entry-header {
-        padding: 40px 20px !important;
+        padding: 24px 16px 20px !important;
     }
 
     .single-post .elementor-section:first-child h1,
     .single-post .entry-title {
-        font-size: clamp(24px, 6vw, 32px) !important;
+        font-size: clamp(22px, 5.5vw, 28px) !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Meta info más compacta */
+    .single-post .elementor-widget-theme-post-info,
+    .single-post .post-meta,
+    .single-post .entry-meta {
+        font-size: 13px;
+        margin-top: 8px;
     }
 
     /* Contenido */
     .single-post .elementor-widget-theme-post-content,
     .single-post .entry-content {
-        padding: 32px 20px 48px;
+        padding: 24px 16px 40px;
     }
 
     .single-post .entry-content p {
+        font-size: 16px !important;
+        line-height: 1.75 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Primer párrafo */
+    .single-post .entry-content > p:first-of-type {
         font-size: 17px !important;
     }
 
     /* Encabezados */
     .single-post h2 {
-        font-size: 24px !important;
-        margin: 36px 0 20px !important;
+        font-size: 22px !important;
+        margin: 32px 0 16px !important;
+        padding-top: 20px;
     }
 
     .single-post h3 {
-        font-size: 20px !important;
+        font-size: 18px !important;
+        margin: 28px 0 12px !important;
+    }
+
+    .single-post h4 {
+        font-size: 16px !important;
     }
 
     /* Citas */
     .single-post blockquote {
-        padding: 20px;
-        margin: 24px 0;
+        padding: 16px 20px;
+        margin: 20px 0;
     }
 
     .single-post blockquote p {
-        font-size: 17px !important;
+        font-size: 16px !important;
+    }
+
+    /* Listas */
+    .single-post .entry-content ul li,
+    .single-post .entry-content ol li {
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
     /* Navegación */
@@ -616,13 +645,43 @@
         flex-direction: column;
     }
 
+    .single-post .post-navigation {
+        padding: 24px 16px;
+        margin-top: 32px;
+    }
+
     /* Posts relacionados */
     .related-posts-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .related-posts-section {
-        padding: 40px 20px;
+        padding: 32px 16px;
+        margin-top: 32px;
+    }
+
+    .related-posts-section h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+/* Extra small - teléfonos pequeños */
+@media (max-width: 480px) {
+    .single-post .elementor-section:first-child,
+    .single-post .entry-header {
+        padding: 20px 12px 16px !important;
+    }
+
+    .single-post .elementor-section:first-child h1,
+    .single-post .entry-title {
+        font-size: 20px !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content,
+    .single-post .entry-content {
+        padding: 20px 12px 32px;
     }
 }
 

@@ -302,3 +302,58 @@ body.page-id-339 h1.entry-title {
     }
 }
 
+/* ============================================
+   MENÚ MÓVIL - Hamburger Button Fix
+   ============================================ */
+
+/* Asegurar que el botón hamburger sea clickable */
+.elementor-menu-toggle,
+.elementor-menu-toggle__icon,
+.elementor-menu-toggle i,
+.eicon-menu-bar {
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative !important;
+}
+
+/* Contenedor del toggle */
+.elementor-nav-menu__toggle {
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+}
+
+/* Icono hamburger más grande y fácil de clickar */
+@media (max-width: 1024px) {
+    .elementor-menu-toggle {
+        padding: 12px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .elementor-menu-toggle i,
+    .elementor-menu-toggle svg {
+        font-size: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    /* Asegurar que el header no bloquee el toggle */
+    .elementor-location-header .elementor-section,
+    .elementor-location-header .elementor-container,
+    .elementor-location-header .elementor-column,
+    .elementor-location-header .elementor-widget-wrap {
+        overflow: visible !important;
+    }
+
+    /* Dropdown del menú móvil */
+    .elementor-nav-menu--dropdown.elementor-nav-menu__container {
+        z-index: 99998 !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    }
+}
+
