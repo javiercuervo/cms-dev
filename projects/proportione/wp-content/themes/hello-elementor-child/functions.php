@@ -110,6 +110,59 @@ function proportione_enqueue_custom_styles() {
     }
 }
 
+// CSS condicional para plantillas de blog por categoría
+add_action('wp_enqueue_scripts', 'proportione_blog_templates_css', 25);
+function proportione_blog_templates_css() {
+    if (!is_singular('post')) return;
+
+    $theme_uri = get_stylesheet_directory_uri();
+
+    // Prioridad: IA Generativa > Estrategia Digital > Personas y Tecnología > Genérica
+    if (has_category('ia-generativa')) {
+        wp_enqueue_style(
+            'blog-ia-generativa',
+            $theme_uri . '/blog-ia-generativa.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    } elseif (has_category('estrategia-digital')) {
+        wp_enqueue_style(
+            'blog-estrategia-digital',
+            $theme_uri . '/blog-estrategia-digital.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    } elseif (has_category('personas-y-tecnologia')) {
+        wp_enqueue_style(
+            'blog-personas-tecnologia',
+            $theme_uri . '/blog-personas-tecnologia.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    } else {
+        wp_enqueue_style(
+            'blog-generic',
+            $theme_uri . '/blog-generic.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    }
+}
+
+// Añadir clases de categoría al body para selectores CSS específicos
+add_filter('body_class', 'proportione_blog_category_body_class');
+function proportione_blog_category_body_class($classes) {
+    if (is_singular('post')) {
+        $categories = get_the_category();
+        if ($categories) {
+            foreach ($categories as $category) {
+                $classes[] = 'category-' . $category->slug;
+            }
+        }
+    }
+    return $classes;
+}
+
 // Limpiar cabecera de WordPress
 add_action('init', function () {
     remove_action('wp_head', 'rsd_link');

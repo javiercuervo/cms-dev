@@ -1,0 +1,469 @@
+/**
+ * Blog Single Template - Estrategia Digital
+ * Concepto: "Executive Premium" - Diseño profesional y corporativo
+ *
+ * Paleta:
+ * - Fondo: #FAFAF8 (blanco/crema)
+ * - Texto: #1A1A1A (gris oscuro)
+ * - Acento primario: #5F322F (granate Proportione)
+ * - Acento secundario: #6E8157 (verde Proportione)
+ */
+
+/* ==========================================================================
+   Variables CSS
+   ========================================================================== */
+.single-post.category-estrategia-digital {
+    --blog-bg-primary: #FAFAF8;
+    --blog-bg-secondary: #F0EDE8;
+    --blog-bg-hero: #5F322F;
+    --blog-text-primary: #1A1A1A;
+    --blog-text-secondary: #4A4A4A;
+    --blog-text-muted: #777777;
+    --blog-accent-primary: #5F322F;
+    --blog-accent-secondary: #6E8157;
+    --blog-border-color: rgba(95, 50, 47, 0.15);
+    --blog-card-bg: #FFFFFF;
+}
+
+/* ==========================================================================
+   Fondo General
+   ========================================================================== */
+.single-post.category-estrategia-digital,
+.single-post.category-estrategia-digital .elementor-location-single {
+    background-color: var(--blog-bg-primary);
+}
+
+.single-post.category-estrategia-digital .site-main {
+    background-color: transparent;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-section:first-child,
+.single-post.category-estrategia-digital [data-elementor-type="single-post"] > .elementor-section:first-child {
+    background-color: var(--blog-bg-hero) !important;
+}
+
+.single-post.category-estrategia-digital .elementor-section:first-child .elementor-heading-title,
+.single-post.category-estrategia-digital .elementor-section:first-child h1 {
+    color: #FFFFFF !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   Tipografía
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-heading-title,
+.single-post.category-estrategia-digital h1,
+.single-post.category-estrategia-digital h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--blog-accent-primary);
+    font-weight: 600;
+}
+
+.single-post.category-estrategia-digital h3,
+.single-post.category-estrategia-digital h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--blog-text-primary);
+    font-weight: 500;
+}
+
+.single-post.category-estrategia-digital p,
+.single-post.category-estrategia-digital .elementor-widget-text-editor,
+.single-post.category-estrategia-digital .elementor-widget-theme-post-content p {
+    font-family: 'Raleway', sans-serif;
+    color: var(--blog-text-secondary);
+    line-height: 1.8;
+}
+
+/* Lead paragraph - Primer párrafo destacado */
+.single-post.category-estrategia-digital .elementor-widget-theme-post-content > div > p:first-child {
+    font-size: 1.25rem;
+    color: var(--blog-text-primary);
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   Enlaces
+   ========================================================================== */
+.single-post.category-estrategia-digital a:not(.elementor-button) {
+    color: var(--blog-accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
+}
+
+.single-post.category-estrategia-digital a:not(.elementor-button):hover {
+    color: var(--blog-accent-secondary);
+}
+
+/* ==========================================================================
+   Imagen Destacada
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-widget-theme-post-featured-image img {
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--blog-border-color);
+}
+
+/* ==========================================================================
+   Blockquotes - Estilo editorial
+   ========================================================================== */
+.single-post.category-estrategia-digital blockquote,
+.single-post.category-estrategia-digital .wp-block-quote {
+    background: var(--blog-bg-secondary);
+    border-left: 4px solid var(--blog-accent-secondary);
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 0 4px 4px 0;
+    font-style: normal;
+    position: relative;
+}
+
+.single-post.category-estrategia-digital blockquote::before {
+    content: '"';
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    color: var(--blog-accent-secondary);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    line-height: 1;
+}
+
+.single-post.category-estrategia-digital blockquote p,
+.single-post.category-estrategia-digital .wp-block-quote p {
+    color: var(--blog-text-primary);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.single-post.category-estrategia-digital blockquote cite,
+.single-post.category-estrategia-digital .wp-block-quote cite {
+    color: var(--blog-accent-primary);
+    font-style: normal;
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Callout Boxes - Insights estratégicos
+   ========================================================================== */
+.single-post.category-estrategia-digital .callout,
+.single-post.category-estrategia-digital .wp-block-group.is-style-callout,
+.single-post.category-estrategia-digital .insight-box {
+    background: var(--blog-card-bg);
+    border: 2px solid var(--blog-accent-primary);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.single-post.category-estrategia-digital .callout::before,
+.single-post.category-estrategia-digital .insight-box::before {
+    content: 'Insight';
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--blog-accent-primary);
+    color: #FFFFFF;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   Key Takeaways Box
+   ========================================================================== */
+.single-post.category-estrategia-digital .key-takeaways {
+    background: var(--blog-card-bg);
+    border: 1px solid var(--blog-border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.single-post.category-estrategia-digital .key-takeaways h4 {
+    color: var(--blog-accent-primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--blog-accent-secondary);
+}
+
+.single-post.category-estrategia-digital .key-takeaways ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.single-post.category-estrategia-digital .key-takeaways li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--blog-text-primary);
+}
+
+.single-post.category-estrategia-digital .key-takeaways li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--blog-accent-secondary);
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Listas
+   ========================================================================== */
+.single-post.category-estrategia-digital ul li::marker {
+    color: var(--blog-accent-secondary);
+}
+
+.single-post.category-estrategia-digital ol li::marker {
+    color: var(--blog-accent-primary);
+    font-weight: 600;
+}
+
+.single-post.category-estrategia-digital ul li,
+.single-post.category-estrategia-digital ol li {
+    color: var(--blog-text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   Badge de Categoría
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-post-info__terms-list a,
+.single-post.category-estrategia-digital .elementor-widget-theme-post-info .elementor-icon-list-text a {
+    background: var(--blog-accent-primary);
+    color: #FFFFFF !important;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Meta Info (Autor, Fecha)
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-section:first-child .elementor-post-info,
+.single-post.category-estrategia-digital .elementor-section:first-child .elementor-widget-theme-post-info {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.single-post.category-estrategia-digital .elementor-post-info,
+.single-post.category-estrategia-digital .elementor-widget-theme-post-info {
+    color: var(--blog-text-muted);
+}
+
+.single-post.category-estrategia-digital .elementor-post-info__item a {
+    color: var(--blog-accent-primary) !important;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Cards de Posts Relacionados
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-posts-container .elementor-post,
+.single-post.category-estrategia-digital .elementor-widget-posts .elementor-post {
+    background: var(--blog-card-bg);
+    border: 1px solid var(--blog-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.single-post.category-estrategia-digital .elementor-posts-container .elementor-post:hover {
+    border-color: var(--blog-accent-primary);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(95, 50, 47, 0.15);
+}
+
+.single-post.category-estrategia-digital .elementor-post__title a {
+    color: var(--blog-text-primary) !important;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+}
+
+.single-post.category-estrategia-digital .elementor-post__title a:hover {
+    color: var(--blog-accent-primary) !important;
+}
+
+.single-post.category-estrategia-digital .elementor-post__excerpt p {
+    color: var(--blog-text-secondary);
+}
+
+/* ==========================================================================
+   Botones
+   ========================================================================== */
+.single-post.category-estrategia-digital .elementor-button {
+    background: var(--blog-accent-primary) !important;
+    border: 2px solid var(--blog-accent-primary) !important;
+    color: #FFFFFF !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.single-post.category-estrategia-digital .elementor-button:hover {
+    background: transparent !important;
+    color: var(--blog-accent-primary) !important;
+}
+
+/* Botón secundario */
+.single-post.category-estrategia-digital .elementor-button.elementor-button-secondary,
+.single-post.category-estrategia-digital .elementor-button[class*="outline"] {
+    background: transparent !important;
+    border: 2px solid var(--blog-accent-secondary) !important;
+    color: var(--blog-accent-secondary) !important;
+}
+
+.single-post.category-estrategia-digital .elementor-button.elementor-button-secondary:hover {
+    background: var(--blog-accent-secondary) !important;
+    color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   CTA Section
+   ========================================================================== */
+.single-post.category-estrategia-digital .cta-consultoria {
+    background: var(--blog-accent-primary);
+    color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.single-post.category-estrategia-digital .cta-consultoria h3 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.single-post.category-estrategia-digital .cta-consultoria p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   Separadores
+   ========================================================================== */
+.single-post.category-estrategia-digital hr,
+.single-post.category-estrategia-digital .wp-block-separator {
+    border: none;
+    height: 1px;
+    background: var(--blog-border-color);
+    margin: 3rem 0;
+}
+
+.single-post.category-estrategia-digital .wp-block-separator.is-style-wide {
+    height: 2px;
+    background: linear-gradient(90deg, var(--blog-accent-primary), var(--blog-accent-secondary));
+}
+
+/* ==========================================================================
+   Tablas
+   ========================================================================== */
+.single-post.category-estrategia-digital table {
+    background: var(--blog-card-bg);
+    border: 1px solid var(--blog-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.single-post.category-estrategia-digital th {
+    background: var(--blog-accent-primary);
+    color: #FFFFFF;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.single-post.category-estrategia-digital td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--blog-border-color);
+    color: var(--blog-text-secondary);
+}
+
+.single-post.category-estrategia-digital tr:last-child td {
+    border-bottom: none;
+}
+
+.single-post.category-estrategia-digital tr:nth-child(even) td {
+    background: var(--blog-bg-secondary);
+}
+
+/* ==========================================================================
+   Código (para snippets técnicos)
+   ========================================================================== */
+.single-post.category-estrategia-digital code {
+    background: var(--blog-bg-secondary);
+    color: var(--blog-accent-primary);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.single-post.category-estrategia-digital pre {
+    background: var(--blog-text-primary);
+    color: #E0E0E0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.single-post.category-estrategia-digital pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 767px) {
+    .single-post.category-estrategia-digital blockquote,
+    .single-post.category-estrategia-digital .wp-block-quote {
+        padding: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .single-post.category-estrategia-digital blockquote::before {
+        font-size: 3rem;
+    }
+
+    .single-post.category-estrategia-digital .key-takeaways {
+        padding: 1.5rem;
+    }
+
+    .single-post.category-estrategia-digital .cta-consultoria {
+        padding: 2rem 1.5rem;
+    }
+
+    .single-post.category-estrategia-digital .elementor-widget-theme-post-content > div > p:first-child {
+        font-size: 1.1rem;
+    }
+}
