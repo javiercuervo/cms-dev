@@ -818,7 +818,7 @@ $categories = get_categories(array('hide_empty' => true));
         <!-- Editorial Header -->
         <header class="editorial-header">
             <p class="editorial-date">Madrid | <?php echo date_i18n('j \d\e F \d\e Y'); ?></p>
-            <h1 class="editorial-title">Perspectivas</h1>
+            <h1 class="editorial-title">Alma Proportione</h1>
             <p class="editorial-subtitle-text">Nuestra mirada sobre estrategia, tecnología y personas</p>
             <div class="editorial-divider"></div>
         </header>
