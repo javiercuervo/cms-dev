@@ -57,25 +57,81 @@ body.page-id-2832 .page-header {
     color: #6E8157 !important;
 }
 
-/* Submenús dropdown */
-.elementor-nav-menu--main .sub-menu {
+/* ===========================================
+   SUBMENÚS DROPDOWN - FIX COMPLETO ELEMENTOR
+   =========================================== */
+
+/* Reset de estilos de Elementor para submenús */
+.elementor-nav-menu--main .elementor-nav-menu--dropdown,
+.elementor-nav-menu--main ul.sub-menu,
+.elementor-nav-menu--main .sub-menu.elementor-nav-menu--dropdown {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    z-index: 99999 !important;
     background: #FFFFFF !important;
     border: none !important;
     box-shadow: 0 8px 30px rgba(95, 50, 47, 0.15) !important;
     border-radius: 0 0 8px 8px !important;
     padding: 12px 0 !important;
-    min-width: 240px !important;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease !important;
+    min-width: 280px !important;
+    margin: 0 !important;
+    list-style: none !important;
+    /* Estado oculto - usar display para máxima compatibilidad */
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.2s ease, visibility 0.2s ease !important;
 }
 
-/* Mostrar submenú en hover */
-.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu {
+/* Asegurar que el item padre tiene posición relativa */
+.elementor-nav-menu--main .menu-item-has-children,
+.elementor-nav-menu--main li.menu-item-has-children {
+    position: relative !important;
+}
+
+/* Puente invisible para mantener hover - ANTES del submenú */
+.elementor-nav-menu--main .menu-item-has-children > a.elementor-item::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 15px !important;
+    background: transparent !important;
+    pointer-events: auto !important;
+}
+
+/* MOSTRAR submenú en hover del item padre */
+.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu,
+.elementor-nav-menu--main .menu-item-has-children:hover > .elementor-nav-menu--dropdown,
+.elementor-nav-menu--main .menu-item-has-children:hover > ul.sub-menu.elementor-nav-menu--dropdown,
+.elementor-nav-menu--main li.menu-item-has-children:hover > ul,
+nav.elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu {
+    display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
-    transform: translateY(0) !important;
+    pointer-events: auto !important;
+}
+
+/* Mantener submenú visible cuando el ratón está sobre él */
+.elementor-nav-menu--main .sub-menu:hover,
+.elementor-nav-menu--main .elementor-nav-menu--dropdown:hover,
+.elementor-nav-menu--main ul.sub-menu.elementor-nav-menu--dropdown:hover {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Items dentro del submenú */
+.elementor-nav-menu--main .sub-menu li,
+.elementor-nav-menu--main .elementor-nav-menu--dropdown li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Items del submenú */

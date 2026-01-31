@@ -1,0 +1,1306 @@
+[
+  {
+    "id": "hero-investigacion",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "vh", "size": 60},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "gradient",
+      "background_color": "#5F322F",
+      "background_color_b": "#3D1F1C",
+      "background_gradient_angle": {"unit": "deg", "size": 135},
+      "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "hero-badge",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Investigacion Aplicada",
+          "header_size": "span",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 12},
+          "typography_font_weight": "600",
+          "typography_letter_spacing": {"unit": "px", "size": 1},
+          "typography_text_transform": "uppercase",
+          "_background_background": "classic",
+          "_background_color": "#6E8157",
+          "_border_radius": {"unit": "px", "size": 20},
+          "_padding": {"unit": "px", "top": "8", "right": "20", "bottom": "8", "left": "20"},
+          "_margin": {"unit": "px", "bottom": "24"}
+        }
+      },
+      {
+        "id": "hero-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Investigacion aplicada para la transformacion digital",
+          "header_size": "h1",
+          "align": "center",
+          "title_color": "#F5F0E6",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 56},
+          "typography_font_size_tablet": {"unit": "px", "size": 42},
+          "typography_font_size_mobile": {"unit": "px", "size": 36},
+          "typography_font_weight": "600",
+          "typography_line_height": {"unit": "em", "size": 1.2},
+          "_animation": "fadeInUp"
+        }
+      },
+      {
+        "id": "hero-lead",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Exploramos como los datos de busqueda, la inteligencia artificial y los sistemas de Business Intelligence pueden impulsar decisiones estrategicas en PYMEs. Rigor academico con vision practica.</p>",
+          "text_color": "#F5F0E6",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 22},
+          "typography_font_size_mobile": {"unit": "px", "size": 18},
+          "typography_line_height": {"unit": "em", "size": 1.6},
+          "_margin": {"unit": "px", "top": "24"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "investigador-card",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.1)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "24", "right": "32", "bottom": "24", "left": "32"},
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 20},
+          "flex_align_items": "center",
+          "_margin": {"unit": "px", "top": "40"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        },
+        "elements": [
+          {
+            "id": "investigador-avatar",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 64},
+              "min_height": {"unit": "px", "size": 64},
+              "background_background": "classic",
+              "background_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 32},
+              "flex_justify_content": "center",
+              "flex_align_items": "center"
+            },
+            "elements": [
+              {
+                "id": "avatar-initials",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "JC",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 24},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "investigador-info",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "investigador-nombre",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Javier Cuervo Lopez",
+                  "header_size": "h3",
+                  "title_color": "#F5F0E6",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 18},
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "investigador-rol",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Investigador Principal - Doctorado en Innovacion Empresarial</p>",
+                  "text_color": "#F5F0E6",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "_css_classes": "opacity-80"
+                }
+              },
+              {
+                "id": "investigador-orcid",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "ORCID: 0009-0006-7134-2894",
+                  "link": {"url": "https://orcid.org/0009-0006-7134-2894", "is_external": true},
+                  "button_type": "link",
+                  "button_text_color": "#F5F0E6",
+                  "typography_font_size": {"unit": "px", "size": 13},
+                  "typography_text_decoration": "underline"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intro-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "intro-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "7 Lineas de Investigacion Activas",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 36},
+          "typography_font_size_mobile": {"unit": "px", "size": 28},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "bottom": "20"}
+        }
+      },
+      {
+        "id": "intro-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Nuestro trabajo combina analisis cuantitativo con estudios cualitativos profundos, colaborando con universidades, centros de investigacion y empresas de Europa y Latinoamerica.</p>",
+          "text_color": "#666666",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18}
+        }
+      }
+    ]
+  },
+  {
+    "id": "lineas-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1100},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "0", "right": "24", "bottom": "64", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "linea-1-featured",
+        "elType": "container",
+        "settings": {
+          "background_background": "gradient",
+          "background_color": "#FFFFFF",
+          "background_color_b": "#F5F0E6",
+          "background_gradient_angle": {"unit": "deg", "size": 135},
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "4"},
+          "border_color": "#5F322F",
+          "border_radius": {"unit": "px", "size": 12},
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 2, "blur": 12, "spread": 0, "color": "rgba(0,0,0,0.04)"},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp"
+        },
+        "elements": [
+          {
+            "id": "linea-1-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-1-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "1",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-1-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Integracion de datos de motores de busqueda en Business Intelligence para PYMEs",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "typography_line_height": {"unit": "em", "size": 1.3},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-1-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Linea central de investigacion: como las senales de Google Search, Maps, YouTube, marketplaces y LLMs pueden integrarse en sistemas de BI para apoyar decisiones estrategicas, tacticas y operativas.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16},
+              "_margin": {"unit": "px", "bottom": "20"}
+            }
+          },
+          {
+            "id": "linea-1-metodologia",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-1-met-label",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "METODOLOGIA",
+                  "header_size": "span",
+                  "title_color": "#6E8157",
+                  "typography_font_size": {"unit": "px", "size": 12},
+                  "typography_font_weight": "700",
+                  "typography_letter_spacing": {"unit": "px", "size": 1},
+                  "_margin": {"unit": "px", "bottom": "8"}
+                }
+              },
+              {
+                "id": "linea-1-tags",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<span style=\"display:inline-block;background:#F5F0E6;color:#5F322F;padding:4px 12px;border-radius:4px;font-size:13px;margin-right:8px;margin-bottom:8px;\">PRISMA 2020</span><span style=\"display:inline-block;background:#F5F0E6;color:#5F322F;padding:4px 12px;border-radius:4px;font-size:13px;margin-right:8px;margin-bottom:8px;\">Analisis bibliometrico</span><span style=\"display:inline-block;background:#F5F0E6;color:#5F322F;padding:4px 12px;border-radius:4px;font-size:13px;margin-bottom:8px;\">Design Science Research</span>"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-1-hallazgos",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "linea-1-hall-label",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "HALLAZGOS PRINCIPALES",
+                  "header_size": "span",
+                  "title_color": "#6E8157",
+                  "typography_font_size": {"unit": "px", "size": 12},
+                  "typography_font_weight": "700",
+                  "typography_letter_spacing": {"unit": "px", "size": 1},
+                  "_margin": {"unit": "px", "bottom": "8"}
+                }
+              },
+              {
+                "id": "linea-1-hall-list",
+                "elType": "widget",
+                "widgetType": "icon-list",
+                "settings": {
+                  "icon_list": [
+                    {"text": "Los datos de busqueda siguen infrautilizados y confinados al marketing", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}},
+                    {"text": "Integrados en BI, actuan como sensores tempranos de demanda, percepcion y riesgo", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}},
+                    {"text": "Existen patrones de uso diferenciados segun nivel de decision", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}
+                  ],
+                  "icon_color": "#6E8157",
+                  "text_color": "#333333",
+                  "text_typography_font_size": {"unit": "px", "size": 15}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "linea-2",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 2, "blur": 12, "spread": 0, "color": "rgba(0,0,0,0.04)"},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 100
+        },
+        "elements": [
+          {
+            "id": "linea-2-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-2-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "2",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-2-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "BI multinivel con integracion de datos locales y cloud",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-2-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Arquitecturas hibridas que integran datos operativos locales (ERP, CRM) y datos cloud (analitica digital, search data) en cuadros de mando ejecutivos.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16},
+              "_margin": {"unit": "px", "bottom": "20"}
+            }
+          },
+          {
+            "id": "linea-2-doi",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "DOI: 10.5281/zenodo.17245495",
+              "link": {"url": "https://doi.org/10.5281/zenodo.17245495", "is_external": true},
+              "button_background_color": "#1E3A5F",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 4},
+              "typography_font_size": {"unit": "px", "size": 12}
+            }
+          }
+        ]
+      },
+      {
+        "id": "linea-3",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        },
+        "elements": [
+          {
+            "id": "linea-3-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-3-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "3",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-3-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Inteligencia Artificial como capa interpretativa: LLMs y agentes",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-3-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Uso de modelos de lenguaje y agentes de IA como capa de interpretacion y accion sobre sistemas de BI y procesos empresariales.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16}
+            }
+          }
+        ]
+      },
+      {
+        "id": "linea-4",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 300
+        },
+        "elements": [
+          {
+            "id": "linea-4-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-4-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "4",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-4-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Privacidad, RGPD y gobernanza de datos en analitica",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-4-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Linea transversal centrada en garantizar que los sistemas de analitica y BI cumplan RGPD y principios de minimizacion, trazabilidad y auditoria.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16}
+            }
+          }
+        ]
+      },
+      {
+        "id": "linea-5",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 400
+        },
+        "elements": [
+          {
+            "id": "linea-5-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-5-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "5",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-5-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "UX, datos y tecnologia en proyectos sociales y sanitarios (CAPPI)",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-5-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Diseno de sistemas digitales centrados en personas en contextos sanitarios y sociales, como paliativos pediatricos.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16}
+            }
+          }
+        ]
+      },
+      {
+        "id": "linea-6",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 500
+        },
+        "elements": [
+          {
+            "id": "linea-6-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-6-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "6",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-6-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Bioseguridad y trazabilidad (Catedra UCH-Mensoft)",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-6-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Investigacion aplicada sobre trazabilidad de procesos y datos en contextos sanitarios y de bioseguridad.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16}
+            }
+          }
+        ]
+      },
+      {
+        "id": "linea-7",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "size": 1},
+          "border_color": "rgba(0,0,0,0.08)",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 600
+        },
+        "elements": [
+          {
+            "id": "linea-7-num",
+            "elType": "container",
+            "settings": {
+              "width": {"unit": "px", "size": 32},
+              "min_height": {"unit": "px", "size": 32},
+              "background_background": "classic",
+              "background_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 16},
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "_margin": {"unit": "px", "bottom": "16"}
+            },
+            "elements": [
+              {
+                "id": "linea-7-num-text",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "7",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_font_weight": "700"
+                }
+              }
+            ]
+          },
+          {
+            "id": "linea-7-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Ciencia abierta y trazabilidad academica",
+              "header_size": "h3",
+              "title_color": "#5F322F",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {"unit": "px", "size": 22},
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "linea-7-desc",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Aplicacion sistematica de principios de Open Science: PRISMA, OSF, Zenodo y ORCID como infraestructura de investigacion.</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 16}
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "publicaciones-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 900},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "pub-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Publicaciones Recientes",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 36},
+          "_margin": {"unit": "px", "bottom": "40"}
+        }
+      },
+      {
+        "id": "pub-1",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "24"}
+        },
+        "elements": [
+          {
+            "id": "pub-1-author",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Cuervo, J. (2025)</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 14}
+            }
+          },
+          {
+            "id": "pub-1-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Developing a data-driven Business Intelligence system for multilevel decision-making in SMEs",
+              "header_size": "h3",
+              "title_color": "#333333",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "typography_font_style": "italic",
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "pub-1-meta",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "row",
+              "flex_gap": {"unit": "px", "size": 12},
+              "flex_align_items": "center"
+            },
+            "elements": [
+              {
+                "id": "pub-1-year",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "2025",
+                  "header_size": "span",
+                  "title_color": "#FFFFFF",
+                  "_background_background": "classic",
+                  "_background_color": "#6E8157",
+                  "_border_radius": {"unit": "px", "size": 4},
+                  "_padding": {"unit": "px", "top": "4", "right": "10", "bottom": "4", "left": "10"},
+                  "typography_font_size": {"unit": "px", "size": 12},
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "pub-1-doi",
+                "elType": "widget",
+                "widgetType": "button",
+                "settings": {
+                  "text": "DOI: 10.5281/zenodo.17245495",
+                  "link": {"url": "https://doi.org/10.5281/zenodo.17245495", "is_external": true},
+                  "button_background_color": "#1E3A5F",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {"unit": "px", "size": 4},
+                  "typography_font_size": {"unit": "px", "size": 12}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pub-2",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"},
+          "_margin": {"unit": "px", "bottom": "24"}
+        },
+        "elements": [
+          {
+            "id": "pub-2-author",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Cuervo, J. &amp; Tortosa, M. (2025)</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 14}
+            }
+          },
+          {
+            "id": "pub-2-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Strategic Role-Play with Generative AI for Innovation Courses",
+              "header_size": "h3",
+              "title_color": "#333333",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "typography_font_style": "italic",
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "pub-2-doi",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "DOI: 10.5281/zenodo.17245635",
+              "link": {"url": "https://doi.org/10.5281/zenodo.17245635", "is_external": true},
+              "button_background_color": "#1E3A5F",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 4},
+              "typography_font_size": {"unit": "px", "size": 12}
+            }
+          }
+        ]
+      },
+      {
+        "id": "pub-3",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {"unit": "px", "size": 12},
+          "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32"}
+        },
+        "elements": [
+          {
+            "id": "pub-3-author",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Cuervo, J. &amp; Tortosa, M. (2024)</p>",
+              "text_color": "#666666",
+              "typography_font_size": {"unit": "px", "size": 14}
+            }
+          },
+          {
+            "id": "pub-3-title",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Coaching Development Program: Conversations that Inspire Change and Achieve Goals",
+              "header_size": "h3",
+              "title_color": "#333333",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "typography_font_style": "italic",
+              "_margin": {"unit": "px", "bottom": "12"}
+            }
+          },
+          {
+            "id": "pub-3-doi",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "DOI: 10.5281/zenodo.17243218",
+              "link": {"url": "https://doi.org/10.5281/zenodo.17243218", "is_external": true},
+              "button_background_color": "#1E3A5F",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 4},
+              "typography_font_size": {"unit": "px", "size": 12}
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "open-science-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#1E3A5F",
+      "padding": {"unit": "px", "top": "48", "right": "24", "bottom": "48", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "os-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Comprometidos con la Ciencia Abierta",
+          "header_size": "h3",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 24}
+        }
+      },
+      {
+        "id": "os-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Toda nuestra investigacion sigue principios de transparencia y reproducibilidad. Materiales, datos y protocolos disponibles publicamente.</p>",
+          "text_color": "#FFFFFF",
+          "typography_font_size": {"unit": "px", "size": 16},
+          "_margin": {"unit": "px", "top": "16", "bottom": "24"},
+          "_css_classes": "opacity-90"
+        }
+      },
+      {
+        "id": "os-logos",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 32},
+          "flex_justify_content": "center",
+          "flex_wrap": "wrap"
+        },
+        "elements": [
+          {
+            "id": "os-prisma",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "PRISMA 2020",
+              "header_size": "span",
+              "title_color": "#FFFFFF",
+              "_background_background": "classic",
+              "_background_color": "rgba(255,255,255,0.1)",
+              "_border_radius": {"unit": "px", "size": 8},
+              "_padding": {"unit": "px", "top": "12", "right": "24", "bottom": "12", "left": "24"},
+              "typography_font_size": {"unit": "px", "size": 14},
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "os-osf",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "OSF",
+              "header_size": "span",
+              "title_color": "#FFFFFF",
+              "_background_background": "classic",
+              "_background_color": "rgba(255,255,255,0.1)",
+              "_border_radius": {"unit": "px", "size": 8},
+              "_padding": {"unit": "px", "top": "12", "right": "24", "bottom": "12", "left": "24"},
+              "typography_font_size": {"unit": "px", "size": 14},
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "os-zenodo",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Zenodo",
+              "header_size": "span",
+              "title_color": "#FFFFFF",
+              "_background_background": "classic",
+              "_background_color": "rgba(255,255,255,0.1)",
+              "_border_radius": {"unit": "px", "size": 8},
+              "_padding": {"unit": "px", "top": "12", "right": "24", "bottom": "12", "left": "24"},
+              "typography_font_size": {"unit": "px", "size": 14},
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "os-orcid",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "ORCID",
+              "header_size": "span",
+              "title_color": "#FFFFFF",
+              "_background_background": "classic",
+              "_background_color": "rgba(255,255,255,0.1)",
+              "_border_radius": {"unit": "px", "size": 8},
+              "_padding": {"unit": "px", "top": "12", "right": "24", "bottom": "12", "left": "24"},
+              "typography_font_size": {"unit": "px", "size": 14},
+              "typography_font_weight": "600"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marco-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F5F5",
+      "padding": {"unit": "px", "top": "48", "right": "24", "bottom": "48", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "marco-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Marco Institucional",
+          "header_size": "h3",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 24},
+          "_margin": {"unit": "px", "bottom": "24"}
+        }
+      },
+      {
+        "id": "marco-instituciones",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 48},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "inst-proportione",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "flex_align_items": "center"
+            },
+            "elements": [
+              {
+                "id": "inst-prop-name",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Proportione LDA",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#333333",
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "inst-prop-detail",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Entidad aplicada - Estrategia, tecnologia y personas</p>",
+                  "text_color": "#666666",
+                  "typography_font_size": {"unit": "px", "size": 14}
+                }
+              }
+            ]
+          },
+          {
+            "id": "inst-aveiro",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "flex_align_items": "center"
+            },
+            "elements": [
+              {
+                "id": "inst-av-name",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Universidade de Aveiro",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#333333",
+                  "typography_font_weight": "600"
+                }
+              },
+              {
+                "id": "inst-av-detail",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align:center;\">Doctorado en Innovacion Empresarial</p>",
+                  "text_color": "#666666",
+                  "typography_font_size": {"unit": "px", "size": 14}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cta-section",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "gradient",
+      "background_color": "#5F322F",
+      "background_color_b": "#566E30",
+      "background_gradient_angle": {"unit": "deg", "size": 135},
+      "padding": {"unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24"}
+    },
+    "elements": [
+      {
+        "id": "cta-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Colaboramos?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {"unit": "px", "size": 40},
+          "typography_font_size_mobile": {"unit": "px", "size": 28}
+        }
+      },
+      {
+        "id": "cta-text",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align:center;\">Universidades, centros de investigacion y empresas interesadas en proyectos conjuntos de transformacion digital basada en datos.</p>",
+          "text_color": "#FFFFFF",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "_margin": {"unit": "px", "top": "16", "bottom": "32"},
+          "_css_classes": "opacity-90"
+        }
+      },
+      {
+        "id": "cta-buttons",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 16},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "cta-btn-primary",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Proponer colaboracion",
+              "link": {"url": "/contacto/"},
+              "button_background_color": "#FFFFFF",
+              "button_text_color": "#5F322F",
+              "border_radius": {"unit": "px", "size": 6},
+              "text_padding": {"unit": "px", "top": "16", "right": "32", "bottom": "16", "left": "32"},
+              "typography_font_weight": "600"
+            }
+          },
+          {
+            "id": "cta-btn-secondary",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Ver perfil ORCID",
+              "link": {"url": "https://orcid.org/0009-0006-7134-2894", "is_external": true},
+              "button_background_color": "transparent",
+              "button_text_color": "#FFFFFF",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "size": 2},
+              "border_color": "#FFFFFF",
+              "border_radius": {"unit": "px", "size": 6},
+              "text_padding": {"unit": "px", "top": "16", "right": "32", "bottom": "16", "left": "32"},
+              "typography_font_weight": "600"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

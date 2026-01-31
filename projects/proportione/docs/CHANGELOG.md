@@ -4,6 +4,47 @@ Todos los cambios notables del proyecto se documentan aquí.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [2026-01-31] Redirecciones 301 + Correcciones Visuales
+
+### Añadido
+- **9 Redirecciones 301** implementadas en `.htaccess-new`:
+  - `/inteligencia-artificial-generativa/` → `/ia-generativa/`
+  - `/organizacion-agile-un-enfoque-moderno-para-la-gestion-empresarial/` → `/organizacion-agile/`
+  - `/estrategia-de-retail-omnicanal/` → `/estrategia-omnicanal-retail/`
+  - `/consultoria-de-negocio/` → `/consultoria-negocio/`
+  - `/la-era-de-la-ia-generativa/` → `/ia-generativa/`
+  - `/estrategia-transformacion-digital/` → `/transformacion-digital/`
+  - `/quienes-somos/` → `/nosotros/`
+  - `/nuestro-equipo/` → `/nosotros/`
+  - `/el-equipo/` → `/nosotros/`
+
+- **Documentación nueva**:
+  - `docs/PLAN-REDIRECCIONES-301.md` - Plan detallado de redirecciones
+  - `docs/MENU-ESTRUCTURA-OFICIAL.md` - Estructura del menú
+  - `docs/IMPLEMENTACION-SEO-GEO-4PAGINAS.md` - Implementación SEO
+
+- **CSS nuevos**:
+  - `blog-single-enhanced.css` - Template mejorado para posts
+  - `investigacion.css` - Estilos página investigación
+
+- **Páginas nuevas**:
+  - `staging19-backup/pages/clientes.php` - Página de clientes
+
+### Modificado
+- **metodologia.php**: Color H1 hero cambiado a blanco puro (#FFFFFF)
+- **consultoria-negocio.php**: Añadida sección CTA final
+- **blog-single-enhanced.css**: Añadido CSS para ocultar imágenes duplicadas en cabecera de posts
+- **investigacion.php**: Rediseño completo de la página
+- **estrategia-innovacion.php**: Hero blanco, altura reducida
+- **proportione-corrections.css**: Fixes para consultoria-negocio
+
+### Verificado
+- Todas las redirecciones 301 testeadas con curl: OK
+- Sin cadenas de redirección detectadas
+- Destinos retornan 200 OK
+
+---
+
 ## [2026-01-31] Preparación para Producción
 
 ### Eliminado

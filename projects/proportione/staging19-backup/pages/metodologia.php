@@ -65,7 +65,7 @@ get_header();
     font-family: var(--font-titulo);
     font-size: clamp(36px, 7vw, 64px);
     font-weight: 700;
-    color: var(--color-crema);
+    color: #FFFFFF !important;
     margin: 0 0 20px;
     line-height: 1.1;
     text-shadow: 0 2px 20px rgba(0,0,0,0.3);
@@ -74,7 +74,7 @@ get_header();
 .metodologia-hero p {
     font-family: var(--font-cuerpo);
     font-size: clamp(18px, 3vw, 22px);
-    color: var(--color-crema);
+    color: #FFFFFF;
     margin: 0;
     opacity: 0.95;
     text-shadow: 0 1px 10px rgba(0,0,0,0.2);
@@ -122,6 +122,14 @@ get_header();
 .camino-item:last-child::before { background: var(--color-verde); }
 .camino-item h3 { font-family: var(--font-titulo); font-size: 22px; font-weight: 600; color: var(--color-granate); margin: 0 0 8px; }
 .camino-item p { font-size: 16px; margin: 0; }
+
+/* CTA */
+.section-cta { background: var(--color-granate); text-align: center; }
+.section-cta .met-container { max-width: 600px; }
+.section-cta h2 { color: var(--color-crema); }
+.section-cta p { font-size: 20px; color: var(--color-crema); line-height: 1.6; margin: 0 0 32px; }
+.btn-cta { display: inline-block; padding: 18px 48px; background: var(--color-verde); color: var(--color-blanco) !important; font-family: var(--font-cuerpo); font-size: 17px; font-weight: 600; text-decoration: none; border-radius: 6px; transition: all 0.3s ease; }
+.btn-cta:hover { background: var(--color-verde-medio); transform: translateY(-3px); }
 
 @media (max-width: 900px) {
     .pasos-grid { grid-template-columns: repeat(2, 1fr); }
@@ -244,6 +252,15 @@ get_header();
                 <p>Su equipo domina las herramientas y puede evolucionar sin nuestra ayuda.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="met-section section-cta">
+    <div class="met-container">
+        <h2>¿Listo para transformar su organización?</h2>
+        <p>Hablemos de su situación específica.<br>Sin compromiso, sin presentaciones eternas.</p>
+        <a href="/contacto/" class="btn-cta">Agendar una conversación</a>
     </div>
 </section>
 

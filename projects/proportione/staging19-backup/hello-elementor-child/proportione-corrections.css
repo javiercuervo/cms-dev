@@ -224,3 +224,19 @@ footer.elementor-location-footer a:hover,
 footer.elementor-location-footer a:focus {
     opacity: 1 !important;
 }
+
+/* ===========================================
+   9. PÁGINA CONSULTORÍA DE NEGOCIO
+   =========================================== */
+
+/* Ocultar título duplicado "Consultoría de Negocio" */
+.page-id-2946 .entry-title {
+    display: none !important;
+}
+
+/* H1 del hero en color blanco */
+.page-id-2946 .elementor-section:first-of-type h1,
+.page-id-2946 .elementor-section:first-of-type .elementor-heading-title {
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}

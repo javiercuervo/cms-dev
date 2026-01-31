@@ -35,8 +35,9 @@ get_header();
    ============================================ */
 .ei-hero {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,9 +89,10 @@ get_header();
     font-family: 'Oswald', sans-serif;
     font-size: clamp(40px, 8vw, 72px);
     font-weight: 700;
-    color: var(--blanco);
+    color: #FFFFFF !important;
     margin: 0 0 24px 0;
     line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 0.8s ease 0.4s both;
 }
 
@@ -948,6 +950,29 @@ get_header();
                     <div class="ei-stat-label">Meses time-to-market</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="ei-cta">
+        <div class="ei-cta-pattern">
+            <svg viewBox="0 0 800 400">
+                <circle cx="100" cy="100" r="150" fill="none" stroke="white" stroke-width="1"/>
+                <circle cx="700" cy="300" r="200" fill="none" stroke="white" stroke-width="1"/>
+                <circle cx="400" cy="200" r="100" fill="none" stroke="white" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="ei-cta-content">
+            <h2>¿Listo para innovar con estrategia?</h2>
+            <p>Hablemos de cómo podemos ayudarte a transformar tu organización</p>
+            <a href="/contacto/" class="ei-cta-btn">
+                Agendar llamada
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </a>
+            <p class="ei-cta-email">o escríbenos a <a href="mailto:info@proportione.com">info@proportione.com</a></p>
         </div>
     </section>
 

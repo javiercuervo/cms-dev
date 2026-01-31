@@ -1,7 +1,7 @@
 <?php
 /**
- * Blog Page - Alma Proportione
- * Diseño estilo editorial tecnológico
+ * Blog Page - The Proportione Times
+ * Diseño estilo periódico tecnológico
  */
 require_once(dirname(__FILE__) . '/wp-load.php');
 get_header();
@@ -36,7 +36,7 @@ $categories = get_categories(array('hide_empty' => true));
 
 <style>
 /* ============================================
-   ALMA PROPORTIONE - Blog Styles
+   Alma Proportione - Blog Styles
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
@@ -62,6 +62,68 @@ $categories = get_categories(array('hide_empty' => true));
     min-height: 100vh;
 }
 
+/* News Ticker */
+.breaking-news {
+    background: var(--granate);
+    color: white;
+    padding: 12px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.breaking-news::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--granate), rgba(110,129,87,0.2), var(--granate));
+    opacity: 0.5;
+}
+
+.ticker-content {
+    display: flex;
+    gap: 48px;
+    animation: ticker 40s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+a.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+a.ticker-item:hover {
+    opacity: 0.8;
+}
+
+.ticker-item .label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ticker-item .text {
+    font-weight: 300;
+}
+
+.ticker-icon {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
 /* Editorial Header */
 .editorial-header {
     border-bottom: 4px solid var(--granate);
@@ -77,29 +139,24 @@ $categories = get_categories(array('hide_empty' => true));
     margin-bottom: 8px;
 }
 
-.editorial-label {
-    display: none;
-}
-
 .editorial-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 400;
-    font-style: italic;
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 700;
     color: var(--granate);
-    margin: 0 0 16px 0;
-}
-
-.editorial-subtitle-text {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--gris-medio);
-    margin: 0;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px 0;
 }
 
 .editorial-subtitle {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gris-medio);
 }
 
 .editorial-subtitle .dot {
@@ -123,17 +180,17 @@ $categories = get_categories(array('hide_empty' => true));
 
 /* Main Container */
 .blog-main {
-    max-width: 1100px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 48px 32px;
+    padding: 32px 24px;
 }
 
 /* Hero Section */
 .hero-section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48px;
-    margin-bottom: 56px;
+    gap: 32px;
+    margin-bottom: 48px;
 }
 
 @media (min-width: 1024px) {
@@ -147,12 +204,20 @@ $categories = get_categories(array('hide_empty' => true));
     cursor: pointer;
 }
 
+.featured-article:hover .featured-image img {
+    transform: scale(1.05);
+}
+
 .featured-article:hover .featured-title {
     color: var(--verde);
 }
 
 .featured-image {
-    display: none;
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 16px;
 }
 
 .featured-image img {
@@ -170,36 +235,35 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .featured-category {
-    position: static;
-    background: transparent;
-    color: var(--verde);
-    padding: 0;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    background: var(--verde);
+    color: white;
+    padding: 6px 12px;
     font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.15em;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    display: block;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .featured-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 400;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
     color: var(--granate);
     line-height: 1.2;
-    margin: 0 0 24px 0;
+    margin: 0 0 12px 0;
     transition: color 0.3s ease;
 }
 
 .featured-excerpt {
-    font-size: clamp(17px, 2vw, 20px);
+    font-size: 18px;
     color: var(--gris-medio);
-    line-height: 1.75;
-    margin: 0 0 24px 0;
-    max-width: 700px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
 }
 
 .featured-meta {
@@ -217,10 +281,6 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 /* Sidebar */
-.sidebar-section {
-    counter-reset: sidebar-counter;
-}
-
 .sidebar-section h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -233,12 +293,12 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .sidebar-article {
-    display: block;
-    padding: 20px 0;
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(51,51,51,0.12);
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(51,51,51,0.2);
     cursor: pointer;
-    counter-increment: sidebar-counter;
 }
 
 .sidebar-article:last-child {
@@ -251,17 +311,15 @@ $categories = get_categories(array('hide_empty' => true));
     color: var(--verde);
 }
 
-.sidebar-article::before {
-    content: counter(sidebar-counter, decimal-leading-zero) ".";
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    color: var(--verde);
-    display: block;
-    margin-bottom: 8px;
+.sidebar-article:hover .sidebar-thumb img {
+    transform: scale(1.1);
 }
 
 .sidebar-thumb {
-    display: none;
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
 }
 
 .sidebar-thumb img {
@@ -272,7 +330,7 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .sidebar-content {
-    flex: none;
+    flex: 1;
 }
 
 .sidebar-category {
@@ -285,16 +343,15 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .sidebar-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    font-weight: 500;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--granate);
-    line-height: 1.4;
+    line-height: 1.3;
     margin: 0 0 8px 0;
     transition: color 0.3s ease;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -312,10 +369,10 @@ $categories = get_categories(array('hide_empty' => true));
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
-    padding: 36px 0;
+    padding: 32px 0;
     border-top: 1px solid rgba(51,51,51,0.2);
     border-bottom: 1px solid rgba(51,51,51,0.2);
-    margin-bottom: 56px;
+    margin-bottom: 48px;
 }
 
 .category-pill {
@@ -357,19 +414,15 @@ $categories = get_categories(array('hide_empty' => true));
 
 @media (min-width: 1024px) {
     .articles-grid {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 48px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* Article Card */
 .article-card {
-    background: transparent;
-    box-shadow: none;
-    border-left: 3px solid transparent;
-    border-bottom: 1px solid rgba(51,51,51,0.1);
-    padding: 28px 0;
-    border-radius: 0;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
     overflow: hidden;
@@ -393,11 +446,14 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .article-card:hover {
-    transform: none;
-    box-shadow: none;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     border-left-color: var(--verde);
-    padding-left: 20px;
-    background: rgba(245, 240, 230, 0.3);
+}
+
+.article-card:hover .card-image img {
+    transform: scale(1.05);
+    filter: grayscale(30%);
 }
 
 .article-card:hover .card-title {
@@ -405,7 +461,9 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .card-image {
-    display: none;
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
 }
 
 .card-image img {
@@ -416,33 +474,32 @@ $categories = get_categories(array('hide_empty' => true));
 }
 
 .card-category {
-    position: static;
-    background: transparent;
-    color: var(--verde);
-    padding: 0;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--verde);
+    color: white;
+    padding: 4px 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 12px;
-    display: block;
 }
 
 .card-content {
-    padding: 0;
+    padding: 20px;
 }
 
 .card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(20px, 2.5vw, 26px);
-    font-weight: 500;
-    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
     color: var(--granate);
-    line-height: 1.35;
+    line-height: 1.3;
     margin: 0 0 12px 0;
     transition: color 0.3s ease;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -450,10 +507,10 @@ $categories = get_categories(array('hide_empty' => true));
 .card-excerpt {
     font-size: 15px;
     color: var(--gris-medio);
-    line-height: 1.7;
+    line-height: 1.5;
     margin: 0 0 16px 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -814,12 +871,39 @@ $categories = get_categories(array('hide_empty' => true));
 </style>
 
 <div class="blog-container">
+    <!-- News Ticker -->
+    <?php
+    $ticker_posts = get_posts(array(
+        'numberposts' => 5,
+        'post_status' => 'publish',
+        'orderby' => 'date',
+        'order' => 'DESC'
+    ));
+    ?>
+    <div class="breaking-news">
+        <div class="ticker-content">
+            <?php foreach ($ticker_posts as $index => $ticker_post) : ?>
+            <a href="<?php echo get_permalink($ticker_post->ID); ?>" class="ticker-item">
+                <span class="ticker-icon">⚡</span>
+                <span class="label"><?php echo ($index === 0) ? 'ÚLTIMO ARTÍCULO:' : 'RECIENTE:'; ?></span>
+                <span class="text"><?php echo get_the_title($ticker_post->ID); ?></span>
+            </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
     <main class="blog-main">
         <!-- Editorial Header -->
         <header class="editorial-header">
             <p class="editorial-date">Madrid | <?php echo date_i18n('j \d\e F \d\e Y'); ?></p>
             <h1 class="editorial-title">Alma Proportione</h1>
-            <p class="editorial-subtitle-text">Nuestra mirada sobre estrategia, tecnología y personas</p>
+            <div class="editorial-subtitle">
+                <span>Estrategia</span>
+                <span class="dot"></span>
+                <span>Tecnología</span>
+                <span class="dot"></span>
+                <span>Personas</span>
+            </div>
             <div class="editorial-divider"></div>
         </header>
 
@@ -828,22 +912,29 @@ $categories = get_categories(array('hide_empty' => true));
             <!-- Featured Article -->
             <?php if ($featured_post) : $post = $featured_post[0]; setup_postdata($post); ?>
             <article class="featured-article" onclick="window.location='<?php the_permalink(); ?>'">
-                <?php $category = get_the_category(); if ($category) : ?>
-                    <span class="featured-category"><?php echo $category[0]->name; ?></span>
-                <?php endif; ?>
+                <div class="featured-image">
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('large'); ?>
+                    <?php else : ?>
+                        <img src="https://staging19.proportione.com/wp-content/uploads/2024/04/placeholder-tech.jpg" alt="<?php the_title(); ?>">
+                    <?php endif; ?>
+                    <?php $category = get_the_category(); if ($category) : ?>
+                        <span class="featured-category"><?php echo $category[0]->name; ?></span>
+                    <?php endif; ?>
+                </div>
                 <h2 class="featured-title"><?php the_title(); ?></h2>
-                <p class="featured-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 50); ?></p>
+                <p class="featured-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
                 <div class="featured-meta">
-                    <span><?php the_author(); ?></span>
-                    <span><?php echo get_the_date('j M Y'); ?></span>
-                    <span><?php echo ceil(str_word_count(get_the_content()) / 200); ?> min lectura</span>
+                    <span>👤 <?php the_author(); ?></span>
+                    <span>📅 <?php echo get_the_date('j M Y'); ?></span>
+                    <span>⏱️ <?php echo ceil(str_word_count(get_the_content()) / 200); ?> min</span>
                 </div>
             </article>
             <?php wp_reset_postdata(); endif; ?>
 
             <!-- Sidebar -->
             <aside class="sidebar-section">
-                <h2>También te interesa</h2>
+                <h2>Más Noticias</h2>
                 <?php foreach ($sidebar_posts as $post) : setup_postdata($post); ?>
                 <article class="sidebar-article" onclick="window.location='<?php the_permalink(); ?>'">
                     <div class="sidebar-thumb">
@@ -860,7 +951,7 @@ $categories = get_categories(array('hide_empty' => true));
                         <h3 class="sidebar-title"><?php the_title(); ?></h3>
                         <div class="sidebar-meta">
                             <span><?php echo get_the_date('j M'); ?></span>
-                            <span><?php echo ceil(str_word_count(get_the_content()) / 200); ?> min lectura</span>
+                            <span>⏱️ <?php echo ceil(str_word_count(get_the_content()) / 200); ?> min</span>
                         </div>
                     </div>
                 </article>
@@ -880,16 +971,23 @@ $categories = get_categories(array('hide_empty' => true));
         <div class="articles-grid">
             <?php foreach ($grid_posts as $post) : setup_postdata($post); ?>
             <article class="article-card" onclick="window.location='<?php the_permalink(); ?>'">
-                <?php $category = get_the_category(); if ($category) : ?>
-                    <span class="card-category"><?php echo $category[0]->name; ?></span>
-                <?php endif; ?>
+                <div class="card-image">
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('medium_large'); ?>
+                    <?php else : ?>
+                        <img src="https://staging19.proportione.com/wp-content/uploads/2024/04/placeholder-tech.jpg" alt="<?php the_title(); ?>">
+                    <?php endif; ?>
+                    <?php $category = get_the_category(); if ($category) : ?>
+                        <span class="card-category"><?php echo $category[0]->name; ?></span>
+                    <?php endif; ?>
+                </div>
                 <div class="card-content">
                     <h3 class="card-title"><?php the_title(); ?></h3>
-                    <p class="card-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
+                    <p class="card-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
                     <div class="card-meta">
                         <span><?php the_author(); ?></span>
                         <span><?php echo get_the_date('j M Y'); ?></span>
-                        <span><?php echo ceil(str_word_count(get_the_content()) / 200); ?> min lectura</span>
+                        <span>⏱️ <?php echo ceil(str_word_count(get_the_content()) / 200); ?> min</span>
                     </div>
                 </div>
             </article>

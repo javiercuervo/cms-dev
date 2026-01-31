@@ -595,6 +595,15 @@ get_header();
     </div>
 </section>
 
+<!-- CTA Section -->
+<section class="cn-section cn-cta">
+    <div class="cn-container">
+        <h2>¿Listo para transformar tu negocio?</h2>
+        <p>Hablemos de cómo podemos ayudarte a navegar la incertidumbre y lograr un crecimiento sostenible.</p>
+        <a href="/contacto/" class="cn-cta-btn">Agendar una conversación</a>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer class="site-footer" style="background:#FFFFFF; padding:40px 50px; margin-top:0; border-top: 1px solid #E5E5E5;">
     <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
