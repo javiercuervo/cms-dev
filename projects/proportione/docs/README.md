@@ -9,6 +9,13 @@
 - [DEPLOYMENT.md](./DEPLOYMENT.md) - Guía de despliegue
 - [CHANGELOG.md](./CHANGELOG.md) - Registro de cambios
 
+### Investigación (Core de Proportione)
+- [investigacion_proportione.md](./investigacion_proportione.md) - **Líneas de investigación, hallazgos y publicaciones**
+  - 7 líneas activas: BI para PYMEs, datos de búsqueda, LLMs/agentes, RGPD, impacto social
+  - Publicaciones con DOI (Zenodo)
+  - Investigador principal: Javier Cuervo (ORCID: 0009-0006-7134-2894)
+  - Marco: Doctorado en Innovación Empresarial (Universidade de Aveiro)
+
 ### Auditorías y revisiones
 - [AUDITORIA-COLORES.md](./AUDITORIA-COLORES.md) - Paleta de colores
 - [AUDITORIA-TIPOGRAFIA.md](./AUDITORIA-TIPOGRAFIA.md) - Sistema tipográfico
