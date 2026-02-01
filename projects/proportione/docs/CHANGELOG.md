@@ -4,6 +4,95 @@ Todos los cambios notables del proyecto se documentan aquí.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [2026-02-01] Menú: Añadir Clientes a Nosotros
+
+### Añadido
+- **Item de menú "Clientes"** (ID 2760) como submenú de "Nosotros" (ID 2712)
+- Enlace a `/clientes/`
+- Menú principal ahora tiene 15 items (antes 14)
+
+### Estructura actualizada
+```
+Nosotros (/nosotros/)
+  - Filosofía -> /filosofia/
+  - Metodología -> /metodologia/
+  - Mayte Tortosa -> /mayte-tortosa-proportione/
+  - Javier Cuervo -> /inteligencia-artificial-...
+  - Clientes -> /clientes/  ← NUEVO
+```
+
+---
+
+## [2026-02-01] Deshabilitar Comentarios y Reseñas
+
+### Objetivo
+Reducir elementos de interacción que no aportan valor. Web informativa, no interactiva.
+
+### Añadido
+- **functions.php**: Código PHP para deshabilitar comentarios completamente:
+  - Redirige página `edit-comments.php` al dashboard
+  - Quita metabox de comentarios del dashboard
+  - Deshabilita soporte de comentarios/trackbacks en todos los post types
+  - Filtra `comments_open` y `pings_open` para retornar false
+  - Oculta comentarios existentes con `comments_array`
+  - Quita página de comentarios del menú admin
+  - Quita enlace de comentarios de la admin bar
+
+- **proportione-design-system.css**: CSS para ocultar UI de comentarios:
+  - `#comments`, `.comments-area`, `.comment-respond`, etc.
+  - `.wp-block-comments`, `.wp-block-post-comments-form`
+
+### Pendiente en servidor
+- Cerrar comentarios en todos los posts existentes (WP-CLI)
+- Corregir enlace menú Filosofía → `/divina-proportione/`
+- Limpiar 128 comentarios históricos de BD (opcional)
+- Flush caches
+
+### Cómo reactivar (si fuera necesario)
+1. Quitar el bloque "DESHABILITAR COMENTARIOS" de `functions.php`
+2. Quitar "PARTE 18: OCULTAR COMENTARIOS" de `proportione-design-system.css`
+3. En admin: Ajustes → Comentarios → Habilitar
+
+---
+
+## [2026-02-01] Footer V2 - Rediseño Completo
+
+### Objetivo
+Reducir bounce rate de ~70% a <50% mediante un footer con más navegación y engagement.
+
+### Añadido
+- **Footer de 5 columnas** (antes 3):
+  - Marca: Logo + tagline
+  - Servicios: 4 links de navegación
+  - Empresa: 7 links de navegación
+  - Newsletter: Formulario inline
+  - Social: LinkedIn + contacto
+
+- **15+ links internos** para mejorar navegación
+
+- **Archivos nuevos**:
+  - `elementor-templates/footer-proportione-v2.json` - Template Elementor
+  - `wp-content/themes/hello-elementor-child/footer-proportione.css` - Estilos
+  - `docs/GUIA-FOOTER-V2.md` - Documentación completa
+
+### Modificado
+- `wp-content/themes/hello-elementor-child/functions.php` - Encolado CSS footer
+- `docs/PLAN-REDISENO-BLOG-SINGLE.md` - Añadido objetivo global de bounce rate
+
+### Especificaciones
+- Background granate: `#5F322F`
+- Bottom bar: `#4a2623`
+- Texto: `#F5F0E6` (crema)
+- Botón newsletter: `#6E8157` (verde)
+- Accesibilidad: WCAG AA, focus visible, touch targets 44px
+- Responsive: Desktop 5 cols, Tablet 2+3 cols, Mobile stack vertical
+
+### Impacto Estimado
+- Bounce rate: -18-32%
+- Páginas por sesión: +2-3
+
+---
+
 ## [2026-01-31] Redirecciones 301 + Correcciones Visuales
 
 ### Añadido
