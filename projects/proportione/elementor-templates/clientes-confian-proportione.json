@@ -1,0 +1,2378 @@
+{
+  "title": "Confían en Proportione - Clientes",
+  "type": "page",
+  "version": "0.4",
+  "page_settings": {
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+  },
+  "content": [
+    {
+      "id": "cl-hero-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "min_height": {"unit": "vh", "size": 55},
+        "min_height_tablet": {"unit": "vh", "size": 45},
+        "min_height_mobile": {"unit": "vh", "size": 40},
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_image": {"url": "https://proportione.com/wp-content/uploads/2023/07/hero-abstract-pattern.jpg"},
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "#5F322F",
+        "background_overlay_opacity": {"unit": "px", "size": 0.78},
+        "padding": {"unit": "px", "top": "100", "right": "24", "bottom": "100", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-hero"
+      },
+      "elements": [
+        {
+          "id": "cl-hero-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Confían en Proportione",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 64},
+            "typography_font_size_tablet": {"unit": "px", "size": 48},
+            "typography_font_size_mobile": {"unit": "px", "size": 36},
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 2},
+            "typography_line_height": {"unit": "em", "size": 1.1},
+            "text_shadow_text_shadow_type": "custom",
+            "text_shadow_text_shadow": {"horizontal": 0, "vertical": 4, "blur": 30, "color": "rgba(0,0,0,0.3)"},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"},
+            "_animation": "fadeInUp"
+          }
+        },
+        {
+          "id": "cl-hero-003",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"text-align: center;\">Empresas que han transformado su futuro con nosotros</p>",
+            "text_color": "#F5F0E6",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {"unit": "px", "size": 20},
+            "typography_font_size_mobile": {"unit": "px", "size": 16},
+            "typography_line_height": {"unit": "em", "size": 1.5},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "30", "left": "0"},
+            "_animation": "fadeInUp",
+            "_animation_delay": 200
+          }
+        },
+        {
+          "id": "cl-hero-004",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "style": "solid",
+            "width": {"unit": "px", "size": 120},
+            "color": "#6E8157",
+            "weight": {"unit": "px", "size": 3},
+            "gap": {"unit": "px", "size": 0},
+            "_animation": "fadeIn",
+            "_animation_delay": 400
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl-intro-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 850},
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"}
+      },
+      "elements": [
+        {
+          "id": "cl-intro-002",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"text-align: center;\">Cada proyecto es una oportunidad para crear algo extraordinario. Trabajamos con organizaciones que comparten nuestra visión: el crecimiento sostenible nace de la armonía entre estrategia, tecnología y personas.</p>",
+            "text_color": "#666666",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {"unit": "px", "size": 18},
+            "typography_font_size_mobile": {"unit": "px", "size": 16},
+            "typography_line_height": {"unit": "em", "size": 1.8},
+            "_animation": "fadeInUp"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl-stats-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1200},
+        "flex_direction": "row",
+        "flex_direction_mobile": "column",
+        "flex_wrap": "wrap",
+        "flex_gap": {"column": "40", "row": "30", "unit": "px"},
+        "flex_justify_content": "space-around",
+        "background_background": "classic",
+        "background_color": "#F5F0E6",
+        "padding": {"unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40"},
+        "padding_mobile": {"unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20"}
+      },
+      "elements": [
+        {
+          "id": "cl-stats-002",
+          "elType": "widget",
+          "widgetType": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 17,
+            "suffix": "+",
+            "title": "Clientes",
+            "align": "center",
+            "number_color": "#5F322F",
+            "title_color": "#666666",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 56},
+            "typography_font_weight": "700",
+            "typography_title_typography": "custom",
+            "typography_title_font_family": "Raleway",
+            "typography_title_font_size": {"unit": "px", "size": 14},
+            "typography_title_text_transform": "uppercase",
+            "typography_title_letter_spacing": {"unit": "px", "size": 1},
+            "_animation": "fadeIn",
+            "css_classes": "clientes-counter"
+          }
+        },
+        {
+          "id": "cl-stats-003",
+          "elType": "widget",
+          "widgetType": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 15,
+            "suffix": "+",
+            "title": "Años de experiencia",
+            "align": "center",
+            "number_color": "#5F322F",
+            "title_color": "#666666",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 56},
+            "typography_font_weight": "700",
+            "_animation": "fadeIn",
+            "_animation_delay": 100,
+            "css_classes": "clientes-counter"
+          }
+        },
+        {
+          "id": "cl-stats-004",
+          "elType": "widget",
+          "widgetType": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 50,
+            "suffix": "+",
+            "title": "Proyectos completados",
+            "align": "center",
+            "number_color": "#5F322F",
+            "title_color": "#666666",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 56},
+            "typography_font_weight": "700",
+            "_animation": "fadeIn",
+            "_animation_delay": 200,
+            "css_classes": "clientes-counter"
+          }
+        },
+        {
+          "id": "cl-stats-005",
+          "elType": "widget",
+          "widgetType": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 5,
+            "title": "Sectores de especialización",
+            "align": "center",
+            "number_color": "#5F322F",
+            "title_color": "#666666",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 56},
+            "typography_font_weight": "700",
+            "_animation": "fadeIn",
+            "_animation_delay": 300,
+            "css_classes": "clientes-counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cl-cat1-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1400},
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-section"
+      },
+      "elements": [
+        {
+          "id": "cl-cat1-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Tecnología e Innovación",
+            "header_size": "h2",
+            "title_color": "#5F322F",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 32},
+            "typography_font_size_mobile": {"unit": "px", "size": 24},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"},
+            "_animation": "fadeInLeft",
+            "css_classes": "clientes-section-title"
+          }
+        },
+        {
+          "id": "cl-cat1-grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {"column": "32", "row": "32", "unit": "px"},
+            "flex_gap_tablet": {"column": "24", "row": "24", "unit": "px"},
+            "flex_gap_mobile": {"column": "20", "row": "20", "unit": "px"},
+            "css_classes": "clientes-grid"
+          },
+          "elements": [
+            {
+              "id": "cl-c1-lejan",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp"
+              },
+              "elements": [
+                {
+                  "id": "cl-c1-lejan-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/lejan-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c1-lejan-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Lejan",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c1-lejan-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Shopify para B2C, B2B y POS</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c1-lejan-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://lejan.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c1-sparkassen",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 50
+              },
+              "elements": [
+                {
+                  "id": "cl-c1-spark-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/sparkassen-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c1-spark-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sparkassen Mexico",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c1-spark-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">IA para banca mexicana</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c1-mensoft",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [
+                {
+                  "id": "cl-c1-mensoft-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/mensoft-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c1-mensoft-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Mensoft",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c1-mensoft-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Innovación digital</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c1-mensoft-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://mensoft.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c1-sngular",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 150
+              },
+              "elements": [
+                {
+                  "id": "cl-c1-sngular-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/sngular-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c1-sngular-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sngular",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c1-sngular-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Conexiones academia-empresa</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c1-sngular-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://sngular.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl-cat2-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1400},
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#F5F0E6",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-section"
+      },
+      "elements": [
+        {
+          "id": "cl-cat2-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Educación y Emprendimiento",
+            "header_size": "h2",
+            "title_color": "#5F322F",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 32},
+            "typography_font_size_mobile": {"unit": "px", "size": 24},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"},
+            "_animation": "fadeInLeft",
+            "css_classes": "clientes-section-title"
+          }
+        },
+        {
+          "id": "cl-cat2-grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {"column": "32", "row": "32", "unit": "px"},
+            "flex_gap_tablet": {"column": "24", "row": "24", "unit": "px"},
+            "flex_gap_mobile": {"column": "20", "row": "20", "unit": "px"},
+            "css_classes": "clientes-grid"
+          },
+          "elements": [
+            {
+              "id": "cl-c2-uxer",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp"
+              },
+              "elements": [
+                {
+                  "id": "cl-c2-uxer-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/uxer-school-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c2-uxer-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Uxer School",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c2-uxer-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">SEO para elite digital</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c2-uxer-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://uxerschool.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c2-unie",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 50
+              },
+              "elements": [
+                {
+                  "id": "cl-c2-unie-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/unie-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c2-unie-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Universidad UNIE",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c2-unie-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Emprendimiento académico</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c2-unie-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://universidadunie.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c2-eae",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [
+                {
+                  "id": "cl-c2-eae-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/eae-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c2-eae-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "EAE Business School",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c2-eae-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Emprendimiento superior</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c2-eae-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://eae.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c2-leinn",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 150
+              },
+              "elements": [
+                {
+                  "id": "cl-c2-leinn-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/leinn-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c2-leinn-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Grado LEINN",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c2-leinn-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">30 tiendas Shopify</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c2-teologia",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 200
+              },
+              "elements": [
+                {
+                  "id": "cl-c2-teologia-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/instituto-teologia-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c2-teologia-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Instituto de Teología",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c2-teologia-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Digitalización educativa - LMS</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c2-teologia-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://institutoteologia.org", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl-cat3-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1400},
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-section"
+      },
+      "elements": [
+        {
+          "id": "cl-cat3-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Estrategia Digital y SEO",
+            "header_size": "h2",
+            "title_color": "#5F322F",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 32},
+            "typography_font_size_mobile": {"unit": "px", "size": 24},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"},
+            "_animation": "fadeInLeft",
+            "css_classes": "clientes-section-title"
+          }
+        },
+        {
+          "id": "cl-cat3-grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {"column": "32", "row": "32", "unit": "px"},
+            "flex_gap_tablet": {"column": "24", "row": "24", "unit": "px"},
+            "flex_gap_mobile": {"column": "20", "row": "20", "unit": "px"},
+            "css_classes": "clientes-grid"
+          },
+          "elements": [
+            {
+              "id": "cl-c3-prodis",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp"
+              },
+              "elements": [
+                {
+                  "id": "cl-c3-prodis-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/fundacion-prodis-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c3-prodis-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Fundación Prodis",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c3-prodis-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">SEO para educación online</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c3-prodis-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://fundacionprodis.org", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c3-perdine",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 50
+              },
+              "elements": [
+                {
+                  "id": "cl-c3-perdine-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/naranjas-perdine-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c3-perdine-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Naranjas Perdine",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c3-perdine-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">SEO mercado gourmet</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c3-perdine-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://naranjasperdine.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c3-hispanidad",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [
+                {
+                  "id": "cl-c3-hispanidad-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/hispanidad-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c3-hispanidad-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Hispanidad",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c3-hispanidad-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Estrategias digitales</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c3-hispanidad-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://hispanidad.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl-cat4-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1400},
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#F5F0E6",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-section"
+      },
+      "elements": [
+        {
+          "id": "cl-cat4-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Transformación Digital",
+            "header_size": "h2",
+            "title_color": "#5F322F",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 32},
+            "typography_font_size_mobile": {"unit": "px", "size": 24},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"},
+            "_animation": "fadeInLeft",
+            "css_classes": "clientes-section-title"
+          }
+        },
+        {
+          "id": "cl-cat4-grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {"column": "32", "row": "32", "unit": "px"},
+            "flex_gap_tablet": {"column": "24", "row": "24", "unit": "px"},
+            "flex_gap_mobile": {"column": "20", "row": "20", "unit": "px"},
+            "css_classes": "clientes-grid"
+          },
+          "elements": [
+            {
+              "id": "cl-c4-ucm",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp"
+              },
+              "elements": [
+                {
+                  "id": "cl-c4-ucm-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/ucm-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c4-ucm-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "UCM",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c4-ucm-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Líderes inspiradores</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c4-ucm-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://ucm.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c4-cartagena",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 50
+              },
+              "elements": [
+                {
+                  "id": "cl-c4-cartagena-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/cartagena-puerto-culturas-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c4-cartagena-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Cartagena Puerto de Culturas",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 16},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c4-cartagena-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Innovación cultural</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c4-cartagena-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://cartagenapuertodeculturas.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c4-farma54",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [
+                {
+                  "id": "cl-c4-farma54-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/farma54-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c4-farma54-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Farma 54",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c4-farma54-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Identidad digital farmacia</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c4-farma54-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://farma54.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c4-mawdy",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 150
+              },
+              "elements": [
+                {
+                  "id": "cl-c4-mawdy-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/mawdy-mapfre-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c4-mawdy-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "MAWDY / MAPFRE",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c4-mawdy-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Transformación asistencia</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c4-mawdy-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://mawdy.com", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c4-porqueviven",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 23},
+                "width_tablet": {"unit": "%", "size": 31},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 200
+              },
+              "elements": [
+                {
+                  "id": "cl-c4-porqueviven-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/porqueviven-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c4-porqueviven-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Fundación porqueViven",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c4-porqueviven-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Digitalización - App de padres</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c4-porqueviven-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://porqueviven.org", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl-cat5-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1400},
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+        "css_classes": "clientes-section clientes-defensa"
+      },
+      "elements": [
+        {
+          "id": "cl-cat5-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Defensa y Seguridad",
+            "header_size": "h2",
+            "title_color": "#5F322F",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 32},
+            "typography_font_size_mobile": {"unit": "px", "size": 24},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"},
+            "_animation": "fadeInLeft",
+            "css_classes": "clientes-section-title"
+          }
+        },
+        {
+          "id": "cl-cat5-grid",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {"column": "32", "row": "32", "unit": "px"},
+            "flex_gap_tablet": {"column": "24", "row": "24", "unit": "px"},
+            "flex_gap_mobile": {"column": "20", "row": "20", "unit": "px"},
+            "css_classes": "clientes-grid"
+          },
+          "elements": [
+            {
+              "id": "cl-c5-einsa",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 31},
+                "width_tablet": {"unit": "%", "size": 48},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp"
+              },
+              "elements": [
+                {
+                  "id": "cl-c5-einsa-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/einsa-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c5-einsa-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "EINSA",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c5-einsa-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Colaboración estratégica bajo acuerdo de confidencialidad</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c5-einsa-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://einsa.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c5-mtp",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 31},
+                "width_tablet": {"unit": "%", "size": 48},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 50
+              },
+              "elements": [
+                {
+                  "id": "cl-c5-mtp-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/mtp-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c5-mtp-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "MTP",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c5-mtp-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Proyecto reservado en transformación digital</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c5-mtp-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://mtp.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cl-c5-libertia",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "width": {"unit": "%", "size": 31},
+                "width_tablet": {"unit": "%", "size": 48},
+                "width_mobile": {"unit": "%", "size": 100},
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_radius": {"unit": "px", "size": 12},
+                "box_shadow_box_shadow_type": "custom",
+                "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 20, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+                "border_border": "solid",
+                "border_width": {"unit": "px", "top": "4", "right": "0", "bottom": "0", "left": "0"},
+                "border_color": "transparent",
+                "padding": {"unit": "px", "top": "32", "right": "24", "bottom": "32", "left": "24"},
+                "css_classes": "cliente-card",
+                "_animation": "fadeInUp",
+                "_animation_delay": 100
+              },
+              "elements": [
+                {
+                  "id": "cl-c5-libertia-logo",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {"url": "https://proportione.com/wp-content/uploads/clientes/libertia-logo.png"},
+                    "image_size": "thumbnail",
+                    "width": {"unit": "px", "size": 100},
+                    "height": {"unit": "px", "size": 100},
+                    "object-fit": "contain",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-logo"
+                  }
+                },
+                {
+                  "id": "cl-c5-libertia-name",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Libertia IT",
+                    "header_size": "h4",
+                    "align": "center",
+                    "title_color": "#5F322F",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Oswald",
+                    "typography_font_size": {"unit": "px", "size": 18},
+                    "typography_font_weight": "600",
+                    "typography_text_transform": "uppercase",
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"}
+                  }
+                },
+                {
+                  "id": "cl-c5-libertia-desc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align: center;\">Iniciativa confidencial en ciberseguridad</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_line_height": {"unit": "em", "size": 1.6},
+                    "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+                    "css_classes": "cliente-descripcion"
+                  }
+                },
+                {
+                  "id": "cl-c5-libertia-link",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Visitar web",
+                    "link": {"url": "https://libertia.es", "is_external": true, "nofollow": true},
+                    "align": "center",
+                    "button_type": "default",
+                    "size": "xs",
+                    "text_color": "#6E8157",
+                    "background_color": "transparent",
+                    "border_border": "none",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Raleway",
+                    "typography_font_size": {"unit": "px", "size": 14},
+                    "typography_font_weight": "600",
+                    "hover_color": "#5F322F",
+                    "css_classes": "cliente-link"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl-cta-001",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 800},
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#6E8157",
+        "padding": {"unit": "px", "top": "80", "right": "40", "bottom": "80", "left": "40"},
+        "padding_mobile": {"unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20"},
+        "css_classes": "clientes-cta"
+      },
+      "elements": [
+        {
+          "id": "cl-cta-002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "¿Listo para ser el próximo?",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 42},
+            "typography_font_size_mobile": {"unit": "px", "size": 28},
+            "typography_font_weight": "700",
+            "typography_text_transform": "uppercase",
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"},
+            "_animation": "fadeInUp"
+          }
+        },
+        {
+          "id": "cl-cta-003",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"text-align: center;\">Hablemos sobre cómo podemos transformar tu negocio</p>",
+            "text_color": "rgba(255,255,255,0.9)",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {"unit": "px", "size": 18},
+            "typography_font_size_mobile": {"unit": "px", "size": 16},
+            "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0"},
+            "_animation": "fadeInUp",
+            "_animation_delay": 100
+          }
+        },
+        {
+          "id": "cl-cta-004",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Contactar",
+            "link": {"url": "/contacto/", "is_external": false},
+            "align": "center",
+            "button_type": "default",
+            "size": "md",
+            "text_color": "#6E8157",
+            "background_color": "#FFFFFF",
+            "border_border": "solid",
+            "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+            "border_color": "#FFFFFF",
+            "border_radius": {"unit": "px", "size": 4},
+            "typography_typography": "custom",
+            "typography_font_family": "Oswald",
+            "typography_font_size": {"unit": "px", "size": 16},
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {"unit": "px", "size": 1},
+            "text_padding": {"unit": "px", "top": "16", "right": "40", "bottom": "16", "left": "40"},
+            "hover_color": "#FFFFFF",
+            "hover_background_color": "transparent",
+            "_animation": "fadeInUp",
+            "_animation_delay": 200,
+            "css_classes": "clientes-cta-button"
+          }
+        }
+      ]
+    }
+  ]
+}
