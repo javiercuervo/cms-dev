@@ -1,0 +1,926 @@
+[
+  {
+    "id": "a1b2c3d4",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "vh", "size": 50},
+      "min_height_tablet": {"unit": "px", "size": 320},
+      "min_height_mobile": {"unit": "px", "size": 280},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {"unit": "px", "size": 0.75},
+      "padding": {"unit": "px", "top": "100", "right": "24", "bottom": "100", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+      "css_classes": "duotone-hero"
+    },
+    "elements": [
+      {
+        "id": "b2c3d4e5",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Estrategia de Transformación Digital",
+          "header_size": "h1",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 52},
+          "typography_font_size_tablet": {"unit": "px", "size": 40},
+          "typography_font_size_mobile": {"unit": "px", "size": 32},
+          "typography_font_weight": "700",
+          "typography_line_height": {"unit": "em", "size": 1.15},
+          "text_shadow_text_shadow_type": "custom",
+          "text_shadow_text_shadow": {"horizontal": 0, "vertical": 4, "blur": 30, "color": "rgba(0,0,0,0.4)"},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+          "_animation": "fadeInDown",
+          "_animation_duration": "default"
+        }
+      },
+      {
+        "id": "c3d4e5f6",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\">Un camino estructurado hacia el futuro de tu organización</p>",
+          "text_color": "rgba(255,255,255,0.95)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 22},
+          "typography_font_size_mobile": {"unit": "px", "size": 18},
+          "typography_font_weight": "400",
+          "typography_line_height": {"unit": "em", "size": 1.6},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        }
+      },
+      {
+        "id": "c3d4e5f7",
+        "elType": "widget",
+        "widgetType": "divider",
+        "settings": {
+          "style": "solid",
+          "width": {"unit": "%", "size": 8},
+          "color": "#6E8157",
+          "gap": {"unit": "px", "size": 0},
+          "_margin": {"unit": "px", "top": "24", "right": "0", "bottom": "0", "left": "0"},
+          "_animation": "fadeIn",
+          "_animation_delay": 400
+        }
+      }
+    ]
+  },
+  {
+    "id": "d4e5f6g7",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "60", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "40", "left": "16"}
+    },
+    "elements": [
+      {
+        "id": "e5f6g7h8",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Más allá de la tecnología: transformar para crear valor",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 32},
+          "typography_font_size_tablet": {"unit": "px", "size": 28},
+          "typography_font_size_mobile": {"unit": "px", "size": 24},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0"},
+          "_animation": "fadeIn"
+        }
+      },
+      {
+        "id": "f6g7h8i9",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p>La transformación digital no se trata simplemente de adoptar nuevas tecnologías. Es un <strong>cambio fundamental</strong> en la forma en que las organizaciones operan, compiten y entregan valor a sus clientes.</p><p>Implica reimaginar procesos, modelos de negocio y la experiencia del cliente a través de la lente digital, creando una <strong>ventaja competitiva sostenible</strong> en un mundo cada vez más conectado.</p>",
+          "text_color": "#333333",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "typography_line_height": {"unit": "em", "size": 1.8},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "36", "left": "0"},
+          "_animation": "fadeIn",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "g7h8i9j0",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#F5F0E6",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "4"},
+          "border_color": "#6E8157",
+          "padding": {"unit": "px", "top": "28", "right": "36", "bottom": "28", "left": "36"},
+          "border_radius": {"unit": "px", "top": "0", "right": "8", "bottom": "8", "left": "0"},
+          "_animation": "fadeInLeft",
+          "_animation_delay": 200
+        },
+        "elements": [
+          {
+            "id": "h8i9j0k1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"font-style: italic; margin: 0; font-size: 20px;\">\"La transformación digital no es un destino, es un viaje continuo\"</p>",
+              "text_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Georgia",
+              "typography_line_height": {"unit": "em", "size": 1.5}
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "i9j0k1l2",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 900},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "60", "right": "24", "bottom": "60", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "40", "right": "16", "bottom": "40", "left": "16"}
+    },
+    "elements": [
+      {
+        "id": "j0k1l2m3",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"column": "28", "row": "20", "unit": "px"},
+          "flex_align_items": "center",
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "padding": {"unit": "px", "top": "36", "right": "40", "bottom": "36", "left": "40"},
+          "padding_mobile": {"unit": "px", "top": "28", "right": "20", "bottom": "28", "left": "20"},
+          "border_radius": {"unit": "px", "size": 12},
+          "box_shadow_box_shadow_type": "custom",
+          "box_shadow_box_shadow": {"horizontal": 0, "vertical": 8, "blur": 30, "spread": 0, "color": "rgba(95,50,47,0.1)"},
+          "_animation": "fadeInUp"
+        },
+        "elements": [
+          {
+            "id": "k1l2m3n4",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 70},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_justify_content": "center",
+              "flex_align_items": "center"
+            },
+            "elements": [
+              {
+                "id": "l2m3n4o5",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-sync-alt", "library": "fa-solid"},
+                  "view": "stacked",
+                  "shape": "circle",
+                  "primary_color": "#6E8157",
+                  "secondary_color": "#FFFFFF",
+                  "size": {"unit": "px", "size": 28},
+                  "icon_padding": {"unit": "px", "size": 18}
+                }
+              }
+            ]
+          },
+          {
+            "id": "m3n4o5p6",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "%", "size": 85},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column"
+            },
+            "elements": [
+              {
+                "id": "n4o5p6q7",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "¿Qué es la estrategia de transformación digital?",
+                  "header_size": "h3",
+                  "title_color": "#5F322F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 24},
+                  "typography_font_size_mobile": {"unit": "px", "size": 20},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"}
+                }
+              },
+              {
+                "id": "o5p6q7r8",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Es un <strong>plan integral y estructurado</strong> para integrar tecnologías digitales en todas las áreas del negocio, cambiando fundamentalmente cómo opera la organización y entrega valor a sus clientes.</p><p>Va más allá de la digitalización de procesos existentes, involucrando una <strong>reinvención completa</strong> del modelo operativo y estratégico.</p>",
+                  "text_color": "#333333",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 16},
+                  "typography_line_height": {"unit": "em", "size": 1.75}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6q7r8s9",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1000},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16"}
+    },
+    "elements": [
+      {
+        "id": "q7r8s9t0",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "4 Dimensiones de la Transformación",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 32},
+          "typography_font_size_mobile": {"unit": "px", "size": 26},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"},
+          "_animation": "fadeIn"
+        }
+      },
+      {
+        "id": "q7r8s9t1",
+        "elType": "widget",
+        "widgetType": "divider",
+        "settings": {
+          "style": "solid",
+          "width": {"unit": "%", "size": 6},
+          "color": "#6E8157",
+          "weight": {"unit": "px", "size": 3},
+          "gap": {"unit": "px", "size": 0},
+          "align": "center",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"}
+        }
+      },
+      {
+        "id": "r8s9t0u1",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_gap": {"column": "24", "row": "24", "unit": "px"},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "s9t0u1v2",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 230},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24"},
+              "border_radius": {"unit": "px", "size": 12},
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.05)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 0
+            },
+            "elements": [
+              {
+                "id": "t0u1v2w3",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center; font-size: 13px; font-weight: 700; color: #6E8157; letter-spacing: 2px;\">01</p>",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"}
+                }
+              },
+              {
+                "id": "u1v2w3x4",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-users", "library": "fa-solid"},
+                  "view": "default",
+                  "primary_color": "#5F322F",
+                  "size": {"unit": "px", "size": 36},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0"}
+                }
+              },
+              {
+                "id": "v2w3x4y5",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Experiencia del Cliente",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 18},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0"}
+                }
+              },
+              {
+                "id": "w3x4y5z6",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center;\">Rediseñar touchpoints digitales para crear valor</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_line_height": {"unit": "em", "size": 1.55}
+                }
+              }
+            ]
+          },
+          {
+            "id": "x4y5z6a7",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 230},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24"},
+              "border_radius": {"unit": "px", "size": 12},
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.05)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "y5z6a7b8",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center; font-size: 13px; font-weight: 700; color: #6E8157; letter-spacing: 2px;\">02</p>",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"}
+                }
+              },
+              {
+                "id": "z6a7b8c9",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-cogs", "library": "fa-solid"},
+                  "view": "default",
+                  "primary_color": "#5F322F",
+                  "size": {"unit": "px", "size": 36},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0"}
+                }
+              },
+              {
+                "id": "a7b8c9d0",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Procesos Operativos",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 18},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0"}
+                }
+              },
+              {
+                "id": "b8c9d0e1",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center;\">Automatización y eficiencia mediante tecnología</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_line_height": {"unit": "em", "size": 1.55}
+                }
+              }
+            ]
+          },
+          {
+            "id": "c9d0e1f2",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 230},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24"},
+              "border_radius": {"unit": "px", "size": 12},
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.05)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "d0e1f2g3",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center; font-size: 13px; font-weight: 700; color: #6E8157; letter-spacing: 2px;\">03</p>",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"}
+                }
+              },
+              {
+                "id": "e1f2g3h4",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-chart-line", "library": "fa-solid"},
+                  "view": "default",
+                  "primary_color": "#5F322F",
+                  "size": {"unit": "px", "size": 36},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0"}
+                }
+              },
+              {
+                "id": "f2g3h4i5",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Modelos de Negocio",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 18},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0"}
+                }
+              },
+              {
+                "id": "g3h4i5j6",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center;\">Nuevas formas de generar ingresos y entregar valor</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_line_height": {"unit": "em", "size": 1.55}
+                }
+              }
+            ]
+          },
+          {
+            "id": "h4i5j6k7",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 230},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "36", "right": "24", "bottom": "36", "left": "24"},
+              "border_radius": {"unit": "px", "size": 12},
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.05)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 300
+            },
+            "elements": [
+              {
+                "id": "i5j6k7l8",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center; font-size: 13px; font-weight: 700; color: #6E8157; letter-spacing: 2px;\">04</p>",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"}
+                }
+              },
+              {
+                "id": "j6k7l8m9",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-lightbulb", "library": "fa-solid"},
+                  "view": "default",
+                  "primary_color": "#5F322F",
+                  "size": {"unit": "px", "size": 36},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "18", "left": "0"}
+                }
+              },
+              {
+                "id": "k7l8m9n0",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Cultura y Talento",
+                  "header_size": "h4",
+                  "align": "center",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 18},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0"}
+                }
+              },
+              {
+                "id": "l8m9n0o1",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center;\">Capacidades digitales y mentalidad de innovación</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 14},
+                  "typography_line_height": {"unit": "em", "size": 1.55}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "m9n0o1p2",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 700},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40"},
+      "padding_mobile": {"unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "n0o1p2q3",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Claves para una Transformación Exitosa",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 28},
+          "typography_font_size_mobile": {"unit": "px", "size": 24},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "36", "left": "0"},
+          "_animation": "fadeIn"
+        }
+      },
+      {
+        "id": "o1p2q3r4",
+        "elType": "widget",
+        "widgetType": "icon-list",
+        "settings": {
+          "icon_list": [
+            {"text": "Visión clara del estado futuro deseado", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+            {"text": "Priorizar la experiencia del cliente", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+            {"text": "Adoptar un enfoque gradual y por fases", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+            {"text": "Cultivar cultura de innovación", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+            {"text": "Invertir en capacidades del equipo", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}}
+          ],
+          "space_between": {"unit": "px", "size": 18},
+          "icon_color": "#6E8157",
+          "icon_size": {"unit": "px", "size": 18},
+          "text_color": "#333333",
+          "text_typography_typography": "custom",
+          "text_typography_font_family": "Raleway",
+          "text_typography_font_size": {"unit": "px", "size": 17},
+          "text_typography_line_height": {"unit": "em", "size": 1.6},
+          "_animation": "fadeInUp",
+          "_animation_delay": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "related-services-td",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 900},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "related-td-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Servicios relacionados",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 28},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "bottom": "32"}
+        }
+      },
+      {
+        "id": "related-td-links",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 16},
+          "flex_justify_content": "center",
+          "flex_wrap": "wrap"
+        },
+        "elements": [
+          {
+            "id": "link-td-ia",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "IA Generativa",
+              "link": {"url": "/ia-generativa/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          },
+          {
+            "id": "link-td-consultoria",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Consultoria de Negocio",
+              "link": {"url": "/consultoria-gestion-negocio/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          },
+          {
+            "id": "link-td-innovacion",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Estrategia de Innovación",
+              "link": {"url": "/estrategia-innovacion/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          }
+        ]
+      },
+      {
+        "id": "link-td-all",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Ver todos los servicios →",
+          "link": {"url": "/servicios/", "is_external": false},
+          "size": "sm",
+          "button_background_color": "transparent",
+          "button_text_color": "#5F322F",
+          "_margin": {"unit": "px", "top": "24"}
+        }
+      }
+    ]
+  },
+  {
+    "id": "p2q3r4s5",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "px", "size": 300},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80"},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "gradient",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_color_b": "#6E8157",
+      "background_overlay_gradient_angle": {"unit": "deg", "size": 135},
+      "background_overlay_opacity": {"unit": "px", "size": 0.88},
+      "padding": {"unit": "px", "top": "70", "right": "24", "bottom": "70", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16"},
+      "css_classes": "duotone-cta"
+    },
+    "elements": [
+      {
+        "id": "q3r4s5t6",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para transformar tu organización?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 32},
+          "typography_font_size_mobile": {"unit": "px", "size": 26},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "14", "left": "0"},
+          "_animation": "fadeInDown"
+        }
+      },
+      {
+        "id": "r4s5t6u7",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\">Hablemos de cómo acelerar tu transformación digital</p>",
+          "text_color": "rgba(255,255,255,0.9)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "32", "left": "0"},
+          "_animation": "fadeIn",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "s5t6u7v8",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Agendar llamada",
+          "link": {"url": "/contacto/", "is_external": false},
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 15},
+          "typography_font_weight": "600",
+          "typography_letter_spacing": {"unit": "px", "size": 0.5},
+          "button_text_color": "#5F322F",
+          "background_color": "#FFFFFF",
+          "button_text_color_hover": "#FFFFFF",
+          "button_background_hover_color": "#6E8157",
+          "border_radius": {"unit": "px", "size": 6},
+          "button_padding": {"unit": "px", "top": "16", "right": "40", "bottom": "16", "left": "40"},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200,
+          "hover_animation": "grow"
+        }
+      },
+      {
+        "id": "t6u7v8w9",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\">o escríbenos a <a href=\"mailto:info@proportione.com\" style=\"color: #FFFFFF; text-decoration: underline;\">info@proportione.com</a></p>",
+          "text_color": "rgba(255,255,255,0.75)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 14},
+          "_animation": "fadeIn",
+          "_animation_delay": 300
+        }
+      }
+    ]
+  },
+  {
+    "id": "u7v8w9x0",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "center",
+      "flex_gap": {"column": "20", "row": "20", "unit": "px"},
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40"},
+      "padding_mobile": {"unit": "px", "top": "30", "right": "20", "bottom": "30", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "v8w9x0y1",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+          "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2024/04/Logo_-Estrategia-Tecnologia-y-Personas.png"},
+          "image_size": "medium",
+          "width": {"unit": "px", "size": 160},
+          "width_mobile": {"unit": "px", "size": 140},
+          "align": "left",
+          "align_mobile": "center"
+        }
+      },
+      {
+        "id": "w9x0y1z2",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\"><a href=\"/politica-privacidad/\" style=\"color: #FFFFFF; text-decoration: none;\">Política de Privacidad</a> &nbsp;|&nbsp; <a href=\"/politica-cookies/\" style=\"color: #FFFFFF; text-decoration: none;\">Política de Cookies</a></p>",
+          "text_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 13}
+        }
+      },
+      {
+        "id": "x0y1z2a3",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: right;\">© 2026 Proportione</p>",
+          "text_color": "rgba(255,255,255,0.7)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 13},
+          "align": "right",
+          "align_mobile": "center"
+        }
+      }
+    ]
+  }
+]

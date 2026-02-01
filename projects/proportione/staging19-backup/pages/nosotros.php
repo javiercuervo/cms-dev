@@ -147,12 +147,19 @@ get_header();
     </div>
 </section>
 
+<!-- Breadcrumb -->
+<nav style="max-width: var(--max-width); margin: 0 auto; padding: 20px 20px 0; font-family: var(--font-cuerpo); font-size: 14px;">
+    <a href="/" style="color: var(--color-verde); text-decoration: none;">Proportione</a>
+    <span style="color: #999; margin: 0 8px;">›</span>
+    <span style="color: var(--color-granate);">Nosotros</span>
+</nav>
+
 <!-- FILOSOFÍA -->
 <section class="ns-section section-filosofia">
     <div class="ns-container">
         <h2>Experiencia que se nota</h2>
         <p class="lead">No somos una consultora de juniors con PowerPoints bonitos. Somos profesionales con décadas de experiencia en estrategia, tecnología y gestión de personas.</p>
-        <p>Hemos dirigido empresas. Hemos liderado equipos. Hemos cometido errores y aprendido de ellos. Por eso sabemos lo que funciona y lo que no.</p>
+        <p>Hemos dirigido empresas. Hemos liderado equipos. Hemos cometido errores y aprendido de ellos. Por eso sabemos lo que funciona y lo que no. Descubre nuestra <a href="/filosofia/" style="color: var(--color-verde); font-weight: 500;">filosofía Divina Proportione</a> y la <a href="/metodologia/" style="color: var(--color-verde); font-weight: 500;">metodología que nos diferencia</a>.</p>
     </div>
 </section>
 
@@ -237,6 +244,18 @@ get_header();
                 <h3>Sin dependencia</h3>
                 <p>No creamos adicción. Le enseñamos a su equipo para que crezca solo.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section class="ns-section" style="background: var(--color-blanco); text-align: center;">
+    <div class="ns-container">
+        <h2>Cómo podemos ayudarle</h2>
+        <p style="font-size: 18px; color: #666; max-width: 700px; margin: 0 auto 40px;">Combinamos estrategia, tecnología y gestión de personas para impulsar su transformación digital.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+            <a href="/servicios/" style="display: inline-block; padding: 14px 28px; background: var(--color-verde); color: #FFFFFF; text-decoration: none; border-radius: 6px; font-weight: 500; transition: all 0.3s ease;">Descubre nuestros servicios</a>
+            <a href="/contacto/" style="display: inline-block; padding: 14px 28px; background: var(--color-granate); color: #FFFFFF; text-decoration: none; border-radius: 6px; font-weight: 500; transition: all 0.3s ease;">Hablemos de tu proyecto</a>
         </div>
     </div>
 </section>

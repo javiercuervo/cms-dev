@@ -658,6 +658,15 @@ get_header();
 
 <div class="ia-generativa-page">
 
+    <!-- Breadcrumb -->
+    <nav style="max-width: 800px; margin: 0 auto; padding: 20px 24px 0; font-family: var(--ia-font-body); font-size: 14px;">
+        <a href="/" style="color: var(--ia-accent-cyan); text-decoration: none;">Proportione</a>
+        <span style="color: var(--ia-text-muted); margin: 0 8px;">›</span>
+        <a href="/servicios/" style="color: var(--ia-accent-cyan); text-decoration: none;">Servicios</a>
+        <span style="color: var(--ia-text-muted); margin: 0 8px;">›</span>
+        <span style="color: var(--ia-text-primary);">IA Generativa</span>
+    </nav>
+
     <!-- HERO SECTION -->
     <section class="ia-hero">
         <div class="ia-hero-bg"></div>
@@ -777,7 +786,7 @@ get_header();
             <h2>Conclusión</h2>
             <p>La Inteligencia Artificial Generativa no es solo una tendencia tecnológica pasajera; representa un cambio fundamental en cómo los humanos interactuamos con las máquinas y cómo las organizaciones operan. Estamos en los primeros capítulos de esta revolución, y las posibilidades que se abren son tanto emocionantes como desafiantes.</p>
             <p>El éxito en esta nueva era no pertenecerá necesariamente a quienes adopten la tecnología más rápido, sino a quienes lo hagan de manera más reflexiva, ética y estratégica. La GAI es una herramienta poderosa, pero como toda herramienta, su valor final depende de quién la usa y con qué propósito.</p>
-            <p>En Proportione, acompañamos a las organizaciones en este viaje de transformación digital, ayudándolas a identificar oportunidades, implementar soluciones y desarrollar las capacidades necesarias para prosperar en un mundo potenciado por la IA Generativa. El futuro ya está aquí, y está lleno de posibilidades extraordinarias para quienes se atrevan a explorarlo.</p>
+            <p>En Proportione, acompañamos a las organizaciones en este viaje de <a href="/estrategia-transformacion-digital/" style="color: var(--ia-accent-cyan);">transformación digital</a>, ayudándolas a identificar oportunidades, implementar soluciones y desarrollar las capacidades necesarias para prosperar en un mundo potenciado por la IA Generativa. Nuestro <a href="/metodologia/" style="color: var(--ia-accent-cyan);">framework Human-Centric AI (20-60-20)</a> garantiza que la tecnología trabaje para las personas. El futuro ya está aquí, y está lleno de posibilidades extraordinarias para quienes se atrevan a explorarlo.</p>
         </section>
 
         <!-- Tools Widget -->
@@ -793,32 +802,35 @@ get_header();
             </div>
         </div>
 
-        <!-- Related Posts -->
+        <!-- Servicios Relacionados -->
         <section class="ia-related">
-            <h2>Más sobre IA Generativa</h2>
+            <h2>Servicios relacionados</h2>
             <div class="ia-related-grid">
-                <a href="/prompt-engineering/" class="ia-related-card">
-                    <h3>Prompt Engineering: El Arte de Comunicarse con la IA</h3>
+                <a href="/estrategia-transformacion-digital/" class="ia-related-card">
+                    <h3>Transformación Digital Estratégica</h3>
                     <div class="ia-related-meta">
-                        <span>22 Enero 2026</span>
-                        <span>6 min</span>
+                        <span>Servicio</span>
+                        <span>Estrategia</span>
                     </div>
                 </a>
-                <a href="/ia-sector-financiero/" class="ia-related-card">
-                    <h3>GAI en el Sector Financiero: Casos de Uso Reales</h3>
+                <a href="/estrategia-innovacion/" class="ia-related-card">
+                    <h3>Estrategia de Innovación</h3>
                     <div class="ia-related-meta">
-                        <span>10 Enero 2026</span>
-                        <span>10 min</span>
+                        <span>Servicio</span>
+                        <span>Innovación</span>
                     </div>
                 </a>
-                <a href="/etica-regulacion-ia/" class="ia-related-card">
-                    <h3>Ética y Regulación en IA Generativa</h3>
+                <a href="/consultoria-gestion-negocio/" class="ia-related-card">
+                    <h3>Consultoría de Gestión de Negocio</h3>
                     <div class="ia-related-meta">
-                        <span>5 Enero 2026</span>
-                        <span>7 min</span>
+                        <span>Servicio</span>
+                        <span>Consultoría</span>
                     </div>
                 </a>
             </div>
+            <p style="text-align: center; margin-top: 32px;">
+                <a href="/servicios/" style="color: var(--ia-accent-cyan); font-weight: 500; text-decoration: none;">← Ver todos los servicios</a>
+            </p>
         </section>
 
         <!-- Newsletter CTA -->

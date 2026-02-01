@@ -441,11 +441,20 @@ get_header();
     </div>
 </section>
 
+<!-- Breadcrumb -->
+<nav style="max-width: 1100px; margin: 0 auto; padding: 20px 24px 0; font-family: var(--font-cuerpo); font-size: 14px;">
+    <a href="/" style="color: var(--color-verde); text-decoration: none;">Proportione</a>
+    <span style="color: #999; margin: 0 8px;">›</span>
+    <a href="/servicios/" style="color: var(--color-verde); text-decoration: none;">Servicios</a>
+    <span style="color: #999; margin: 0 8px;">›</span>
+    <span style="color: var(--color-granate);">Consultoría de Gestión de Negocio</span>
+</nav>
+
 <!-- Intro Section -->
 <section class="cn-section cn-intro">
     <div class="cn-intro-inner">
         <h2>Más allá de resolver problemas</h2>
-        <p>La Consultoría de Gestión de Negocio es una disciplina que ha ganado relevancia en la era de la disrupción digital. Se trata de un enfoque estratégico que permite a las empresas navegar por la incertidumbre, adaptarse a los cambios y lograr un crecimiento rentable y sostenido. En Proportione combinamos estrategias de negocio con principios de diseño y tecnología para impulsar el crecimiento orgánico de tu empresa.</p>
+        <p>La Consultoría de Gestión de Negocio es una disciplina que ha ganado relevancia en la era de la disrupción digital. Se trata de un enfoque estratégico que permite a las empresas navegar por la incertidumbre, adaptarse a los cambios y lograr un crecimiento rentable y sostenido. En Proportione combinamos estrategias de negocio con principios de diseño y tecnología para impulsar el crecimiento orgánico de tu empresa. Conoce <a href="/metodologia/" style="color: var(--color-verde); font-weight: 500;">nuestra metodología</a> basada en el framework Human-Centric AI.</p>
     </div>
 </section>
 
@@ -592,6 +601,30 @@ get_header();
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Servicios Relacionados -->
+<section class="cn-section" style="background: var(--color-crema);">
+    <div class="cn-container">
+        <h2 style="font-family: var(--font-titulo); font-size: clamp(26px, 4vw, 36px); font-weight: 600; color: var(--color-granate); text-align: center; margin: 0 0 32px 0;">Servicios relacionados</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
+            <a href="/estrategia-innovacion/" style="text-decoration: none; display: block; background: var(--color-blanco); padding: 28px 24px; border-radius: 8px; border-left: 4px solid var(--color-verde); transition: all 0.3s ease;">
+                <h3 style="font-family: var(--font-titulo); font-size: 20px; font-weight: 600; color: var(--color-granate); margin: 0 0 8px 0;">Estrategia de Innovación</h3>
+                <p style="font-family: var(--font-cuerpo); font-size: 15px; color: #666; margin: 0; line-height: 1.6;">Transforma ideas en ventaja competitiva con un enfoque estructurado.</p>
+            </a>
+            <a href="/ia-generativa/" style="text-decoration: none; display: block; background: var(--color-blanco); padding: 28px 24px; border-radius: 8px; border-left: 4px solid var(--color-verde); transition: all 0.3s ease;">
+                <h3 style="font-family: var(--font-titulo); font-size: 20px; font-weight: 600; color: var(--color-granate); margin: 0 0 8px 0;">Inteligencia Artificial Generativa</h3>
+                <p style="font-family: var(--font-cuerpo); font-size: 15px; color: #666; margin: 0; line-height: 1.6;">Automatiza procesos y potencia la productividad con IA.</p>
+            </a>
+            <a href="/estrategia-transformacion-digital/" style="text-decoration: none; display: block; background: var(--color-blanco); padding: 28px 24px; border-radius: 8px; border-left: 4px solid var(--color-verde); transition: all 0.3s ease;">
+                <h3 style="font-family: var(--font-titulo); font-size: 20px; font-weight: 600; color: var(--color-granate); margin: 0 0 8px 0;">Transformación Digital</h3>
+                <p style="font-family: var(--font-cuerpo); font-size: 15px; color: #666; margin: 0; line-height: 1.6;">Hojas de ruta personalizadas para tu evolución digital.</p>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 32px;">
+            <a href="/servicios/" style="color: var(--color-verde); font-weight: 500; text-decoration: none; font-family: var(--font-cuerpo);">← Ver todos los servicios</a>
+        </p>
     </div>
 </section>
 

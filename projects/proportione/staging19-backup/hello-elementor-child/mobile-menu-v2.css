@@ -1,0 +1,287 @@
+/* ============================================
+   MENÚ MÓVIL PROPORTIONE v2.1
+   Control directo con click handler
+   ============================================ */
+
+/* Breakpoint: Tablet y móvil (1024px y menos) */
+@media (max-width: 1024px) {
+
+    /* ===== OCULTAR MENÚ HORIZONTAL (solo visual) ===== */
+    .elementor-nav-menu--main.elementor-nav-menu__container {
+        display: none !important;
+    }
+
+    /* ===== HEADER COMPACTO ===== */
+    .elementor-location-header .e-con,
+    .elementor-location-header .elementor-container {
+        min-height: 60px;
+        padding: 8px 16px;
+        align-items: center;
+    }
+
+    /* Logo compacto */
+    .elementor-location-header .elementor-widget-image img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    /* ===== HAMBURGER TOGGLE ===== */
+    .elementor-menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10001;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Icono hamburguesa */
+    .elementor-menu-toggle svg {
+        width: 26px;
+        height: 26px;
+        fill: #5F322F;
+        transition: transform 0.3s ease;
+    }
+
+    /* Iconos open/close */
+    .elementor-menu-toggle .elementor-menu-toggle__icon--close {
+        display: none;
+    }
+
+    .elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--open {
+        display: none;
+    }
+
+    .elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--close {
+        display: block;
+    }
+
+    /* ===== DROPDOWN CONTAINER ===== */
+    nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+        position: fixed !important;
+        top: 60px !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-height: calc(100vh - 60px) !important;
+        max-height: calc(100dvh - 60px) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 8px 30px rgba(95, 50, 47, 0.15) !important;
+        z-index: 10000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border-top: 3px solid #5F322F !important;
+    }
+
+    /* Cuando está oculto */
+    nav.elementor-nav-menu--dropdown[aria-hidden="true"] {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.25s ease-out;
+    }
+
+    /* Cuando está visible */
+    nav.elementor-nav-menu--dropdown[aria-hidden="false"] {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+        transition: all 0.3s ease-out;
+    }
+
+    /* ===== LISTA PRINCIPAL ===== */
+    .elementor-nav-menu--dropdown > ul.elementor-nav-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* ===== ITEMS DEL MENÚ ===== */
+    .elementor-nav-menu--dropdown .menu-item {
+        margin: 0;
+        border-bottom: 1px solid #F0EDE8;
+    }
+
+    .elementor-nav-menu--dropdown .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Links principales */
+    .elementor-nav-menu--dropdown .elementor-item,
+    .elementor-nav-menu--dropdown > ul > li > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+        text-decoration: none;
+        background: #FFFFFF;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .elementor-nav-menu--dropdown .elementor-item:hover,
+    .elementor-nav-menu--dropdown .elementor-item:focus,
+    .elementor-nav-menu--dropdown .elementor-item:active {
+        background: #F5F0E6;
+        color: #5F322F;
+    }
+
+    /* ===== SUBMENÚS ===== */
+    .elementor-nav-menu--dropdown .sub-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: #FAFAF8;
+        border-top: 1px solid #F0EDE8;
+        display: none; /* Oculto por defecto */
+    }
+
+    /* Submenú visible con clase propia (controlado por JS) */
+    .menu-item-has-children.submenu-open > .sub-menu {
+        display: block !important;
+    }
+
+    /* Items del submenú */
+    .elementor-nav-menu--dropdown .sub-menu .menu-item {
+        border-bottom: 1px solid #EDEAE5;
+    }
+
+    .elementor-nav-menu--dropdown .sub-menu .menu-item:last-child {
+        border-bottom: none;
+    }
+
+    .elementor-nav-menu--dropdown .sub-menu .elementor-sub-item,
+    .elementor-nav-menu--dropdown .sub-menu a {
+        display: block;
+        padding: 14px 20px 14px 28px;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: #555555;
+        text-decoration: none;
+        border-left: 3px solid transparent;
+        transition: all 0.2s ease;
+    }
+
+    .elementor-nav-menu--dropdown .sub-menu a:hover,
+    .elementor-nav-menu--dropdown .sub-menu a:focus,
+    .elementor-nav-menu--dropdown .sub-menu a:active {
+        background: #F5F0E6;
+        color: #5F322F;
+        border-left-color: #6E8157;
+    }
+
+    /* ===== INDICADOR DE SUBMENÚ (flecha) ===== */
+    .elementor-nav-menu--dropdown .menu-item-has-children > .elementor-item::after,
+    .elementor-nav-menu--dropdown .menu-item-has-children > a::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid #5F322F;
+        border-bottom: 2px solid #5F322F;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+
+    /* Flecha rotada cuando submenú abierto */
+    .menu-item-has-children.submenu-open > .elementor-item::after,
+    .menu-item-has-children.submenu-open > a::after {
+        transform: rotate(-135deg) !important;
+    }
+
+    /* ===== BOTÓN CONTACTO (CTA) ===== */
+    .elementor-nav-menu--dropdown .menu-item.menu-cta {
+        padding: 16px 20px;
+        border-bottom: none;
+        background: #FAFAF8;
+    }
+
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > .elementor-item {
+        display: block;
+        background: #6E8157;
+        color: #FFFFFF !important;
+        text-align: center;
+        padding: 14px 24px;
+        border-radius: 6px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > .elementor-item::after {
+        display: none;
+    }
+
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > .elementor-item:hover,
+    .elementor-nav-menu--dropdown .menu-item.menu-cta > .elementor-item:focus {
+        background: #5A6D47;
+    }
+
+    /* ===== BLOQUEAR SCROLL BODY CUANDO MENÚ ABIERTO ===== */
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+/* ===== MÓVILES PEQUEÑOS ===== */
+@media (max-width: 480px) {
+    .elementor-location-header .e-con,
+    .elementor-location-header .elementor-container {
+        padding: 8px 12px;
+    }
+
+    .elementor-location-header .elementor-widget-image img {
+        max-width: 100px;
+    }
+
+    .elementor-nav-menu--dropdown .elementor-item {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
+    .elementor-nav-menu--dropdown .sub-menu a {
+        padding: 12px 16px 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* ===== AJUSTES PARA ACCESIBILIDAD ===== */
+@media (max-width: 1024px) {
+    /* Focus visible */
+    .elementor-menu-toggle:focus-visible {
+        outline: 2px solid #5F322F;
+        outline-offset: 2px;
+    }
+
+    .elementor-nav-menu--dropdown a:focus-visible {
+        outline: 2px solid #6E8157;
+        outline-offset: -2px;
+        background: #F5F0E6;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        nav.elementor-nav-menu--dropdown,
+        .elementor-menu-toggle svg,
+        .elementor-nav-menu--dropdown .sub-menu,
+        .elementor-nav-menu--dropdown a {
+            transition: none !important;
+        }
+    }
+}

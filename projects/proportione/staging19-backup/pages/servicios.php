@@ -594,7 +594,7 @@ get_header();
 <section class="servicios-intro">
     <div class="servicios-intro-inner">
         <h2>No somos una fábrica de herramientas genéricas</h2>
-        <p>Somos consultores implementadores que trabajan en tu propio ecosistema tecnológico. Diseñamos estrategias personalizadas, las implementamos contigo y transferimos el conocimiento a tu equipo. Sin dependencias. Con resultados medibles.</p>
+        <p>Somos consultores implementadores que trabajan en tu propio ecosistema tecnológico. Diseñamos estrategias personalizadas, las implementamos contigo y transferimos el conocimiento a tu equipo. Sin dependencias. Con resultados medibles. Descubre <a href="/metodologia/" style="color: var(--color-verde); font-weight: 500;">nuestra metodología de trabajo</a> y conoce al <a href="/nosotros/" style="color: var(--color-verde); font-weight: 500;">equipo Proportione</a>.</p>
     </div>
 </section>
 
@@ -613,7 +613,7 @@ get_header();
                 </div>
                 <h3>Transformación Digital Estratégica</h3>
                 <p>Hojas de ruta personalizadas, identificación de pilotos de alto impacto y modelos de gobierno de IA alineados con tus objetivos de negocio.</p>
-                <a href="#">Saber más →</a>
+                <a href="/estrategia-transformacion-digital/">Estrategia de transformación digital →</a>
             </div>
 
             <!-- Servicio 2 -->
@@ -626,7 +626,7 @@ get_header();
                 </div>
                 <h3>Inteligencia Artificial y Automatización</h3>
                 <p>Casos de uso de IA generativa, trabajo intelectual asistido (modelo 20-60-20) y automatización de procesos con cuadros de mando integrados.</p>
-                <a href="#">Saber más →</a>
+                <a href="/ia-generativa/">Inteligencia artificial generativa →</a>
             </div>
 
             <!-- Servicio 3 -->
@@ -640,7 +640,7 @@ get_header();
                 </div>
                 <h3>Ecommerce Inteligente</h3>
                 <p>Partner Shopify Plus en España y Portugal. Estrategia D2C, omnicanal, IA aplicada al comercio y análisis de comportamiento.</p>
-                <a href="#">Saber más →</a>
+                <a href="/estrategia-omnicanal-retail/">Estrategia omnicanal para retail →</a>
             </div>
 
             <!-- Servicio 4 -->
@@ -653,7 +653,7 @@ get_header();
                 </div>
                 <h3>Marketplaces Locales</h3>
                 <p>Plataformas que proyectan lo local en lo digital. Ecosistemas que conectan vendedores de proximidad con clientes globales.</p>
-                <a href="#">Saber más →</a>
+                <a href="/contacto/">Consulta este servicio →</a>
             </div>
 
             <!-- Servicio 5 -->
@@ -668,7 +668,7 @@ get_header();
                 </div>
                 <h3>Desarrollo de Personas y Liderazgo</h3>
                 <p>Programas de talento, coaching ejecutivo, digitalización de RRHH y gestión del cambio humanizada.</p>
-                <a href="#">Saber más →</a>
+                <a href="/consultoria-gestion-negocio/">Consultoría de gestión de negocio →</a>
             </div>
 
             <!-- Servicio 6 -->
@@ -681,7 +681,7 @@ get_header();
                 </div>
                 <h3>Digitalización de Operaciones</h3>
                 <p>Edificios inteligentes, IoT, cuadros de mando integrados y reporting automatizado para la toma de decisiones.</p>
-                <a href="#">Saber más →</a>
+                <a href="/estrategia-transformacion-digital/">Transformación digital de operaciones →</a>
             </div>
 
             <!-- Servicio 7 -->
@@ -694,7 +694,7 @@ get_header();
                 </div>
                 <h3>Aprendizaje y Educación</h3>
                 <p>Rediseño de itinerarios formativos, plataformas LMS accesibles y estrategias de captación para instituciones educativas.</p>
-                <a href="#">Saber más →</a>
+                <a href="/estrategia-innovacion/">Estrategia de innovación educativa →</a>
             </div>
 
             <!-- Servicio 8 -->
@@ -706,7 +706,7 @@ get_header();
                 </div>
                 <h3>Peritaje Forense</h3>
                 <p>Análisis forense de incidentes, investigación de brechas de seguridad y peritaje judicial especializado.</p>
-                <a href="#">Saber más →</a>
+                <a href="/contacto/">Consulta este servicio →</a>
             </div>
         </div>
     </div>
@@ -883,6 +883,15 @@ get_header();
                 <p>Simplicidad y escalabilidad sobre complejidad.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-inner">
+        <h2>¿Listo para transformar tu negocio?</h2>
+        <p>Hablemos de cómo podemos ayudarte a alcanzar tus objetivos de transformación digital.</p>
+        <a href="/contacto/" class="cta-btn">Solicita una consulta</a>
     </div>
 </section>
 

@@ -108,46 +108,56 @@ function proportione_enqueue_custom_styles() {
             '1.0.0'
         );
     }
+
+    // Página Investigación
+    if (is_page('investigacion')) {
+        wp_enqueue_style(
+            'proportione-investigacion',
+            $theme_uri . '/investigacion.css',
+            array('proportione-design-system'),
+            '1.0.0'
+        );
+    }
 }
 
-// CSS condicional para plantillas de blog por categoría
+// Menú Móvil v2 - Compatible con Elementor Pro
+add_action('wp_enqueue_scripts', 'proportione_mobile_menu_v2', 30);
+function proportione_mobile_menu_v2() {
+    $theme_uri = get_stylesheet_directory_uri();
+    $theme_dir = get_stylesheet_directory();
+
+    // CSS del menú móvil
+    wp_enqueue_style(
+        'proportione-mobile-menu',
+        $theme_uri . '/mobile-menu-v2.css',
+        array('widget-nav-menu'), // Después del CSS de Elementor nav
+        '2.0.0'
+    );
+
+    // JS del menú móvil (solo mejoras, no control de visibilidad)
+    wp_enqueue_script(
+        'proportione-mobile-menu',
+        $theme_uri . '/mobile-menu-v2.js',
+        array('jquery', 'smartmenus'), // Después de SmartMenus
+        '2.0.0',
+        true // En footer
+    );
+}
+
+// CSS para plantilla de blog unificada
 add_action('wp_enqueue_scripts', 'proportione_blog_templates_css', 25);
 function proportione_blog_templates_css() {
     if (!is_singular('post')) return;
 
     $theme_uri = get_stylesheet_directory_uri();
 
-    // CSS Enhanced (nuevo diseño sin sidebar, reducción de rebote)
+    // CSS Unificado para todos los posts (diseño sin sidebar, reducción de rebote)
     wp_enqueue_style(
         'blog-single-enhanced',
         $theme_uri . '/blog-single-enhanced.css',
         array('proportione-design-system'),
-        '1.1.0'
+        '2.0.1-' . time()
     );
-
-    // CSS adicional por categoría (colores específicos)
-    if (has_category('ia-generativa')) {
-        wp_enqueue_style(
-            'blog-ia-generativa',
-            $theme_uri . '/blog-ia-generativa.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    } elseif (has_category('estrategia-digital')) {
-        wp_enqueue_style(
-            'blog-estrategia-digital',
-            $theme_uri . '/blog-estrategia-digital.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    } elseif (has_category('personas-y-tecnologia')) {
-        wp_enqueue_style(
-            'blog-personas-tecnologia',
-            $theme_uri . '/blog-personas-tecnologia.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    }
 }
 
 // Añadir clases de categoría al body para selectores CSS específicos

@@ -783,7 +783,7 @@ get_header();
         <div class="ei-hero-bg"></div>
         <div class="ei-hero-overlay"></div>
         <div class="ei-hero-content">
-            <nav class="ei-breadcrumb">Servicios &gt; Estrategia de Innovación</nav>
+            <nav class="ei-breadcrumb"><a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Proportione</a> &gt; <a href="/servicios/" style="color: rgba(255,255,255,0.8); text-decoration: none;">Servicios</a> &gt; Estrategia de Innovación</nav>
             <h1>Estrategia de Innovación</h1>
             <p class="ei-hero-subtitle">Un enfoque estructurado para transformar ideas en ventaja competitiva</p>
         </div>
@@ -795,7 +795,7 @@ get_header();
         <div class="ei-intro-inner">
             <div class="ei-intro-text-wrapper">
                 <p class="ei-intro-text">
-                    <span class="drop-cap">L</span>a estrategia de innovación es un componente vital para cualquier organización que aspire a mantenerse relevante y competitiva. No se trata simplemente de tener ideas novedosas, sino de tener un enfoque estructurado y estratégico para implementarlas de manera efectiva.
+                    <span class="drop-cap">L</span>a estrategia de innovación es un componente vital para cualquier organización que aspire a mantenerse relevante y competitiva. No se trata simplemente de tener ideas novedosas, sino de tener un enfoque estructurado y estratégico para implementarlas de manera efectiva. En Proportione aplicamos <a href="/metodologia/" style="color: var(--verde); font-weight: 500;">nuestra metodología Human-Centric AI</a> para garantizar que la innovación esté siempre centrada en las personas.
                 </p>
                 <blockquote class="ei-quote">
                     <p>"La esencia de la estrategia es elegir qué NO hay que hacer"</p>

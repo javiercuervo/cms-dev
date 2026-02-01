@@ -1,0 +1,833 @@
+[
+  {
+    "id": "om1a2b3c",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "vh", "size": 50},
+      "min_height_tablet": {"unit": "px", "size": 320},
+      "min_height_mobile": {"unit": "px", "size": 280},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "https://staging19.proportione.com/wp-content/uploads/2023/07/Experiencia_Cliente_Coherente_Fluida.png", "id": 294},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {"unit": "px", "size": 0.75},
+      "padding": {"unit": "px", "top": "100", "right": "24", "bottom": "100", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "60", "right": "16", "bottom": "60", "left": "16"},
+      "css_classes": "duotone-hero"
+    },
+    "elements": [
+      {
+        "id": "om2b3c4d",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Estrategia Omnicanal",
+          "header_size": "h1",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 52},
+          "typography_font_size_tablet": {"unit": "px", "size": 40},
+          "typography_font_size_mobile": {"unit": "px", "size": 32},
+          "typography_font_weight": "700",
+          "typography_line_height": {"unit": "em", "size": 1.15},
+          "text_shadow_text_shadow_type": "custom",
+          "text_shadow_text_shadow": {"horizontal": 0, "vertical": 4, "blur": 30, "color": "rgba(0,0,0,0.4)"},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"},
+          "_animation": "fadeInDown"
+        }
+      },
+      {
+        "id": "om3c4d5e",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\">El camino hacia la coherencia en el comercio minorista</p>",
+          "text_color": "rgba(255,255,255,0.95)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 22},
+          "typography_font_size_mobile": {"unit": "px", "size": 18},
+          "typography_line_height": {"unit": "em", "size": 1.6},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200
+        }
+      },
+      {
+        "id": "om3c4d5f",
+        "elType": "widget",
+        "widgetType": "divider",
+        "settings": {
+          "style": "solid",
+          "width": {"unit": "%", "size": 8},
+          "color": "#6E8157",
+          "weight": {"unit": "px", "size": 3},
+          "gap": {"unit": "px", "size": 0},
+          "_margin": {"unit": "px", "top": "24", "right": "0", "bottom": "0", "left": "0"},
+          "_animation": "fadeIn",
+          "_animation_delay": 400
+        }
+      }
+    ]
+  },
+  {
+    "id": "om4d5e6f",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "60", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "40", "left": "16"}
+    },
+    "elements": [
+      {
+        "id": "om5e6f7g",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"font-size: 20px;\">¿Alguna vez te has preguntado cómo una estrategia omnicanal puede transformar tu negocio minorista?</p><p>En este mundo digital, la estrategia omnicanal se ha convertido en un componente esencial para las empresas que buscan proporcionar una <strong>experiencia de cliente coherente y fluida</strong>.</p>",
+          "text_color": "#333333",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "typography_line_height": {"unit": "em", "size": 1.8},
+          "_animation": "fadeIn"
+        }
+      }
+    ]
+  },
+  {
+    "id": "om6f7g8h",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 950},
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {"column": "40", "row": "30", "unit": "px"},
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40"},
+      "padding_mobile": {"unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "om7g8h9i",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "width": {"unit": "%", "size": 55},
+          "width_mobile": {"unit": "%", "size": 100},
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "om8h9i0j",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Qué es la estrategia omnicanal?",
+              "header_size": "h2",
+              "title_color": "#5F322F",
+              "typography_typography": "custom",
+              "typography_font_family": "Georgia",
+              "typography_font_size": {"unit": "px", "size": 32},
+              "typography_font_size_mobile": {"unit": "px", "size": 26},
+              "typography_font_weight": "600",
+              "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"},
+              "_animation": "fadeInLeft"
+            }
+          },
+          {
+            "id": "om9i0j1k",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>La estrategia omnicanal es un enfoque de ventas que busca proporcionar al cliente una <strong>experiencia de compra integrada y coherente</strong>, ya sea que esté comprando en línea desde un dispositivo móvil, una laptop, o en una tienda física.</p><p>El objetivo es crear una experiencia unificada donde el cliente pueda interactuar con la marca de forma fluida a través de cualquier canal.</p>",
+              "text_color": "#333333",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 16},
+              "typography_line_height": {"unit": "em", "size": 1.75},
+              "_animation": "fadeIn",
+              "_animation_delay": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "om0j1k2l",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "width": {"unit": "%", "size": 45},
+          "width_mobile": {"unit": "%", "size": 100}
+        },
+        "elements": [
+          {
+            "id": "om1k2l3m",
+            "elType": "widget",
+            "widgetType": "image",
+            "settings": {
+              "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2023/07/Mundo_Hiperconectado_Cliente_Centro-1024x574.png", "id": 295},
+              "image_size": "large",
+              "border_radius": {"unit": "px", "size": 12},
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 8, "blur": 25, "spread": 0, "color": "rgba(95,50,47,0.15)"},
+              "_animation": "fadeInRight",
+              "_animation_delay": 200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "om2l3m4n",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 1000},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16"}
+    },
+    "elements": [
+      {
+        "id": "om3m4n5o",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Beneficios de la Estrategia Omnicanal",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 32},
+          "typography_font_size_mobile": {"unit": "px", "size": 26},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "16", "left": "0"},
+          "_animation": "fadeIn"
+        }
+      },
+      {
+        "id": "om3m4n5p",
+        "elType": "widget",
+        "widgetType": "divider",
+        "settings": {
+          "style": "solid",
+          "width": {"unit": "%", "size": 6},
+          "color": "#6E8157",
+          "weight": {"unit": "px", "size": 3},
+          "gap": {"unit": "px", "size": 0},
+          "align": "center",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "48", "left": "0"}
+        }
+      },
+      {
+        "id": "om4n5o6p",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_wrap": "wrap",
+          "flex_gap": {"column": "24", "row": "24", "unit": "px"},
+          "flex_justify_content": "center"
+        },
+        "elements": [
+          {
+            "id": "om5o6p7q",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 300},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28"},
+              "border_radius": {"unit": "px", "size": 12},
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "3", "left": "0"},
+              "border_color": "#6E8157",
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 0
+            },
+            "elements": [
+              {
+                "id": "om6p7q8r",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-smile", "library": "fa-solid"},
+                  "view": "stacked",
+                  "shape": "circle",
+                  "primary_color": "#6E8157",
+                  "secondary_color": "#FFFFFF",
+                  "size": {"unit": "px", "size": 24},
+                  "icon_padding": {"unit": "px", "size": 14},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"}
+                }
+              },
+              {
+                "id": "om7q8r9s",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Experiencia del Cliente Mejorada",
+                  "header_size": "h4",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 19},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0"}
+                }
+              },
+              {
+                "id": "om8r9s0t",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Al proporcionar una experiencia de compra coherente y fluida en todos los canales, aumentas la satisfacción del cliente y fomentas la lealtad a la marca.</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15},
+                  "typography_line_height": {"unit": "em", "size": 1.65}
+                }
+              }
+            ]
+          },
+          {
+            "id": "om9s0t1u",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 300},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28"},
+              "border_radius": {"unit": "px", "size": 12},
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "3", "left": "0"},
+              "border_color": "#6E8157",
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 100
+            },
+            "elements": [
+              {
+                "id": "om0t1u2v",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-cog", "library": "fa-solid"},
+                  "view": "stacked",
+                  "shape": "circle",
+                  "primary_color": "#6E8157",
+                  "secondary_color": "#FFFFFF",
+                  "size": {"unit": "px", "size": 24},
+                  "icon_padding": {"unit": "px", "size": 14},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"}
+                }
+              },
+              {
+                "id": "om1u2v3w",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Mayor Eficiencia Operativa",
+                  "header_size": "h4",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 19},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0"}
+                }
+              },
+              {
+                "id": "om2v3w4x",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Al integrar tus canales de venta, puedes mejorar la eficiencia operativa, reducir costes y optimizar los recursos de tu negocio.</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15},
+                  "typography_line_height": {"unit": "em", "size": 1.65}
+                }
+              }
+            ]
+          },
+          {
+            "id": "om3w4x5y",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "width": {"unit": "px", "size": 300},
+              "width_mobile": {"unit": "%", "size": 100},
+              "flex_direction": "column",
+              "background_background": "classic",
+              "background_color": "#FAFAFA",
+              "padding": {"unit": "px", "top": "32", "right": "28", "bottom": "32", "left": "28"},
+              "border_radius": {"unit": "px", "size": 12},
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "3", "left": "0"},
+              "border_color": "#6E8157",
+              "box_shadow_box_shadow_type": "custom",
+              "box_shadow_box_shadow": {"horizontal": 0, "vertical": 4, "blur": 15, "spread": 0, "color": "rgba(0,0,0,0.06)"},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            },
+            "elements": [
+              {
+                "id": "om4x5y6z",
+                "elType": "widget",
+                "widgetType": "icon",
+                "settings": {
+                  "icon": {"value": "fas fa-chart-line", "library": "fa-solid"},
+                  "view": "stacked",
+                  "shape": "circle",
+                  "primary_color": "#6E8157",
+                  "secondary_color": "#FFFFFF",
+                  "size": {"unit": "px", "size": 24},
+                  "icon_padding": {"unit": "px", "size": 14},
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0"}
+                }
+              },
+              {
+                "id": "om5y6z7a",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Aumento de las Ventas",
+                  "header_size": "h4",
+                  "title_color": "#1F1F1F",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Georgia",
+                  "typography_font_size": {"unit": "px", "size": 19},
+                  "typography_font_weight": "600",
+                  "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0"}
+                }
+              },
+              {
+                "id": "om6z7a8b",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p>Los clientes que compran a través de múltiples canales tienden a gastar más que aquellos que solo usan un único canal.</p>",
+                  "text_color": "#555555",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {"unit": "px", "size": 15},
+                  "typography_line_height": {"unit": "em", "size": 1.65}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "om7a8b9c",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "px", "size": 400},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "https://staging19.proportione.com/wp-content/uploads/2026/01/IMG_8407.jpg", "id": 2857},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_opacity": {"unit": "px", "size": 0.8},
+      "padding": {"unit": "px", "top": "70", "right": "24", "bottom": "70", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16"},
+      "css_classes": "duotone-hero"
+    },
+    "elements": [
+      {
+        "id": "om8b9c0d",
+        "elType": "container",
+        "settings": {
+          "content_width": "boxed",
+          "boxed_width": {"unit": "px", "size": 800},
+          "flex_direction": "column"
+        },
+        "elements": [
+          {
+            "id": "om9c0d1e",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Implementando una Estrategia Omnicanal",
+              "header_size": "h2",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_typography": "custom",
+              "typography_font_family": "Georgia",
+              "typography_font_size": {"unit": "px", "size": 32},
+              "typography_font_size_mobile": {"unit": "px", "size": 26},
+              "typography_font_weight": "600",
+              "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0"},
+              "_animation": "fadeInDown"
+            }
+          },
+          {
+            "id": "om0d1e2f",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style=\"text-align: center;\">La implementación requiere un enfoque estratégico y considerado</p>",
+              "text_color": "rgba(255,255,255,0.9)",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 18},
+              "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "36", "left": "0"},
+              "_animation": "fadeIn",
+              "_animation_delay": 100
+            }
+          },
+          {
+            "id": "om1e2f3g",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {"text": "Entiende a tu cliente: conoce sus preferencias de compra", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                {"text": "Integra tus canales de venta de forma fluida", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                {"text": "Personaliza la experiencia con datos del cliente", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                {"text": "Mide y optimiza continuamente tu estrategia", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}}
+              ],
+              "space_between": {"unit": "px", "size": 18},
+              "icon_color": "#6E8157",
+              "icon_size": {"unit": "px", "size": 20},
+              "text_color": "#FFFFFF",
+              "text_typography_typography": "custom",
+              "text_typography_font_family": "Raleway",
+              "text_typography_font_size": {"unit": "px", "size": 17},
+              "text_typography_line_height": {"unit": "em", "size": 1.6},
+              "_animation": "fadeInUp",
+              "_animation_delay": 200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "om2f3g4h",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 800},
+      "flex_direction": "column",
+      "background_background": "classic",
+      "background_color": "#F5F0E6",
+      "padding": {"unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40"},
+      "padding_mobile": {"unit": "px", "top": "40", "right": "20", "bottom": "40", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "om3g4h5i",
+        "elType": "container",
+        "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_border": "solid",
+          "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "4"},
+          "border_color": "#6E8157",
+          "padding": {"unit": "px", "top": "28", "right": "36", "bottom": "28", "left": "36"},
+          "border_radius": {"unit": "px", "top": "0", "right": "8", "bottom": "8", "left": "0"},
+          "_animation": "fadeInLeft"
+        },
+        "elements": [
+          {
+            "id": "om4h5i6j",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Una estrategia omnicanal puede ser un <strong>poderoso motor de crecimiento</strong> para tu negocio. Al proporcionar una experiencia de cliente coherente y fluida, puedes aumentar la satisfacción del cliente, mejorar la eficiencia operativa y aumentar las ventas.</p><p style=\"margin-top: 16px;\">¿Estás listo para adoptar una estrategia omnicanal? ¿Quieres conocer lo que Proportione te ofrece como <strong>Shopify Plus Partner</strong>?</p>",
+              "text_color": "#333333",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {"unit": "px", "size": 17},
+              "typography_line_height": {"unit": "em", "size": 1.75}
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "related-services-om",
+    "elType": "container",
+    "settings": {
+      "content_width": "boxed",
+      "boxed_width": {"unit": "px", "size": 900},
+      "flex_direction": "column",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "padding": {"unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "related-om-title",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "Servicios relacionados",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 28},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "bottom": "32"}
+        }
+      },
+      {
+        "id": "related-om-links",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_gap": {"unit": "px", "size": 16},
+          "flex_justify_content": "center",
+          "flex_wrap": "wrap"
+        },
+        "elements": [
+          {
+            "id": "link-om-td",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Transformación Digital",
+              "link": {"url": "/estrategia-transformacion-digital/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          },
+          {
+            "id": "link-om-ia",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "IA Generativa",
+              "link": {"url": "/ia-generativa/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          },
+          {
+            "id": "link-om-consultoria",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Consultoria de Negocio",
+              "link": {"url": "/consultoria-gestion-negocio/", "is_external": false},
+              "size": "sm",
+              "button_background_color": "transparent",
+              "button_text_color": "#6E8157",
+              "border_border": "solid",
+              "border_width": {"unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2"},
+              "border_color": "#6E8157",
+              "border_radius": {"unit": "px", "size": 6}
+            }
+          }
+        ]
+      },
+      {
+        "id": "link-om-all",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Ver todos los servicios →",
+          "link": {"url": "/servicios/", "is_external": false},
+          "size": "sm",
+          "button_background_color": "transparent",
+          "button_text_color": "#5F322F",
+          "_margin": {"unit": "px", "top": "24"}
+        }
+      }
+    ]
+  },
+  {
+    "id": "om5i6j7k",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "min_height": {"unit": "px", "size": 280},
+      "flex_direction": "column",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "background_background": "classic",
+      "background_image": {"url": "https://staging19.proportione.com/wp-content/uploads/2026/01/PHOTO-2026-01-31-00-50-28.jpg", "id": 2954},
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "gradient",
+      "background_overlay_color": "#5F322F",
+      "background_overlay_color_b": "#6E8157",
+      "background_overlay_gradient_angle": {"unit": "deg", "size": 135},
+      "background_overlay_opacity": {"unit": "px", "size": 0.88},
+      "padding": {"unit": "px", "top": "60", "right": "24", "bottom": "60", "left": "24"},
+      "padding_mobile": {"unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16"},
+      "css_classes": "duotone-cta"
+    },
+    "elements": [
+      {
+        "id": "om6j7k8l",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para transformar tu retail?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Georgia",
+          "typography_font_size": {"unit": "px", "size": 32},
+          "typography_font_size_mobile": {"unit": "px", "size": 26},
+          "typography_font_weight": "600",
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "12", "left": "0"},
+          "_animation": "fadeInDown"
+        }
+      },
+      {
+        "id": "om7k8l9m",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\">Hablemos de cómo implementar tu estrategia omnicanal</p>",
+          "text_color": "rgba(255,255,255,0.9)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 18},
+          "_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "28", "left": "0"},
+          "_animation": "fadeIn",
+          "_animation_delay": 100
+        }
+      },
+      {
+        "id": "om8l9m0n",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+          "text": "Contactar",
+          "link": {"url": "/contacto/", "is_external": false},
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 15},
+          "typography_font_weight": "600",
+          "button_text_color": "#5F322F",
+          "background_color": "#FFFFFF",
+          "button_text_color_hover": "#FFFFFF",
+          "button_background_hover_color": "#6E8157",
+          "border_radius": {"unit": "px", "size": 6},
+          "button_padding": {"unit": "px", "top": "16", "right": "40", "bottom": "16", "left": "40"},
+          "_animation": "fadeInUp",
+          "_animation_delay": 200,
+          "hover_animation": "grow"
+        }
+      }
+    ]
+  },
+  {
+    "id": "om9m0n1o",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_wrap": "wrap",
+      "flex_justify_content": "space-between",
+      "flex_align_items": "center",
+      "flex_gap": {"column": "20", "row": "20", "unit": "px"},
+      "background_background": "classic",
+      "background_color": "#5F322F",
+      "padding": {"unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40"},
+      "padding_mobile": {"unit": "px", "top": "30", "right": "20", "bottom": "30", "left": "20"}
+    },
+    "elements": [
+      {
+        "id": "om0n1o2p",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+          "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2024/04/Logo_-Estrategia-Tecnologia-y-Personas.png"},
+          "image_size": "medium",
+          "width": {"unit": "px", "size": 160},
+          "width_mobile": {"unit": "px", "size": 140},
+          "align": "left",
+          "align_mobile": "center"
+        }
+      },
+      {
+        "id": "om1o2p3q",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: center;\"><a href=\"/politica-privacidad/\" style=\"color: #FFFFFF; text-decoration: none;\">Política de Privacidad</a> &nbsp;|&nbsp; <a href=\"/politica-cookies/\" style=\"color: #FFFFFF; text-decoration: none;\">Política de Cookies</a></p>",
+          "text_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 13}
+        }
+      },
+      {
+        "id": "om2p3q4r",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style=\"text-align: right;\">© 2026 Proportione</p>",
+          "text_color": "rgba(255,255,255,0.7)",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 13},
+          "align": "right",
+          "align_mobile": "center"
+        }
+      }
+    ]
+  }
+]

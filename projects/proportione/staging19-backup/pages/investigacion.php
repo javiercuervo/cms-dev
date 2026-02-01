@@ -817,6 +817,13 @@ get_header();
 
 <div class="investigacion-page">
 
+    <!-- Breadcrumb -->
+    <nav style="max-width: 900px; margin: 0 auto; padding: 20px 24px 0; font-family: 'Raleway', sans-serif; font-size: 14px;">
+        <a href="/" style="color: var(--verde); text-decoration: none;">Proportione</a>
+        <span style="color: #999; margin: 0 8px;">›</span>
+        <span style="color: var(--granate);">Investigación</span>
+    </nav>
+
     <!-- HERO SECTION -->
     <section class="inv-hero">
         <div class="inv-hero-bg"></div>
@@ -830,7 +837,7 @@ get_header();
                 <div class="investigador-avatar">JC</div>
                 <div class="investigador-info">
                     <h3>Javier Cuervo López</h3>
-                    <p>Investigador Principal · Doctorado en Innovación Empresarial</p>
+                    <p>Investigador Principal · Doctorando en Innovación Empresarial</p>
                     <a href="https://orcid.org/0009-0006-7134-2894" target="_blank">
                         <span>🔗</span> ORCID: 0009-0006-7134-2894
                     </a>
@@ -843,7 +850,7 @@ get_header();
     <section class="inv-intro">
         <div class="inv-intro-inner">
             <h2>Nuestro Impacto</h2>
-            <p>Combinamos análisis cuantitativo con estudios cualitativos, colaborando con universidades y empresas de Europa y Latinoamérica.</p>
+            <p>Combinamos análisis cuantitativo con estudios cualitativos, colaborando con universidades y empresas de Europa y Latinoamérica. Nuestra investigación alimenta directamente <a href="/servicios/" style="color: var(--verde); font-weight: 500;">los servicios que ofrecemos</a> y el contenido que publicamos en nuestro <a href="/blog/" style="color: var(--verde); font-weight: 500;">blog de insights</a>.</p>
 
             <div class="inv-stats">
                 <div class="inv-stat">
@@ -1028,7 +1035,7 @@ get_header();
                 <div class="institucion-card">
                     <div class="institucion-icon">🎓</div>
                     <h4>Universidade de Aveiro</h4>
-                    <p>Doctorado en Innovación Empresarial</p>
+                    <p>Doctorando en Innovación Empresarial</p>
                 </div>
             </div>
         </div>
@@ -1043,6 +1050,9 @@ get_header();
                 <a href="/contacto/" class="btn-primary">Proponer colaboración</a>
                 <a href="https://orcid.org/0009-0006-7134-2894" target="_blank" class="btn-secondary">Ver perfil ORCID</a>
             </div>
+            <p style="margin-top: 24px; font-size: 14px; color: rgba(255,255,255,0.7);">
+                También puedes <a href="/nosotros/" style="color: var(--verde);">conocer al equipo</a> o explorar <a href="/servicios/" style="color: var(--verde);">nuestros servicios de consultoría</a>
+            </p>
         </div>
     </section>
 

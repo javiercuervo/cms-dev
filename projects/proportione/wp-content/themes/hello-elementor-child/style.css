@@ -36,6 +36,19 @@ body.page-id-2832 .page-header {
     z-index: 1000;
 }
 
+/* Altura reducida del header en desktop */
+.elementor-location-header .e-con {
+    min-height: 56px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+/* Logo más compacto en desktop */
+.elementor-location-header .elementor-widget-image img {
+    max-width: 140px !important;
+    height: auto !important;
+}
+
 /* Menú principal */
 .elementor-nav-menu--main {
     font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
@@ -43,12 +56,12 @@ body.page-id-2832 .page-header {
 
 .elementor-nav-menu--main .elementor-item {
     font-family: 'Oswald', 'Josefin Sans', sans-serif !important;
-    font-size: 26px !important;
+    font-size: 15px !important;
     font-weight: 600 !important;
-    letter-spacing: 2px !important;
+    letter-spacing: 1.5px !important;
     text-transform: uppercase !important;
     color: #5F322F !important;
-    padding: 12px 22px !important;
+    padding: 8px 16px !important;
     transition: all 0.3s ease !important;
     position: relative !important;
 }
@@ -355,5 +368,151 @@ body.page-id-339 h1.entry-title {
         background: #FFFFFF !important;
         box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
     }
+}
+
+/* ============================================
+   FIX MÓVIL iOS - Header y Hamburger
+   ============================================ */
+
+/* Evitar corte del header en móvil */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+/* Header móvil - evitar overflow */
+@media (max-width: 767px) {
+    .elementor-location-header,
+    .elementor-location-header > .elementor-section,
+    .elementor-location-header > .elementor-element,
+    .elementor-location-header .e-con {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    /* Altura reducida del header en móvil */
+    .elementor-location-header .e-con {
+        min-height: 50px !important;
+        height: auto !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Logo más pequeño en móvil */
+    .elementor-location-header .elementor-widget-image img {
+        max-width: 100px !important;
+        height: auto !important;
+    }
+
+    /* Hamburger button - FIX para iOS touch */
+    .elementor-menu-toggle {
+        -webkit-tap-highlight-color: transparent !important;
+        touch-action: manipulation !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
+    }
+
+    /* Asegurar área de toque suficiente (44x44 mínimo iOS) */
+    .elementor-menu-toggle,
+    .elementor-nav-menu__toggle,
+    .elementor-widget-nav-menu .elementor-menu-toggle {
+        min-width: 44px !important;
+        min-height: 44px !important;
+        padding: 10px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        z-index: 999999 !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+        background: transparent !important;
+    }
+
+    /* Icono hamburger visible */
+    .elementor-menu-toggle i.eicon-menu-bar,
+    .elementor-menu-toggle svg {
+        font-size: 22px !important;
+        color: #5F322F !important;
+        pointer-events: none !important;
+    }
+
+    /* Dropdown del menú cuando está abierto */
+    .elementor-nav-menu--dropdown.elementor-nav-menu__container,
+    .elementor-nav-menu__container.elementor-nav-menu--dropdown {
+        position: fixed !important;
+        top: 56px !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100vw !important;
+        max-height: calc(100vh - 56px) !important;
+        overflow-y: auto !important;
+        z-index: 999998 !important;
+        background: #FFFFFF !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    }
+
+    /* Items del menú móvil */
+    .elementor-nav-menu--dropdown .elementor-item {
+        padding: 16px 20px !important;
+        font-size: 16px !important;
+        border-bottom: 1px solid #E5E5E5 !important;
+    }
+}
+
+/* ============================================
+   EFECTO DUOTONO - Páginas con Hero
+   ============================================ */
+
+/* Hero con efecto duotono granate */
+.duotone-hero {
+    position: relative !important;
+    isolation: isolate !important;
+}
+
+.duotone-hero::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(95, 50, 47, 0.7) 0%, rgba(95, 50, 47, 0.85) 100%) !important;
+    mix-blend-mode: multiply !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+.duotone-hero > * {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* CTA con efecto duotono degradado */
+.duotone-cta {
+    position: relative !important;
+    isolation: isolate !important;
+}
+
+.duotone-cta::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(135deg, rgba(95, 50, 47, 0.85) 0%, rgba(110, 129, 87, 0.85) 100%) !important;
+    mix-blend-mode: multiply !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+.duotone-cta > * {
+    position: relative !important;
+    z-index: 2 !important;
 }
 

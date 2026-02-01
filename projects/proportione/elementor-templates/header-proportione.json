@@ -1,0 +1,96 @@
+[
+  {
+    "id": "header-main",
+    "elType": "container",
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "nowrap",
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "min_height": {"unit": "px", "size": 70},
+      "min_height_tablet": {"unit": "px", "size": 65},
+      "min_height_mobile": {"unit": "px", "size": 60},
+      "padding": {"unit": "px", "top": "10", "right": "40", "bottom": "10", "left": "40"},
+      "padding_tablet": {"unit": "px", "top": "10", "right": "20", "bottom": "10", "left": "20"},
+      "padding_mobile": {"unit": "px", "top": "8", "right": "16", "bottom": "8", "left": "16"},
+      "background_background": "classic",
+      "background_color": "#FFFFFF",
+      "border_border": "solid",
+      "border_width": {"unit": "px", "top": "0", "right": "0", "bottom": "3", "left": "0"},
+      "border_color": "#5F322F",
+      "z_index": 9999,
+      "position": "fixed",
+      "width": {"unit": "%", "size": 100}
+    },
+    "elements": [
+      {
+        "id": "logo-widget",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+          "image": {"url": "https://staging19.proportione.com/wp-content/uploads/2023/07/Estrategia-y-tecnologia-1.png", "id": 38},
+          "image_size": "full",
+          "width": {"unit": "px", "size": 180},
+          "width_tablet": {"unit": "px", "size": 150},
+          "width_mobile": {"unit": "px", "size": 130},
+          "link_to": "custom",
+          "link": {"url": "/", "is_external": false},
+          "_flex_size": {"unit": "initial", "size": ""},
+          "_flex_shrink": 0
+        }
+      },
+      {
+        "id": "nav-widget",
+        "elType": "widget",
+        "widgetType": "nav-menu",
+        "settings": {
+          "menu": "menu-principal",
+          "layout": "horizontal",
+          "align_items": "center",
+          "pointer": "underline",
+          "animation_line": "fade",
+          "submenu_icon": {"value": "fas fa-angle-down", "library": "fa-solid"},
+          "text_color": "#333333",
+          "text_color_hover": "#5F322F",
+          "text_color_active": "#5F322F",
+          "pointer_color": "#5F322F",
+          "typography_typography": "custom",
+          "typography_font_family": "Raleway",
+          "typography_font_size": {"unit": "px", "size": 14},
+          "typography_font_weight": "500",
+          "typography_text_transform": "none",
+          "gap": {"unit": "px", "size": 24},
+          "breakpoint": "tablet",
+          "full_width": "yes",
+          "toggle": "burger",
+          "toggle_align": "right",
+          "toggle_icon_color": "#5F322F",
+          "toggle_icon_color_hover": "#6E8157",
+          "toggle_size": {"unit": "px", "size": 24},
+          "dropdown_background_color": "#FFFFFF",
+          "dropdown_border_radius": {"unit": "px", "size": 8},
+          "dropdown_box_shadow_box_shadow_type": "yes",
+          "dropdown_box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.12)"
+          },
+          "dropdown_typography_typography": "custom",
+          "dropdown_typography_font_family": "Raleway",
+          "dropdown_typography_font_size": {"unit": "px", "size": 15},
+          "dropdown_typography_font_weight": "500",
+          "dropdown_text_color": "#333333",
+          "dropdown_text_color_hover": "#5F322F",
+          "dropdown_text_color_active": "#5F322F",
+          "dropdown_background_color_hover": "#F5F0E6",
+          "dropdown_background_color_active": "#F5F0E6",
+          "dropdown_padding": {"unit": "px", "top": "15", "right": "20", "bottom": "15", "left": "20"},
+          "dropdown_item_padding": {"unit": "px", "top": "12", "right": "20", "bottom": "12", "left": "20"}
+        }
+      }
+    ]
+  }
+]

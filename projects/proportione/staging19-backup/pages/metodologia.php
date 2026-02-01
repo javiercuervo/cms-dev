@@ -142,6 +142,15 @@ get_header();
 
 <main id="content" class="site-main">
 
+<!-- Breadcrumb -->
+<nav style="max-width: var(--max-width); margin: 0 auto; padding: 20px 20px 0; font-family: var(--font-cuerpo); font-size: 14px; position: relative; z-index: 10;">
+    <a href="/" style="color: var(--color-verde); text-decoration: none;">Proportione</a>
+    <span style="color: #999; margin: 0 8px;">›</span>
+    <a href="/nosotros/" style="color: var(--color-verde); text-decoration: none;">Nosotros</a>
+    <span style="color: #999; margin: 0 8px;">›</span>
+    <span style="color: var(--color-granate);">Metodología</span>
+</nav>
+
 <!-- HERO BANNER -->
 <section class="metodologia-hero">
     <div class="metodologia-hero-bg"></div>
@@ -157,7 +166,7 @@ get_header();
     <div class="met-container">
         <h2>El Framework Proportione</h2>
         <p class="lead">No creemos en soluciones mágicas ni en tecnología por tecnología. Creemos en entender primero, actuar después.</p>
-        <p>Nuestro framework combina estrategia, tecnología y gestión del cambio en un proceso colaborativo donde usted siempre mantiene el control.</p>
+        <p>Nuestro framework combina estrategia, tecnología y gestión del cambio en un proceso colaborativo donde usted siempre mantiene el control. Este enfoque nace de nuestra <a href="/filosofia/" style="color: var(--color-verde); font-weight: 500;">filosofía Divina Proportione</a>: equilibrio, proporción y armonía en cada proyecto.</p>
         <div class="framework-infografia" style="margin-top:30px;text-align:center;">
             <a href="https://staging19.proportione.com/wp-content/uploads/2026/01/proportione-framework-vertical-1.png" target="_blank" onclick="event.preventDefault(); document.getElementById('lightbox-framework').style.display='flex'">
                 <img src="https://staging19.proportione.com/wp-content/uploads/2026/01/proportione-framework-vertical-1.png" alt="Framework Proportione - Método de 4 pasos" style="max-width:400px;width:100%;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.15);cursor:pointer;transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
@@ -252,6 +261,21 @@ get_header();
                 <p>Su equipo domina las herramientas y puede evolucionar sin nuestra ayuda.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Aplicación de la Metodología -->
+<section class="met-section" style="background: var(--color-blanco);">
+    <div class="met-container" style="text-align: center;">
+        <h2>Aplicamos esta metodología en todos nuestros servicios</h2>
+        <p style="font-size: 18px; color: #666; max-width: 700px; margin: 0 auto 32px;">Desde la consultoría estratégica hasta la implementación de IA, cada proyecto sigue nuestro framework probado.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+            <a href="/consultoria-gestion-negocio/" style="padding: 12px 24px; border: 2px solid var(--color-verde); color: var(--color-verde); text-decoration: none; border-radius: 6px; font-weight: 500;">Consultoría de Negocio</a>
+            <a href="/estrategia-innovacion/" style="padding: 12px 24px; border: 2px solid var(--color-verde); color: var(--color-verde); text-decoration: none; border-radius: 6px; font-weight: 500;">Estrategia de Innovación</a>
+            <a href="/ia-generativa/" style="padding: 12px 24px; border: 2px solid var(--color-verde); color: var(--color-verde); text-decoration: none; border-radius: 6px; font-weight: 500;">IA Generativa</a>
+            <a href="/estrategia-transformacion-digital/" style="padding: 12px 24px; border: 2px solid var(--color-verde); color: var(--color-verde); text-decoration: none; border-radius: 6px; font-weight: 500;">Transformación Digital</a>
+        </div>
+        <p style="margin-top: 24px;"><a href="/servicios/" style="color: var(--color-verde); font-weight: 500;">Ver todos los servicios →</a></p>
     </div>
 </section>
 

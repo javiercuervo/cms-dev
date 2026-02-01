@@ -24,6 +24,23 @@ add_action('wp_enqueue_scripts', 'proportione_enqueue_custom_styles', 20);
 function proportione_enqueue_custom_styles() {
     $theme_uri = get_stylesheet_directory_uri();
 
+    // Menú Móvil - CSS
+    wp_enqueue_style(
+        'proportione-mobile-menu',
+        $theme_uri . '/mobile-menu-v2.css',
+        array('hello-elementor-child'),
+        '2.1.0'
+    );
+
+    // Menú Móvil - JS (solo jQuery como dependencia)
+    wp_enqueue_script(
+        'proportione-mobile-menu',
+        $theme_uri . '/mobile-menu-v2.js',
+        array('jquery'),
+        '2.1.0',
+        true
+    );
+
     // Sistema de contraste (texto claro/oscuro según fondo)
     wp_enqueue_style(
         'proportione-contrast',
@@ -110,44 +127,20 @@ function proportione_enqueue_custom_styles() {
     }
 }
 
-// CSS condicional para plantillas de blog por categoría
+// CSS para plantilla de blog unificada
 add_action('wp_enqueue_scripts', 'proportione_blog_templates_css', 25);
 function proportione_blog_templates_css() {
     if (!is_singular('post')) return;
 
     $theme_uri = get_stylesheet_directory_uri();
 
-    // CSS Enhanced (nuevo diseño sin sidebar, reducción de rebote)
+    // CSS Unificado para todos los posts (diseño sin sidebar, reducción de rebote)
     wp_enqueue_style(
         'blog-single-enhanced',
         $theme_uri . '/blog-single-enhanced.css',
         array('proportione-design-system'),
-        '1.1.0'
+        '2.0.1-' . time()
     );
-
-    // CSS adicional por categoría (colores específicos)
-    if (has_category('ia-generativa')) {
-        wp_enqueue_style(
-            'blog-ia-generativa',
-            $theme_uri . '/blog-ia-generativa.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    } elseif (has_category('estrategia-digital')) {
-        wp_enqueue_style(
-            'blog-estrategia-digital',
-            $theme_uri . '/blog-estrategia-digital.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    } elseif (has_category('personas-y-tecnologia')) {
-        wp_enqueue_style(
-            'blog-personas-tecnologia',
-            $theme_uri . '/blog-personas-tecnologia.css',
-            array('blog-single-enhanced'),
-            '1.0.0'
-        );
-    }
 }
 
 // Añadir clases de categoría al body para selectores CSS específicos
