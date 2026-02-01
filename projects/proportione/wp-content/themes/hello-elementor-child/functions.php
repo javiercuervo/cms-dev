@@ -127,19 +127,28 @@ function proportione_enqueue_custom_styles() {
     }
 }
 
-// CSS para plantilla de blog unificada
+// CSS para plantilla de blog V2
 add_action('wp_enqueue_scripts', 'proportione_blog_templates_css', 25);
 function proportione_blog_templates_css() {
     if (!is_singular('post')) return;
 
     $theme_uri = get_stylesheet_directory_uri();
 
-    // CSS Unificado para todos los posts (diseño sin sidebar, reducción de rebote)
+    // CSS V2 para todos los posts
     wp_enqueue_style(
-        'blog-single-enhanced',
-        $theme_uri . '/blog-single-enhanced.css',
+        'blog-single-v2',
+        $theme_uri . '/blog-single-v2.css',
         array('proportione-design-system'),
-        '2.0.1-' . time()
+        '2.0.0'
+    );
+
+    // JavaScript V2
+    wp_enqueue_script(
+        'blog-single-v2',
+        $theme_uri . '/js/blog-single-v2.js',
+        array(),
+        '2.0.0',
+        true
     );
 }
 

@@ -1,0 +1,970 @@
+/**
+ * Blog Single Template V2 - Proportione
+ * Implementacion del diseno de Figma
+ * Fecha: Febrero 2026
+ *
+ * Componentes:
+ * 1. Progress Bar (sticky top)
+ * 2. Context Bar (sticky after hero)
+ * 3. Hero con imagen grayscale + overlay
+ * 4. TOC inline colapsable
+ * 5. Contenido con tipografia optimizada
+ * 6. Inline CTA
+ * 7. Newsletter inline
+ * 8. Tags como pills
+ * 9. Share buttons circulares
+ * 10. Author bio
+ * 11. Post navigation
+ * 12. Related posts grid
+ * 13. Floating sidebar (>1200px)
+ */
+
+/* ==========================================================================
+   CSS VARIABLES - Design Tokens del Figma
+   ========================================================================== */
+:root {
+    /* Brand Colors */
+    --granate: #5F322F;
+    --verde: #6E8157;
+    --verde-hover: #566E30;
+
+    /* Backgrounds */
+    --bg-white: #FFFFFF;
+    --bg-cream: #F5F0E6;
+    --bg-gray-light: #FAFAFA;
+
+    /* Text Colors */
+    --text-primary: #1F1F1F;
+    --text-body: #333333;
+    --text-secondary: #555555;
+    --text-muted: #777777;
+
+    /* Borders */
+    --border-light: #E5E5E5;
+    --border-medium: #CCCCCC;
+
+    /* Spacing - base 8px */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+    --space-4xl: 80px;
+
+    /* Content widths */
+    --content-width: 720px;
+    --wide-width: 960px;
+    --max-width: 1280px;
+
+    /* Typography */
+    --font-serif: 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.2s ease;
+    --transition-slow: 0.3s ease;
+}
+
+/* ==========================================================================
+   1. PROGRESS BAR - Barra de progreso sticky
+   ========================================================================== */
+.reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--verde);
+    z-index: 99999;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   2. CONTEXT BAR - Barra sticky despues del hero
+   ========================================================================== */
+.blog-context-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: var(--bg-white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    transform: translateY(-100%);
+    transition: transform var(--transition-base);
+}
+
+.blog-context-bar.visible {
+    transform: translateY(0);
+}
+
+.blog-context-bar .context-title {
+    flex: 1;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 16px;
+}
+
+.blog-context-bar .context-share-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.blog-context-bar .context-share-btn:hover {
+    background: var(--verde-hover);
+}
+
+.blog-context-bar .context-share-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ==========================================================================
+   3. HERO SECTION - Imagen grayscale + overlay granate
+   ========================================================================== */
+.single-post .blog-hero-section,
+.single-post .elementor-section:first-child {
+    position: relative !important;
+    min-height: 320px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    background: var(--granate) !important;
+    padding: 48px 24px !important;
+}
+
+/* Imagen destacada como fondo absoluto */
+.single-post .blog-hero-section .hero-bg-image,
+.single-post .elementor-section:first-child .elementor-widget-theme-post-featured-image {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.single-post .blog-hero-section .hero-bg-image img,
+.single-post .elementor-section:first-child .elementor-widget-theme-post-featured-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    filter: grayscale(100%) contrast(1.1) !important;
+}
+
+/* Overlay duotono granate */
+.single-post .blog-hero-section::before,
+.single-post .elementor-section:first-child::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(
+        180deg,
+        rgba(95, 50, 47, 0.6) 0%,
+        rgba(95, 50, 47, 0.85) 100%
+    ) !important;
+    z-index: 2 !important;
+}
+
+/* Contenido del hero sobre el overlay */
+.single-post .blog-hero-section > .elementor-container,
+.single-post .elementor-section:first-child > .elementor-container {
+    position: relative !important;
+    z-index: 3 !important;
+    text-align: center !important;
+}
+
+/* Badge de categoria - Pill verde */
+.single-post .hero-category-badge .elementor-post-info__terms-list a,
+.single-post .elementor-section:first-child .elementor-post-info__terms-list a {
+    background: var(--verde) !important;
+    color: #FFFFFF !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    border: none !important;
+    display: inline-block;
+    text-decoration: none !important;
+    transition: background-color var(--transition-fast);
+}
+
+.single-post .hero-category-badge .elementor-post-info__terms-list a:hover {
+    background: var(--verde-hover) !important;
+}
+
+/* Titulo H1 en hero */
+.single-post .blog-hero-section h1,
+.single-post .elementor-section:first-child h1.elementor-heading-title {
+    font-family: var(--font-serif) !important;
+    font-size: clamp(28px, 5vw, 48px) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3) !important;
+    max-width: 900px !important;
+    margin: 0 auto 16px !important;
+}
+
+/* Meta info en hero */
+.single-post .blog-hero-section .elementor-icon-list-text,
+.single-post .elementor-section:first-child .elementor-icon-list-text {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* ==========================================================================
+   4. TOC INLINE - Tabla de contenidos colapsable
+   ========================================================================== */
+.single-post .toc-inline-section {
+    background: var(--bg-cream) !important;
+    border-left: 4px solid var(--verde) !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 24px !important;
+    margin: 48px auto 0 !important;
+    max-width: var(--content-width) !important;
+}
+
+.single-post .toc-inline-section .elementor-toc__header {
+    font-family: var(--font-sans) !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 16px !important;
+}
+
+.single-post .toc-inline-section .elementor-toc__list-item a {
+    font-family: var(--font-sans) !important;
+    font-size: 14px !important;
+    color: var(--text-secondary) !important;
+    text-decoration: none !important;
+    padding: 4px 0 !important;
+    display: block !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.single-post .toc-inline-section .elementor-toc__list-item a:hover {
+    color: var(--granate) !important;
+    transform: translateX(4px) !important;
+}
+
+.single-post .toc-inline-section .elementor-toc__list-item.elementor-item-active a {
+    color: var(--granate) !important;
+    font-weight: 600 !important;
+}
+
+/* Toggle para mobile */
+.single-post .toc-inline-section .elementor-toc__toggle-button {
+    color: var(--text-muted) !important;
+}
+
+/* ==========================================================================
+   5. CONTENIDO PRINCIPAL - Tipografia optimizada
+   ========================================================================== */
+.single-post .elementor-widget-theme-post-content {
+    max-width: var(--content-width) !important;
+    margin: 0 auto !important;
+}
+
+/* Parrafos */
+.single-post .elementor-widget-theme-post-content p {
+    font-family: var(--font-sans) !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    color: var(--text-body) !important;
+    margin-bottom: 24px !important;
+}
+
+/* Lead paragraph - primer parrafo destacado */
+.single-post .elementor-widget-theme-post-content > .elementor-widget-container > p:first-of-type {
+    font-size: 20px !important;
+    line-height: 1.7 !important;
+    color: var(--text-primary) !important;
+}
+
+/* H2 - Secciones principales */
+.single-post .elementor-widget-theme-post-content h2 {
+    font-family: var(--font-serif) !important;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: var(--text-primary) !important;
+    margin: 48px 0 24px !important;
+    padding-top: 24px !important;
+    border-top: 1px solid var(--border-light) !important;
+    scroll-margin-top: 100px !important;
+}
+
+.single-post .elementor-widget-theme-post-content h2:first-of-type {
+    border-top: none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* H3 - Subsecciones */
+.single-post .elementor-widget-theme-post-content h3 {
+    font-family: var(--font-serif) !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    color: var(--text-primary) !important;
+    margin: 36px 0 16px !important;
+    scroll-margin-top: 100px !important;
+}
+
+/* Enlaces */
+.single-post .elementor-widget-theme-post-content a {
+    color: var(--verde) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+    transition: color var(--transition-fast) !important;
+}
+
+.single-post .elementor-widget-theme-post-content a:hover {
+    color: var(--granate) !important;
+}
+
+/* Blockquotes */
+.single-post .elementor-widget-theme-post-content blockquote {
+    background: var(--bg-cream) !important;
+    border-left: 4px solid var(--verde) !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 24px 28px !important;
+    margin: 32px 0 !important;
+}
+
+.single-post .elementor-widget-theme-post-content blockquote p {
+    font-size: 19px !important;
+    font-style: italic !important;
+    color: var(--text-primary) !important;
+    margin: 0 !important;
+}
+
+.single-post .elementor-widget-theme-post-content blockquote cite {
+    display: block !important;
+    margin-top: 12px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: var(--granate) !important;
+}
+
+/* Listas UL - Bullets verdes */
+.single-post .elementor-widget-theme-post-content ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 24px 0 !important;
+}
+
+.single-post .elementor-widget-theme-post-content ul li {
+    position: relative !important;
+    padding-left: 28px !important;
+    margin-bottom: 12px !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+}
+
+.single-post .elementor-widget-theme-post-content ul li::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 12px !important;
+    width: 8px !important;
+    height: 8px !important;
+    background: var(--verde) !important;
+    border-radius: 50% !important;
+}
+
+/* Listas OL - Numeros granate */
+.single-post .elementor-widget-theme-post-content ol {
+    list-style: none !important;
+    counter-reset: list-counter !important;
+    padding-left: 0 !important;
+    margin: 24px 0 !important;
+}
+
+.single-post .elementor-widget-theme-post-content ol li {
+    counter-increment: list-counter !important;
+    position: relative !important;
+    padding-left: 36px !important;
+    margin-bottom: 12px !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+}
+
+.single-post .elementor-widget-theme-post-content ol li::before {
+    content: counter(list-counter) !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 4px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background: var(--granate) !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Imagenes */
+.single-post .elementor-widget-theme-post-content img {
+    border-radius: 8px !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.single-post .elementor-widget-theme-post-content figcaption {
+    text-align: center !important;
+    color: var(--text-muted) !important;
+    font-size: 14px !important;
+    font-style: italic !important;
+    margin-top: 12px !important;
+}
+
+/* Codigo inline */
+.single-post .elementor-widget-theme-post-content code {
+    background: var(--bg-cream) !important;
+    color: var(--granate) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-size: 0.95em !important;
+}
+
+/* Bloques de codigo */
+.single-post .elementor-widget-theme-post-content pre {
+    background: #2D2D2D !important;
+    color: #F8F8F2 !important;
+    padding: 24px !important;
+    border-radius: 8px !important;
+    overflow-x: auto !important;
+    margin: 28px 0 !important;
+}
+
+.single-post .elementor-widget-theme-post-content pre code {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+}
+
+/* Tablas */
+.single-post .elementor-widget-theme-post-content table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 28px 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.single-post .elementor-widget-theme-post-content th {
+    background: var(--granate) !important;
+    color: #FFFFFF !important;
+    padding: 12px 16px !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+}
+
+.single-post .elementor-widget-theme-post-content td {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid var(--border-light) !important;
+}
+
+.single-post .elementor-widget-theme-post-content tr:nth-child(even) td {
+    background: var(--bg-gray-light) !important;
+}
+
+/* ==========================================================================
+   6. INLINE CTA - Call to action contextual
+   ========================================================================== */
+.single-post .inline-cta-block {
+    background: var(--bg-white) !important;
+    border-top: 1px solid var(--border-light) !important;
+    border-bottom: 1px solid var(--border-light) !important;
+    padding: 48px 24px !important;
+    text-align: center !important;
+    margin: 48px auto !important;
+    max-width: var(--content-width) !important;
+}
+
+.single-post .inline-cta-block h3 {
+    font-family: var(--font-serif) !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: var(--granate) !important;
+    margin-bottom: 16px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.single-post .inline-cta-block p {
+    font-size: 16px !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 24px !important;
+}
+
+/* ==========================================================================
+   7. NEWSLETTER INLINE - Formulario integrado
+   ========================================================================== */
+.single-post .newsletter-inline-block {
+    background: linear-gradient(135deg, var(--granate) 0%, #3d1f1d 100%) !important;
+    border-radius: 12px !important;
+    padding: 48px 32px !important;
+    text-align: center !important;
+    margin: 48px auto !important;
+    max-width: var(--content-width) !important;
+}
+
+.single-post .newsletter-inline-block h3 {
+    font-family: var(--font-serif) !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    margin-bottom: 12px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.single-post .newsletter-inline-block p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.single-post .newsletter-inline-block .elementor-field-group input[type="email"] {
+    background: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 18px !important;
+    font-size: 16px !important;
+}
+
+.single-post .newsletter-inline-block .elementor-button {
+    background: var(--verde) !important;
+    border-radius: 8px !important;
+    padding: 14px 24px !important;
+    font-weight: 600 !important;
+}
+
+.single-post .newsletter-inline-block .elementor-button:hover {
+    background: var(--verde-hover) !important;
+}
+
+/* ==========================================================================
+   8. TAGS - Pills con hover
+   ========================================================================== */
+.single-post .tags-pills .elementor-post-info__terms-list a {
+    display: inline-block !important;
+    background: var(--bg-cream) !important;
+    color: var(--granate) !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin: 4px !important;
+    text-decoration: none !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.single-post .tags-pills .elementor-post-info__terms-list a:hover {
+    background: var(--granate) !important;
+    color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   9. SHARE BUTTONS - Circulos verdes
+   ========================================================================== */
+.single-post .elementor-widget-share-buttons .elementor-share-btn {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: var(--verde) !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.single-post .elementor-widget-share-buttons .elementor-share-btn:hover {
+    background: var(--granate) !important;
+    transform: scale(1.1) !important;
+}
+
+.single-post .elementor-widget-share-buttons .elementor-share-btn__icon {
+    color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   10. AUTHOR BIO - Seccion de autor
+   ========================================================================== */
+.single-post .author-bio-block {
+    background: var(--bg-gray-light) !important;
+    border-radius: 12px !important;
+    padding: 32px !important;
+    margin: 48px auto !important;
+    max-width: var(--content-width) !important;
+}
+
+.single-post .author-bio-block .elementor-author-box__avatar img {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+.single-post .author-bio-block .elementor-author-box__name {
+    font-family: var(--font-serif) !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+}
+
+.single-post .author-bio-block .elementor-author-box__bio {
+    font-size: 15px !important;
+    color: var(--text-secondary) !important;
+    line-height: 1.6 !important;
+}
+
+/* ==========================================================================
+   11. POST NAVIGATION - Anterior/Siguiente
+   ========================================================================== */
+.single-post .elementor-widget-post-navigation {
+    padding: 24px !important;
+    background: var(--bg-white) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 8px !important;
+    transition: all var(--transition-base) !important;
+}
+
+.single-post .elementor-widget-post-navigation:hover {
+    border-color: var(--verde) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.single-post .elementor-widget-post-navigation .post-navigation__prev--label,
+.single-post .elementor-widget-post-navigation .post-navigation__next--label {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: var(--text-muted) !important;
+    letter-spacing: 0.5px !important;
+}
+
+.single-post .elementor-widget-post-navigation .post-navigation__prev--title,
+.single-post .elementor-widget-post-navigation .post-navigation__next--title {
+    font-family: var(--font-serif) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+    margin-top: 8px !important;
+}
+
+.single-post .elementor-widget-post-navigation:hover .post-navigation__prev--title,
+.single-post .elementor-widget-post-navigation:hover .post-navigation__next--title {
+    color: var(--granate) !important;
+}
+
+/* ==========================================================================
+   12. RELATED POSTS - Grid de posts relacionados
+   ========================================================================== */
+.single-post .elementor-widget-posts .elementor-post {
+    background: var(--bg-white) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: all var(--transition-base) !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__thumbnail {
+    aspect-ratio: 3/2 !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__thumbnail img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__badge {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: var(--verde) !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__title {
+    font-family: var(--font-serif) !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+    line-height: 1.4 !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__title a:hover {
+    color: var(--granate) !important;
+}
+
+.single-post .elementor-widget-posts .elementor-post__meta-data {
+    font-size: 13px !important;
+    color: var(--text-muted) !important;
+}
+
+/* ==========================================================================
+   13. FLOATING SIDEBAR - Solo desktop >1200px
+   ========================================================================== */
+.blog-floating-sidebar {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-slow), visibility var(--transition-slow);
+}
+
+.blog-floating-sidebar.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* TOC flotante */
+.blog-floating-sidebar .floating-toc {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.blog-floating-sidebar .floating-toc-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.blog-floating-sidebar .floating-toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-floating-sidebar .floating-toc li {
+    margin-bottom: 8px;
+}
+
+.blog-floating-sidebar .floating-toc a {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    transition: all var(--transition-fast);
+}
+
+.blog-floating-sidebar .floating-toc a:hover,
+.blog-floating-sidebar .floating-toc a.active {
+    color: var(--granate);
+    transform: translateX(4px);
+}
+
+.blog-floating-sidebar .floating-toc a.active {
+    font-weight: 600;
+}
+
+/* Share flotante */
+.blog-floating-sidebar .floating-share {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.blog-floating-sidebar .floating-share-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.blog-floating-sidebar .floating-share-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.blog-floating-sidebar .floating-share-btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--verde);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.blog-floating-sidebar .floating-share-btn:hover {
+    background: var(--granate);
+}
+
+.blog-floating-sidebar .floating-share-btn svg {
+    width: 18px;
+    height: 18px;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE - Tablet y Mobile
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .blog-floating-sidebar {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero */
+    .single-post .blog-hero-section,
+    .single-post .elementor-section:first-child {
+        min-height: 280px !important;
+        padding: 32px 16px !important;
+    }
+
+    .single-post .blog-hero-section h1,
+    .single-post .elementor-section:first-child h1 {
+        font-size: 32px !important;
+    }
+
+    /* Contenido */
+    .single-post .elementor-widget-theme-post-content p {
+        font-size: 17px !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content h2 {
+        font-size: 26px !important;
+        margin: 32px 0 16px !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content h3 {
+        font-size: 21px !important;
+    }
+
+    /* Context bar */
+    .blog-context-bar .context-share-btn span {
+        display: none;
+    }
+
+    /* Newsletter */
+    .single-post .newsletter-inline-block {
+        padding: 32px 20px !important;
+    }
+
+    .single-post .newsletter-inline-block h3 {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero */
+    .single-post .blog-hero-section,
+    .single-post .elementor-section:first-child {
+        min-height: 200px !important;
+        padding: 24px 16px !important;
+    }
+
+    .single-post .blog-hero-section h1,
+    .single-post .elementor-section:first-child h1 {
+        font-size: 24px !important;
+    }
+
+    /* Contenido */
+    .single-post .elementor-widget-theme-post-content p {
+        font-size: 16px !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content h2 {
+        font-size: 22px !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content h3 {
+        font-size: 19px !important;
+    }
+
+    /* Author bio */
+    .single-post .author-bio-block {
+        padding: 24px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+@media print {
+    .reading-progress-bar,
+    .blog-context-bar,
+    .blog-floating-sidebar,
+    .inline-cta-block,
+    .newsletter-inline-block,
+    .elementor-widget-share-buttons,
+    .elementor-widget-post-navigation {
+        display: none !important;
+    }
+
+    .single-post .elementor-widget-theme-post-content {
+        max-width: 100% !important;
+    }
+}

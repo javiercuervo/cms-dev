@@ -63,7 +63,11 @@
     }
 
     /* ===== DROPDOWN CONTAINER ===== */
+    /* Override para evitar conflicto con custom-elementor.css flex rules */
     nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+        display: block !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
         position: fixed !important;
         top: 60px !important;
         left: 0 !important;
@@ -79,6 +83,24 @@
         padding: 0 !important;
         margin: 0 !important;
         border-top: 3px solid #5F322F !important;
+    }
+
+    /* Override para items del menu - evitar corte de texto */
+    nav.elementor-nav-menu--dropdown .menu-item,
+    nav.elementor-nav-menu--dropdown > ul > li {
+        display: block !important;
+        width: 100% !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Override para links - texto completo visible */
+    nav.elementor-nav-menu--dropdown .elementor-item {
+        display: flex !important;
+        width: 100% !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
     }
 
     /* Cuando está oculto */
