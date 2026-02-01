@@ -1,0 +1,534 @@
+/* ===========================================
+   PROPORTIONE - Footer Styles V2
+   Rediseno completo para reducir bounce rate
+   Version: 2.0.0
+   Ultima actualizacion: 2026-02-01
+   =========================================== */
+
+/* ===========================================
+   1. VARIABLES CSS (hereda de design-system)
+   =========================================== */
+.site-footer {
+    --footer-bg: #5F322F;
+    --footer-bg-dark: #4a2623;
+    --footer-text: #F5F0E6;
+    --footer-text-muted: rgba(245, 240, 230, 0.7);
+    --footer-heading: #FFFFFF;
+    --footer-accent: #6E8157;
+    --footer-accent-hover: #566E30;
+    --footer-link-hover: #FFFFFF;
+    --footer-border: rgba(255, 255, 255, 0.15);
+}
+
+/* ===========================================
+   2. CONTENEDOR PRINCIPAL
+   =========================================== */
+.site-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    font-family: 'Raleway', sans-serif;
+}
+
+.site-footer * {
+    box-sizing: border-box;
+}
+
+/* Sin animaciones ni sombras en footer */
+.site-footer .elementor-widget,
+.site-footer .elementor-element {
+    animation: none !important;
+}
+
+.site-footer .elementor-heading-title::after {
+    display: none !important;
+}
+
+/* ===========================================
+   3. COLUMNAS DEL FOOTER
+   =========================================== */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-col {
+    min-width: 0;
+}
+
+/* Columna Marca */
+.footer-col-brand {
+    flex: 0 0 25%;
+}
+
+/* Columnas Servicios y Empresa */
+.footer-col-servicios,
+.footer-col-empresa {
+    flex: 0 0 18%;
+}
+
+/* Columna Newsletter */
+.footer-col-newsletter {
+    flex: 0 0 24%;
+}
+
+/* Columna Social */
+.footer-col-social {
+    flex: 0 0 15%;
+}
+
+/* ===========================================
+   4. LOGO Y TAGLINE
+   =========================================== */
+.footer-logo img {
+    max-width: 160px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover img {
+    opacity: 0.85;
+}
+
+.footer-tagline {
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--footer-text);
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* ===========================================
+   5. TITULOS DE COLUMNA
+   =========================================== */
+.footer-heading,
+.footer-heading.elementor-heading-title {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--footer-heading) !important;
+    text-transform: none !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 16px !important;
+    line-height: 1.3 !important;
+}
+
+.footer-heading-newsletter {
+    font-family: 'Georgia', serif !important;
+    font-size: 18px !important;
+}
+
+/* ===========================================
+   6. LISTAS DE NAVEGACION
+   =========================================== */
+.footer-nav-list,
+.footer-nav-list .elementor-icon-list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-list .elementor-icon-list-item {
+    margin-bottom: 0;
+}
+
+.footer-nav-list .elementor-icon-list-text,
+.footer-nav-list a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--footer-text);
+    text-decoration: none;
+    line-height: 2.2;
+    display: inline-block;
+    transition: color 0.2s ease, transform 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav-list .elementor-icon-list-text:hover,
+.footer-nav-list a:hover {
+    color: var(--footer-link-hover);
+    transform: translateX(4px);
+}
+
+/* Quitar iconos por defecto de icon-list */
+.footer-nav-list .elementor-icon-list-icon {
+    display: none;
+}
+
+/* ===========================================
+   7. NEWSLETTER FORM
+   =========================================== */
+.footer-newsletter-desc {
+    font-size: 14px;
+    color: var(--footer-text);
+    margin: 0 0 16px 0;
+    opacity: 0.9;
+}
+
+.footer-newsletter-form {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.footer-newsletter-form input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.footer-newsletter-form input[type="email"]::placeholder {
+    color: #999;
+}
+
+.footer-newsletter-form input[type="email"]:focus {
+    box-shadow: 0 0 0 3px var(--footer-accent);
+}
+
+.footer-newsletter-form button {
+    padding: 12px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: var(--footer-accent);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.footer-newsletter-form button:hover {
+    background: var(--footer-accent-hover);
+    transform: translateY(-2px);
+}
+
+.footer-newsletter-form button:focus-visible {
+    outline: 2px solid var(--footer-link-hover);
+    outline-offset: 2px;
+}
+
+.footer-rgpd,
+.footer-rgpd p {
+    font-size: 12px !important;
+    color: var(--footer-text-muted) !important;
+    margin: 12px 0 0 0 !important;
+}
+
+.footer-rgpd a {
+    color: var(--footer-text) !important;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.footer-rgpd a:hover {
+    color: var(--footer-link-hover) !important;
+}
+
+/* ===========================================
+   8. ICONOS SOCIALES
+   =========================================== */
+.footer-social-icons .elementor-social-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 20px;
+    background: transparent !important;
+    border: 1px solid var(--footer-border);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.footer-social-icons .elementor-social-icon:hover {
+    background: var(--footer-accent) !important;
+    border-color: var(--footer-accent);
+    transform: translateY(-3px);
+}
+
+.footer-social-icons .elementor-social-icon i {
+    color: var(--footer-text);
+    transition: color 0.2s ease;
+}
+
+.footer-social-icons .elementor-social-icon:hover i {
+    color: var(--footer-link-hover);
+}
+
+/* Contacto info */
+.footer-contact-email,
+.footer-contact-location {
+    font-size: 14px;
+    color: var(--footer-text);
+    margin: 0 0 4px 0;
+    line-height: 1.8;
+}
+
+.footer-contact-email a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-email a:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer-contact-location {
+    opacity: 0.8;
+}
+
+/* ===========================================
+   9. BARRA INFERIOR (BOTTOM BAR)
+   =========================================== */
+.footer-bottom {
+    background: var(--footer-bg-dark);
+    border-top: 1px solid var(--footer-border);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-legal-links,
+.footer-legal-links p,
+.footer-copyright,
+.footer-copyright p {
+    font-size: 13px !important;
+    color: var(--footer-text) !important;
+    margin: 0 !important;
+}
+
+.footer-legal-links a {
+    color: var(--footer-text) !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+    color: var(--footer-link-hover) !important;
+}
+
+.footer-legal-links .separator {
+    margin: 0 12px;
+    opacity: 0.5;
+}
+
+/* ===========================================
+   10. ACCESIBILIDAD (WCAG AA)
+   =========================================== */
+
+/* Focus visible para todos los elementos interactivos */
+.site-footer a:focus-visible,
+.site-footer button:focus-visible,
+.site-footer input:focus-visible {
+    outline: 2px solid var(--footer-accent);
+    outline-offset: 2px;
+}
+
+/* Skip-link support */
+.site-footer a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Touch targets minimos 44x44 */
+.site-footer a,
+.site-footer button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Links en listas con area clickeable expandida */
+.footer-nav-list a {
+    padding: 4px 0;
+}
+
+/* ===========================================
+   11. RESPONSIVE - TABLET
+   =========================================== */
+@media (max-width: 1024px) {
+    .footer-columns {
+        gap: 24px;
+    }
+
+    .footer-col-brand {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .footer-col-brand .elementor-widget-wrap,
+    .footer-col-brand .e-con-inner {
+        align-items: center;
+    }
+
+    .footer-col-servicios,
+    .footer-col-empresa {
+        flex: 0 0 48%;
+    }
+
+    .footer-col-newsletter {
+        flex: 0 0 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-newsletter-form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .footer-col-social {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .footer-col-social .elementor-widget-wrap,
+    .footer-col-social .e-con-inner {
+        align-items: center;
+    }
+}
+
+/* ===========================================
+   12. RESPONSIVE - MOBILE
+   =========================================== */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-col-brand,
+    .footer-col-servicios,
+    .footer-col-empresa,
+    .footer-col-newsletter,
+    .footer-col-social {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .footer-col .elementor-widget-wrap,
+    .footer-col .e-con-inner {
+        align-items: center !important;
+    }
+
+    .footer-nav-list .elementor-icon-list-items {
+        align-items: center;
+    }
+
+    .footer-nav-list .elementor-icon-list-text:hover,
+    .footer-nav-list a:hover {
+        transform: none;
+    }
+
+    .footer-newsletter-form {
+        flex-direction: column;
+        max-width: 280px;
+    }
+
+    .footer-newsletter-form input[type="email"],
+    .footer-newsletter-form button {
+        width: 100%;
+    }
+
+    /* Bottom bar mobile */
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .footer-legal-links .separator {
+        display: inline;
+    }
+}
+
+/* ===========================================
+   13. MOBILE MENU ORDER
+   Stack vertical con orden especifico
+   =========================================== */
+@media (max-width: 768px) {
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Orden en mobile segun plan:
+       1. Logo + Tagline
+       2. Newsletter
+       3. Servicios
+       4. Empresa
+       5. Social + Contacto
+    */
+    .footer-col-brand { order: 1; }
+    .footer-col-newsletter { order: 2; }
+    .footer-col-servicios { order: 3; }
+    .footer-col-empresa { order: 4; }
+    .footer-col-social { order: 5; }
+}
+
+/* ===========================================
+   14. PREFERENCIAS DE USUARIO
+   =========================================== */
+@media (prefers-reduced-motion: reduce) {
+    .site-footer * {
+        transition-duration: 0.01ms !important;
+    }
+
+    .footer-nav-list a:hover,
+    .footer-social-icons .elementor-social-icon:hover,
+    .footer-newsletter-form button:hover {
+        transform: none !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    .site-footer {
+        --footer-border: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-nav-list a,
+    .footer-legal-links a {
+        text-decoration: underline;
+    }
+}
+
+/* ===========================================
+   15. PRINT STYLES
+   =========================================== */
+@media print {
+    .site-footer {
+        background: #FFF !important;
+        color: #000 !important;
+    }
+
+    .site-footer a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    .footer-newsletter-form,
+    .footer-social-icons {
+        display: none !important;
+    }
+}
+
+/* ===========================================
+   FIN DEL FOOTER CSS
+   =========================================== */

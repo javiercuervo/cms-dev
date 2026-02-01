@@ -2,7 +2,21 @@
 /**
  * Hello Elementor Child - Proportione
  * Functions and definitions
+ *
+ * Versión: 2.0.0 - Optimizado con CSS unificado
+ * Última actualización: 2026-02-01
  */
+
+/**
+ * Obtener versión basada en filemtime para cache busting
+ */
+function proportione_get_file_version($file_path) {
+    $full_path = get_stylesheet_directory() . '/' . $file_path;
+    if (file_exists($full_path)) {
+        return filemtime($full_path);
+    }
+    return wp_get_theme()->get('Version');
+}
 
 // Cargar estilos del tema padre
 add_action('wp_enqueue_scripts', 'hello_elementor_child_enqueue_styles');
@@ -19,59 +33,45 @@ function hello_elementor_child_enqueue_styles() {
     );
 }
 
-// Encolar CSS adicionales de Proportione
+// Encolar CSS adicionales de Proportione (Optimizado)
 add_action('wp_enqueue_scripts', 'proportione_enqueue_custom_styles', 20);
 function proportione_enqueue_custom_styles() {
     $theme_uri = get_stylesheet_directory_uri();
 
-    // Menú Móvil - CSS
+    // Menú Móvil - CSS (carga en todas las páginas)
     wp_enqueue_style(
         'proportione-mobile-menu',
         $theme_uri . '/mobile-menu-v2.css',
         array('hello-elementor-child'),
-        '2.1.0'
+        proportione_get_file_version('mobile-menu-v2.css')
     );
 
-    // Menú Móvil - JS (solo jQuery como dependencia)
+    // Menú Móvil - JS (sin dependencias para carga temprana)
     wp_enqueue_script(
         'proportione-mobile-menu',
         $theme_uri . '/mobile-menu-v2.js',
-        array('jquery'),
-        '2.1.0',
+        array(),
+        proportione_get_file_version('mobile-menu-v2.js'),
         true
     );
 
-    // Sistema de contraste (texto claro/oscuro según fondo)
-    wp_enqueue_style(
-        'proportione-contrast',
-        $theme_uri . '/proportione-contrast.css',
-        array('hello-elementor-child'),
-        '1.0.1'
-    );
-
-    // Correcciones de diseño
-    wp_enqueue_style(
-        'proportione-corrections',
-        $theme_uri . '/proportione-corrections.css',
-        array('proportione-contrast'),
-        '1.0.0'
-    );
-
-    // Accesibilidad
-    wp_enqueue_style(
-        'proportione-accessibility',
-        $theme_uri . '/proportione-accessibility.css',
-        array('proportione-corrections'),
-        '1.0.0'
-    );
-
-    // Design System - Tipografía, animaciones, decorativos
+    // Design System Unificado (incluye contrast, corrections, accessibility)
     wp_enqueue_style(
         'proportione-design-system',
         $theme_uri . '/proportione-design-system.css',
-        array('proportione-accessibility'),
-        '1.0.0'
+        array('hello-elementor-child'),
+        proportione_get_file_version('proportione-design-system.css')
     );
+
+    // Footer V2 - Nuevo diseño 5 columnas
+    wp_enqueue_style(
+        'proportione-footer',
+        $theme_uri . '/footer-proportione.css',
+        array('proportione-design-system'),
+        proportione_get_file_version('footer-proportione.css')
+    );
+
+    // === CSS CONDICIONAL POR PÁGINA ===
 
     // Homepage Nueva - Solo en la página de inicio
     if (is_front_page()) {
@@ -79,7 +79,7 @@ function proportione_enqueue_custom_styles() {
             'proportione-homepage',
             $theme_uri . '/homepage-nuevo.css',
             array('proportione-design-system'),
-            '1.0.0'
+            proportione_get_file_version('homepage-nuevo.css')
         );
     }
 
@@ -89,40 +89,37 @@ function proportione_enqueue_custom_styles() {
             'proportione-filosofia',
             $theme_uri . '/filosofia.css',
             array('proportione-design-system'),
-            '1.0.0'
+            proportione_get_file_version('filosofia.css')
         );
     }
 
     // Página Consultoría de Gestión de Negocio
-    // URL: /consultoria-estrategica-crecimiento-organico/consultoria-de-gestion-de-negocio-un-enfoque-estrategico/
     if (is_page('consultoria-de-gestion-de-negocio-un-enfoque-estrategico')) {
         wp_enqueue_style(
             'proportione-consultoria-gestion',
             $theme_uri . '/consultoria-gestion.css',
             array('proportione-design-system'),
-            '1.0.0'
+            proportione_get_file_version('consultoria-gestion.css')
         );
     }
 
     // Página Consultoría de Tecnología
-    // URL: /consultoria-estrategica-crecimiento-organico/consultoria-de-tecnologia/
     if (is_page('consultoria-de-tecnologia')) {
         wp_enqueue_style(
             'proportione-consultoria-tecnologia',
             $theme_uri . '/consultoria-tecnologia.css',
             array('proportione-design-system'),
-            '1.0.0'
+            proportione_get_file_version('consultoria-tecnologia.css')
         );
     }
 
     // Página Contacto
-    // URL: /contacto/
     if (is_page('contacto')) {
         wp_enqueue_style(
             'proportione-contacto',
             $theme_uri . '/contacto-elementor.css',
             array('proportione-design-system'),
-            '1.1.0'
+            proportione_get_file_version('contacto-elementor.css')
         );
 
         // Mapa de vuelo animado "Waze del Aire"
@@ -130,13 +127,13 @@ function proportione_enqueue_custom_styles() {
             'proportione-flight-map',
             $theme_uri . '/js/proportione-flight-map.js',
             array('jquery'),
-            '1.0.0',
+            proportione_get_file_version('js/proportione-flight-map.js'),
             true
         );
     }
 }
 
-// CSS para plantilla de blog V2
+// CSS para plantilla de blog V2 (Single Posts)
 add_action('wp_enqueue_scripts', 'proportione_blog_templates_css', 25);
 function proportione_blog_templates_css() {
     if (!is_singular('post')) return;
@@ -148,7 +145,7 @@ function proportione_blog_templates_css() {
         'blog-single-v2',
         $theme_uri . '/blog-single-v2.css',
         array('proportione-design-system'),
-        '2.0.0'
+        proportione_get_file_version('blog-single-v2.css')
     );
 
     // JavaScript V2
@@ -156,9 +153,79 @@ function proportione_blog_templates_css() {
         'blog-single-v2',
         $theme_uri . '/js/blog-single-v2.js',
         array(),
-        '2.0.0',
+        proportione_get_file_version('js/blog-single-v2.js'),
         true
     );
+}
+
+// CSS para Blog Archive - Estilo McKinsey/BCG/Bain
+add_action('wp_enqueue_scripts', 'proportione_blog_archive_css', 25);
+function proportione_blog_archive_css() {
+    // Cargar en: página del blog, archivos de categoría, archivos de autor, búsqueda
+    if (!is_home() && !is_category() && !is_tag() && !is_author() && !is_archive() && !is_page('blog')) return;
+
+    // No cargar en single posts
+    if (is_singular('post')) return;
+
+    $theme_uri = get_stylesheet_directory_uri();
+
+    // Google Fonts - Inter y Playfair Display
+    wp_enqueue_style(
+        'google-fonts-blog',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap',
+        array(),
+        null
+    );
+
+    // CSS Blog Archive - Estilo Consultora
+    wp_enqueue_style(
+        'blog-archive',
+        $theme_uri . '/blog-archive.css',
+        array('proportione-design-system', 'google-fonts-blog'),
+        proportione_get_file_version('blog-archive.css')
+    );
+
+    // JavaScript Blog Archive
+    wp_enqueue_script(
+        'blog-archive',
+        $theme_uri . '/js/blog-archive.js',
+        array(),
+        proportione_get_file_version('js/blog-archive.js'),
+        true
+    );
+}
+
+/**
+ * Calcular tiempo de lectura de un post
+ * @param string $content El contenido del post
+ * @return int Minutos de lectura
+ */
+function proportione_reading_time($content) {
+    $word_count = str_word_count(strip_tags($content));
+    $reading_time = ceil($word_count / 200); // 200 palabras por minuto
+    return max(1, $reading_time);
+}
+
+/**
+ * Shortcode para insertar Blog Archive en Elementor
+ * Uso: [proportione_blog_archive]
+ */
+add_shortcode('proportione_blog_archive', 'proportione_blog_archive_shortcode');
+function proportione_blog_archive_shortcode($atts) {
+    ob_start();
+    include get_stylesheet_directory() . '/template-parts/blog-archive-template.php';
+    return ob_get_clean();
+}
+
+// Añadir clase al body para páginas de blog archive
+add_filter('body_class', 'proportione_blog_archive_body_class');
+function proportione_blog_archive_body_class($classes) {
+    if (is_home() || is_category() || is_tag() || is_author() || is_archive() || is_page('blog')) {
+        if (!is_singular('post')) {
+            $classes[] = 'blog-archive-page';
+        }
+    }
+    return $classes;
 }
 
 // Añadir clases de categoría al body para selectores CSS específicos
