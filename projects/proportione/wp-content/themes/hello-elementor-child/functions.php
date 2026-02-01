@@ -122,7 +122,16 @@ function proportione_enqueue_custom_styles() {
             'proportione-contacto',
             $theme_uri . '/contacto-elementor.css',
             array('proportione-design-system'),
-            '1.0.0'
+            '1.1.0'
+        );
+
+        // Mapa de vuelo animado "Waze del Aire"
+        wp_enqueue_script(
+            'proportione-flight-map',
+            $theme_uri . '/js/proportione-flight-map.js',
+            array('jquery'),
+            '1.0.0',
+            true
         );
     }
 }
